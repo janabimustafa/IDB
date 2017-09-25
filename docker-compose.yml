@@ -1,0 +1,69 @@
+version: '2.1'
+services:
+  traefik:
+    image: traefik
+    container_name: rldb-traefik
+    restart: always
+    ports:
+      - 8080:8080
+      - 80:80
+      - 443:443
+    networks:
+      - webgateway
+    volumes:
+      - ./traefik/traefik.toml:/traefik.toml
+      - ./traefik/servers.toml:/servers.toml
+      #- ./traefik/acme.json:/acme.json:ro
+  flask:
+    container_name: rldb-flask
+    build:
+      context: backend/.
+      dockerfile: Dockerfile
+    command: sh /app/flask-launcher.sh
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app:z
+    working_dir: /app
+    ports:
+      - 5000:5000
+    networks:
+      - webgateway
+    healthcheck:
+      test: curl -f http://localhost:5000
+      interval: 3s
+      timeout: 5s
+      retries: 5
+  react:
+    image: node
+    container_name: rldb-react
+    volumes:
+      - ./frontend:/app:z
+    entrypoint: sh /app/rldb/react-launcher.sh
+    working_dir: /app/rldb
+    ports:
+      - 3000:3000
+    networks:
+      - webgateway
+    depends_on:
+      flask:
+        condition: service_healthy
+    healthcheck:
+      test: curl -f http://localhost:3000
+      interval: 3s
+      timeout: 5s
+      retries: 5
+  db:
+    image: postgres:latest
+    networks:
+      - webgateway
+    container_name: rldb-db
+    healthcheck:
+      test: "pg_isready -h localhost -p 5432 -q -U postgres"
+      interval: 3s
+      timeout: 5s
+      retries: 5
+networks:
+  webgateway:
+    driver: bridge

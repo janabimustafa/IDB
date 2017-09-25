@@ -1,0 +1,17 @@
+[backends]
+  [backends.flask]
+    [backends.flask.servers.server1]
+    url = "http://flask:5000"
+    weight = 10
+  [backends.react]
+    [backends.react.servers.server1]
+    url = "http://react:3000"
+    weight = 10
+
+[frontends]
+  [frontends.flask]
+  backend = "flask"
+    [frontends.flask.routes.api]
+    rule = "PathPrefixStrip:/api"
+  [frontends.react]
+  backend = "react"    

@@ -41,11 +41,10 @@ services:
   react:
     container_name: rldb-react
     build:
-      context: frontend/rldb/.
+      context: frontend/.
       dockerfile: Dockerfile
     volumes:
-      - ./frontend:/app:z
-    entrypoint: sh /app/rldb/react-launcher.sh
+      - ./frontend/rldb:/app/rldb:z
     working_dir: /app/rldb
     ports:
       - 3000:3000

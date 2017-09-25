@@ -1,3 +1,2 @@
 #!/usr/bin/env sh
-yarn install
-yarn start
+npm start

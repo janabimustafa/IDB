@@ -4,6 +4,9 @@ services:
     image: traefik
     container_name: rldb-traefik
     restart: always
+    depends_on:
+      react:
+        condition: service_healthy
     ports:
       - 8080:8080
       - 80:80
@@ -36,8 +39,10 @@ services:
       timeout: 5s
       retries: 5
   react:
-    image: node
     container_name: rldb-react
+    build:
+      context: frontend/rldb/.
+      dockerfile: Dockerfile
     volumes:
       - ./frontend:/app:z
     entrypoint: sh /app/rldb/react-launcher.sh

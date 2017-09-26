@@ -22,7 +22,7 @@ services:
     build:
       context: backend/.
       dockerfile: Dockerfile
-    command: sh /app/flask-launcher.sh
+    command: ['sh', '/app/flask-launcher.sh']
     depends_on:
       db:
         condition: service_healthy
@@ -34,7 +34,7 @@ services:
     networks:
       - webgateway
     healthcheck:
-      test: curl -f http://localhost:5000
+      test: curl -f http://localhost:5000/api
       interval: 3s
       timeout: 5s
       retries: 5

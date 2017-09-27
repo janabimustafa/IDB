@@ -8,9 +8,8 @@ services:
   - docker
 
 env:
-  matrix:
-    - DOCKER_COMPOSE_VERSION=1.16.0
   global:
+    - DOCKER_COMPOSE_VERSION=1.16.0
     - GOOGLE_APPLICATION_CREDENTIALS=~/gcloud-service-key.json
     - PROJECT_NAME_STG=rldb-idb
     - CLUSTER_NAME_STG=cluster-2-dev
@@ -25,6 +24,11 @@ env:
 
 
 before_install:
+  - docker-compose --version
+  - sudo rm -f /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
   - docker-compose --version
 
 install:

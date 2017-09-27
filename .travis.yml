@@ -1,0 +1,47 @@
+sudo: required
+
+cache:
+  directories:
+    - "$HOME/google-cloud-sdk/"
+
+services:
+  - docker
+
+env:
+  global:
+    - GOOGLE_APPLICATION_CREDENTIALS=~/gcloud-service-key.json
+    - PROJECT_NAME_STG=rldb-idb
+    - CLUSTER_NAME_STG=cluster-2-dev
+    - PROJECT_NAME_PRD=rldb-idb
+    - CLUSTER_NAME_PRD=cluster-1
+    - CLOUDSDK_COMPUTE_ZONE=us-central1-a
+    - DOCKER_FLASK_IMAGE_NAME=rldb-flask
+    - DOCKER_REACT_IMAGE_NAME=rldb-react
+    - KUBE_DEPLOYMENT_NAME=rldb-deployment
+    - KUBE_DEPLOYMENT_FLASK_CONTAINER_NAME=rldb-flask
+    - KUBE_DEPLOYMENT_REACT_CONTAINER_NAME=rldb-react
+
+
+install:
+  - docker-compose build
+  - docker-compose up -d
+
+script:
+  - docker exec rldb-flask python test.py
+  - docker exec rldb-react npm test
+
+before_deploy:
+  - if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
+  - source /home/travis/google-cloud-sdk/path.bash.inc
+  - gcloud --quiet version
+  - gcloud --quiet components update
+  - gcloud --quiet components beta update
+  - gcloud --quiet components update kubectl
+
+
+deploy:
+  - provider: script
+    script: ./deploy/deploy-dev.sh
+    skip_cleanup: true
+    on:
+      branch: ci

@@ -1,6 +1,6 @@
-from flask import Flask, request
+from flask import Flask, request, Blueprint
 from flask_restplus import Api, Resource, reqparse, abort
-
+from werkzeug.contrib.fixers import ProxyFix
 """
 This is likely not the final form of
 this file, so I've skipped on the documentation
@@ -10,12 +10,13 @@ to separate endpoints out into different files.
 
 
 app = Flask(__name__)
-
-api = Api(app, version='1.0', title='RocketLeague API',
+app.wsgi_app = ProxyFix(app.wsgi_app)
+blueprint = Blueprint('api', __name__, url_prefix='/api')
+api = Api(blueprint, version='1.0', title='RocketLeague API',
     description='API for getting data about everything RocketLeague',
     default_mediatype='application/json',
     validate=True)
-
+app.register_blueprint(blueprint)
 db = {'TODO': 'Replace with DB query'}
 
 
@@ -121,4 +122,4 @@ class Decal_Res(Resource):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0')

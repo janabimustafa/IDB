@@ -1,0 +1,14 @@
+version: '2'
+services:
+  flask:
+    image: gcr.io/rldb-idb/rldb-flask
+    container_name: rldb-flask
+    build:
+      context: backend/.
+      dockerfile: Dockerfile-travis
+  react:
+    image: gcr.io/rldb-idb/rldb-react
+    container_name: rldb-react
+    build:
+      context: frontend/.
+      dockerfile: Dockerfile-travis

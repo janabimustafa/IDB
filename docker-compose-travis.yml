@@ -1,14 +1,18 @@
 version: '2'
 services:
-  flask:
+  rldb-flask:
     image: gcr.io/rldb-idb/rldb-flask
     container_name: rldb-flask
     build:
       context: backend/.
       dockerfile: Dockerfile-travis
-  react:
+    ports:
+    - 5000:5000
+  rldb-react:
     image: gcr.io/rldb-idb/rldb-react
     container_name: rldb-react
     build:
       context: frontend/.
       dockerfile: Dockerfile-travis
+    ports:
+    - 3000:3000

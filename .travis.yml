@@ -8,8 +8,9 @@ services:
   - docker
 
 env:
-  - DOCKER_COMPOSE_VERSION=1.16.0
-  - global:
+  matrix:
+    - DOCKER_COMPOSE_VERSION=1.16.0
+  global:
     - GOOGLE_APPLICATION_CREDENTIALS=~/gcloud-service-key.json
     - PROJECT_NAME_STG=rldb-idb
     - CLUSTER_NAME_STG=cluster-2-dev

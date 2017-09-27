@@ -3,4 +3,7 @@ RUN apt-get update && apt-get -y install curl
 RUN mkdir /config
 COPY ./config/requirements.txt /config/
 RUN pip install -r /config/requirements.txt
+COPY . /app
+WORKDIR /app
+EXPOSE 5000
 CMD sh flask-launcher.sh

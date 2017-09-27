@@ -42,7 +42,7 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: ./deploy/deploy-dev.sh
+    script: deploy/deploy-dev.sh
     skip_cleanup: true
     on:
       branch: ci

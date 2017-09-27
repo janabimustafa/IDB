@@ -24,6 +24,9 @@ env:
     - KUBE_DEPLOYMENT_REACT_CONTAINER_NAME=rldb-react
 
 
+before_install:
+  - docker-compose --version
+
 install:
   - docker-compose -f docker-compose-travis.yml build
   - docker-compose -f docker-compose-travis.yml up -d
@@ -42,7 +45,7 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: chmod +x deploy/deploy-dev.sh && deploy/deploy-dev.sh
+    script: chmod +x ./deploy/deploy-dev.sh && ./deploy/deploy-dev.sh
     skip_cleanup: true
     on:
       branch: ci

@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: basic-ingress
+spec:
+  backend:
+    serviceName: rldb-react
+    servicePort: 3000
+  rules:
+  - http:
+      paths:
+      - path: /api/
+        backend:
+          serviceName: rldb-flask
+          servicePort: 5000
+      - path: /
+        backend:
+          serviceName: rldb-react
+          servicePort: 3000

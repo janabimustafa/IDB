@@ -1,0 +1,28 @@
+Note: formatted for readability
+
+TASKS											HOURS ESTIMATED		HOURS TAKEN
+Setup namecheap domain							.5					.5
+Decide on Project topic							2					5
+Find sources									2					1
+Research models, relationships, attributes		2					2
+Connect Flask/Docker app to GCP					3					6
+Setup basic site landing page and nav bar		1					1
+As a user, I want to see available crates in the game.
+												1					2
+
+As a user, I want to see available vehicle bodies in the game.
+												1					1
+
+As a user, I want to see available in-game decals.
+												1					1
+
+As a user, I want to see available paint finishes.
+												1					.5
+As a user, I want to see items grouped into categories.
+												1					.5
+As a user, I want to see rarities of items.
+												1					2
+As a user, I want to see availability of items (when they were available, can I get them now).
+												1					.5
+As a developer, I want references to each attribute so that I can easily look up related items.
+												1					1

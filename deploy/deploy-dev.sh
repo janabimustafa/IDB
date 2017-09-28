@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-echo $GCLOUD_SERVICE_KEY_PRD | base64 --decode -i > ${HOME}/gcloud-service-key.json
-gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json
+# echo $GCLOUD_SERVICE_KEY_PRD | base64 --decode -i > ${HOME}/gcloud-service-key.json
+gcloud auth activate-service-account --key-file .\\RLDB-idb-2267e2f4e99e.json
 
 gcloud --quiet config set project $PROJECT_NAME_PRD
 gcloud --quiet config set container/cluster $CLUSTER_NAME_PRD

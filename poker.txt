@@ -19,7 +19,7 @@ As a user, I want to see available in-game decals.
 As a user, I want to see available paint finishes.
 												1					.5
 As a user, I want to see items grouped into categories.
-												1					.5
+												2					.5
 As a user, I want to see rarities of items.
 												1					2
 As a user, I want to see availability of items (when they were available, can I get them now).

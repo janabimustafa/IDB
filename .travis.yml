@@ -19,8 +19,7 @@ env:
   - KUBE_DEPLOYMENT_FLASK_CONTAINER_NAME=rldb-flask
   - KUBE_DEPLOYMENT_REACT_CONTAINER_NAME=rldb-react
 before_install:
-- openssl aes-256-cbc -K $encrypted_4f2c403f1257_key -iv $encrypted_4f2c403f1257_iv
-  -in RLDB-idb-2267e2f4e99e.json.enc -out .\\RLDB-idb-2267e2f4e99e.json -d
+- openssl aes-256-cbc -K $encrypted_4f2c403f1257_key -iv $encrypted_4f2c403f1257_iv -in RLDB-idb-2267e2f4e99e.json.enc -out RLDB-idb-2267e2f4e99e.json -d
 - docker-compose --version
 - sudo rm -f /usr/local/bin/docker-compose
 - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose

@@ -1,0 +1,18 @@
+version: '2'
+services:
+  rldb-flask:
+    image: gcr.io/rldb-idb/rldb-flask:${TRAVIS_COMMIT}
+    container_name: rldb-flask
+    build:
+      context: backend/.
+      dockerfile: Dockerfile-travis
+    ports:
+    - 5000:5000
+  rldb-react:
+    image: gcr.io/rldb-idb/rldb-react:${TRAVIS_COMMIT}
+    container_name: rldb-react
+    build:
+      context: frontend/.
+      dockerfile: Dockerfile-travis
+    ports:
+    - 3000:3000

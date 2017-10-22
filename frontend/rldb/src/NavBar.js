@@ -8,14 +8,29 @@ class NavBar extends Component {
     return (
       <Navbar className="navbar title-font" inverse collapseOnSelect>
         <Navbar.Header>
-          <div className='navbar-brand'>Header Text</div>
+          <Navbar.Brand>
+            RLDB
+          </Navbar.Brand>
+          <Navbar.Toggle/>
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
             <IndexLinkContainer to="/">
               <NavItem>Home</NavItem>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/About">
+            <IndexLinkContainer to="/crate">
+              <NavItem>Crate</NavItem>
+            </IndexLinkContainer>
+            <IndexLinkContainer to="/body">
+              <NavItem>Body</NavItem>
+            </IndexLinkContainer>
+            <IndexLinkContainer to="/paint">
+              <NavItem>Paint Finish</NavItem>
+            </IndexLinkContainer>
+            <IndexLinkContainer to="/player">
+              <NavItem>Player</NavItem>
+            </IndexLinkContainer>
+            <IndexLinkContainer to="/about">
               <NavItem>About</NavItem>
             </IndexLinkContainer>
           </Nav>

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Home = () => (
-    <div>
-        <p>Home Text</p>
+    <div className="container">
+        <h1>Rocket League Database on RLDB.com</h1>
     </div>
 )
 

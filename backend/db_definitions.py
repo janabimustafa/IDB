@@ -1,14 +1,15 @@
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
 from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey
 import json
+import os
 
 Base = declarative_base()
 
-DB_NAME = 'rldb'
-DB_USER = 'rldb'
-DB_PASS = 'rldb'
-DB_DIALECT = 'postgres'
-
+DB_NAME = os.environ['DB_NAME']
+DB_USER = os.environ['DB_USER']
+DB_PASS = os.environ['DB_PASS']
+DB_DIALECT = os.environ['DB_DIALECT']
+DB_HOST = os.environ['DB_HOST']
 # To create this schema, ensure that the DB_NAME database exists,
 # and that DB_USER:DB_PASS is correct. Then using the above Base object
 # do: Base.metadata.create_all(engine) to initialize a blank db (or nop

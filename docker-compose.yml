@@ -34,6 +34,12 @@ services:
       - 5000:5000
     networks:
       - webgateway
+    environment:
+      - DB_NAME=rldb
+      - DB_USER=rldb
+      - DB_PASS=rldb
+      - DB_DIALECT=postgres
+      - DB_HOST=db
     healthcheck:
       test: curl -f http://localhost:5000/api
       interval: 3s
@@ -65,6 +71,9 @@ services:
     networks:
       - webgateway
     container_name: rldb-db
+    environment:
+      - POSTGRES_PASSWORD=rldb
+      - POSTGRES_USER=rldb
     healthcheck:
       test: "pg_isready -h localhost -p 5432 -q -U postgres"
       interval: 3s

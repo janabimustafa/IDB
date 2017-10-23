@@ -6,7 +6,13 @@ Base = declarative_base()
 
 DB_NAME = 'rldb'
 DB_USER = 'rldb'
+DB_PASS = 'rldb'
 DB_DIALECT = 'postgres'
+
+# To create this schema, ensure that the DB_NAME database exists,
+# and that DB_USER:DB_PASS is correct. Then using the above Base object
+# do: Base.metadata.create_all(engine) to initialize a blank db (or nop
+# if it already exists)
 
 class RLObject: # Everything
     id = Column(Integer, primary_key=True)

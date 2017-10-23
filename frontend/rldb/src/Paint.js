@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Paint = () => (
-    <div className="container">
-        <h1>Paint</h1>
-    </div>
-)
+class Paint extends Component {
+    render() {
+        return (
+            <div className="container">
+                <h1>Paint</h1>
+            </div>
+        )
+    }
+}
 
 export default Paint;

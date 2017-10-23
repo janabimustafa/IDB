@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Body = () => (
-    <div className="container">
-        <h1>Body</h1>
-    </div>
-)
+class Body extends Component {
+    render() {
+        return (
+            <div className="container">
+                <h1>Body</h1>
+            </div>
+        )
+    }
+}
 
 export default Body;

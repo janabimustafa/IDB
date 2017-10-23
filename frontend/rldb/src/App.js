@@ -4,6 +4,8 @@ import {Route, Switch} from 'react-router-dom';
 import './App.css';
 
 import Header from './Header';
+import NavBar from './NavBar';
+
 import Home from './Home';
 import Crate from './Crate';
 import Body from './Body';
@@ -15,7 +17,7 @@ import About from './About';
 
 const App = () => (
   <div>
-    <Header />
+    <NavBar />
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/crate' component={Crate}/>

@@ -1,25 +1,9 @@
 sudo: required
-cache:
-  directories:
-  - "$HOME/google-cloud-sdk/"
+
 services:
 - docker
-env:
-  global:
-  - DOCKER_COMPOSE_VERSION=1.16.0
-  - GOOGLE_APPLICATION_CREDENTIALS=~/gcloud-service-key.json
-  - PROJECT_NAME_STG=rldb-idb
-  - CLUSTER_NAME_STG=cluster-2-dev
-  - PROJECT_NAME_PRD=rldb-idb
-  - CLUSTER_NAME_PRD=cluster-1
-  - CLOUDSDK_COMPUTE_ZONE=us-central1-a
-  - DOCKER_FLASK_IMAGE_NAME=rldb-flask
-  - DOCKER_REACT_IMAGE_NAME=rldb-react
-  - KUBE_DEPLOYMENT_NAME=rldb-deployment
-  - KUBE_DEPLOYMENT_FLASK_CONTAINER_NAME=rldb-flask
-  - KUBE_DEPLOYMENT_REACT_CONTAINER_NAME=rldb-react
+
 before_install:
-- openssl aes-256-cbc -K $encrypted_1077ebbf3dc2_key -iv $encrypted_1077ebbf3dc2_iv -in RLDB-idb-2267e2f4e99e.json.enc -out RLDB-idb-2267e2f4e99e.json -d
 - docker-compose --version
 - sudo rm -f /usr/local/bin/docker-compose
 - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
@@ -27,20 +11,14 @@ before_install:
 - sudo mv docker-compose /usr/local/bin
 - docker-compose --version
 install:
-- docker-compose -f docker-compose-travis.yml build
-- docker-compose -f docker-compose-travis.yml up -d
+- docker-compose build
+- docker-compose up -d
 script:
 - docker exec rldb-flask python test.py
 - docker exec -e CI=true rldb-react npm test
-before_deploy:
-- if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
-- source /home/travis/google-cloud-sdk/path.bash.inc
-- gcloud --quiet version
-- gcloud --quiet components update
-- gcloud --quiet components update kubectl
-deploy:
-- provider: script
-  script: sh $TRAVIS_BUILD_DIR/deploy/deploy-dev.sh
-  skip_cleanup: true
-  on:
-    branch: master
+after_success:
+- if [ "$TRAVIS_BRANCH" == "docker-deploy-fixes" ]; then
+  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  docker push janabimustafa/rldb-flask;
+  docker push janabimustafa/rldb-react;
+  fi

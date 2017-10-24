@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
 
-import './App.css';
+import './styles/App.css';
 
-import Header from './Header';
-import NavBar from './NavBar';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
 
-import Home from './Home';
-import Crate from './Crate';
-import Body from './Body';
-import Paint from './Paint';
-import Player from './Player';
-import About from './About';
+import Home from './components/Home';
+import Crate from './components/Crate';
+import Body from './components/Body';
+import Paint from './components/Paint';
+import Player from './components/Player';
+import About from './components/About';
 
 //right now header is just navbar, but maybe header could be something more
 
@@ -20,11 +20,11 @@ const App = () => (
     <NavBar />
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/crate' component={Crate}/>
-      <Route path='/body' component={Body}/>
-      <Route path='/paint' component={Paint}/>
-      <Route path='/player' component={Player}/>
-      <Route path='/about' component={About}/>
+      <Route exact path='/crate' component={Crate}/>
+      <Route exact path='/body' component={Body}/>
+      <Route exact path='/paint' component={Paint}/>
+      <Route exact path='/player' component={Player}/>
+      <Route exact path='/about' component={About}/>
     </Switch>
   </div>
 

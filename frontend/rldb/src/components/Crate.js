@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
 
-import InstanceCard from './InstanceCard';
+import InstancePreview from './InstancePreview';
 
 class Crate extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            data: []
+            data: {}
         };
     }
-    
-    //is it better to do fetch in constructor or in componentDidMount
 
     componentDidMount() {
-        fetch('http://httpbin.org/get', { 
+        fetch('http://echo.jsontest.com/key/value/one/two', { 
             method: 'GET',
             dataType: 'json'
         })
@@ -29,16 +27,17 @@ class Crate extends Component {
             });
         });
     }
-
-    //for each value in state, generate a model card
+    
     render() {
+        let data = this.state.data;
+
         return (
             <div className="container">
                 <h1>Crate</h1>
-                {Object.keys(this.state.data).map(function(content, i){
-                    return <InstanceCard name={content} key={i}/>;
+                <InstancePreview name="name" value="value" />
+                {Object.keys(data).map((content, i ) => {
+                    return <InstancePreview name={content} value={data[content]} key={i} />
                 })}
-                <InstanceCard name= "test" />
             </div>
         )
     }

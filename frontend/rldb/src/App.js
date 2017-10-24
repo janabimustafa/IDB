@@ -5,6 +5,7 @@ import './App.css';
 
 import Header from './Header';
 import NavBar from './NavBar';
+import Footer from './components/footer/footer'
 
 import Home from './Home';
 import Crate from './Crate';
@@ -26,6 +27,8 @@ const App = () => (
       <Route path='/player' component={Player}/>
       <Route path='/about' component={About}/>
     </Switch>
+
+    <Footer />
   </div>
 
 )

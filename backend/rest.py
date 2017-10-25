@@ -5,6 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from db_definitions import *
+import about_stats
 """
 This is likely not the final form of
 this file, so I've skipped on the documentation
@@ -164,6 +165,13 @@ class GetDLCs(Resource):
 
     def get(self):
         return get_mapping(DLC)
+
+
+@api.route('/meta/about')
+class AboutStats(Resource):
+
+    def get(self):
+        return about_stats.get_about_stats()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

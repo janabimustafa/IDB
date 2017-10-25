@@ -17,8 +17,8 @@ after_success:
   docker push janabimustafa/rldb-flask;
   docker push janabimustafa/rldb-react;
   elif [ "$TRAVIS_BRANCH" == "dev" ]; then
-  docker tag janabimustafa/rldb-flask janabimustafa/rldb-flask:dev
-  docker tag janabimustafa/rldb-react janabimustafa/rldb-react:dev
+  docker tag janabimustafa/rldb-flask janabimustafa/rldb-flask:dev;
+  docker tag janabimustafa/rldb-react janabimustafa/rldb-react:dev;
   docker push janabimustafa/rldb-flask:dev;
   docker push janabimustafa/rldb-react:dev;
   fi

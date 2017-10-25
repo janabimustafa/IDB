@@ -109,7 +109,7 @@ class Decal_Res(Resource):
 
 def get_mapping(Class):
     s = Session()
-    return [serialize(r) for r in s.query(Class)]
+    return {r.id: r.name for r in s.query(Class)}
 
 @api.route('/meta/rarities')
 class GetRarities(Resource):

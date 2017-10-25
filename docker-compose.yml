@@ -18,7 +18,7 @@ services:
       - ./traefik/servers.toml:/servers.toml
       #- ./traefik/acme.json:/acme.json:ro
   flask:
-    image: gcr.io/rldb-idb/rldb-flask
+    image: janabimustafa/rldb-flask
     container_name: rldb-flask
     build:
       context: backend/.
@@ -46,7 +46,7 @@ services:
       timeout: 5s
       retries: 5
   react:
-    image: gcr.io/rldb-idb/rldb-react
+    image: janabimustafa/rldb-react
     container_name: rldb-react
     build:
       context: frontend/.
@@ -79,6 +79,19 @@ services:
       interval: 3s
       timeout: 5s
       retries: 5
+  phppgadmin:
+    image: zhajor/docker-phppgadmin
+    networks:
+      - webgateway
+    container_name: rldb-phppgadmin
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+    ports:
+      - 8081:80
 networks:
   webgateway:
     driver: bridge

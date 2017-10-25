@@ -12,26 +12,28 @@ Session = sessionmaker(bind=db)
 
 if len(inspect(db).get_table_names()) == 0:
     print('No tables detected, creating...')
-    Base.metadata.create_all(db)
+# updates DB to create tables that don't already exist in the DB
+Base.metadata.create_all(db)
 
 s = Session()
 
 filename = sys.argv[1]
 
-id_ = 1
-
 with open(filename, 'r') as f:
     for line in f:
-        j = json.loads(line)
-        j['id'] = id_
+        try:
+            j = json.loads(line)
+        except:
+            print("Error, could not parse line.")
+            print(line)
+        #j['id'] = id_
         if 'related' in j:
             del j['related']
         if 'type' in j:
             j['type'] = j['type'].lower()
         new = deserialize(json.dumps(j))
         if new:
-            s.add(new)
-            id_ += 1
+            s.merge(new)
 
 s.commit()
  

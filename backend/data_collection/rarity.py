@@ -2,6 +2,7 @@ from db_definitions import *
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import sessionmaker
 
+
 '''
 This file provides supplemental Rarity values for the RL Objects.
 '''

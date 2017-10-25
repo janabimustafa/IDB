@@ -12,7 +12,8 @@ Session = sessionmaker(bind=db)
 
 if len(inspect(db).get_table_names()) == 0:
     print('No tables detected, creating...')
-    Base.metadata.create_all(db)
+# updates DB to create tables that don't already exist in the DB
+Base.metadata.create_all(db)
 
 s = Session()
 

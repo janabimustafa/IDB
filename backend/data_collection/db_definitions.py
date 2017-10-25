@@ -81,6 +81,9 @@ class Decal(Base, RLItem):
     is_paintable = Column(Boolean)
     #list of bodies stored in BodyDecalsRelation table
 
+class Wheel(Base, RLItem):
+    __tablename__ = 'wheels'
+
 class Crate(Base, RLItem):
     __tablename__ = 'crates'
     retire_date = Column(Date)
@@ -104,7 +107,8 @@ TYPE_TO_CLASS = {
     'decal': Decal,
     'crate': Crate,
     'dlc': DLC,
-    'player': Player
+    'player': Player,
+    'wheel': Wheel
 }
 
 CLASS_TO_TYPE = {v: k for k, v in TYPE_TO_CLASS.items()}

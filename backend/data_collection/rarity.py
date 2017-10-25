@@ -9,9 +9,7 @@ This file provides supplemental Rarity values for the RL Objects.
 
 db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
 Session = sessionmaker(bind=db)
-if len(inspect(db).get_table_names()) == 0:
-    print('No tables detected, creating...')
-    Base.metadata.create_all(db)
+Base.metadata.create_all(db)
 
 s = Session()
 rarities = [

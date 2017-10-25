@@ -79,6 +79,19 @@ services:
       interval: 3s
       timeout: 5s
       retries: 5
+  phppgadmin:
+    image: zhajor/docker-phppgadmin
+    networks:
+      - webgateway
+    container_name: rldb-phppgadmin
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+    ports:
+      - 8081:80
 networks:
   webgateway:
     driver: bridge

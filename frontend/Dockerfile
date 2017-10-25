@@ -1,4 +1,4 @@
-FROM node
+FROM node:8
 WORKDIR /app
 COPY rldb/package.json .
 ENV NPM_CONFIG_LOGLEVEL warn

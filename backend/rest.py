@@ -1,13 +1,17 @@
 from flask import Flask, request, Blueprint
 from flask_restplus import Api, Resource, reqparse, abort
 from werkzeug.contrib.fixers import ProxyFix
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+from db_definitions import *
+import about_stats
 """
 This is likely not the final form of
 this file, so I've skipped on the documentation
 for now. If this gets too large, we might want
 to separate endpoints out into different files.
 """
-
 
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
@@ -17,7 +21,9 @@ api = Api(blueprint, version='1.0', title='RocketLeague API',
     default_mediatype='application/json',
     validate=True)
 app.register_blueprint(blueprint)
-db = {'TODO': 'Replace with DB query'}
+
+db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
+Session = sessionmaker(bind=db)
 
 
 ### Internal ID lookup for any resource
@@ -26,8 +32,15 @@ db = {'TODO': 'Replace with DB query'}
 class ID_Res(Resource):
 
     def get(self, id):
-        return {'message': db.get(id, id)}
+        s = Session()
+        for Class in CLASS_TO_TYPE: # Works as a functional listing of all 'real' types
+            res = s.query(Class).filter(Class.id == id).first()
+            if res:
+                return serialize(res)
+        abort(404)
 
+def get_obj_by_name(Class, name):
+    return serialize(Session().query(Class).filter(Class.name == name).first())
 
 ### Player lookup by id number
 
@@ -35,7 +48,7 @@ class ID_Res(Resource):
 class Player_ID(Resource):
 
     def get(self, id):
-        return {'message': db.get(id, id)}
+        return serialize(Session().query(Player).filter(Player.id == id).first())
 
 
 ### Player lookup by name
@@ -44,7 +57,7 @@ class Player_ID(Resource):
 class Player_Name(Resource):
 
     def get(self, name):
-        return {'message': db.get(name, name)}
+        return get_obj_by_name(Player, name)
 
 
 ### DLC Lookup by name
@@ -53,7 +66,7 @@ class Player_Name(Resource):
 class DLC_Res(Resource):
 
     def get(self, name):
-        return {'message': db.get(name, name)}
+        return get_obj_by_name(DLC, name)
 
 
 ### Body lookup by name
@@ -62,7 +75,7 @@ class DLC_Res(Resource):
 class Body_Res(Resource):
 
     def get(self, name):
-        return {'message': db.get(name, name)}
+        return get_obj_by_name(Body, name)
 
 
 ### Crate lookup by name
@@ -71,7 +84,7 @@ class Body_Res(Resource):
 class Crate_Res(Resource):
 
     def get(self, name):
-        return {'message': db.get(name, name)}
+        return get_obj_by_name(Crate, name)
 
 
 ### Antenna lookup by name
@@ -80,7 +93,7 @@ class Crate_Res(Resource):
 class Paint_Res(Resource):
 
     def get(self, name):
-        return {'message': db.get(name, name)}
+        return get_obj_by_name(Paint, name)
 
 
 ### Decal lookup by name
@@ -89,8 +102,76 @@ class Paint_Res(Resource):
 class Decal_Res(Resource):
 
     def get(self, name):
-        return {'message': db.get(name, name)}
+        return get_obj_by_name(Decal, name)
 
+
+### Meta mappings
+
+def get_mapping(Class):
+    s = Session()
+    return {r.id: r.name for r in s.query(Class)}
+
+@api.route('/meta/rarities')
+class GetRarities(Resource):
+
+    def get(self):
+        return get_mapping(Rarity)
+
+
+@api.route('/meta/sources')
+class GetSources(Resource):
+
+    def get(self):
+        return get_mapping(Source)
+
+
+@api.route('/meta/platforms')
+class GetSources(Resource):
+
+    def get(self):
+        return get_mapping(Platform)
+
+
+@api.route('/meta/paints')
+class GetPaints(Resource):
+
+    def get(self):
+        return get_mapping(Paint)
+
+
+@api.route('/meta/bodies')
+class GetBodies(Resource):
+
+    def get(self):
+        return get_mapping(Body)
+
+
+@api.route('/meta/decals')
+class GetDecals(Resource):
+
+    def get(self):
+        return get_mapping(Decal)
+
+
+@api.route('/meta/crates')
+class GetCrates(Resource):
+
+    def get(self):
+        return get_mapping(Crate)
+
+
+@api.route('/meta/dlcs')
+class GetDLCs(Resource):
+
+    def get(self):
+        return get_mapping(DLC)
+
+
+@api.route('/meta/about')
+class AboutStats(Resource):
+
+    def get(self):
+        return about_stats.get_about_stats()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

@@ -21,7 +21,11 @@ filename = sys.argv[1]
 
 with open(filename, 'r') as f:
     for line in f:
-        j = json.loads(line)
+        try:
+            j = json.loads(line)
+        except:
+            print("Error, could not parse line.")
+            print(line)
         #j['id'] = id_
         if 'related' in j:
             del j['related']

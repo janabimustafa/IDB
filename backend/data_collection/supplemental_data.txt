@@ -1,1 +1,109 @@
-{"id": 7005, "rarity": 1, "type": "body"}
+{"id": 5120, "name": "Veloce", "type": "Wheel", "rarity" : 1}
+{"id": 4927, "name": "Vortex", "type": "Wheel", "rarity" : 1}
+{"id": 7172, "name": "Masamune", "type": "Body", "rarity" : 6}
+{"id": 7071, "name": "Dominus", "type": "Body", "rarity" : 6}
+{"id": 7084, "name": "Takumi", "type": "Body", "rarity" : 6}
+{"id": 7180, "name": "Grog", "type": "Body", "rarity" : 6}
+{"id": 5060, "name": "Spyder", "type": "Wheel", "rarity" : 1}
+{"id": 8451, "name": "Gaiden", "type": "Wheel", "rarity" : 4}
+{"id": 7188, "name": "Ripper", "type": "Body", "rarity" : 6}
+{"id": 5145, "name": "Asterias", "type": "Wheel", "rarity" : 3}
+{"id": 4996, "name": "Lowrider", "type": "Wheel", "rarity" : 1}
+{"id": 5269, "name": "Voltaic", "type": "Wheel", "rarity" : 8}
+{"id": 5090, "name": "Trahere", "type": "Wheel", "rarity" : 1}
+{"id": 7003, "name": "Backfire", "type": "Body", "rarity" : 1}
+{"id": 7204, "name": "Triton", "type": "Body", "rarity" : 6}
+{"id": 5160, "name": "Zeta", "type": "Wheel", "rarity" : 3}
+{"id": 7005, "name": "Breakout", "type": "Body", "rarity" : 1}
+{"id": 7688, "name": "Kalos", "type": "Wheel", "rarity" : 8}
+{"id": 5299, "name": "Looper", "type": "Wheel", "rarity" : 8}
+{"id": 5175, "name": "Chakram", "type": "Wheel", "rarity" : 4}
+{"id": 7689, "name": "Roulette", "type": "Wheel", "rarity" : 8}
+{"id": 7093, "name": "Vulcan", "type": "Body", "rarity" : 6}
+{"id": 5284, "name": "Lobo", "type": "Wheel", "rarity" : 8}
+{"id": 4912, "name": "Stern", "type": "Wheel", "rarity" : 1}
+{"id": 7235, "name": "Animus GP", "type": "Body", "rarity" : 7}
+{"id": 7236, "name": "Centio V17", "type": "Body", "rarity" : 7}
+{"id": 5190, "name": "Spiralis", "type": "Wheel", "rarity" : 4}
+{"id": 5045, "name": "Rat Rod", "type": "Wheel", "rarity" : 1}
+{"id": 7504, "name": "Draco", "type": "Wheel", "rarity" : 8}
+{"id": 5205, "name": "Troika", "type": "Wheel", "rarity" : 4}
+{"id": 7044, "name": "Paladin", "type": "Body", "rarity" : 1}
+{"id": 5254, "name": "Discotheque", "type": "Wheel", "rarity" : 8}
+{"id": 4965, "name": "Falco", "type": "Wheel", "rarity" : 1}
+{"id": 7611, "name": "FGSP", "type": "Wheel", "rarity" : 8}
+{"id": 5314, "name": "Photon", "type": "Wheel", "rarity" : 8}
+{"id": 7100, "name": "Batmobile", "type": "Body", "rarity" : 6}
+{"id": 5028, "name": "Octavian", "type": "Wheel", "rarity" : 1}
+{"id": 7285, "name": "Bone Shaker", "type": "Body", "rarity" : 6}
+{"id": 8310, "name": "J\u00e4ger 619 RS", "type": "Body", "rarity" : 7}
+{"id": 8824, "name": "Revenant", "type": "Wheel", "rarity" : 4}
+{"id": 8826, "name": "Cauldron", "type": "Wheel", "rarity" : 7}
+{"id": 8127, "name": "Spatter", "type": "Decal", "rarity" : 3}
+{"id": 7293, "name": "Twin Mill III", "type": "Body", "rarity" : 6}
+{"id": 5221, "name": "FSL", "type": "Wheel", "rarity" : 7}
+{"id": 6934, "name": "Mantis", "type": "Body", "rarity" : 7}
+{"id": 8839, "name": "Afterlife", "type": "Decal", "rarity" : 3}
+{"id": 8840, "name": "Thanatos", "type": "Decal", "rarity" : 3}
+{"id": 6937, "name": "Endo", "type": "Body", "rarity" : 7}
+{"id": 7108, "name": "DeLorean Time Machine", "type": "Body", "rarity" : 6}
+{"id": 5239, "name": "ARA-51", "type": "Wheel", "rarity" : 8}
+{"id": 7536, "name": "Triplex", "type": "Wheel", "rarity" : 7}
+{"id": 7541, "name": "K2", "type": "Wheel", "rarity" : 8}
+{"id": 7196, "name": "Proteus", "type": "Body", "rarity" : 6}
+{"id": 7132, "name": "Scarab", "type": "Body", "rarity" : 6}
+{"id": 4980, "name": "Invader", "type": "Wheel", "rarity" : 1}
+{"id": 7581, "name": "Fireplug", "type": "Wheel", "rarity" : 4}
+{"id": 6944, "name": "Breakout Type-S", "type": "Body", "rarity" : 7}
+{"id": 8829, "name": "Widow's Web", "type": "Decal", "rarity" : 3}
+{"id": 7116, "name": "Ice Charger", "type": "Body", "rarity" : 6}
+{"id": 8838, "name": "Stitches", "type": "Decal", "rarity" : 3}
+{"id": 7612, "name": "Turbine", "type": "Wheel", "rarity" : 8}
+{"id": 8825, "name": "Grimalkin", "type": "Wheel", "rarity" : 4}
+{"id": 8437, "name": "Saptarishi", "type": "Wheel", "rarity" : 7}
+{"id": 6963, "name": "Takumi RX-T", "type": "Body", "rarity" : 7}
+{"id": 5105, "name": "Tunica", "type": "Wheel", "rarity" : 1}
+{"id": 6950, "name": "X-Devil Mk2", "type": "Body", "rarity" : 7}
+{"id": 5344, "name": "Zomba", "type": "Wheel", "rarity" : 8}
+{"id": 5075, "name": "Sunburst", "type": "Wheel", "rarity" : 1}
+{"id": 8436, "name": "Clockwork", "type": "Wheel", "rarity" : 8}
+{"id": 6953, "name": "Octane", "type": "Body", "rarity" : 1}
+{"id": 7987, "name": "Luigi NSR", "type": "Body", "rarity" : 1}
+{"id": 7039, "name": "Hotshot", "type": "Body", "rarity" : 1}
+{"id": 4867, "name": "Alchemist", "type": "Wheel", "rarity" : 1}
+{"id": 7544, "name": "RLCS (decal)", "type": "Decal", "rarity" : 5}
+{"id": 7981, "name": "Mobo", "type": "Decal", "rarity" : 3}
+{"id": 8093, "name": "Buzz Kill", "type": "Decal", "rarity" : 3}
+{"id": 4882, "name": "Almas", "type": "Wheel", "rarity" : 1}
+{"id": 6941, "name": "Octane ZSR", "type": "Body", "rarity" : 7}
+{"id": 4897, "name": "OEM", "type": "Wheel", "rarity" : 1}
+{"id": 6947, "name": "Road Hog XL", "type": "Body", "rarity" : 7}
+{"id": 5329, "name": "Pulsus", "type": "Wheel", "rarity" : 8}
+{"id": 6956, "name": "Dominus GT", "type": "Body", "rarity" : 7}
+{"id": 7988, "name": "Mario NSR", "type": "Body", "rarity" : 1}
+{"id": 8090, "name": "Lone Wolf", "type": "Decal", "rarity" : 3}
+{"id": 7990, "name": "Samus' Gunship", "type": "Body", "rarity" : 1}
+{"id": 6968, "name": "Road Hog", "type": "Body", "rarity" : 1}
+{"id": 6975, "name": "Gizmo", "type": "Body", "rarity" : 1}
+{"id": 6977, "name": "X-Devil", "type": "Body", "rarity" : 1}
+{"id": 5011, "name": "Neptune", "type": "Wheel", "rarity" : 1}
+{"id": 6997, "name": "Armadillo", "type": "Body", "rarity" : 1}
+{"id": 6998, "name": "Hogsticker", "type": "Body", "rarity" : 1}
+{"id": 7042, "name": "Merc", "type": "Body", "rarity" : 1}
+{"id": 7613, "name": "SLK", "type": "Wheel", "rarity" : 4}
+{"id": 7046, "name": "Venom", "type": "Body", "rarity" : 1}
+{"id": 7048, "name": "Sweet Tooth", "type": "Body", "rarity" : 1}
+{"id": 8343, "name": "Chrono", "type": "Wheel", "rarity" : 8}
+{"id": 8607, "name": "'99 Nissan Skyline GT-R R34", "type": "Body", "rarity" : 6}
+{"id": 7138, "name": "Zippy", "type": "Body", "rarity" : 6}
+{"id": 7145, "name": "Aftershock", "type": "Body", "rarity" : 6}
+{"id": 7152, "name": "Marauder", "type": "Body", "rarity" : 6}
+{"id": 8609, "name": "'70 Dodge Charger R/T", "type": "Body", "rarity" : 6}
+{"id": 6654, "name": "Tribal", "type": "Decal", "rarity" : 3}
+{"id": 7566, "name": "Septem", "type": "Wheel", "rarity" : 4}
+{"id": 4948, "name": "Dieci", "type": "Wheel", "rarity" : 1}
+{"id": 7162, "name": "Esper", "type": "Body", "rarity" : 6}
+{"id": 6651, "name": "Cobra", "type": "Decal", "rarity" : 3}
+{"id": 6652, "name": "Funny Book", "type": "Decal", "rarity" : 3}
+{"id": 6653, "name": "Super RX-T", "type": "Decal", "rarity" : 3}
+{"id": 6655, "name": "Unmasked", "type": "Decal", "rarity" : 3}

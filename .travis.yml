@@ -19,10 +19,6 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
   - docker-compose --version
-  - docker-machine restart default
-  - eval $(docker-machine env default)
-  - docker-machine regenerate-certs default
-
 
 install:
   - docker-compose build

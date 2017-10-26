@@ -16,10 +16,14 @@ class InstancePage extends Component {
 
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
+<<<<<<< HEAD
         var url = this.props.match.url
 
         fetch('/api/' + this.getApiType(url.split('/')[1] + "/"
         + url.split('/')[2] )), { 
+=======
+        fetch('/api' + this.props.match.url), { 
+>>>>>>> b6bfb0ba1bf71826f982116de7c2c128194937db
             method: 'GET',
             dataType: 'json'
         }

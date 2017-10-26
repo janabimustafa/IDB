@@ -23,7 +23,7 @@ class InstanceCard extends Component {
                     <p>Rarity: { this.getRarity(this.props.data.rarity) }</p>
                     <p>Item Type: {this.props.data.type}</p>
                     <p>Release Date: {this.props.data.release_date ? this.props.data.release_date : "unknown"}</p>
-                    <p>Source: {this.props.data.source ? this.props.data.source : "unknown"}</p>
+                    <p>Source: {this.props.data.source ? this.props.data.source : "drop"}</p>
                 </div>
             </div>
         )

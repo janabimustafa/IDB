@@ -33,6 +33,8 @@ with open(filename, 'r') as f:
             j['type'] = j['type'].lower()
         new = deserialize(json.dumps(j))
         if new:
+            index = UniqueIDRelation(id=j['id'], name=j['name'])
+            s.merge(index)
             s.merge(new)
 
 s.commit()

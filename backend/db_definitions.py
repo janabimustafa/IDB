@@ -15,12 +15,19 @@ DB_HOST = os.environ['DB_HOST']
 # do: Base.metadata.create_all(engine) to initialize a blank db (or nop
 # if it already exists)
 
-class RLObject: # Everything
+class DBObject: # Everything
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
 
+class RLObject(DBObject): # Non-meta
+    @declared_attr
+    def id(cls):
+        return Column(Integer, ForeignKey('item_ids.id'), primary_key=True)
+
+    image = Column(String(300)) # URL of image
+
     def __eq__(self, other):
-        return serialize(self) == serialize(other)
+        return serialize_str(self) == serialize_str(other)
 
     def __repr__(self):
         return "<RLObject(id='{0}', name='{1}', type='{2}')>".format(
@@ -43,16 +50,20 @@ class RLItem(RLObtainable): # Not DLC
     description = Column(String)
 
 # Used for ForeignKey
-class Source(Base, RLObject):
+class Source(Base, DBObject):
     __tablename__ = 'sources'
 
 # Used for ForeignKey
-class Rarity(Base, RLObject):
+class Rarity(Base, DBObject):
     __tablename__ = 'rarities'
 
 # Used for ForeignKey
-class Platform(Base, RLObject):
+class Platform(Base, DBObject):
     __tablename__ = 'platforms'
+
+# Used to ensure all items have unique ids
+class UniqueIDRelation(Base, DBObject):
+    __tablename__ = 'unique_ids'
 
 class Paint(Base, RLItem):
     __tablename__ = 'paints'
@@ -87,18 +98,24 @@ class Wheel(Base, RLItem):
 class Crate(Base, RLItem):
     __tablename__ = 'crates'
     retire_date = Column(Date)
-    # Not sure how to do this, maybe just a bunch of other tables for Crate to each other type?
-    items = Column(String(50)) # Should be a list of ids or something
+
+class CrateItemsRelation(Base):
+    __tablename__ = 'crate_item_relations'
+    crate_id = Column(ForeignKey('crates.id'), primary_key=True)
+    item_id = Column(ForeignKey('unique_ids.id'), primary_key=True) # Foreign key to all returnable types
 
 class DLC(Base, RLObtainable):
     __tablename__ = 'dlcs'
-    items = Column(String(50)) # Should be a list of ids (ForeignKeys)
+
+class DLCItemsRelation(Base):
+    __tablename__ = 'dlc_item_relations'
+    dlc_id = Column(ForeignKey('dlcs.id'), primary_key=True)
+    item_id = Column(ForeignKey('unique_ids.id'), primary_key=True) # Foreign key to all returnable types
 
 class Player(Base, RLObject):
     __tablename__ = 'players'
     platform = Column(Integer, ForeignKey('platforms.id')) # ForeignKey
-    skill_rating = Column(String(50)) # Should be a list of skill ratings (or dict)
-    rank = Column(Integer)
+    skill_rating = Column(Integer) # Average of Ranked modes in most recent season
     wins = Column(Integer)
 
 TYPE_TO_CLASS = {

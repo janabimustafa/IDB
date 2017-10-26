@@ -13,25 +13,22 @@ class TestRLDBAPI(unittest.TestCase):
 	# returns SOMETHING, and it is of the right type, we can say the API works
 	# properly.
 
-	@unittest.expectedFailure
 	def testGetAllPaints(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/paints/").read().decode()
 		object_list = deserialize_list(result)
-		self.assertTrue(len(obj) > 1)
+		self.assertTrue(len(object_list) > 1)
 		for obj in object_list:
 			self.assertTrue(isinstance(obj, Paint))
 
-	@unittest.expectedFailure
 	def testGetPaintFinishByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/paints/Circuit%20Board").read().decode()
 		obj = deserialize(result)
-		self.assertEqual(isinstance(obj, Paint))
+		self.assertTrue(isinstance(obj, Paint))
 
-	@unittest.expectedFailure
 	def testGetPaintFinishByID(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/paints/0").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/paints/10000").read().decode()
 		obj = deserialize(result)
-		self.assertEqual(isinstance(obj, Paint))
+		self.assertTrue(isinstance(obj, Paint))
 
 	def testGetAllBodies(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/bodies/").read().decode()

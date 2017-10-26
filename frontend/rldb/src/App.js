@@ -13,8 +13,6 @@ import Paint from './Paint';
 import Player from './Player';
 import About from './About';
 
-import InstancePage from './InstancePage';
-
 //right now header is just navbar, but maybe header could be something more
 
 const App = () => (

@@ -9,6 +9,14 @@ This file provides supplemental Rarity values for the RL Objects.
 
 db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
 Session = sessionmaker(bind=db)
+
+Base.metadata.reflect(db)
+Base.metadata.drop_all(db)
+# for tbl in reversed(Base.metadata.sorted_tables):
+#     try:
+#         tbl.drop(db)
+#     except:
+#         pass
 Base.metadata.create_all(db)
 
 s = Session()
@@ -24,6 +32,14 @@ rarities = [
     Rarity(id=9, name='black_market')
 ]
 
+platforms = [
+    Platform(id=1, name="Steam"),
+    Platform(id=2, name="Playstation"),
+    Platform(id=3, name="Xbox")
+]
+
 for rarity in rarities:
-    s.add(rarity)
+    s.merge(rarity)
+for platform in platforms:
+    s.merge(platform)
 s.commit()

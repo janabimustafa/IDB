@@ -18,6 +18,7 @@ DB_HOST = os.environ['DB_HOST']
 class RLObject: # Everything
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
+    image = Column(String(300)) # URL of image
 
     def __eq__(self, other):
         return serialize(self) == serialize(other)
@@ -28,7 +29,6 @@ class RLObject: # Everything
 
 class RLObtainable(RLObject): # Not Players
     release_date = Column(Date)
-    image = Column(String(300)) # URL of image
     description = Column(String(800))
 
 class RLItem(RLObtainable): # Not DLC
@@ -81,9 +81,6 @@ class Decal(Base, RLItem):
     is_paintable = Column(Boolean)
     #list of bodies stored in BodyDecalsRelation table
 
-class Wheel(Base, RLItem):
-    __tablename__ = 'wheels'
-
 class Crate(Base, RLItem):
     __tablename__ = 'crates'
     retire_date = Column(Date)
@@ -97,8 +94,7 @@ class DLC(Base, RLObtainable):
 class Player(Base, RLObject):
     __tablename__ = 'players'
     platform = Column(Integer, ForeignKey('platforms.id')) # ForeignKey
-    skill_rating = Column(String(50)) # Should be a list of skill ratings (or dict)
-    rank = Column(Integer)
+    skill_rating = Column(Integer) # Should be a list of skill ratings (or dict)
     wins = Column(Integer)
 
 TYPE_TO_CLASS = {
@@ -107,8 +103,7 @@ TYPE_TO_CLASS = {
     'decal': Decal,
     'crate': Crate,
     'dlc': DLC,
-    'player': Player,
-    'wheel': Wheel
+    'player': Player
 }
 
 CLASS_TO_TYPE = {v: k for k, v in TYPE_TO_CLASS.items()}

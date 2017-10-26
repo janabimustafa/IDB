@@ -1,4 +1,5 @@
 #!/bin/bash
-python data_collection/rarity.py
-python data_collection/serial_importer.py data_collection/serial.txt
-python data_collection/serial_importer.py data_collection/supplemental_data.txt
+python -m data_collection.rarity
+python -m data_collection.serial_importer data_collection/serial.txt
+python -m data_collection.serial_importer data_collection/supplemental_data.txt
+python -m data_collection.serial_importer data_collection/players.txt

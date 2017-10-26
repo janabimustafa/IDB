@@ -1,20 +1,41 @@
 sudo: required
 
 services:
-- docker
+  - docker
+
+env:
+  - DOCKER_COMPOSE_VERSION=1.16.1
 
 before_install:
-- docker-compose --version
+  - docker --version
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  - sudo apt-get update
+  - sudo apt-get -y install docker-ce
+  - docker --version
+  - docker-compose --version
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+  - docker-compose --version
 
 install:
-- docker-compose build
-- docker-compose up -d
+  - docker-compose build
+  - docker-compose up -d
+
 script:
-- docker exec rldb-flask python test.py
-- docker exec -e CI=true rldb-react npm test
+  - docker exec rldb-flask python test.py
+#- docker exec -e CI=true rldb-react npm test
 after_success:
-- if [ "$TRAVIS_BRANCH" == "master" ]; then
-  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-  docker push janabimustafa/rldb-flask;
-  docker push janabimustafa/rldb-react;
-  fi
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then  
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push janabimustafa/rldb-flask;
+    docker push janabimustafa/rldb-react;
+    elif [ "$TRAVIS_BRANCH" == "dev" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker tag janabimustafa/rldb-flask janabimustafa/rldb-flask:dev;
+    docker tag janabimustafa/rldb-react janabimustafa/rldb-react:dev;
+    docker push janabimustafa/rldb-flask:dev;
+    docker push janabimustafa/rldb-react:dev;
+    fi

@@ -22,7 +22,7 @@ class DBObject: # Everything
 class RLObject(DBObject): # Non-meta
     @declared_attr
     def id(cls):
-        return Column(Integer, ForeignKey('item_ids.id'), primary_key=True)
+        return Column(Integer, ForeignKey('unique_ids.id'), primary_key=True)
 
     image = Column(String(300)) # URL of image
 
@@ -101,7 +101,7 @@ class Crate(Base, RLItem):
 
 class CrateItemsRelation(Base):
     __tablename__ = 'crate_item_relations'
-    crate_id = Column(ForeignKey('crates.id'), primary_key=True)
+    crate_id = Column(ForeignKey('unique_ids.id'), primary_key=True)
     item_id = Column(ForeignKey('unique_ids.id'), primary_key=True) # Foreign key to all returnable types
 
 class DLC(Base, RLObtainable):

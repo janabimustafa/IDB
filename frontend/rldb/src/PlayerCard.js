@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 import './playerCard.css';
 
@@ -12,10 +13,10 @@ class PlayerCard extends Component {
     render() {
         return (
             <div className=" col-md-3 col-sm-3 text-center">
-                <a href="">
+                <Link to={`/${this.props.data.type}/${this.props.data.name}`}>
                     <img className="img-rounded img-player" src={this.props.data.image ? this.props.data.image : "http://via.placeholder.com/150x150"}/>
                     <h2>{this.props.data.name}</h2>
-                </a>
+                </Link>
                 <div className="caption">
                     <p>Platform: {this.getPlatform(this.props.data.platform)}</p>
                     <p>Skill Rating: {this.props.data.skill_rating}</p>

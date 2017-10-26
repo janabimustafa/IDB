@@ -13,6 +13,7 @@ import Body from './Body';
 import Paint from './Paint';
 import Player from './Player';
 import About from './About';
+import InstancePage from './InstancePage';
 
 //right now header is just navbar, but maybe header could be something more
 
@@ -26,6 +27,10 @@ const App = () => (
       <Route path='/paint' component={Paint}/>
       <Route path='/player' component={Player}/>
       <Route path='/about' component={About}/>
+      <Route path='/crate/:cratename' component={InstancePage}/>
+      <Route path='/body/:bodyname' component={InstancePage}/>
+      <Route path='/paint/:paintname' component={InstancePage}/>
+      <Route path='/player/:playername' component={InstancePage}/>
     </Switch>
   </div>
 

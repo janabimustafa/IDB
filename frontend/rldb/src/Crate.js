@@ -10,11 +10,10 @@ class Crate extends Component {
             data: []
         };
     }
-    
-    //is it better to do fetch in constructor or in componentDidMount
 
+    //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
-        fetch('http://httpbin.org/get', { 
+        fetch('/api/meta/crates', { 
             method: 'GET',
             dataType: 'json'
         })
@@ -23,7 +22,6 @@ class Crate extends Component {
         })
         .then(j => {
             console.log(j);
-  
             this.setState({
                 data: j
             });
@@ -32,13 +30,17 @@ class Crate extends Component {
 
     //for each value in state, generate a model card
     render() {
+        // Create the cards before rendering
+        var cards = [];
+        this.state.data.forEach( function(item) {
+            cards.push(<InstanceCard data={item}/>);
+        });
         return (
             <div className="container">
-                <h1>Crate</h1>
-                {Object.keys(this.state.data).map(function(content, i){
-                    return <InstanceCard name={content} key={i}/>;
-                })}
-                <InstanceCard name= "test" />
+                <h1>Crates</h1>
+                <div className="row">
+                    {cards.length == 0 ? "No items to show." : cards}
+                </div>
             </div>
         )
     }

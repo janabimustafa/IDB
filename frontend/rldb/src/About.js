@@ -52,7 +52,6 @@ class About extends Component {
 
   render() {
     return (
-      <div>    
         <div className="container">
           <h1>About</h1>
           <p>We are the Supersonic Acrobatic Rocket-Powered Engineers.</p>
@@ -141,7 +140,6 @@ class About extends Component {
             <div className="col-md-2"></div>
           </div>
         </div>
-      </div>
     )
   }
 }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-class InstancePage extends Component {
+class PaintPage extends Component {
     constructor(props) {
         super(props);
 
@@ -39,16 +39,7 @@ class InstancePage extends Component {
             return "unknown";
         var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limted", "premium", "import", "exotic", "black market"];
         return rarities[rarity_num];
-    } 
-
-    /* This could be useful.
-        var content = this.state.data;
-        {Object.keys(content).map(function(key, index) {
-            if(!(content[key] === null)){
-                return <h3>{key}: {content[key]} </h3>
-            }
-        })}
-    */
+    }
 
     render() {
         return (
@@ -59,7 +50,10 @@ class InstancePage extends Component {
                         <img className="img-rounded img-responsive" src={this.state.data.image}/>
                     </div>
                     <div className="col-md-8 text-center">
-                        <p>{this.state.data.description}</p>
+                        <h3>Rarity: { this.getRarity(this.state.data.rarity) }</h3>
+                        <h3>Release Date: {this.state.data.release_date ? this.state.data.release_date : "Unknown"}</h3>
+                        <h3>Source: {this.state.data.source ? this.state.data.source : "Drop"}</h3>
+
                         <Link to={'/'+ this.props.match.url.split('/')[1]}>
                         <h3>Go back.</h3>
                         </Link>
@@ -70,4 +64,4 @@ class InstancePage extends Component {
     }
 }
 
-export default InstancePage;
+export default PaintPage;

@@ -13,6 +13,7 @@ import Paint from './Paint';
 import Player from './Player';
 import About from './About';
 import InstancePage from './InstancePage';
+import PaintPage from '.PaintPage';
 import PlayerPage from './PlayerPage';
 import NotFound from './NotFound';
 
@@ -30,7 +31,7 @@ const App = () => (
       <Route exact path='/about' component={About}/>
       <Route path='/crate/:cratename' component={InstancePage}/>
       <Route path='/body/:bodyname' component={InstancePage}/>
-      <Route path='/paint/:paintname' component={InstancePage}/>
+      <Route path='/paint/:paintname' component={PaintPage}/>
       <Route path='/player/:playername' component={PlayerPage}/>
       <Route component={NotFound}/>
     </Switch>

@@ -47,7 +47,7 @@ class PlayerPage extends Component {
                     <div className="col-md-4">
                         <img className="img-rounded" src={this.state.data.image ? this.state.data.image : "http://via.placeholder.com/300x300"}/>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 text-center">
                         <h3>Platform: {this.getPlatform(this.state.data.platform)}</h3>
                         <h3>Skill Rating: {this.state.data.skill_rating}</h3>
                         <h3>Wins: {this.state.data.wins}</h3>

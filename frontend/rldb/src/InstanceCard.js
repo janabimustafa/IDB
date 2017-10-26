@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 import './instanceCard.css';
 
@@ -19,15 +20,15 @@ class InstanceCard extends Component {
     render() {
         return (
             <div className=" col-md-4 col-sm-6 text-center">
-                <a href={"/" + this.getApiType(this.props.data.type) + "/" + this.props.data.id}>
+                <Link to={`/${this.props.data.type}/${this.props.data.name}`}>
                     <img className="img-rounded" src={this.props.data.image}/>
                     <h2>{this.props.data.name}</h2>
-                </a>
+                </Link>
                 <div className="caption">
                     <p>Rarity: { this.getRarity(this.props.data.rarity) }</p>
                     <p>Item Type: {this.props.data.type}</p>
                     <p>Release Date: {this.props.data.release_date ? this.props.data.release_date : "unknown"}</p>
-                    <p>Source: {this.props.data.source ? this.props.data.source : "unknown"}</p>
+                    <p>Source: {this.props.data.source ? this.props.data.source : "drop"}</p>
                 </div>
             </div>
         )

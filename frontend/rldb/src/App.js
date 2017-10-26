@@ -12,6 +12,10 @@ import Body from './Body';
 import Paint from './Paint';
 import Player from './Player';
 import About from './About';
+import InstancePage from './InstancePage';
+import PaintPage from './PaintPage';
+import PlayerPage from './PlayerPage';
+import NotFound from './NotFound';
 
 //right now header is just navbar, but maybe header could be something more
 
@@ -20,11 +24,16 @@ const App = () => (
     <NavBar />
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/crate' component={Crate}/>
-      <Route path='/body' component={Body}/>
-      <Route path='/paint' component={Paint}/>
-      <Route path='/player' component={Player}/>
-      <Route path='/about' component={About}/>
+      <Route exact path='/crate' component={Crate}/>
+      <Route exact path='/body' component={Body}/>
+      <Route exact path='/paint' component={Paint}/>
+      <Route exact path='/player' component={Player}/>
+      <Route exact path='/about' component={About}/>
+      <Route path='/crate/:cratename' component={InstancePage}/>
+      <Route path='/body/:bodyname' component={InstancePage}/>
+      <Route path='/paint/:paintname' component={PaintPage}/>
+      <Route path='/player/:playername' component={PlayerPage}/>
+      <Route component={NotFound}/>
     </Switch>
   </div>
 

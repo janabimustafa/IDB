@@ -22,7 +22,7 @@ class DBObject: # Everything
 class RLObject(DBObject): # Non-meta
     @declared_attr
     def id(cls):
-        return Column(Integer, ForeignKey('item_ids.id'), primary_key=True)
+        return Column(Integer, ForeignKey('unique_ids.id'), primary_key=True)
 
     image = Column(String(300)) # URL of image
 

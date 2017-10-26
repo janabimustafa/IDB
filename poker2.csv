@@ -1,0 +1,12 @@
+sep=;
+Story Title;Estimate;Vote Started;Voting Duration;Avg Voting Time;Fastest;Slowest;Actual;
+As a user, I want to see which crates contain which items.;2;26/10/2017 06:01:27;00:00:04;00:00:03;Alex;Melanie;4;
+As a user, I want to see more links on the front page in addition to the navigation menu.;1;26/10/2017 06:01:17;00:00:07;00:00:06;Alex;Melanie;.5;
+As a user, I want to see the contributions of each team member.;1;26/10/2017 06:01:10;00:00:05;00:00:04;Alex;Melanie;1;
+As a user, I want to see a list of all of the tools used to create the application.;½;26/10/2017 03:47:29;02:13:37;02:13:33;Alex;Melanie;.5;
+As a user, I want to see why this site was created.;½;24/10/2017 23:14:16;00:00:05;00:00:04;Alex;Melanie;0;
+As a user, I want to see the name of the site on the front page.;½;24/10/2017 23:14:07;00:00:07;00:00:06;Alex;Melanie;.5;
+As a PS4 user, I want to see player stats for PS4 players.;1;24/10/2017 23:13:56;00:00:08;00:00:02;Alex;Melanie;2;
+As an Xbox user, I want to see player stats for Xbox players.;1;24/10/2017 23:13:49;00:00:05;00:00:04;Alex;Melanie;2;
+As a PC user, I want to see player stats for Steam players.;1;24/10/2017 23:13:32;00:00:09;00:00:06;Alex;Melanie;2;
+As a user, I want to view information about the game the database is based on.;2;24/10/2017 23:11:42;00:00:21;00:00:14;Alex;Melanie;3;

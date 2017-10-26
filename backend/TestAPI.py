@@ -13,6 +13,7 @@ class TestRLDBAPI(TestCase):
 	# returns SOMETHING, and it is of the right type, we can say the API works
 	# properly.
 
+	@unittest.expectedFailure
 	def testGetAllPaints(self):
 		result = urlopen("http://dev.rldb.me/api/paints/").read().decode()
 		object_list = deserialize_list(result)
@@ -20,11 +21,13 @@ class TestRLDBAPI(TestCase):
 		for obj in object_list:
 			self.assertTrue(isinstance(obj, Paint))
 
+	@unittest.expectedFailure
 	def testGetPaintFinishByName(self):
 		result = urlopen("http://dev.rldb.me/api/paints/Circuit%20Board").read().decode()
 		obj = desserialize(result)
 		self.assertEqual(isinstance(obj, Paint))
 
+	@unittest.expectedFailure
 	def testGetPaintFinishByID(self):
 		result = urlopen("http://dev.rldb.me/api/paints/0").read().decode()
 		obj = desserialize(result)
@@ -55,12 +58,12 @@ class TestRLDBAPI(TestCase):
 			self.assertTrue(isinstance(obj, Decal))
 
 	def testGetDecalByName(self):
-		result = urlopen("http://dev.rldb.me/api/decals/Funny%20Book").read().decode()
+		result = urlopen("http://dev.rldb.me/api/decals/Spatter").read().decode()
 		obj = desserialize(result)
 		self.assertEqual(isinstance(obj, Decal))
 
 	def testGetDecalByID(self):
-		result = urlopen("http://dev.rldb.me/api/decals/0").read().decode()
+		result = urlopen("http://dev.rldb.me/api/decals/8127").read().decode()
 		obj = desserialize(result)
 		self.assertEqual(isinstance(obj, Decal))
 
@@ -81,6 +84,7 @@ class TestRLDBAPI(TestCase):
 		obj = desserialize(result)
 		self.assertEqual(isinstance(obj, Crate))
 
+	@unittest.expectedFailure
 	def testGetAllDLC(self):
 		result = urlopen("http://dev.rldb.me/api/dlcs").read().decode()
 		obj_list = deserialize_list(result)
@@ -88,15 +92,18 @@ class TestRLDBAPI(TestCase):
 		for obj in object_list:
 			self.assertTrue(isinstance(obj, DLC))
 
+	@unittest.expectedFailure
 	def testGetDLCByName(self):
 		result = urlopen(r"http://dev.rldb.me/api/dlcs/Supersonic%20Fury").read().decode()
 		obj = desserialize(result)
 		self.assertEqual(isinstance(obj, DLC))
 
+	@unittest.expectedFailure
 	def testGetDLCByID(self):
 		result = urlopen(r"http://dev.rldb.me/api/dlcs/0").read().decode()
 		obj = desserialize(result)
 		self.assertEqual(isinstance(obj, DLC))
+
 
 	def testGetObjectByID(self):
 		result = urlopen("http://dev.rldb.me/api/id/6991").read().decode()
@@ -104,6 +111,7 @@ class TestRLDBAPI(TestCase):
 		self.assertEqual(isinstance(obj, RLObject))
 		self.assertEqual(isinstance(obj, Crate))
 
+	@unittest.expectedFailure
 	def testGetAllPlayers(self):
 		result = urlopen("http://dev.rldb.me/api/players").read().decode()
 		obj_list = deserialize_list(result)
@@ -111,6 +119,13 @@ class TestRLDBAPI(TestCase):
 		for obj in object_list:
 			self.assertTrue(isinstance(obj, Player))
 
+	@unittest.expectedFailure
+	def testGetPlayerByName(self):
+		result = urlopen(r"http://dev.rldb.me/api/players/Kaydop").read().decode()
+		obj = desserialize(result)
+		self.assertEqual(isinstance(obj, Player))
+
+	@unittest.expectedFailure
 	def testGetPlayerByID(self):
 		result = urlopen(r"http://dev.rldb.me/api/players/76561198067659330").read().decode()
 		obj = desserialize(result)

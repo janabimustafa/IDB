@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 
 import InstanceCard from './InstanceCard';
+import LoadingOverlay from './LoadingOverlay';
 
 class Body extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            data: []
+            data: null
         };
     }
 
@@ -30,6 +31,8 @@ class Body extends Component {
 
     //for each value in state, generate a model card
     render() {
+        if (this.state.data === null)
+            return (<LoadingOverlay />)
         // Create the cards before rendering
         var cards = [];
         this.state.data.forEach( function(item) {

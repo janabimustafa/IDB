@@ -9,12 +9,17 @@ class InstanceCard extends Component {
             return "unknown";
         var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limted", "premium", "import", "exotic", "black market"];
         return rarities[rarity_num];
-    } 
+    }
+    
+    getApiType (type) {
+        var apiTypes = {"crate" : "crates", "body":"bodies", "paint":"paints", "player":"players", "wheel":"wheels"};
+        return apiTypes[type];
+    }
 
     render() {
         return (
             <div className=" col-md-4 col-sm-6 text-center">
-                <a href="">
+                <a href={"/" + this.getApiType(this.props.data.type) + "/" + this.props.data.id}>
                     <img className="img-rounded" src={this.props.data.image}/>
                     <h2>{this.props.data.name}</h2>
                 </a>

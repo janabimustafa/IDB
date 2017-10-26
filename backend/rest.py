@@ -3,7 +3,7 @@ from flask_restplus import Api, Resource, reqparse, abort
 from werkzeug.contrib.fixers import ProxyFix
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
+from werkzeug.exceptions import BadRequest, NotFound
 from db_definitions import *
 import about_stats
 """
@@ -40,68 +40,112 @@ class ID_Res(Resource):
         abort(404)
 
 def get_obj_by_name(Class, name):
-    return serialize(Session().query(Class).filter(Class.name == name).first())
+    query = Session().query(Class).filter(Class.name == name).first()
+    if not query:
+        raise NotFound()
+    return serialize(query)
+def get_obj_by_id(Class, id):
+    query = Session().query(Class).filter(Class.id == id).first()
+    if not query:
+        raise NotFound()
+    return serialize(query)
+def get_obj_list(Class):
+    return [serialize(e) for e in Session().query(Class)]
 
 ### Player lookup by id number
 
-@api.route('/player_id/<int:id>')
-class Player_ID(Resource):
+@api.route('/players/')
+class Players_Res(Resource):
+    def get(self):
+        return get_obj_list(Player)
 
-    def get(self, id):
-        return serialize(Session().query(Player).filter(Player.id == id).first())
 
-
-### Player lookup by name
-
-@api.route('/player_name/<string:name>')
-class Player_Name(Resource):
-
+@api.route('/players/<string:name>')
+class Player_Res(Resource):
     def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Player, int(name))
         return get_obj_by_name(Player, name)
 
-
 ### DLC Lookup by name
+@api.route('/dlcs/')
+class DLCs_Res(Resource):
+    def get(self):
+        return get_obj_list(DLC)
 
-@api.route('/dlc/<string:name>')
+
+@api.route('/dlcs/<string:name>')
 class DLC_Res(Resource):
 
     def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(DLC, int(name))
         return get_obj_by_name(DLC, name)
 
 
 ### Body lookup by name
 
-@api.route('/body/<string:name>')
+@api.route('/bodies/')
+class Bodies_Res(Resource):
+    def get(self):
+        return get_obj_list(Body)
+
+
+@api.route('/bodies/<string:name>')
 class Body_Res(Resource):
 
     def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Body, int(name))
         return get_obj_by_name(Body, name)
 
 
 ### Crate lookup by name
 
-@api.route('/crate/<string:name>')
-class Crate_Res(Resource):
+@api.route('/crates/')
+class Crates_Res(Resource):
+    def get(self):
+        return get_obj_list(Crate)
 
+@api.route('/crates/<string:name>')
+class Crate_Res(Resource):
     def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Crate, int(name))
         return get_obj_by_name(Crate, name)
 
 
 ### Antenna lookup by name
 
-@api.route('/paint/<string:name>')
+@api.route('/paints/')
+class Paints_Res(Resource):
+    def get(self):
+        return get_obj_list(Paint)
+
+@api.route('/paints/<string:name>')
 class Paint_Res(Resource):
 
     def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Paint, int(name))
         return get_obj_by_name(Paint, name)
 
 
 ### Decal lookup by name
 
-@api.route('/decal/<string:name>')
+
+@api.route('/decals/')
+class Decals_Res(Resource):
+    def get(self):
+        return get_obj_list(Decal)
+
+
+@api.route('/decals/<string:name>')
 class Decal_Res(Resource):
 
     def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Decal, int(name))
         return get_obj_by_name(Decal, name)
 
 

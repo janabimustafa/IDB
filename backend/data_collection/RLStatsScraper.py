@@ -32,7 +32,7 @@ for id_ in game_type.values():
 
 ids = set()
 
-with open('players.txt') as f:
+with open('players.txt', 'w') as f:
     for player in players.values():
         out = {}
         out['name'] = player['displayName']

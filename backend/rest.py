@@ -4,7 +4,7 @@ from werkzeug.contrib.fixers import ProxyFix
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from werkzeug.exceptions import BadRequest, NotFound
-from db_definitions import *
+from models import *
 import about_stats
 """
 This is likely not the final form of

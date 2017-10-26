@@ -14,6 +14,7 @@
     [frontends.swagger.routes.swaggerui]
     rule = "PathPrefix:/swaggerui"
   [frontends.flask]
+  passHostHeader = true
   backend = "flask"
     [frontends.flask.routes.api]
     rule = "PathPrefix:/api"

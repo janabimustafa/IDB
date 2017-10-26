@@ -19,10 +19,10 @@ class InstancePage extends Component {
     componentDidMount() {
         var url = this.props.match.url
 
-        fetch('/api/' + this.getApiType(url.split('/')[1]) + "/" + url.split('/')[2] ), { 
+        fetch('/api/' + this.getApiType(url.split('/')[1]) + "/" + url.split('/')[2] , { 
             method: 'GET',
             dataType: 'json'
-        }
+        })
         .then(function(response) {
             return response.json()
         })
@@ -53,6 +53,7 @@ class InstancePage extends Component {
                         {this.state.data.description}
                     </div>
                 <p></p>
+                </div>
             </div>
         )
     }

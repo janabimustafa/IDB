@@ -127,8 +127,17 @@ def serialize_str(rl_object):
 # this returns a new instance of that object
 def deserialize(json_str):
     sdict = json.loads(json_str)
+    return __deserialize_helper(sdict)
+
+def __deserialize_helper(sdict):
     class_ = TYPE_TO_CLASS.get(sdict.get('type'))
     if class_:
         del sdict['type']
         return class_(**sdict)
     return None
+
+def deserialize_list(json_str):
+    json_list = json.loads(json_str)
+    object_list = [__deserialize_helper(json) for json in json_list]
+    return object_list
+

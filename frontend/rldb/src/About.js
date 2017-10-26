@@ -73,7 +73,7 @@ class About extends Component {
           <h3>Project Info</h3>
           <p>{this.state.commits["total"]} Total Commits</p>
           <p>29 Total Issues</p>
-          <p>0 Total Unit Tests</p>
+          <p>19 Total Unit Tests</p>
 
           <h3>Project Tools</h3>
           <p>Git: A version control system.</p>
@@ -135,7 +135,7 @@ class About extends Component {
                 <p>Responsibilities: Back-end, API, comedic relief</p>
                 <p>{this.state.commits["lprekon"]} Commits</p>
                 <p>3 Issues</p>
-                <p>0 Unit Tests</p>
+                <p>19 Unit Tests</p>
             </div>
             <div className="col-md-2"></div>
           </div>

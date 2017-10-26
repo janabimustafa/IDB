@@ -2,7 +2,7 @@
 {"id":10001, "type": "paint", "name": "Glossy", "rarity": 1, "image": "https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_paint_finish_icon.png/revision/latest/"}
 {"id":10002, "type": "paint", "name":"Matte", "rarity":1, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/3/37/Matte_paint_finish_icon.png/revision/latest/"}
 {"id":10003, "type": "paint", "name":"Metallic", "rarity":1, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/a2/Metallic_paint_finish_icon.png/revision/latest/"}
-{"id":10004, "type": "paint", "name":"Semigloss", "rarity":1, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/b/be/Semigloss_paint_finish_icon.png/revision/latest}
+{"id":10004, "type": "paint", "name":"Semigloss", "rarity":1, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/b/be/Semigloss_paint_finish_icon.png/revision/latest"}
 {"id":10005, "type": "paint", "name":"Circuit Board", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/f/f8/Circuit_Board_paint_finish_icon.png/revision/latest"}
 {"id":10006, "type": "paint", "name":"Glossy Block", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_Block_paint_finish_icon.png/revision/latest/"}
 {"id":10007, "type": "paint", "name":"Pearlescent (Matte)", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/c/cd/Pearlescent_%28Matte%29_paint_finish_icon.png/revision/latest/"}

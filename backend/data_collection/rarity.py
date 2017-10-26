@@ -38,31 +38,8 @@ platforms = [
     Platform(id=3, name="Xbox")
 ]
 
-crateItems = [
-    CrateItemsRelation(id=1, crate_id=6991, item_id=10017),
-    CrateItemsRelation(id=2, crate_id=6991, item_id=6937),
-    CrateItemsRelation(id=3, crate_id=7237, item_id=10005),
-    CrateItemsRelation(id=4, crate_id=7237, item_id=10006),
-    CrateItemsRelation(id=5, crate_id=7237, item_id=7236),
-    CrateItemsRelation(id=6, crate_id=7237, item_id=7235),
-    CrateItemsRelation(id=7, crate_id=8313, item_id=10007),
-    CrateItemsRelation(id=8, crate_id=8313, item_id=8310),
-    CrateItemsRelation(id=9, crate_id=6987, item_id=6956),
-    CrateItemsRelation(id=10, crate_id=6987, item_id=6963),
-    CrateItemsRelation(id=11, crate_id=6983, item_id=6934),
-    CrateItemsRelation(id=12, crate_id=6988, item_id=6950),
-    CrateItemsRelation(id=13, crate_id=6988, item_id=6947),
-    CrateItemsRelation(id=14, crate_id=6990, item_id=6956),
-    CrateItemsRelation(id=15, crate_id=6990, item_id=6944),
-    CrateItemsRelation(id=16, crate_id=6990, item_id=6941),
-    CrateItemsRelation(id=17, crate_id=6992, item_id=6944),
-    CrateItemsRelation(id=18, crate_id=6994, item_id=6941)
-]
-
 for rarity in rarities:
     s.merge(rarity)
 for platform in platforms:
     s.merge(platform)
-for relation in crateItems:
-    s.merge(relation)
 s.commit()

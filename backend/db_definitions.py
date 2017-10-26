@@ -101,7 +101,7 @@ class Crate(Base, RLItem):
 
 class CrateItemsRelation(Base):
     __tablename__ = 'crate_item_relations'
-    crate_id = Column(ForeignKey('crates.id'), primary_key=True)
+    crate_id = Column(ForeignKey('unique_ids.id'), primary_key=True)
     item_id = Column(ForeignKey('unique_ids.id'), primary_key=True) # Foreign key to all returnable types
 
 class DLC(Base, RLObtainable):

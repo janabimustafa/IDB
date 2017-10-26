@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import LoadingOverlay from './LoadingOverlay';
+
 //this page just copy pasted from static instead of rewriting with react-bootstrap
 
 class About extends Component {
@@ -7,25 +9,12 @@ class About extends Component {
     super(props);
     
     this.state = {
-      commits: {
-        "Musi13" : 0,
-        "gweng88" : 0,
-        "janabimustafa" : 0,
-        "lprekon" : 0,
-        "obits13" : 0,
-        "total" : 0
-      },
-      trello: {
-        "total" : 0
-      },
-      tests: {
-        "total" : 0
-      }
+      data: null
     };
   }
 
   componentDidMount(){
-    fetch('https://api.github.com/repos/janabimustafa/IDB/stats/contributors', {
+    fetch('/api/meta/about', {
       method: 'GET',
       dataType: 'json'
     })
@@ -33,24 +22,17 @@ class About extends Component {
       return response.json()
     })
     .then(j => {
-      var commits = {}
-
-      let sum = 0;
-      for (let i = 0; i < j.length; i++) {
-        commits[j[i].author.login] = j[i].total;
-        sum += j[i].total;
-      }
-      commits["total"] = sum;
+      console.log(j);
       this.setState({
-        commits: commits
+        data: j
       });
-      console.log("github");
-      console.log(commits);
     });
   }
 
 
-  render() {
+  render() {    
+    if (this.state.data === null)
+      return (<LoadingOverlay />)
     return (
         <div className="container">
           <h1>About</h1>
@@ -71,8 +53,8 @@ class About extends Component {
           <p>RocketLeagueStats is a fan-made collection of Rocket League player statistics. We use their API to obtain player information. The API returns JSON, so we use that information for the player info.</p>
 
           <h3>Project Info</h3>
-          <p>{this.state.commits["total"]} Total Commits</p>
-          <p>29 Total Issues</p>
+          <p>{this.state.data['num_commits']} Total Commits</p>
+          <p>{this.state.data['num_issues']} Total Issues</p>
           <p>0 Total Unit Tests</p>
 
           <h3>Project Tools</h3>
@@ -93,8 +75,8 @@ class About extends Component {
                 <h2>Melanie Rivera</h2>
                 <p>I am a senior in UTCS and Platinum II in Rocket League Competitive Standard.</p>
                 <p>Responsibilities: technical writer, trello manager, front-end.</p>
-                <p>{this.state.commits["obits13"]} Commits</p>
-                <p>9 Issues</p>
+                <p>{this.state.data.commits.obits13} Commits</p>
+                <p>{this.state.data["issues"]['Melanie L Rivera']} Issues</p>
                 <p>0 Unit Tests</p>
             </div>
             <div className="col-md-4 text-center">
@@ -102,8 +84,8 @@ class About extends Component {
                 <h2>Mustafa Taleb</h2>
                 <p>I am a senior in UTCS and Diamond II in Rocket League Competitive Standard.</p>
                 <p>Responsibilities: sysadmin, back-end, front-end, API</p>
-                <p>{this.state.commits["janabimustafa"]} Commits</p>
-                <p>8 Issues</p>
+                <p>{this.state.data['commits']["janabimustafa"]} Commits</p>
+                <p>{this.state.data["issues"]["Mustafa Taleb"]} Issues</p>
                 <p>0 Unit Tests</p>
             </div>
             <div className="col-md-4 text-center">
@@ -111,8 +93,8 @@ class About extends Component {
                 <h2>Alex Gonzales</h2>
                 <p>I am a senior in UTCS and can count on two hands the number of games of Rocket League I have played.</p>
                 <p>Responsibilities: Back-End, API, Documentation.</p>
-                <p>{this.state.commits["Musi13"]} Commits</p>
-                <p>6 Issues</p>
+                <p>{this.state.data['commits']["Musi13"]} Commits</p>
+                <p>{this.state.data["issues"]["Alex Gonzales"]} Issues</p>
                 <p>0 Unit Tests</p>
             </div>
           </div>
@@ -124,8 +106,8 @@ class About extends Component {
                 <h2>George Weng</h2>
                 <p>I'm a sophomore in UTCS. That's all from me!</p>
                 <p>Responsibilities: front-end</p>
-                <p>{this.state.commits["gweng88"]} Commits</p>
-                <p>5 Issues</p>
+                <p>{this.state.data['commits']["gweng88"]} Commits</p>
+                <p>{this.state.data["issues"]["George Weng"]} Issues</p>
                 <p>0 Unit Tests</p>
             </div>
             <div className="col-md-4 text-center">
@@ -133,8 +115,8 @@ class About extends Component {
                 <h2>John Okane</h2>
                 <p>UTCS Half-Senior (what do you call it when you're graduating a semester early, rather than late, anyway?!). I used to be a big rocket league player "back in the day".</p>
                 <p>Responsibilities: Back-end, API, comedic relief</p>
-                <p>{this.state.commits["lprekon"]} Commits</p>
-                <p>3 Issues</p>
+                <p>{this.state.data['commits']["lprekon"]} Commits</p>
+                <p>{this.state.data['issues']["John O'Kane"]} Issues</p>
                 <p>0 Unit Tests</p>
             </div>
             <div className="col-md-2"></div>

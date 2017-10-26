@@ -5,15 +5,14 @@ import json
 def get_about_stats():
     s = Session()
 
-    commits = s.get('https://api.github.com/repos/janabimustafa/IDB/commits').json()
+    contributions = s.get('https://api.github.com/repos/janabimustafa/IDB/stats/contributors').json()
 
-    git_stats = defaultdict(int)
+    git_stats = {}
     num_commits = 0
 
-    for commit in commits:
-        if not commit["commit"]["message"].startswith('Merge pull request'):
-            git_stats[commit["commit"]["author"]["name"]] += 1
-            num_commits += 1
+    for contributor in contributions:
+        git_stats[contributor['author']['login']] = contributor['total']
+        num_commits += contributor['total']
 
 
     trello_stats = defaultdict(int)

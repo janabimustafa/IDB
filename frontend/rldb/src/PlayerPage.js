@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-class InstancePage extends Component {
+class PlayerPage extends Component {
     constructor(props) {
         super(props);
 
@@ -34,11 +34,9 @@ class InstancePage extends Component {
         });
     }
 
-    getRarity (rarity_num) {
-        if (!rarity_num)
-            return "unknown";
-        var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limted", "premium", "import", "exotic", "black market"];
-        return rarities[rarity_num];
+    getPlatform (platform) {
+        var platforms = ["unknown", "Steam", "Playstation", "Xbox"];
+        return platforms[platform];
     } 
 
     render() {
@@ -47,19 +45,21 @@ class InstancePage extends Component {
                 <h1>{this.state.data.name}</h1>
                 <div className="row">
                     <div className="col-md-4">
-                        <img className="img-rounded img-responsive" src={this.state.data.image}/>
+                        <img className="img-rounded" src={this.state.data.image ? this.state.data.image : "http://via.placeholder.com/300x300"}/>
                     </div>
                     <div className="col-md-8">
-                        <h3></h3>
-                        <p>{this.state.data.description}</p>
+                        <h3>Platform: {this.getPlatform(this.state.data.platform)}</h3>
+                        <h3>Skill Rating: {this.state.data.skill_rating}</h3>
+                        <h3>Wins: {this.state.data.wins}</h3>
                         <Link to={'/'+ this.props.match.url.split('/')[1]}>
                         <h3>Go back.</h3>
                         </Link>
                     </div>
+                <p></p>
                 </div>
             </div>
         )
     }
 }
 
-export default InstancePage;
+export default PlayerPage;

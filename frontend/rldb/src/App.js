@@ -5,7 +5,6 @@ import './App.css';
 
 import Header from './Header';
 import NavBar from './NavBar';
-import Footer from './components/footer/footer'
 
 import Home from './Home';
 import Crate from './Crate';
@@ -13,6 +12,8 @@ import Body from './Body';
 import Paint from './Paint';
 import Player from './Player';
 import About from './About';
+
+import InstancePage from './InstancePage';
 
 //right now header is just navbar, but maybe header could be something more
 

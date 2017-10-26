@@ -9,11 +9,14 @@ This file provides supplemental Rarity values for the RL Objects.
 
 db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
 Session = sessionmaker(bind=db)
-for tbl in reversed(Base.metadata.sorted_tables):
-    try:
-        tbl.drop(db)
-    except:
-        pass
+
+Base.metadata.reflect(db)
+Base.metadata.drop_all(db)
+# for tbl in reversed(Base.metadata.sorted_tables):
+#     try:
+#         tbl.drop(db)
+#     except:
+#         pass
 Base.metadata.create_all(db)
 
 s = Session()

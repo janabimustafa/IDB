@@ -9,7 +9,7 @@ class Crate extends Component {
         this.state = {
             data: []
         };
-    }
+    }   
 
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {

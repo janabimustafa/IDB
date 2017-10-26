@@ -9,12 +9,20 @@ class InstancePage extends Component {
         };
     }
 
+    getApiType (type_name) {
+        var apiTypes = {"crate":"crates", "paint":"paints", "body":"bodies","player":"players"};
+        return apiTypes[type_name];
+    } 
+
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
-        fetch('/api' + {this.props.match.url}), { 
+        var url = this.props.match.url
+
+        fetch('/api/' + this.getApiType(url.split('/')[1] + "/"
+        + url.split('/')[2] )), { 
             method: 'GET',
             dataType: 'json'
-        })
+        }
         .then(function(response) {
             return response.json()
         })

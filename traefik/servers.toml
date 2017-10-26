@@ -10,6 +10,7 @@
 
 [frontends]
   [frontends.swagger]
+  passHostHeader = true
   backend = "flask"
     [frontends.swagger.routes.swaggerui]
     rule = "PathPrefix:/swaggerui"
@@ -19,4 +20,5 @@
     [frontends.flask.routes.api]
     rule = "PathPrefix:/api"
   [frontends.react]
+  passHostHeader = true
   backend = "react"    

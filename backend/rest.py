@@ -22,9 +22,6 @@ api = Api(blueprint, version='1.0', title='RocketLeague API',
     validate=True)
 app.register_blueprint(blueprint)
 
-db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
-Session = sessionmaker(bind=db)
-
 
 ### Internal ID lookup for any resource
 

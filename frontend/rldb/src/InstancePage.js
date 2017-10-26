@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class InstancePage extends Component {
     constructor(props) {
@@ -16,14 +17,9 @@ class InstancePage extends Component {
 
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
-<<<<<<< HEAD
         var url = this.props.match.url
 
-        fetch('/api/' + this.getApiType(url.split('/')[1] + "/"
-        + url.split('/')[2] )), { 
-=======
-        fetch('/api' + this.props.match.url), { 
->>>>>>> b6bfb0ba1bf71826f982116de7c2c128194937db
+        fetch('/api/' + this.getApiType(url.split('/')[1]) + "/" + url.split('/')[2] ), { 
             method: 'GET',
             dataType: 'json'
         }
@@ -38,10 +34,24 @@ class InstancePage extends Component {
         });
     }
 
+    getRarity (rarity_num) {
+        if (!rarity_num)
+            return "unknown";
+        var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limted", "premium", "import", "exotic", "black market"];
+        return rarities[rarity_num];
+    } 
+
     render() {
         return (
-            <div className="container text-center">
-                <h1>Instance Page for {this.props.match.url}</h1>
+            <div className="container">
+                <h1>{this.state.data.name}</h1>
+                <div className="row">
+                    <div className="col-md-4">
+                        <img className="img-rounded img-responsive" src={this.state.data.image}/>
+                    </div>
+                    <div classNAme="col-md-8">
+                        {this.state.data.description}
+                    </div>
                 <p></p>
             </div>
         )

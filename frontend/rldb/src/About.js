@@ -53,9 +53,9 @@ class About extends Component {
           <p>RocketLeagueStats is a fan-made collection of Rocket League player statistics. We use their API to obtain player information. The API returns JSON, so we use that information for the player info.</p>
 
           <h3>Project Info</h3>
-          <p>{this.state.data['num_commits']} Total Commits</p>
-          <p>{this.state.data['num_issues']} Total Issues</p>
-          <p>0 Total Unit Tests</p>
+          <p>{this.state.commits["total"]} Total Commits</p>
+          <p>29 Total Issues</p>
+          <p>19 Total Unit Tests</p>
 
           <h3>Project Tools</h3>
           <p>Git: A version control system.</p>
@@ -115,9 +115,15 @@ class About extends Component {
                 <h2>John Okane</h2>
                 <p>UTCS Half-Senior (what do you call it when you're graduating a semester early, rather than late, anyway?!). I used to be a big rocket league player "back in the day".</p>
                 <p>Responsibilities: Back-end, API, comedic relief</p>
+<<<<<<< HEAD
                 <p>{this.state.data['commits']["lprekon"]} Commits</p>
                 <p>{this.state.data['issues']["John O'Kane"]} Issues</p>
                 <p>0 Unit Tests</p>
+=======
+                <p>{this.state.commits["lprekon"]} Commits</p>
+                <p>3 Issues</p>
+                <p>19 Unit Tests</p>
+>>>>>>> 329f2532cba1b79093bf936311c2b794a7f8c562
             </div>
             <div className="col-md-2"></div>
           </div>

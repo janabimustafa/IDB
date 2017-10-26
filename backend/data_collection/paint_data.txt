@@ -1,19 +1,19 @@
-{"Type": "Paint Finish" "Name": "Corroded Metal" "Rarity": 1 "Drop": "Drop" Image: "https://vignette.wikia.nocookie.net/rocketleague/images/e/e5/Corroded_Metal_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name": "Glossy" "Rarity": 1 "Drop": "Drop" Image: "https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Matte" "Rarity":1 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/3/37/Matte_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Metallic" "Rarity":1 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/a2/Metallic_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Semigloss" "Rarity":1 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/b/be/Semigloss_paint_finish_icon.png/revision/latest}
-{"Type": "Paint Finish" "Name":"Circuit Board" "Rarity":2 "Drop":"Overdrive Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/f/f8/Circuit_Board_paint_finish_icon.png/revision/latest"}
-{"Type": "Paint Finish" "Name":"Circuit Board" "Rarity":2 "Drop":"Overdrive Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/f/f8/Circuit_Board_paint_finish_icon.png/revision/latest"}
-{"Type": "Paint Finish" "Name":"Glossy Block" "Rarity":2 "Drop":"Overdrive Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_Block_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Pearlescent (Matte)" "Rarity":2 "Drop":"Accelerator Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_Block_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Pearlescent (Matte)" "Rarity":2 "Drop":"Accelerator Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/c/cd/Pearlescent_%28Matte%29_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Pearlescent (Matte)" "Rarity":2 "Drop":"Accelerator Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/c/cd/Pearlescent_%28Matte%29_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Burlap" "Rarity":3 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/4/4b/Burlap_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Cookie Dough" "Rarity":3 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/1/16/Cookie_Dough_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Knitted Yarn" "Rarity":3 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/c/c6/Knitted_Yarn_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Metallic (Smooth)" "Rarity":3 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/8/8f/Metallic_%28Smooth%29_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Metallic Pearl (Smooth)" "Rarity":3 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/5/5c/Metallic_Pearl_%28Smooth%29_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Moon Rock" "Rarity":3 "Drop":"Drop" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/f/f3/Moon_Rock_paint_finish_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Furry" "Rarity":4 "Drop":"Turbp Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/7/7c/Furry_paint_icon.png/revision/latest/"}
-{"Type": "Paint Finish" "Name":"Brushed Metal" "Rarity":4 "Drop":"Turbp Crate" "Image":"https://vignette.wikia.nocookie.net/rocketleague/images/7/7c/Furry_paint_icon.png/revision/latest/"}
+{"id":10000, "type": "paint", "name": "Corroded Metal", "rarity": 1, "image": "https://vignette.wikia.nocookie.net/rocketleague/images/e/e5/Corroded_Metal_paint_finish_icon.png/revision/latest/"}
+{"id":10001, "type": "paint", "name": "Glossy", "rarity": 1, "image": "https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_paint_finish_icon.png/revision/latest/"}
+{"id":10002, "type": "paint", "name":"Matte", "rarity":1, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/3/37/Matte_paint_finish_icon.png/revision/latest/"}
+{"id":10003, "type": "paint", "name":"Metallic", "rarity":1, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/a2/Metallic_paint_finish_icon.png/revision/latest/"}
+{"id":10004, "type": "paint", "name":"Semigloss", "rarity":1, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/b/be/Semigloss_paint_finish_icon.png/revision/latest}
+{"id":10005, "type": "paint", "name":"Circuit Board", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/f/f8/Circuit_Board_paint_finish_icon.png/revision/latest"}
+{"id":10006, "type": "paint", "name":"Circuit Board", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/f/f8/Circuit_Board_paint_finish_icon.png/revision/latest"}
+{"id":10007, "type": "paint", "name":"Glossy Block", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_Block_paint_finish_icon.png/revision/latest/"}
+{"id":10008, "type": "paint", "name":"Pearlescent (Matte)", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/a/ac/Glossy_Block_paint_finish_icon.png/revision/latest/"}
+{"id":10009, "type": "paint", "name":"Pearlescent (Matte)", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/c/cd/Pearlescent_%28Matte%29_paint_finish_icon.png/revision/latest/"}
+{"id":10010, "type": "paint", "name":"Pearlescent (Matte)", "rarity":2, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/c/cd/Pearlescent_%28Matte%29_paint_finish_icon.png/revision/latest/"}
+{"id":10011, "type": "paint", "name":"Burlap", "rarity":3, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/4/4b/Burlap_paint_finish_icon.png/revision/latest/"}
+{"id":10012, "type": "paint", "name":"Cookie Dough", "rarity":3, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/1/16/Cookie_Dough_paint_finish_icon.png/revision/latest/"}
+{"id":10013, "type": "paint", "name":"Knitted Yarn", "rarity":3, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/c/c6/Knitted_Yarn_paint_finish_icon.png/revision/latest/"}
+{"id":10014, "type": "paint", "name":"Metallic (Smooth)", "rarity":3, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/8/8f/Metallic_%28Smooth%29_paint_finish_icon.png/revision/latest/"}
+{"id":10015, "type": "paint", "name":"Metallic Pearl (Smooth)", "rarity":3, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/5/5c/Metallic_Pearl_%28Smooth%29_paint_finish_icon.png/revision/latest/"}
+{"id":10016, "type": "paint", "name":"Moon Rock", "rarity":3, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/f/f3/Moon_Rock_paint_finish_icon.png/revision/latest/"}
+{"id":10017, "type": "paint", "name":"Furry", "rarity":4, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/7/7c/Furry_paint_icon.png/revision/latest/"}
+{"id":10018, "type": "paint", "name":"Brushed Metal", "rarity":4, "image":"https://vignette.wikia.nocookie.net/rocketleague/images/7/7c/Furry_paint_icon.png/revision/latest/"}

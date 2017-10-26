@@ -32,7 +32,7 @@ for id_ in game_type.values():
 
 ids = set()
 
-with open('players.txt', 'w') as f:
+with open('data_collection/players.txt', 'w') as f:
     for player in players.values():
         out = {}
         out['name'] = player['displayName']
@@ -57,4 +57,4 @@ with open('players.txt', 'w') as f:
         out['image'] = player['avatar']
         out['type'] = 'player'
         # This has more data than we use, so extract here
-        f.write(json.dumps(out))
+        f.write(json.dumps(out)+ '\n')

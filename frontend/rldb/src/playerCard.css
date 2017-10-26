@@ -3,8 +3,11 @@ p {
     margin: 0;
 }
 
-img {
+.img-rounded {
     margin-top: 12px;
+}
+
+.img-player {
     max-width: 150px;
     max-height: 150px;
 }

@@ -13,7 +13,7 @@ class PlayerCard extends Component {
         return (
             <div className=" col-md-3 col-sm-3 text-center">
                 <a href="">
-                    <img className="img-rounded" src={this.props.data.image ? this.props.data.image : "http://via.placeholder.com/150x150"}/>
+                    <img className="img-rounded img-player" src={this.props.data.image ? this.props.data.image : "http://via.placeholder.com/150x150"}/>
                     <h2>{this.props.data.name}</h2>
                 </a>
                 <div className="caption">

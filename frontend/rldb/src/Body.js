@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import InstanceCard from './InstanceCard';
 
-class Crate extends Component {
+class Body extends Component {
     constructor(props) {
         super(props);
 
@@ -13,7 +13,7 @@ class Crate extends Component {
 
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
-        fetch('/api/meta/bodies', { 
+        fetch('/api/bodies/', { 
             method: 'GET',
             dataType: 'json'
         })
@@ -46,4 +46,4 @@ class Crate extends Component {
     }
 }
 
-export default Crate;
+export default Body;

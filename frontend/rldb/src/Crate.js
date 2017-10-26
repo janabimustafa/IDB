@@ -13,7 +13,7 @@ class Crate extends Component {
 
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
-        fetch('/api/meta/crates', { 
+        fetch('/api/crates/', { 
             method: 'GET',
             dataType: 'json'
         })

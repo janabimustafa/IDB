@@ -20,6 +20,7 @@
 
 body {
   position: relative;
+  margin-bottom: 120px;
 }
 
 @keyframes App-logo-spin {

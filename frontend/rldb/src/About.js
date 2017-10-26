@@ -42,7 +42,7 @@ class About extends Component {
           <br></br>
           <a href="https://github.com/janabimustafa/idb">Link to GitHub Repo</a>
           <br></br>
-          <a href="https://trello.com/b/tAZ12NXY/project-2">Link to Trello</a>
+          <a href="https://trello.com/b/PuKpSYr5/project-3">Link to Trello</a>
           <br></br>
           <a href="https://utexas.box.com/s/jy9pa6ja68ogjylym7wxg38tyg0ik5tk">Link to Technical Report</a>
 

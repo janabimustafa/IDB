@@ -116,7 +116,7 @@ class About extends Component {
                 <p>UTCS Half-Senior (what do you call it when you're graduating a semester early, rather than late, anyway?!). I used to be a big rocket league player "back in the day".</p>
                 <p>Responsibilities: Back-end, API, comedic relief</p>
                 <p>{this.state.data['commits']["lprekon"]} Commits</p>
-                <p>{this.state.data["issues"]["John O'Kane"]}</p>
+                <p>{this.state.data["issues"]["John O'Kane"]} Issues</p>
                 <p>19 Unit Tests</p>
             </div>
             <div className="col-md-2"></div>

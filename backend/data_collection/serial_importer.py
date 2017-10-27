@@ -7,9 +7,6 @@ from sqlalchemy.orm import sessionmaker
 if len(sys.argv) != 2:
     exit()
 
-db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
-Session = sessionmaker(bind=db)
-
 if len(inspect(db).get_table_names()) == 0:
     print('No tables detected, creating...')
 # updates DB to create tables that don't already exist in the DB

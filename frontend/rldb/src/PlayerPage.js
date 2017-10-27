@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import LoadingOverlay from './LoadingOverlay';
 
 class PlayerPage extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            data: []
+            data: null
         };
     }
 
@@ -40,6 +41,9 @@ class PlayerPage extends Component {
     } 
 
     render() {
+        if (this.state.data === null)
+            return (<LoadingOverlay />)
+
         return (
             <div className="container">
                 <h1>{this.state.data.name}</h1>
@@ -51,12 +55,12 @@ class PlayerPage extends Component {
                         <h3>Platform: {this.getPlatform(this.state.data.platform)}</h3>
                         <h3>Skill Rating: {this.state.data.skill_rating}</h3>
                         <h3>Wins: {this.state.data.wins}</h3>
-                        <Link to={'/'+ this.props.match.url.split('/')[1]}>
+                        {/* <Link to={'/'+ this.props.match.url.split('/')[1]}>
                         <h3>Go back.</h3>
-                        </Link>
+                        </Link> */}
                     </div>
-                <p></p>
                 </div>
+                <img src={this.state.data.sig_image ? this.state.data.sig_image : ""}/>
             </div>
         )
     }

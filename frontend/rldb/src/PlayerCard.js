@@ -22,6 +22,7 @@ class PlayerCard extends Component {
                     <p>Skill Rating: {this.props.data.skill_rating}</p>
                     <p>Wins: {this.props.data.wins}</p>
                 </div>
+                {/* <img src={this.props.data.sig ? this.props.data.image : ""}/> */}
             </div>
         )
     }

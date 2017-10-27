@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-
 import './instanceCard.css';
 
 class InstanceCard extends Component {
@@ -18,9 +17,10 @@ class InstanceCard extends Component {
     }
 
     render() {
+        console.log(this.props.data.type);
         return (
             <div className=" col-md-4 col-sm-6 text-center">
-                <Link to={`/${this.props.data.type}/${this.props.data.name}`}>
+                <Link onClick={this.forceUpdate} to={`/${this.props.data.type}/${this.props.data.name}`}>
                     <img className="img-rounded" src={this.props.data.image}/>
                     <h2>{this.props.data.name}</h2>
                 </Link>

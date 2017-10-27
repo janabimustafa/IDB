@@ -15,9 +15,9 @@ NO_DESCRIPT = {'Antenna', 'Trail'}
 
 session = Session()
 
-all_rlobjects = {}
+all_objects = {}
 category_sets = {}
-class RLObject:
+class ImportableObject:
 
     def __init__(self, type, id, name=None, related=None, description=None, image=None):
         self.type = type

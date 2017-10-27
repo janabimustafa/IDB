@@ -1,0 +1,13 @@
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.img-rounded {
+    margin-top: 12px;
+}
+
+.img-player {
+    max-width: 150px;
+    max-height: 150px;
+}

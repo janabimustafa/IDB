@@ -28,11 +28,11 @@ script:
   - docker exec rldb-flask python test.py
 #- docker exec -e CI=true rldb-react npm test
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then  
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then  
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push janabimustafa/rldb-flask;
     docker push janabimustafa/rldb-react;
-    elif [ "$TRAVIS_BRANCH" == "dev" ]; then
+    elif [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "dev" ]; then
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker tag janabimustafa/rldb-flask janabimustafa/rldb-flask:dev;
     docker tag janabimustafa/rldb-react janabimustafa/rldb-react:dev;

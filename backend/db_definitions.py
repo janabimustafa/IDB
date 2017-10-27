@@ -141,6 +141,14 @@ TYPE_TO_CLASS = {
 
 CLASS_TO_TYPE = {v: k for k, v in TYPE_TO_CLASS.items()}
 
+SPECIAL_REMOVES = {
+    Paint: ['decals'],
+    Body: ['decals'],
+    Decal: ['bodies'],
+    Crate: ['items'],
+    DLC: ['items']
+}
+
 def serialize(rl_object):
     if rl_object is None:
         return None
@@ -164,6 +172,9 @@ def deserialize(json_str):
 def __deserialize_helper(sdict):
     class_ = TYPE_TO_CLASS.get(sdict.get('type'))
     if class_:
+        for rem in SPECIAL_REMOVES.get(class_, []):
+            if rem in sdict:
+                del sdict[rem]
         del sdict['type']
         return class_(**sdict)
     return None

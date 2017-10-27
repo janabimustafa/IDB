@@ -54,9 +54,9 @@ class PaintPage extends Component {
                         <h3>Release Date: {this.state.data.release_date ? this.state.data.release_date : "Unknown"}</h3>
                         <h3>Source: {this.state.data.source ? this.state.data.source : "Drop"}</h3>
 
-                        <Link to={'/'+ this.props.match.url.split('/')[1]}>
+                        {/* <Link to={'/'+ this.props.match.url.split('/')[1]}>
                         <h3>Go back.</h3>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

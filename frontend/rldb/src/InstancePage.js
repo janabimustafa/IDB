@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import InstanceCard from './InstanceCard';
+import LoadingOverlay from './LoadingOverlay';
 
 class InstancePage extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            data: []
+            data: null,
+            itemsData: null
         };
     }
 
@@ -28,9 +31,37 @@ class InstancePage extends Component {
         })
         .then(j => {
             console.log(j);
-            this.setState({
-                data: j
-            });
+            var items = [];
+            if(j.items !== undefined)
+            {
+
+            
+            var itemsPromise = j.items.map( function(item) {
+                var uri = '/api/id/' + item;
+                return fetch(uri, { 
+                                    method: 'GET',
+                                    dataType: 'json'
+                                })
+                                .then(function(response) {
+                                    return response.json()
+                                });
+                });
+
+            Promise.all(itemsPromise).then((result)=>{
+                console.log("All items fetched!");
+                console.log(result);
+                console.log(typeof(result));                
+                this.setState({
+                    data: j,
+                    itemsData : result
+                });
+            });}
+            else {
+                this.setState({
+                    data: j,
+                });
+            }
+
         });
     }
 
@@ -51,20 +82,35 @@ class InstancePage extends Component {
     */
 
     render() {
+        if (this.state.data === null)
+            return (<LoadingOverlay />)
+        
+        var itemCards = [];
+        if(this.state.itemsData !== null)
+        {
+            this.state.itemsData.forEach( function(item) {
+                itemCards.push(<InstanceCard key={item.id} data={item}/>);
+            });
+        }
+
         return (
             <div className="container">
+                {/* <Link to={'/'+ this.props.match.url.split('/')[1]}>
+                    <h3>Go back.</h3>
+                </Link> */}
                 <h1>{this.state.data.name}</h1>
                 <div className="row">
                     <div className="col-md-4">
                         <img className="img-rounded img-responsive" src={this.state.data.image}/>
                     </div>
+                    <h3>Description:</h3>
                     <div className="col-md-8 text-center">
-                        <p>{this.state.data.description}</p>
-                        <Link to={'/'+ this.props.match.url.split('/')[1]}>
-                        <h3>Go back.</h3>
-                        </Link>
+                        <p>{this.state.data.description}</p>   
                     </div>
+                    {itemCards.length > 0 ? <h3>Contains:</h3> : <hr/>}                   
+                    {itemCards}
                 </div>
+                
             </div>
         )
     }

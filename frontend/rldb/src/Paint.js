@@ -36,7 +36,7 @@ class Paint extends Component {
         // Create the cards before rendering
         var cards = [];
         this.state.data.forEach( function(item) {
-            cards.push(<InstanceCard data={item}/>);
+            cards.push(<InstanceCard key={item.id} data={item}/>);
         });
         return (
             <div className="container">

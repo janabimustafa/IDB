@@ -28,7 +28,7 @@ class RLObject(DBObject): # Non-meta
     def id(cls):
         return Column(Integer, ForeignKey('unique_ids.id'), primary_key=True)
 
-    image = Column(String(300)) # URL of image
+    image = Column(String) # URL of image
 
     _relations = []
 
@@ -41,8 +41,7 @@ class RLObject(DBObject): # Non-meta
 
 class RLObtainable(RLObject): # Not Players
     release_date = Column(Date)
-    image = Column(String(300)) # URL of image
-    description = Column(String(800))
+    description = Column(String)
 
 class RLItem(RLObtainable): # Not DLC
     @declared_attr
@@ -52,8 +51,6 @@ class RLItem(RLObtainable): # Not DLC
     @declared_attr
     def rarity(cls):
         return Column(Integer, ForeignKey('rarities.id'))
-
-    description = Column(String)
 
 # Used for ForeignKey
 class Source(Base, DBObject):
@@ -158,6 +155,7 @@ def serialize(rl_object):
     for rel in rl_object._relations:
         res = conn.execute(rel[2].format(rl_object.id))
         sdict[rel[0]] = [k[rel[1]] for k in res]
+    conn.close()
     return sdict
 
 def serialize_str(rl_object):
@@ -167,9 +165,9 @@ def serialize_str(rl_object):
 # this returns a new instance of that object
 def deserialize(json_str):
     sdict = json.loads(json_str)
-    return __deserialize_helper(sdict)
+    return _deserialize_helper(sdict)
 
-def __deserialize_helper(sdict):
+def _deserialize_helper(sdict):
     class_ = TYPE_TO_CLASS.get(sdict.get('type'))
     if class_:
         for rem in SPECIAL_REMOVES.get(class_, []):
@@ -181,6 +179,6 @@ def __deserialize_helper(sdict):
 
 def deserialize_list(json_str):
     json_list = json.loads(json_str)
-    object_list = [__deserialize_helper(json) for json in json_list]
+    object_list = [_deserialize_helper(json) for json in json_list]
     return object_list
 

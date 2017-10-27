@@ -1,7 +1,7 @@
 import unittest
 from urllib.request import urlopen
 import json
-from db_definitions import *
+from models import *
 
 UNIVERSAL_PROPERTIES = {"id", "type", "name"}
 

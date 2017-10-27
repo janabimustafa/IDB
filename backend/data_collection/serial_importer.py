@@ -1,4 +1,4 @@
-from db_definitions import *
+from models import *
 import sys
 import json
 from sqlalchemy import create_engine, inspect

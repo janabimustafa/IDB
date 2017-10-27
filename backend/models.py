@@ -1,5 +1,6 @@
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
-from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey
+from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine
+from sqlalchemy.orm import sessionmaker
 import json
 import os
 
@@ -15,6 +16,9 @@ DB_HOST = os.environ['DB_HOST']
 # do: Base.metadata.create_all(engine) to initialize a blank db (or nop
 # if it already exists)
 
+db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
+Session = sessionmaker(bind=db)
+
 class DBObject: # Everything
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
@@ -25,6 +29,8 @@ class RLObject(DBObject): # Non-meta
         return Column(Integer, ForeignKey('unique_ids.id'), primary_key=True)
 
     image = Column(String(300)) # URL of image
+
+    _relations = []
 
     def __eq__(self, other):
         return serialize_str(self) == serialize_str(other)
@@ -68,6 +74,7 @@ class UniqueIDRelation(Base, DBObject):
 class Paint(Base, RLItem):
     __tablename__ = 'paints'
     crate = Column(ForeignKey('crates.id')) # ForeignKey
+    _relations = [('decals', 'decal_id', 'SELECT * FROM paint_decal_relations WHERE paint_id = {0}')]
     #list of decals stored in PaintDecalsRelation table
 
 # Maps paints to decals
@@ -78,6 +85,7 @@ class PaintDecalsRelation(Base):
 
 class Body(Base, RLItem):
     __tablename__ = 'bodies'
+    _relations = [('decals', 'decal_id', 'SELECT * FROM body_decal_relations WHERE body_id = {0}')]
     #list of decals stored in BodyDecalsRelation table
 
 class BodyDecalsRelation(Base):
@@ -90,6 +98,7 @@ class Decal(Base, RLItem):
     crate = Column(Integer, ForeignKey('crates.id')) # ForeignKey
     is_animated = Column(Boolean)
     is_paintable = Column(Boolean)
+    _relations = [('bodies', 'item_id', 'SELECT * FROM body_decal_relations WHERE decal_id = {0}')]
     #list of bodies stored in BodyDecalsRelation table
 
 class Wheel(Base, RLItem):
@@ -98,6 +107,7 @@ class Wheel(Base, RLItem):
 class Crate(Base, RLItem):
     __tablename__ = 'crates'
     retire_date = Column(Date)
+    _relations = [('items', 'item_id', 'SELECT * FROM crate_item_relations WHERE crate_id = {0}')]
 
 class CrateItemsRelation(Base):
     __tablename__ = 'crate_item_relations'
@@ -106,6 +116,7 @@ class CrateItemsRelation(Base):
 
 class DLC(Base, RLObtainable):
     __tablename__ = 'dlcs'
+    _relations = [('items', 'item_id', 'SELECT * FROM dlc_item_relations WHERE dlc_id = {0}')]
 
 class DLCItemsRelation(Base):
     __tablename__ = 'dlc_item_relations'
@@ -130,11 +141,23 @@ TYPE_TO_CLASS = {
 
 CLASS_TO_TYPE = {v: k for k, v in TYPE_TO_CLASS.items()}
 
+SPECIAL_REMOVES = {
+    Paint: ['decals'],
+    Body: ['decals'],
+    Decal: ['bodies'],
+    Crate: ['items'],
+    DLC: ['items']
+}
+
 def serialize(rl_object):
     if rl_object is None:
         return None
     sdict = {k: rl_object.__dict__[k] for k in rl_object.__dict__ if not k.startswith('_')}
     sdict['type'] = CLASS_TO_TYPE.get(type(rl_object))
+    conn = db.connect()
+    for rel in rl_object._relations:
+        res = conn.execute(rel[2].format(rl_object.id))
+        sdict[rel[0]] = [k[rel[1]] for k in res]
     return sdict
 
 def serialize_str(rl_object):
@@ -149,6 +172,9 @@ def deserialize(json_str):
 def __deserialize_helper(sdict):
     class_ = TYPE_TO_CLASS.get(sdict.get('type'))
     if class_:
+        for rem in SPECIAL_REMOVES.get(class_, []):
+            if rem in sdict:
+                del sdict[rem]
         del sdict['type']
         return class_(**sdict)
     return None

@@ -158,6 +158,7 @@ def serialize(rl_object):
     for rel in rl_object._relations:
         res = conn.execute(rel[2].format(rl_object.id))
         sdict[rel[0]] = [k[rel[1]] for k in res]
+    conn.close()
     return sdict
 
 def serialize_str(rl_object):

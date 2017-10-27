@@ -55,6 +55,7 @@ with open('data_collection/players.txt', 'w') as f:
                 break
         out['wins'] = player['stats']['wins']
         out['image'] = player['avatar']
+        out['sig_image'] = player['signatureUrl']
         out['type'] = 'player'
         # This has more data than we use, so extract here
         f.write(json.dumps(out)+ '\n')

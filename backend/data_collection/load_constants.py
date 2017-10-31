@@ -1,11 +1,12 @@
 from models import *
 from sqlalchemy import create_engine, inspect
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, configure_mappers
 
 
 '''
 This file provides supplemental Rarity values for the RL Objects.
 '''
+configure_mappers()
 
 Base.metadata.reflect(db)
 Base.metadata.drop_all(db)

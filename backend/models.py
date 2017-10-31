@@ -161,6 +161,12 @@ RELATION_KEYS = {
     DLC: ['items']
 }
 
+RELATION_KEY_TARGETS = {
+    'decals': Decal,
+    'bodies': Body,
+    'items': RLObject
+}
+
 def serialize(rl_object):
     if rl_object is None:
         return None

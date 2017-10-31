@@ -18,7 +18,6 @@ DB_HOST = os.environ['DB_HOST']
 # if it already exists)
 
 db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
-#db = create_engine('sqlite:///testing.db')
 Session = sessionmaker(bind=db)
 
 class DBObject: # Everything
@@ -30,8 +29,8 @@ class RLObject(Base, DBObject): # Non-meta
 
     id = Column(Integer, primary_key=True)
 
-    discriminator = Column('type', String(50))
-    __mapper_args__ = {'polymorphic_on': discriminator}
+    type = Column('type', String(50))
+    __mapper_args__ = {'polymorphic_on': type}
 
     image = Column(String(300)) # URL of image
 
@@ -140,6 +139,7 @@ class Player(RLObject):
     platform = Column(Integer, ForeignKey('platforms.id')) # ForeignKey
     skill_rating = Column(Integer) # Average of Ranked modes in most recent season
     wins = Column(Integer)
+    sig_image = Column(String)
 
 TYPE_TO_CLASS = {
     'paint': Paint,

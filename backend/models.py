@@ -1,6 +1,7 @@
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
-from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine, Table
+from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.sql import select
 import json
 import os
 
@@ -17,20 +18,22 @@ DB_HOST = os.environ['DB_HOST']
 # if it already exists)
 
 db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
+#db = create_engine('sqlite:///testing.db')
 Session = sessionmaker(bind=db)
 
 class DBObject: # Everything
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
 
-class RLObject(DBObject): # Non-meta
-    @declared_attr
-    def id(cls):
-        return Column(Integer, ForeignKey('unique_ids.id'), primary_key=True)
+class RLObject(Base, DBObject): # Non-meta
+    __tablename__ = 'objects'
 
-    image = Column(String) # URL of image
+    id = Column(Integer, primary_key=True)
 
-    _relations = []
+    discriminator = Column('type', String(50))
+    __mapper_args__ = {'polymorphic_on': discriminator}
+
+    image = Column(String(300)) # URL of image
 
     def __eq__(self, other):
         return serialize_str(self) == serialize_str(other)
@@ -64,68 +67,79 @@ class Rarity(Base, DBObject):
 class Platform(Base, DBObject):
     __tablename__ = 'platforms'
 
-# Used to ensure all items have unique ids
-class UniqueIDRelation(Base, DBObject):
-    __tablename__ = 'unique_ids'
+PaintDecalsRelation = Table('paint_decal_relations', Base.metadata,
+    Column('paint_id', ForeignKey('paints.id'), primary_key=True),
+    Column('decal_id', ForeignKey('decals.id'), primary_key=True))
 
-class Paint(Base, RLItem):
+class Paint(RLItem):
     __tablename__ = 'paints'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'paint'}
     crate = Column(ForeignKey('crates.id')) # ForeignKey
-    _relations = [('decals', 'decal_id', 'SELECT * FROM paint_decal_relations WHERE paint_id = {0}')]
-    #list of decals stored in PaintDecalsRelation table
+    decals = relationship('Decal',
+        secondary=PaintDecalsRelation,
+        primaryjoin=id==PaintDecalsRelation.c.paint_id)
 
-# Maps paints to decals
-class PaintDecalsRelation(Base):
-    __tablename__ = 'paint_decal_relations'
-    paint_id = Column(ForeignKey('paints.id'), primary_key=True)
-    decal_id = Column(ForeignKey('decals.id'), primary_key=True)
+BodyDecalsRelation = Table('body_decal_relations', Base.metadata,
+    Column('body_id', ForeignKey('bodies.id'), primary_key=True),
+    Column('decal_id', ForeignKey('decals.id'), primary_key=True))
 
-class Body(Base, RLItem):
+class Body(RLItem):
     __tablename__ = 'bodies'
-    _relations = [('decals', 'decal_id', 'SELECT * FROM body_decal_relations WHERE body_id = {0}')]
-    #list of decals stored in BodyDecalsRelation table
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'body'}
+    decals = relationship('Decal',
+        secondary=BodyDecalsRelation,
+        primaryjoin=id==BodyDecalsRelation.c.body_id)
 
-class BodyDecalsRelation(Base):
-    __tablename__ = 'body_decal_relations'
-    body_id = Column(ForeignKey('bodies.id'), primary_key=True)
-    decal_id = Column(ForeignKey('decals.id'), primary_key=True)
-
-class Decal(Base, RLItem):
+class Decal(RLItem):
     __tablename__ = 'decals'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'decal'}
     crate = Column(Integer, ForeignKey('crates.id')) # ForeignKey
     is_animated = Column(Boolean)
     is_paintable = Column(Boolean)
-    _relations = [('bodies', 'item_id', 'SELECT * FROM body_decal_relations WHERE decal_id = {0}')]
-    #list of bodies stored in BodyDecalsRelation table
+    bodies = relationship(Body,
+        secondary=BodyDecalsRelation,
+        primaryjoin=id==BodyDecalsRelation.c.decal_id)
 
-class Wheel(Base, RLItem):
+class Wheel(RLItem):
     __tablename__ = 'wheels'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'wheel'}
 
-class Crate(Base, RLItem):
+CrateItemsRelation = Table('crate_item_relations', Base.metadata,
+    Column('crate_id', ForeignKey('crates.id'), primary_key=True),
+    Column('item_id', ForeignKey('objects.id'), primary_key=True)) # Foreign key to all returnable types
+
+class Crate(RLItem):
     __tablename__ = 'crates'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'crate'}
     retire_date = Column(Date)
-    _relations = [('items', 'item_id', 'SELECT * FROM crate_item_relations WHERE crate_id = {0}')]
+    items = relationship(RLObject,
+        secondary=CrateItemsRelation,
+        primaryjoin=id==CrateItemsRelation.c.crate_id)
 
-class CrateItemsRelation(Base):
-    __tablename__ = 'crate_item_relations'
-    crate_id = Column(ForeignKey('unique_ids.id'), primary_key=True)
-    item_id = Column(ForeignKey('unique_ids.id'), primary_key=True) # Foreign key to all returnable types
+DLCItemsRelation = Table('dlc_item_relations', Base.metadata,
+    Column('dlc_id', ForeignKey('dlcs.id'), primary_key=True),
+    Column('item_id', ForeignKey('objects.id'), primary_key=True))
 
-class DLC(Base, RLObtainable):
+class DLC(RLObtainable):
     __tablename__ = 'dlcs'
-    _relations = [('items', 'item_id', 'SELECT * FROM dlc_item_relations WHERE dlc_id = {0}')]
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'dlc'}
+    items = relationship(RLObject,
+        secondary=DLCItemsRelation,
+        primaryjoin=id==DLCItemsRelation.c.dlc_id)
 
-class DLCItemsRelation(Base):
-    __tablename__ = 'dlc_item_relations'
-    dlc_id = Column(ForeignKey('dlcs.id'), primary_key=True)
-    item_id = Column(ForeignKey('unique_ids.id'), primary_key=True) # Foreign key to all returnable types
-
-class Player(Base, RLObject):
+class Player(RLObject):
     __tablename__ = 'players'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'player'}
     platform = Column(Integer, ForeignKey('platforms.id')) # ForeignKey
     skill_rating = Column(Integer) # Average of Ranked modes in most recent season
     wins = Column(Integer)
-    sig_image = Column(String)
 
 TYPE_TO_CLASS = {
     'paint': Paint,
@@ -139,7 +153,7 @@ TYPE_TO_CLASS = {
 
 CLASS_TO_TYPE = {v: k for k, v in TYPE_TO_CLASS.items()}
 
-SPECIAL_REMOVES = {
+RELATION_KEYS = {
     Paint: ['decals'],
     Body: ['decals'],
     Decal: ['bodies'],
@@ -152,11 +166,8 @@ def serialize(rl_object):
         return None
     sdict = {k: rl_object.__dict__[k] for k in rl_object.__dict__ if not k.startswith('_')}
     sdict['type'] = CLASS_TO_TYPE.get(type(rl_object))
-    conn = db.connect()
-    for rel in rl_object._relations:
-        res = conn.execute(rel[2].format(rl_object.id))
-        sdict[rel[0]] = [k[rel[1]] for k in res]
-    conn.close()
+    for rel in RELATION_KEYS.get(type(rl_object), []):
+        sdict[rel] = list(k.id for k in getattr(rl_object, rel))
     return sdict
 
 def serialize_str(rl_object):
@@ -171,7 +182,7 @@ def deserialize(json_str):
 def _deserialize_helper(sdict):
     class_ = TYPE_TO_CLASS.get(sdict.get('type'))
     if class_:
-        for rem in SPECIAL_REMOVES.get(class_, []):
+        for rem in RELATION_KEYS.get(class_, []):
             if rem in sdict:
                 del sdict[rem]
         del sdict['type']

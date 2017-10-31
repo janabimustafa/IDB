@@ -23,15 +23,12 @@ with open(filename, 'r') as f:
         except:
             print("Error, could not parse line.")
             print(line)
-        #j['id'] = id_
         if 'related' in j:
             del j['related']
         if 'type' in j:
             j['type'] = j['type'].lower()
         new = deserialize(json.dumps(j))
         if new:
-            index = UniqueIDRelation(id=j['id'], name=j['name'])
-            s.merge(index)
             s.merge(new)
 
 s.commit()

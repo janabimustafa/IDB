@@ -1,18 +1,92 @@
-version: '2'
+version: '2.1'
 services:
-  rldb-flask:
-    image: gcr.io/rldb-idb/rldb-flask:${TRAVIS_COMMIT}
+  traefik:
+    image: traefik
+    container_name: rldb-traefik
+    restart: always
+    depends_on:
+      react:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+      - 80:80
+      - 443:443
+    networks:
+      - webgateway
+    volumes:
+      - ./traefik/traefik.toml:/traefik.toml
+      - ./traefik/servers.toml:/servers.toml
+      #- ./traefik/acme.json:/acme.json:ro
+  flask:
+    image: janabimustafa/rldb-flask
     container_name: rldb-flask
     build:
       context: backend/.
-      dockerfile: Dockerfile-travis
+      dockerfile: Dockerfile
+    command: ['sh', '/app/flask-launcher.sh']
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app:z
+    working_dir: /app
     ports:
-    - 5000:5000
-  rldb-react:
-    image: gcr.io/rldb-idb/rldb-react:${TRAVIS_COMMIT}
+      - 5000:5000
+    networks:
+      - webgateway
+    environment:
+      - DB_NAME=rldb
+      - DB_USER=rldb
+      - DB_PASS=rldb
+      - DB_DIALECT=postgres
+      - DB_HOST=db
+    healthcheck:
+      test: curl -f http://localhost:5000/api
+      interval: 3s
+      timeout: 5s
+      retries: 5
+  react:
+    image: janabimustafa/rldb-react
     container_name: rldb-react
     build:
       context: frontend/.
-      dockerfile: Dockerfile-travis
+      dockerfile: Dockerfile-prod        
+    networks:
+      - webgateway
+    depends_on:
+      flask:
+        condition: service_healthy
+    healthcheck:
+      test: curl -f http://localhost:3000
+      interval: 3s
+      timeout: 5s
+      retries: 5
+  db:
+    image: postgres:latest
+    networks:
+      - webgateway
+    container_name: rldb-db
+    environment:
+      - POSTGRES_PASSWORD=rldb
+      - POSTGRES_USER=rldb
+    healthcheck:
+      test: "pg_isready -h localhost -p 5432 -q -U postgres"
+      interval: 3s
+      timeout: 5s
+      retries: 5
+  phppgadmin:
+    image: zhajor/docker-phppgadmin
+    networks:
+      - webgateway
+    container_name: rldb-phppgadmin
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
     ports:
-    - 3000:3000
+      - 8081:80
+networks:
+  webgateway:
+    driver: bridge

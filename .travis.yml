@@ -21,8 +21,13 @@ before_install:
   - docker-compose --version
 
 install:
-  - docker-compose build
-  - docker-compose up -d
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker-compose -f docker-compose-travis.yml build;
+    docker-compose -f docker-compose-travis.yml up -d;
+    else
+    docker-compose build
+    docker-compose up -d
+    fi
 
 script:
   - docker exec rldb-flask python test.py

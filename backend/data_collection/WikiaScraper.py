@@ -3,11 +3,11 @@ import datetime
 import re
 import json
 import os
-
+import hashlib
 WIKIA_API = 'http://rocketleague.wikia.com/api/v1/'
 
 # Names of category pages mapped to the Category of object
-CATEGORIES = {'Crates': 'Crate', 'Bodies': 'Body', 'Decals': 'Decal', 'Wheels': 'Wheel', 'Images - antennas': 'Antenna', 'Toppers': 'Topper', 'Images - trails': 'Trail', 'Arenas': 'Arena'}
+CATEGORIES = {'Crates': 'Crate', 'Bodies': 'Body', 'Wheels': 'Wheel', 'Images - antennas': 'Antenna', 'Toppers': 'Topper', 'Images - trails': 'Trail', 'Arenas': 'Arena'}
 
 # Antenna and Trail objects have a title of '<Name> antenna/trail.png' because they're just pictures
 REPLACEMENTS = {'Antenna': ' antenna', 'Trail': ' trail'}
@@ -18,6 +18,11 @@ session = Session()
 
 all_objects = {}
 category_sets = {}
+
+
+def get_hash(name):
+    return int(hashlib.sha256(name.encode('utf-8')).hexdigest(), 16) % 10**8
+
 class ImportableObject:
 
     def __init__(self, type, id, name=None, related=None, description=None, image=None):
@@ -33,6 +38,9 @@ class ImportableObject:
                 self.name = prop.get('title')
         else:
             self.name = name
+        # create a new database ID for bodies. Used for scraping Decal relations
+        if type == 'Body' or type == 'body':
+            self.id = get_hash(self.name.lower())
 
         if related is None:
             self.related = set()
@@ -74,6 +82,7 @@ class ImportableObject:
     def GetObject(type, id, name=None, related=None, description=None, image=None):
         if id in all_objects:
             return all_objects[id]
+
         n = ImportableObject(type, id, name, related, description, image)
         n.SetReleaseDate()
         all_objects[id] = n
@@ -112,7 +121,7 @@ class ImportableObject:
 
 
 # Generator for ids related objects
-# I'm not entirel y sure what 'related' means, and the api doesn't give any context.
+# I'm not entirely sure what 'related' means, and the api doesn't give any context.
 def get_related_objects(id):
     items = session.get(WIKIA_API + 'RelatedPages/List?ids=' + str(id) + '&limit=-1').json()['items']
     for article in items[str(id)]:

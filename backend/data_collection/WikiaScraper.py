@@ -1,4 +1,5 @@
 from requests import Session
+import datetime
 import re
 import json
 import os
@@ -22,6 +23,7 @@ class ImportableObject:
     def __init__(self, type, id, name=None, related=None, description=None, image=None):
         self.type = type
         self.id = id
+        self.release_date = ""
         prop = get_properties_from_id(id)
 
         if name is None:
@@ -52,32 +54,61 @@ class ImportableObject:
             self.image = image
 
 
-    # More for debug, allows str(RLObject)
+    # More for debug, allows str(ImportableObject)
     def __repr__(self):
         return str(self.id) + ": " + str(self.name) + " (" + str(self.type) + ")"
 
 
     # Serializes an Object to JSON for database storaage
     def serialize(self):
-        return json.dumps({'id': self.id, 'name': self.name, 'type': self.type, 'related': list(self.related), 'description': self.description, 'image': self.image})
+        return json.dumps({'id': self.id, 'name': self.name, 'type': self.type, 'release_date':self.release_date, 'related': list(self.related), 'description': self.description, 'image': self.image})
 
 
     # Deserializes an object, only really used for caching
     def deserialize(s):
         j = json.loads(s)
-        return RLObject.GetObject(j['type'], j['id'], j['name'], set(j['related']), j['description'], j['image'])
+        return ImportableObject.GetObject(j['type'], j['id'], j['name'], set(j['related']), j['description'], j['image'])
 
 
     # Static factory
     def GetObject(type, id, name=None, related=None, description=None, image=None):
-        if id in all_rlobjects:
-            return all_rlobjects[id]
-        n = RLObject(type, id, name, related, description, image)
-        all_rlobjects[id] = n
+        if id in all_objects:
+            return all_objects[id]
+        n = ImportableObject(type, id, name, related, description, image)
+        n.SetReleaseDate()
+        all_objects[id] = n
         if type not in category_sets:
             category_sets[type] = {}
         category_sets[type] = n
         return n
+
+    def SetReleaseDate(self):
+        MONTHS = {  'January' : 1, 
+                'February': 2,
+                'March' : 3, 
+                'April' : 4, 
+                'May' : 5, 
+                'June' : 6, 
+                'July' : 7, 
+                'August' : 8, 
+                'September' : 9, 
+                'October' : 10, 
+                'November' : 11, 
+                'December' : 12 }
+        delimiter = 'released on '
+        index = self.description.find(delimiter)
+        if (index > -1): # Release date mentioned in description
+            max_len = 19 # max length of a date is "September, 30, 2017" characters long
+            start = index + delimiter.__len__()
+            end = start + max_len
+            substring = self.description[start:end]
+            substring = substring.replace(",", "") # "September 30 2017. <...>"
+            substring = substring.replace(".", "") # "September 30 2017 <...>"
+            date_parts = substring.split() # ['September', '30', '2017']
+            if (date_parts[1].isdigit() and date_parts[2].isdigit()): # make sure the day and year are numbers
+                releaseDate = datetime.date(int(date_parts[2]), MONTHS[date_parts[0]], int(date_parts[1])) # Year, Month, Day
+                self.release_date = str(releaseDate)
+
 
 
 # Generator for ids related objects
@@ -105,19 +136,19 @@ if __name__ == '__main__':
     if os.path.exists('serial.txt'):
         with open('serial.txt', 'r') as f:
             for line in f:
-                RLObject.deserialize(line)
+                ImportableObject.deserialize(line)
 
   
     for cat in CATEGORIES:
         for i in get_objects_from_category(cat):
-            RLObject.GetObject(CATEGORIES[cat], i)
+            ImportableObject.GetObject(CATEGORIES[cat], i)
 
-    for rlid in all_rlobjects:
+    for rlid in all_objects:
         for relid in get_related_objects(rlid):
-            if relid in all_rlobjects:
-                all_rlobjects[rlid].related.add(relid)
+            if relid in all_objects:
+                all_objects[rlid].related.add(relid)
 
 
     with open('serial.txt', 'w') as f:
-        for rl in all_rlobjects.values():
+        for rl in all_objects.values():
             f.write(rl.serialize() + '\n')

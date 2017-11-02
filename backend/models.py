@@ -2,6 +2,7 @@ from sqlalchemy.ext.declarative import declarative_base, declared_attr
 from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine, Table
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.sql import select
+import datetime
 import json
 import os
 
@@ -170,13 +171,15 @@ RELATION_KEY_TARGETS = {
 def serialize(rl_object):
     if rl_object is None:
         return None
+    if (rl_object.release_date):
+        rl_object.release_date = str(rl_object.release_date)
     sdict = {k: rl_object.__dict__[k] for k in rl_object.__dict__ if not k.startswith('_')}
     sdict['type'] = CLASS_TO_TYPE.get(type(rl_object))
     for rel in RELATION_KEYS.get(type(rl_object), []):
         sdict[rel] = list(k.id for k in getattr(rl_object, rel))
     return sdict
 
-def serialize_str(rl_object):
+def serialize_str(rl_object):    
     return json.dumps(serialize(rl_object))
 
 # Deserializes json into an object (or None if type unknown)
@@ -192,6 +195,12 @@ def _deserialize_helper(sdict):
             if rem in sdict:
                 del sdict[rem]
         del sdict['type']
+        if 'release_date' in sdict:
+            if sdict['release_date']:
+                sdict['release_date'] = datetime.datetime.strptime(sdict['release_date'], '%Y-%m-%d').date()
+            else:
+                del sdict['release_date']
+        # print(sdict['release_date'])
         return class_(**sdict)
     return None
 

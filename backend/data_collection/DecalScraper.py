@@ -19,7 +19,7 @@ RARITIES = {
 }
 
 def get_hash(name):
-    return int(hashlib.sha256(name.encode('utf-8')).hexdigest(), 16) % 10**8
+    return int(hashlib.sha256(name.lower().encode('utf-8')).hexdigest(), 16) % 10**8
 
 class DecalObject:
 

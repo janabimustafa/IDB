@@ -1,226 +1,226 @@
-{"id": 99269263, "name": "Dots", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e5147b07251509216026.png", "rarity": 1}
-{"id": 32092650, "name": "Flames", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3a77a2c0181507818326.png", "rarity": 1}
-{"id": 26172984, "name": "Lightning", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ac4f5768f71509216051.png", "rarity": 1}
-{"id": 78967690, "name": "Skulls", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d02b3129971509215270.png", "rarity": 1}
-{"id": 18564359, "name": "Stars", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/09e17bf46a1509216360.png", "rarity": 1}
-{"id": 84072009, "name": "Stripes", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6958e354d31509214827.png", "rarity": 1}
-{"id": 88221147, "name": "Tech", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a13fbc2c621509216420.png", "rarity": 1}
-{"id": 42877197, "name": "Wings", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9fd40f41f01509215299.png", "rarity": 1}
-{"id": 78520310, "name": "Funny Book", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5ed3a3db6e1499315069.png", "rarity": 3}
-{"id": 45607360, "name": "Distortion", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d7374716691474311319.png", "rarity": 4}
-{"id": 46236881, "name": "Snakeskin", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b1b96580d41473420476.png", "rarity": 4}
-{"id": 54673697, "name": "Copycat", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9a177381711466510006.png", "rarity": 6}
-{"id": 73622412, "name": "Hearts", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/df89ce9d711509217269.png", "rarity": 6}
-{"id": 99556280, "name": "Tiger", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/508c5e58531509217099.png", "rarity": 6}
-{"id": 12599738, "name": "20XX", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a9b3b8f4071490226029.png", "rarity": 9}
-{"id": 73568794, "name": "Biomass", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9679fe0c3e1481305022.png", "rarity": 9}
-{"id": 58983127, "name": "Bubbly", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1eebaabe791494500212.png", "rarity": 9}
-{"id": 68587809, "name": "Heatwave", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e574121eb11473421648.png", "rarity": 9}
-{"id": 28607356, "name": "Hexed", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/38d639bd1e1481304852.png", "rarity": 9}
-{"id": 8513424, "name": "Labyrinth", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ccf1f068061473421529.png", "rarity": 9}
-{"id": 90092126, "name": "Parallax", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4585ff957f1473414299.png", "rarity": 9}
-{"id": 17396651, "name": "Slipstream", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/342148e9851473411817.png", "rarity": 9}
-{"id": 62821650, "name": "Spectre", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4d75fb025e1494500377.png", "rarity": 9}
-{"id": 70725188, "name": "Tora", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a6f0f47c4d1490226006.png", "rarity": 9}
-{"id": 71331903, "name": "Twisted Tree", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1db8424c1f1508200273.png", "rarity": 5}
-{"id": 90603564, "name": "Alameda Twin", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9d7229b3941507818081.png", "rarity": 6}
-{"id": 92524061, "name": "Good Graces", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/372382535b1507818437.png", "rarity": 6}
-{"id": 8166210, "name": "Rally", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6958e354d31509214827.png", "rarity": 6}
-{"id": 39072747, "name": "Sinclair", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f40d62c7f41507818578.png", "rarity": 6}
-{"id": 64709204, "name": "Wheelman", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2de6268a3e1507818598.png", "rarity": 6}
-{"id": 40593438, "name": "2Bold", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a277d36ba11507818619.png", "rarity": 6}
-{"id": 87726531, "name": "2Cool", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/73085bf44c1507818634.png", "rarity": 6}
-{"id": 91609074, "name": "2Tuff", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/96bed424d41507818648.png", "rarity": 6}
-{"id": 32454438, "name": "Clean Cut", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/fc3a73a7c61491820554.png", "rarity": 6}
-{"id": 41691421, "name": "Home Stretch", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2aa233cfb01507818711.png", "rarity": 6}
-{"id": 65978742, "name": "The Clutch", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1666765f141507818723.png", "rarity": 6}
-{"id": 5485766, "name": "MIRV", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8ca64fe7001466510026.png", "rarity": 6}
-{"id": 54071323, "name": "Seismic", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/faf28f9e291466510033.png", "rarity": 6}
-{"id": 44401389, "name": "Tribal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f5f88416c51509217157.png", "rarity": 6}
-{"id": 37415285, "name": "Feral", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9a87b1ecee1499479133.png", "rarity": 1}
-{"id": 22461929, "name": "L-ITA 99", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/34656064d21499479176.png", "rarity": 1}
-{"id": 31100642, "name": "Monza", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74ecd3c5711499479222.png", "rarity": 1}
-{"id": 29557555, "name": "Necro", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/86e7dc127a1499479278.png", "rarity": 1}
-{"id": 12738415, "name": "Rockat", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/baf62076b41499479314.png", "rarity": 1}
-{"id": 64503165, "name": "Zhangtek", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f8d85f27801499479367.png", "rarity": 1}
-{"id": 40937602, "name": "Bone Jack", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3f96cc54b81509214594.png", "rarity": 6}
-{"id": 62524388, "name": "Diablo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b90fab91261509214642.png", "rarity": 6}
-{"id": 13297627, "name": "Inferno", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2dc1fea70f1509214672.png", "rarity": 6}
-{"id": 73406042, "name": "Pro-Street", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cb02dea78f1509214701.png", "rarity": 6}
-{"id": 7109425, "name": "Starstruck", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/91723a82f81509214733.png", "rarity": 6}
-{"id": 6878369, "name": "BOO!", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d6a980e5011508200238.png", "rarity": 5}
-{"id": 51703069, "name": "RLCS", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5}
-{"id": 91261865, "name": "Chainsaw", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0b87b64c501506796649.png", "rarity": 3}
-{"id": 88242000, "name": "Falchion", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/019f79f74b1475683975.png", "rarity": 3}
-{"id": 8072120, "name": "Heiwa", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/08443e939f1490228862.png", "rarity": 3}
-{"id": 76006203, "name": "Junk Food", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/67d958a2851466510063.png", "rarity": 3}
-{"id": 56640966, "name": "Shibuya", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0690397fe41473420205.png", "rarity": 3}
-{"id": 38879021, "name": "Stitches", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/77dd7358f41508200115.png", "rarity": 3}
-{"id": 62491626, "name": "Turbo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4d302931f21475684281.png", "rarity": 3}
-{"id": 1058242, "name": "Vice", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/7ea19f5ad71473420334.png", "rarity": 3}
-{"id": 12016324, "name": "Dot Matrix", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/97a82eb7a61473420275.png", "rarity": 4}
-{"id": 89250188, "name": "Vector", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/25a1f26f391490236426.png", "rarity": 4}
-{"id": 34209338, "name": "Hyper-Flight", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/7a48eb04ac1509215111.png", "rarity": 1}
-{"id": 7387282, "name": "Iris", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5d36a8b3391509215144.png", "rarity": 1}
-{"id": 24157756, "name": "Python", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9ac761a57c1509215181.png", "rarity": 1}
-{"id": 68947629, "name": "Shockwave", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/be0066febb1509215209.png", "rarity": 1}
-{"id": 73967155, "name": "RLCS", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5}
-{"id": 57579411, "name": "Mobo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/194578340b1494500365.png", "rarity": 3}
-{"id": 35951522, "name": "Echo-Pulse", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bf595aebd71499478687.png", "rarity": 1}
-{"id": 81112946, "name": "Flagman", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f706bb619f1499478737.png", "rarity": 1}
-{"id": 55509996, "name": "L-ITA 99", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/39ca606bd01499478785.png", "rarity": 1}
-{"id": 54460217, "name": "MiNT", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/551653a2731499478841.png", "rarity": 1}
-{"id": 20508446, "name": "Tribal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8c697bbb4c1499479022.png", "rarity": 1}
-{"id": 92694326, "name": "Gigapede", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b4c3c83b7d1506796582.png", "rarity": 3}
-{"id": 33801029, "name": "Scorpions", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d2a18b72f01509217029.png", "rarity": 6}
-{"id": 33418792, "name": "Tats", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8a10d45c9f1509217054.png", "rarity": 6}
-{"id": 50823471, "name": "RLCS", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5}
-{"id": 99070625, "name": "Afterlife", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a1c6b562701508200156.png", "rarity": 3}
-{"id": 38856983, "name": "Arcana", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d1f59e93781473420373.png", "rarity": 3}
-{"id": 43460942, "name": "MDGA", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c0a8dcf9381494500392.png", "rarity": 3}
-{"id": 1231930, "name": "Mondo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/19629443d41475684183.png", "rarity": 3}
-{"id": 30011104, "name": "Pollo Caliente", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d79c3e448d1473420435.png", "rarity": 3}
-{"id": 60179719, "name": "Royalty", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9802f528941466510052.png", "rarity": 3}
-{"id": 1575744, "name": "Suji", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a6ecd80bcd1490228110.png", "rarity": 3}
-{"id": 84087305, "name": "Protractor", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/06d0c1f0f31473469656.png", "rarity": 1}
-{"id": 2775803, "name": "Sunburst", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/513fd286851473469730.png", "rarity": 1}
-{"id": 42995683, "name": "Techno", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/890889e02b1509217214.png", "rarity": 1}
-{"id": 71081871, "name": "RLCS", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5}
-{"id": 33635634, "name": "Splatter", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1e5a9631511506796084.png", "rarity": 3}
-{"id": 93560204, "name": "Unmasked", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/fa4a087e181487938631.png", "rarity": 3}
-{"id": 37176848, "name": "Circuit Pro", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ed63e4057f1490226312.png", "rarity": 1}
-{"id": 33575144, "name": "Cupcake", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/58af70fb081490226280.png", "rarity": 1}
-{"id": 61767114, "name": "Cyrus", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0f286593521490226385.png", "rarity": 1}
-{"id": 24825730, "name": "Dyno", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b281e2c6fc1490226401.png", "rarity": 1}
-{"id": 11923442, "name": "Spatter", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a3abb0adec1499315152.png", "rarity": 3}
-{"id": 86912040, "name": "MG-88", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6cb404b34d1494492112.png", "rarity": 4}
-{"id": 24621650, "name": "Kaiju", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2f52f421da1474294439.png", "rarity": 6}
-{"id": 23613583, "name": "Mouse Cat", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c21594760e1466510228.png", "rarity": 6}
-{"id": 58048116, "name": "Neo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e847b015671466510235.png", "rarity": 6}
-{"id": 51858900, "name": "Pegasus", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b9e41c829d1466510246.png", "rarity": 6}
-{"id": 9467224, "name": "Shank", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/38d3be0c061466510205.png", "rarity": 6}
-{"id": 94900251, "name": "Super F3", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/475a8e782f1466510213.png", "rarity": 6}
-{"id": 36802111, "name": "Mean Streak", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cf454d6b421481304057.png", "rarity": 3}
-{"id": 69523516, "name": "Bomber", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a34dcc61291451512611.png", "rarity": 6}
-{"id": 81915334, "name": "Cyclops", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5ba54a3abc1451512698.png", "rarity": 6}
-{"id": 68484042, "name": "Lepus", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/dac93204a81451512729.png", "rarity": 6}
-{"id": 56301393, "name": "Tagged", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/436a448bdc1451512796.png", "rarity": 6}
-{"id": 69327523, "name": "Tribal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f3db5838451451512827.png", "rarity": 6}
-{"id": 41042582, "name": "Hi-Tech", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b7af6b802f1481304619.png", "rarity": 3}
-{"id": 66730472, "name": "CDXL", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0a07f6f4c71491820520.png", "rarity": 6}
-{"id": 24094976, "name": "Clean Cut", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/fc3a73a7c61491820554.png", "rarity": 6}
-{"id": 2386781, "name": "Crazy Sandwich", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bcc932f9f21491820579.png", "rarity": 6}
-{"id": 3787551, "name": "Rakugaki", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/38386e5d091509217782.png", "rarity": 6}
-{"id": 21339517, "name": "Rally", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cb293e6b101491820705.png", "rarity": 6}
-{"id": 25520345, "name": "Circuit Pro", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0bdadbb7741506796319.png", "rarity": 1}
-{"id": 62275337, "name": "Euphoria", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/7d940575a81506796380.png", "rarity": 1}
-{"id": 32855028, "name": "Kraken", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/acac3306781506796409.png", "rarity": 1}
-{"id": 75855037, "name": "Storm Warning", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/93a28131461506796440.png", "rarity": 1}
-{"id": 87247429, "name": "The Summit", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1e653784ed1506796495.png", "rarity": 1}
-{"id": 49503010, "name": "Arrowhead", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b96d52eb8d1509218357.png", "rarity": 1}
-{"id": 46535915, "name": "Battleworn", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1e285df05b1509218385.png", "rarity": 1}
-{"id": 27880680, "name": "Kaze", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f7a547d9051509218415.png", "rarity": 1}
-{"id": 61533841, "name": "Maxx", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6c8938440f1509218439.png", "rarity": 1}
-{"id": 54830490, "name": "Roasted", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f01d5521fb1509218466.png", "rarity": 1}
-{"id": 18575750, "name": "Uproar", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2ca1320e0c1509218494.png", "rarity": 1}
-{"id": 36941340, "name": "Critters", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/27f3ef0c091506796806.png", "rarity": 3}
-{"id": 28911418, "name": "Widow's Web", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cc46b125af1508200064.png", "rarity": 3}
-{"id": 7174860, "name": "Big Buck", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/48721e00b51466510088.png", "rarity": 6}
-{"id": 96445033, "name": "Ruffian", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/71c26c01131466510096.png", "rarity": 6}
-{"id": 61229675, "name": "Safari", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/62b96932f71466510111.png", "rarity": 6}
-{"id": 67150617, "name": "Vagabond", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a689342ca71466510079.png", "rarity": 6}
-{"id": 40058999, "name": "DJ Sushi", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c832bc04b21466510143.png", "rarity": 6}
-{"id": 86491906, "name": "Otaku", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/53661a28111466510134.png", "rarity": 6}
-{"id": 34589794, "name": "Road Rage", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/18cd2cca501466510158.png", "rarity": 6}
-{"id": 61807701, "name": "Wildfire", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3cb82decc21466510125.png", "rarity": 6}
-{"id": 59663250, "name": "Kawaii", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e7c59c43c91490228436.png", "rarity": 3}
-{"id": 96428522, "name": "Oni", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/052ce5a6891475765180.png", "rarity": 3}
-{"id": 3963382, "name": "Flower Power", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b26ea16b4b1481308754.png", "rarity": 3}
-{"id": 98518084, "name": "Narwhal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a227fb283b1473421076.png", "rarity": 3}
-{"id": 32428234, "name": "Warlock", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/99e5e0650c1473421119.png", "rarity": 4}
-{"id": 52125596, "name": "Monstercat", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ec8080ceb31499479469.png", "rarity": 1}
-{"id": 82452669, "name": "RLCS", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5}
-{"id": 37892271, "name": "Buzz Kill", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/76511236891494500265.png", "rarity": 3}
-{"id": 18290578, "name": "Dragon Lord", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8fbf50a8ae1473420780.png", "rarity": 3}
-{"id": 13947782, "name": "Griffon", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6cbc6b456e1490228256.png", "rarity": 3}
-{"id": 5492129, "name": "Lone Wolf", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/51dfa9513b1499315194.png", "rarity": 3}
-{"id": 99486086, "name": "Racer", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/542d3d77811466510286.png", "rarity": 3}
-{"id": 31009442, "name": "Roadkill", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/08b64e3b8c1481304709.png", "rarity": 3}
-{"id": 55749110, "name": "Shisa", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c428f570501475684232.png", "rarity": 3}
-{"id": 41972532, "name": "Thanatos", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2558fbbf411508200188.png", "rarity": 3}
-{"id": 75286859, "name": "Kilowatt", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c13df29d571481303117.png", "rarity": 4}
-{"id": 93610134, "name": "MG-88", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bd92e4dcdb1475684113.png", "rarity": 4}
-{"id": 69142351, "name": "Gobo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c3a4aad9b01481367234.png", "rarity": 1}
-{"id": 58476005, "name": "Interceptor", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/56f922c38a1481367397.png", "rarity": 1}
-{"id": 63181419, "name": "Mean Streak", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cf454d6b421481304057.png", "rarity": 1}
-{"id": 57179945, "name": "Namesake", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0c884db38a1481367455.png", "rarity": 1}
-{"id": 57902663, "name": "Peace", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c03cac28b81481367339.png", "rarity": 1}
-{"id": 49963035, "name": "Wildfire", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ef3e05df6e1473468017.png", "rarity": 1}
-{"id": 85417025, "name": "RLCS", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5}
-{"id": 96499426, "name": "Funnybook", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5ed3a3db6e1499315069.png", "rarity": 3}
-{"id": 45939307, "name": "Jiangshi", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6f879bfe9c1494500353.png", "rarity": 3}
-{"id": 27132450, "name": "Tribal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bdb55698b71487938531.png", "rarity": 3}
-{"id": 21926714, "name": "Crash Dive", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a8538cbcaf1475938501.png", "rarity": 6}
-{"id": 98829621, "name": "Cuttle Time", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4683a48ebb1475938549.png", "rarity": 6}
-{"id": 33594324, "name": "Fathom", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/73701115651475938583.png", "rarity": 6}
-{"id": 94114789, "name": "Ladybug", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1b2e89c9631475938609.png", "rarity": 6}
-{"id": 8356533, "name": "Tiger Shark", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c191d33a561475938662.png", "rarity": 6}
-{"id": 19395210, "name": "Bomber", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/136da488901451512873.png", "rarity": 6}
-{"id": 82631735, "name": "Ockie", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/615888ad561451512922.png", "rarity": 6}
-{"id": 3690596, "name": "Shot Fox", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/aff38160f51451512945.png", "rarity": 6}
-{"id": 21307712, "name": "Spikes", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/67c3da8a621451512973.png", "rarity": 6}
-{"id": 13025755, "name": "Tribal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a35fa74df41451512993.png", "rarity": 6}
-{"id": 65221426, "name": "Carbonated", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c3c7455d4e1474367733.png", "rarity": 3}
-{"id": 17649370, "name": "Wildfire", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ef3e05df6e1473468017.png", "rarity": 3}
-{"id": 85869477, "name": "Arsenal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b45254c2151473467857.png", "rarity": 1}
-{"id": 69415363, "name": "Horus", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4ebec07f911473467915.png", "rarity": 1}
-{"id": 67471360, "name": "Muerto", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ac32b12e3a1473467957.png", "rarity": 1}
-{"id": 88904100, "name": "Playtime", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6e6768096a1473467575.png", "rarity": 1}
-{"id": 16387047, "name": "Space Trip", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/497a40cc5f1473467989.png", "rarity": 1}
-{"id": 99875168, "name": "Wildfire", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ef3e05df6e1473468017.png", "rarity": 1}
-{"id": 84278586, "name": "Bomani", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e1074398571509217540.png", "rarity": 6}
-{"id": 224353, "name": "Derby Girl", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9cbafa072e1509217559.png", "rarity": 6}
-{"id": 10678252, "name": "Tribal", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/991bb54e1d1509217582.png", "rarity": 6}
-{"id": 20536483, "name": "Chaser", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/63ef05a21a1509217313.png", "rarity": 6}
-{"id": 11092667, "name": "Crazy-8", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/792bac18591509217186.png", "rarity": 6}
-{"id": 40811590, "name": "Gaki", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/092565abcc1509217334.png", "rarity": 6}
-{"id": 74474601, "name": "Reiko", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c91c4f5eb51473412097.png", "rarity": 6}
-{"id": 29796009, "name": "Aqueous", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ae2b91c6dd1490227440.png", "rarity": 3}
-{"id": 77622492, "name": "Combo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d2d949fce11473419922.png", "rarity": 3}
-{"id": 12919156, "name": "Sticker Bomb", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9cce36aec41494500249.png", "rarity": 3}
-{"id": 79000059, "name": "Whizzle", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/70b89d4b381473421042.png", "rarity": 3}
-{"id": 20404068, "name": "Anubis", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4e7765d8631473420159.png", "rarity": 4}
-{"id": 66789001, "name": "Vector", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/473dcff7b51494491971.png", "rarity": 4}
-{"id": 94406125, "name": "Blackwork", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/72743379ef1473469914.png", "rarity": 1}
-{"id": 20506455, "name": "Inked", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/434413bdf01473469963.png", "rarity": 1}
-{"id": 34726521, "name": "Party-Chan", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/05a88021f21473469995.png", "rarity": 1}
-{"id": 65700397, "name": "Rockat", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/298243607d1473470056.png", "rarity": 1}
-{"id": 6378696, "name": "Skullface", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/43bd7f9ac61473470085.png", "rarity": 1}
-{"id": 94184648, "name": "Super RX-T", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e8a1c43ac11487938668.png", "rarity": 3}
-{"id": 59197155, "name": "Daddy-O", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ad4a9aac6a1475938800.png", "rarity": 6}
-{"id": 30707077, "name": "Fugu", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f070e03efb1475938846.png", "rarity": 6}
-{"id": 94005624, "name": "Makai", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/78e2e6a49d1475938869.png", "rarity": 6}
-{"id": 65042840, "name": "Modus Bestia", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b0a205e7c51475938888.png", "rarity": 6}
-{"id": 79372181, "name": "Ragnarok", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6ce3f893e61475938913.png", "rarity": 6}
-{"id": 23584430, "name": "Javelin", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a280c58cce1509215619.png", "rarity": 6}
-{"id": 55712193, "name": "Overline", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b866c346d91506796462.png", "rarity": 6}
-{"id": 80172042, "name": "Primo", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9228eddbdd1509215744.png", "rarity": 6}
-{"id": 18904088, "name": "Pyro", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/82c57bae531509215797.png", "rarity": 6}
-{"id": 41394138, "name": "Speedster", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f7e801ceef1509215823.png", "rarity": 6}
-{"id": 65102219, "name": "Tagged", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6b7ddde12f1436136128.png", "rarity": 1}
-{"id": 70571217, "name": "Flex", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/63187662761466510296.png", "rarity": 3}
-{"id": 48195281, "name": "Nine Lives", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0a465c75a41473420945.png", "rarity": 3}
-{"id": 98900791, "name": "ARC", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c792ecf3171481302008.png", "rarity": 6}
-{"id": 58275394, "name": "Armada", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e3063a66ea1481302551.png", "rarity": 6}
-{"id": 11014931, "name": "Combat", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0f2e0d971b1481302609.png", "rarity": 6}
-{"id": 22946899, "name": "Cryo-Flames", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c0954a79361481302667.png", "rarity": 6}
-{"id": 55442752, "name": "Medic", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e62955b7571481302707.png", "rarity": 6}
-{"id": 3278462, "name": "Space Worm", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ea87765ab41481302755.png", "rarity": 6}
-{"id": 18971489, "name": "Maximon", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e88ef504191481303793.png", "rarity": 3}
-{"id": 9312581, "name": "Debugged", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/54795c8cfa1473470222.png", "rarity": 1}
-{"id": 77839289, "name": "Hyper", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3cf77d9ed41473470253.png", "rarity": 1}
-{"id": 21893418, "name": "X", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/73b2a398e11473470356.png", "rarity": 1}
-{"id": 72907556, "name": "Cobra", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/34dec8d9ca1487938591.png", "rarity": 3}
-{"id": 73897791, "name": "Caboodle", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3f724431641509217354.png", "rarity": 6}
-{"id": 73386696, "name": "Callous", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f5f88416c51509217157.png", "rarity": 6}
-{"id": 99016212, "name": "Leopard", "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e4e03985011509217290.png", "rarity": 6}
+{"id": 94216652, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e5147b07251509216026.png", "rarity": 1, "name": "Dots"}
+{"id": 65952151, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3a77a2c0181507818326.png", "rarity": 1, "name": "Flames"}
+{"id": 73404402, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ac4f5768f71509216051.png", "rarity": 1, "name": "Lightning"}
+{"id": 25597400, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d02b3129971509215270.png", "rarity": 1, "name": "Skulls"}
+{"id": 58331139, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/09e17bf46a1509216360.png", "rarity": 1, "name": "Stars"}
+{"id": 9568648, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6958e354d31509214827.png", "rarity": 1, "name": "Stripes"}
+{"id": 82031809, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a13fbc2c621509216420.png", "rarity": 1, "name": "Tech"}
+{"id": 81802954, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9fd40f41f01509215299.png", "rarity": 1, "name": "Wings"}
+{"id": 38369998, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5ed3a3db6e1499315069.png", "rarity": 3, "name": "Funny Book"}
+{"id": 90305088, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d7374716691474311319.png", "rarity": 4, "name": "Distortion"}
+{"id": 8675821, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b1b96580d41473420476.png", "rarity": 4, "name": "Snakeskin"}
+{"id": 72428597, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9a177381711466510006.png", "rarity": 6, "name": "Copycat"}
+{"id": 85874045, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/df89ce9d711509217269.png", "rarity": 6, "name": "Hearts"}
+{"id": 80284014, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/508c5e58531509217099.png", "rarity": 6, "name": "Tiger"}
+{"id": 18962690, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a9b3b8f4071490226029.png", "rarity": 9, "name": "20XX"}
+{"id": 94803866, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9679fe0c3e1481305022.png", "rarity": 9, "name": "Biomass"}
+{"id": 40157502, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1eebaabe791494500212.png", "rarity": 9, "name": "Bubbly"}
+{"id": 61288541, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e574121eb11473421648.png", "rarity": 9, "name": "Heatwave"}
+{"id": 11299786, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/38d639bd1e1481304852.png", "rarity": 9, "name": "Hexed"}
+{"id": 23300777, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ccf1f068061473421529.png", "rarity": 9, "name": "Labyrinth"}
+{"id": 24689428, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4585ff957f1473414299.png", "rarity": 9, "name": "Parallax"}
+{"id": 3528707, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/342148e9851473411817.png", "rarity": 9, "name": "Slipstream"}
+{"id": 76732520, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4d75fb025e1494500377.png", "rarity": 9, "name": "Spectre"}
+{"id": 47040148, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a6f0f47c4d1490226006.png", "rarity": 9, "name": "Tora"}
+{"id": 67741399, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1db8424c1f1508200273.png", "rarity": 5, "name": "Twisted Tree"}
+{"id": 65944907, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9d7229b3941507818081.png", "rarity": 6, "name": "Alameda Twin"}
+{"id": 13641392, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/372382535b1507818437.png", "rarity": 6, "name": "Good Graces"}
+{"id": 84090237, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6958e354d31509214827.png", "rarity": 6, "name": "Rally"}
+{"id": 45576724, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f40d62c7f41507818578.png", "rarity": 6, "name": "Sinclair"}
+{"id": 18438247, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2de6268a3e1507818598.png", "rarity": 6, "name": "Wheelman"}
+{"id": 2267996, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a277d36ba11507818619.png", "rarity": 6, "name": "2Bold"}
+{"id": 87773146, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/73085bf44c1507818634.png", "rarity": 6, "name": "2Cool"}
+{"id": 43019022, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/96bed424d41507818648.png", "rarity": 6, "name": "2Tuff"}
+{"id": 25288619, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/fc3a73a7c61491820554.png", "rarity": 6, "name": "Clean Cut"}
+{"id": 99336725, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2aa233cfb01507818711.png", "rarity": 6, "name": "Home Stretch"}
+{"id": 82433071, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1666765f141507818723.png", "rarity": 6, "name": "The Clutch"}
+{"id": 27279313, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8ca64fe7001466510026.png", "rarity": 6, "name": "MIRV"}
+{"id": 62614974, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/faf28f9e291466510033.png", "rarity": 6, "name": "Seismic"}
+{"id": 79518128, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f5f88416c51509217157.png", "rarity": 6, "name": "Tribal"}
+{"id": 79874015, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9a87b1ecee1499479133.png", "rarity": 1, "name": "Feral"}
+{"id": 28844044, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/34656064d21499479176.png", "rarity": 1, "name": "L-ITA 99"}
+{"id": 45239875, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74ecd3c5711499479222.png", "rarity": 1, "name": "Monza"}
+{"id": 3671546, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/86e7dc127a1499479278.png", "rarity": 1, "name": "Necro"}
+{"id": 67015648, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/baf62076b41499479314.png", "rarity": 1, "name": "Rockat"}
+{"id": 59717960, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f8d85f27801499479367.png", "rarity": 1, "name": "Zhangtek"}
+{"id": 55122283, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3f96cc54b81509214594.png", "rarity": 6, "name": "Bone Jack"}
+{"id": 88870100, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b90fab91261509214642.png", "rarity": 6, "name": "Diablo"}
+{"id": 77368561, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2dc1fea70f1509214672.png", "rarity": 6, "name": "Inferno"}
+{"id": 97649718, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cb02dea78f1509214701.png", "rarity": 6, "name": "Pro-Street"}
+{"id": 63211016, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/91723a82f81509214733.png", "rarity": 6, "name": "Starstruck"}
+{"id": 67577824, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d6a980e5011508200238.png", "rarity": 5, "name": "BOO!"}
+{"id": 54530786, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5, "name": "RLCS"}
+{"id": 29239326, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0b87b64c501506796649.png", "rarity": 3, "name": "Chainsaw"}
+{"id": 94605865, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/019f79f74b1475683975.png", "rarity": 3, "name": "Falchion"}
+{"id": 21695020, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/08443e939f1490228862.png", "rarity": 3, "name": "Heiwa"}
+{"id": 90388672, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/67d958a2851466510063.png", "rarity": 3, "name": "Junk Food"}
+{"id": 12261895, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0690397fe41473420205.png", "rarity": 3, "name": "Shibuya"}
+{"id": 30234938, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/77dd7358f41508200115.png", "rarity": 3, "name": "Stitches"}
+{"id": 91670761, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4d302931f21475684281.png", "rarity": 3, "name": "Turbo"}
+{"id": 13213726, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/7ea19f5ad71473420334.png", "rarity": 3, "name": "Vice"}
+{"id": 90466566, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/97a82eb7a61473420275.png", "rarity": 4, "name": "Dot Matrix"}
+{"id": 19102745, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/25a1f26f391490236426.png", "rarity": 4, "name": "Vector"}
+{"id": 77835829, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/7a48eb04ac1509215111.png", "rarity": 1, "name": "Hyper-Flight"}
+{"id": 54123793, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5d36a8b3391509215144.png", "rarity": 1, "name": "Iris"}
+{"id": 48790754, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9ac761a57c1509215181.png", "rarity": 1, "name": "Python"}
+{"id": 429755, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/be0066febb1509215209.png", "rarity": 1, "name": "Shockwave"}
+{"id": 15604897, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5, "name": "RLCS"}
+{"id": 33606731, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/194578340b1494500365.png", "rarity": 3, "name": "Mobo"}
+{"id": 92248664, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bf595aebd71499478687.png", "rarity": 1, "name": "Echo-Pulse"}
+{"id": 13937870, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f706bb619f1499478737.png", "rarity": 1, "name": "Flagman"}
+{"id": 1205223, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/39ca606bd01499478785.png", "rarity": 1, "name": "L-ITA 99"}
+{"id": 91000926, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/551653a2731499478841.png", "rarity": 1, "name": "MiNT"}
+{"id": 22920122, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8c697bbb4c1499479022.png", "rarity": 1, "name": "Tribal"}
+{"id": 54793305, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b4c3c83b7d1506796582.png", "rarity": 3, "name": "Gigapede"}
+{"id": 33014905, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d2a18b72f01509217029.png", "rarity": 6, "name": "Scorpions"}
+{"id": 11735353, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8a10d45c9f1509217054.png", "rarity": 6, "name": "Tats"}
+{"id": 8460786, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5, "name": "RLCS"}
+{"id": 92707490, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a1c6b562701508200156.png", "rarity": 3, "name": "Afterlife"}
+{"id": 12548067, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d1f59e93781473420373.png", "rarity": 3, "name": "Arcana"}
+{"id": 15467893, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c0a8dcf9381494500392.png", "rarity": 3, "name": "MDGA"}
+{"id": 52876065, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/19629443d41475684183.png", "rarity": 3, "name": "Mondo"}
+{"id": 12261160, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d79c3e448d1473420435.png", "rarity": 3, "name": "Pollo Caliente"}
+{"id": 35171985, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9802f528941466510052.png", "rarity": 3, "name": "Royalty"}
+{"id": 73767680, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a6ecd80bcd1490228110.png", "rarity": 3, "name": "Suji"}
+{"id": 90512285, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/06d0c1f0f31473469656.png", "rarity": 1, "name": "Protractor"}
+{"id": 28551117, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/513fd286851473469730.png", "rarity": 1, "name": "Sunburst"}
+{"id": 81358318, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/890889e02b1509217214.png", "rarity": 1, "name": "Techno"}
+{"id": 4874637, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5, "name": "RLCS"}
+{"id": 1175412, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1e5a9631511506796084.png", "rarity": 3, "name": "Splatter"}
+{"id": 5884228, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/fa4a087e181487938631.png", "rarity": 3, "name": "Unmasked"}
+{"id": 29710318, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ed63e4057f1490226312.png", "rarity": 1, "name": "Circuit Pro"}
+{"id": 35642138, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/58af70fb081490226280.png", "rarity": 1, "name": "Cupcake"}
+{"id": 66318470, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0f286593521490226385.png", "rarity": 1, "name": "Cyrus"}
+{"id": 5742461, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b281e2c6fc1490226401.png", "rarity": 1, "name": "Dyno"}
+{"id": 99885951, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a3abb0adec1499315152.png", "rarity": 3, "name": "Spatter"}
+{"id": 55651864, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6cb404b34d1494492112.png", "rarity": 4, "name": "MG-88"}
+{"id": 22652429, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2f52f421da1474294439.png", "rarity": 6, "name": "Kaiju"}
+{"id": 29400975, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c21594760e1466510228.png", "rarity": 6, "name": "Mouse Cat"}
+{"id": 15998618, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e847b015671466510235.png", "rarity": 6, "name": "Neo"}
+{"id": 14879253, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b9e41c829d1466510246.png", "rarity": 6, "name": "Pegasus"}
+{"id": 15462696, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/38d3be0c061466510205.png", "rarity": 6, "name": "Shank"}
+{"id": 29557368, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/475a8e782f1466510213.png", "rarity": 6, "name": "Super F3"}
+{"id": 22864155, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cf454d6b421481304057.png", "rarity": 3, "name": "Mean Streak"}
+{"id": 71149474, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a34dcc61291451512611.png", "rarity": 6, "name": "Bomber"}
+{"id": 14286408, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5ba54a3abc1451512698.png", "rarity": 6, "name": "Cyclops"}
+{"id": 46914028, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/dac93204a81451512729.png", "rarity": 6, "name": "Lepus"}
+{"id": 41209728, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/436a448bdc1451512796.png", "rarity": 6, "name": "Tagged"}
+{"id": 9592058, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f3db5838451451512827.png", "rarity": 6, "name": "Tribal"}
+{"id": 68302436, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b7af6b802f1481304619.png", "rarity": 3, "name": "Hi-Tech"}
+{"id": 22676485, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0a07f6f4c71491820520.png", "rarity": 6, "name": "CDXL"}
+{"id": 34761843, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/fc3a73a7c61491820554.png", "rarity": 6, "name": "Clean Cut"}
+{"id": 58224059, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bcc932f9f21491820579.png", "rarity": 6, "name": "Crazy Sandwich"}
+{"id": 62527133, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/38386e5d091509217782.png", "rarity": 6, "name": "Rakugaki"}
+{"id": 41714535, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cb293e6b101491820705.png", "rarity": 6, "name": "Rally"}
+{"id": 92130352, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0bdadbb7741506796319.png", "rarity": 1, "name": "Circuit Pro"}
+{"id": 21540526, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/7d940575a81506796380.png", "rarity": 1, "name": "Euphoria"}
+{"id": 32849428, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/acac3306781506796409.png", "rarity": 1, "name": "Kraken"}
+{"id": 53343432, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/93a28131461506796440.png", "rarity": 1, "name": "Storm Warning"}
+{"id": 51249601, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1e653784ed1506796495.png", "rarity": 1, "name": "The Summit"}
+{"id": 78140794, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b96d52eb8d1509218357.png", "rarity": 1, "name": "Arrowhead"}
+{"id": 49985971, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1e285df05b1509218385.png", "rarity": 1, "name": "Battleworn"}
+{"id": 47043101, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f7a547d9051509218415.png", "rarity": 1, "name": "Kaze"}
+{"id": 69937435, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6c8938440f1509218439.png", "rarity": 1, "name": "Maxx"}
+{"id": 34640372, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f01d5521fb1509218466.png", "rarity": 1, "name": "Roasted"}
+{"id": 90668208, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2ca1320e0c1509218494.png", "rarity": 1, "name": "Uproar"}
+{"id": 72236655, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/27f3ef0c091506796806.png", "rarity": 3, "name": "Critters"}
+{"id": 30705822, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cc46b125af1508200064.png", "rarity": 3, "name": "Widow's Web"}
+{"id": 19147268, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/48721e00b51466510088.png", "rarity": 6, "name": "Big Buck"}
+{"id": 44485110, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/71c26c01131466510096.png", "rarity": 6, "name": "Ruffian"}
+{"id": 22212422, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/62b96932f71466510111.png", "rarity": 6, "name": "Safari"}
+{"id": 63552861, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a689342ca71466510079.png", "rarity": 6, "name": "Vagabond"}
+{"id": 80730888, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c832bc04b21466510143.png", "rarity": 6, "name": "DJ Sushi"}
+{"id": 91142478, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/53661a28111466510134.png", "rarity": 6, "name": "Otaku"}
+{"id": 70578278, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/18cd2cca501466510158.png", "rarity": 6, "name": "Road Rage"}
+{"id": 96059672, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3cb82decc21466510125.png", "rarity": 6, "name": "Wildfire"}
+{"id": 67891322, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e7c59c43c91490228436.png", "rarity": 3, "name": "Kawaii"}
+{"id": 67849256, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/052ce5a6891475765180.png", "rarity": 3, "name": "Oni"}
+{"id": 9633196, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b26ea16b4b1481308754.png", "rarity": 3, "name": "Flower Power"}
+{"id": 81222037, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a227fb283b1473421076.png", "rarity": 3, "name": "Narwhal"}
+{"id": 82149241, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/99e5e0650c1473421119.png", "rarity": 4, "name": "Warlock"}
+{"id": 27362720, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ec8080ceb31499479469.png", "rarity": 1, "name": "Monstercat"}
+{"id": 44816265, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5, "name": "RLCS"}
+{"id": 9376250, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/76511236891494500265.png", "rarity": 3, "name": "Buzz Kill"}
+{"id": 48678428, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/8fbf50a8ae1473420780.png", "rarity": 3, "name": "Dragon Lord"}
+{"id": 55227263, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6cbc6b456e1490228256.png", "rarity": 3, "name": "Griffon"}
+{"id": 84181497, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/51dfa9513b1499315194.png", "rarity": 3, "name": "Lone Wolf"}
+{"id": 86480894, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/542d3d77811466510286.png", "rarity": 3, "name": "Racer"}
+{"id": 58066192, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/08b64e3b8c1481304709.png", "rarity": 3, "name": "Roadkill"}
+{"id": 42964421, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c428f570501475684232.png", "rarity": 3, "name": "Shisa"}
+{"id": 81396694, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/2558fbbf411508200188.png", "rarity": 3, "name": "Thanatos"}
+{"id": 93295478, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c13df29d571481303117.png", "rarity": 4, "name": "Kilowatt"}
+{"id": 69717155, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bd92e4dcdb1475684113.png", "rarity": 4, "name": "MG-88"}
+{"id": 12204450, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c3a4aad9b01481367234.png", "rarity": 1, "name": "Gobo"}
+{"id": 39317127, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/56f922c38a1481367397.png", "rarity": 1, "name": "Interceptor"}
+{"id": 12310243, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/cf454d6b421481304057.png", "rarity": 1, "name": "Mean Streak"}
+{"id": 22227061, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0c884db38a1481367455.png", "rarity": 1, "name": "Namesake"}
+{"id": 28322873, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c03cac28b81481367339.png", "rarity": 1, "name": "Peace"}
+{"id": 71118154, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ef3e05df6e1473468017.png", "rarity": 1, "name": "Wildfire"}
+{"id": 92087260, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/74bd55e1cf1496436720.png", "rarity": 5, "name": "RLCS"}
+{"id": 21529407, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/5ed3a3db6e1499315069.png", "rarity": 3, "name": "Funnybook"}
+{"id": 2551478, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6f879bfe9c1494500353.png", "rarity": 3, "name": "Jiangshi"}
+{"id": 82913985, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/bdb55698b71487938531.png", "rarity": 3, "name": "Tribal"}
+{"id": 32288802, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a8538cbcaf1475938501.png", "rarity": 6, "name": "Crash Dive"}
+{"id": 42906618, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4683a48ebb1475938549.png", "rarity": 6, "name": "Cuttle Time"}
+{"id": 82205241, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/73701115651475938583.png", "rarity": 6, "name": "Fathom"}
+{"id": 88880135, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/1b2e89c9631475938609.png", "rarity": 6, "name": "Ladybug"}
+{"id": 23987253, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c191d33a561475938662.png", "rarity": 6, "name": "Tiger Shark"}
+{"id": 37736342, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/136da488901451512873.png", "rarity": 6, "name": "Bomber"}
+{"id": 40943477, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/615888ad561451512922.png", "rarity": 6, "name": "Ockie"}
+{"id": 45690795, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/aff38160f51451512945.png", "rarity": 6, "name": "Shot Fox"}
+{"id": 7696570, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/67c3da8a621451512973.png", "rarity": 6, "name": "Spikes"}
+{"id": 75390681, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a35fa74df41451512993.png", "rarity": 6, "name": "Tribal"}
+{"id": 74431060, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c3c7455d4e1474367733.png", "rarity": 3, "name": "Carbonated"}
+{"id": 88511096, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ef3e05df6e1473468017.png", "rarity": 3, "name": "Wildfire"}
+{"id": 23436752, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b45254c2151473467857.png", "rarity": 1, "name": "Arsenal"}
+{"id": 26434851, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4ebec07f911473467915.png", "rarity": 1, "name": "Horus"}
+{"id": 53087433, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ac32b12e3a1473467957.png", "rarity": 1, "name": "Muerto"}
+{"id": 63370754, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6e6768096a1473467575.png", "rarity": 1, "name": "Playtime"}
+{"id": 68176415, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/497a40cc5f1473467989.png", "rarity": 1, "name": "Space Trip"}
+{"id": 79948727, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ef3e05df6e1473468017.png", "rarity": 1, "name": "Wildfire"}
+{"id": 55185595, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e1074398571509217540.png", "rarity": 6, "name": "Bomani"}
+{"id": 98141283, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9cbafa072e1509217559.png", "rarity": 6, "name": "Derby Girl"}
+{"id": 81307465, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/991bb54e1d1509217582.png", "rarity": 6, "name": "Tribal"}
+{"id": 82473586, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/63ef05a21a1509217313.png", "rarity": 6, "name": "Chaser"}
+{"id": 12863082, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/792bac18591509217186.png", "rarity": 6, "name": "Crazy-8"}
+{"id": 50281434, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/092565abcc1509217334.png", "rarity": 6, "name": "Gaki"}
+{"id": 81755838, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c91c4f5eb51473412097.png", "rarity": 6, "name": "Reiko"}
+{"id": 83601839, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ae2b91c6dd1490227440.png", "rarity": 3, "name": "Aqueous"}
+{"id": 16397473, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/d2d949fce11473419922.png", "rarity": 3, "name": "Combo"}
+{"id": 26435104, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9cce36aec41494500249.png", "rarity": 3, "name": "Sticker Bomb"}
+{"id": 43152640, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/70b89d4b381473421042.png", "rarity": 3, "name": "Whizzle"}
+{"id": 74955690, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/4e7765d8631473420159.png", "rarity": 4, "name": "Anubis"}
+{"id": 33778652, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/473dcff7b51494491971.png", "rarity": 4, "name": "Vector"}
+{"id": 86721023, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/72743379ef1473469914.png", "rarity": 1, "name": "Blackwork"}
+{"id": 43421278, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/434413bdf01473469963.png", "rarity": 1, "name": "Inked"}
+{"id": 88993110, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/05a88021f21473469995.png", "rarity": 1, "name": "Party-Chan"}
+{"id": 26388617, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/298243607d1473470056.png", "rarity": 1, "name": "Rockat"}
+{"id": 37187537, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/43bd7f9ac61473470085.png", "rarity": 1, "name": "Skullface"}
+{"id": 54920510, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e8a1c43ac11487938668.png", "rarity": 3, "name": "Super RX-T"}
+{"id": 63800656, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ad4a9aac6a1475938800.png", "rarity": 6, "name": "Daddy-O"}
+{"id": 67524931, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f070e03efb1475938846.png", "rarity": 6, "name": "Fugu"}
+{"id": 97250935, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/78e2e6a49d1475938869.png", "rarity": 6, "name": "Makai"}
+{"id": 16187862, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b0a205e7c51475938888.png", "rarity": 6, "name": "Modus Bestia"}
+{"id": 14420785, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6ce3f893e61475938913.png", "rarity": 6, "name": "Ragnarok"}
+{"id": 39705743, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/a280c58cce1509215619.png", "rarity": 6, "name": "Javelin"}
+{"id": 13339710, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/b866c346d91506796462.png", "rarity": 6, "name": "Overline"}
+{"id": 6597843, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/9228eddbdd1509215744.png", "rarity": 6, "name": "Primo"}
+{"id": 68600901, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/82c57bae531509215797.png", "rarity": 6, "name": "Pyro"}
+{"id": 83638893, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f7e801ceef1509215823.png", "rarity": 6, "name": "Speedster"}
+{"id": 33139308, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/6b7ddde12f1436136128.png", "rarity": 1, "name": "Tagged"}
+{"id": 83895981, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/63187662761466510296.png", "rarity": 3, "name": "Flex"}
+{"id": 87885509, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0a465c75a41473420945.png", "rarity": 3, "name": "Nine Lives"}
+{"id": 27997750, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c792ecf3171481302008.png", "rarity": 6, "name": "ARC"}
+{"id": 76814996, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e3063a66ea1481302551.png", "rarity": 6, "name": "Armada"}
+{"id": 15726333, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/0f2e0d971b1481302609.png", "rarity": 6, "name": "Combat"}
+{"id": 88486972, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/c0954a79361481302667.png", "rarity": 6, "name": "Cryo-Flames"}
+{"id": 35306664, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e62955b7571481302707.png", "rarity": 6, "name": "Medic"}
+{"id": 23194649, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/ea87765ab41481302755.png", "rarity": 6, "name": "Space Worm"}
+{"id": 52082398, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e88ef504191481303793.png", "rarity": 3, "name": "Maximon"}
+{"id": 87191215, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/54795c8cfa1473470222.png", "rarity": 1, "name": "Debugged"}
+{"id": 96427767, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3cf77d9ed41473470253.png", "rarity": 1, "name": "Hyper"}
+{"id": 92939489, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/73b2a398e11473470356.png", "rarity": 1, "name": "X"}
+{"id": 3462623, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/34dec8d9ca1487938591.png", "rarity": 3, "name": "Cobra"}
+{"id": 82121887, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/3f724431641509217354.png", "rarity": 6, "name": "Caboodle"}
+{"id": 33950388, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/f5f88416c51509217157.png", "rarity": 6, "name": "Callous"}
+{"id": 7530309, "type": "decal", "image": "https://rocket-league.com/content/media/items/avatar/220px/e4e03985011509217290.png", "rarity": 6, "name": "Leopard"}

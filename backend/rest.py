@@ -1,7 +1,7 @@
 from flask import Flask, request, Blueprint
 from flask_restplus import Api, Resource, reqparse, abort
 from werkzeug.contrib.fixers import ProxyFix
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker
 from werkzeug.exceptions import BadRequest, NotFound
 from models import *
@@ -37,7 +37,7 @@ class ID_Res(Resource):
         abort(404)
 
 def get_obj_by_name(Class, name):
-    query = Session().query(Class).filter(Class.name == name).first()
+    query = Session().query(Class).filter(func.lower(Class.name) == name.lower()).first()
     if not query:
         raise NotFound()
     return serialize(query)

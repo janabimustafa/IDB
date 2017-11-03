@@ -27,7 +27,8 @@ rarities = [
 platforms = [
     Platform(id=1, name="Steam"),
     Platform(id=2, name="Playstation"),
-    Platform(id=3, name="Xbox")
+    Platform(id=3, name="Xbox"),
+    Platform(id=4, name="All")
 ]
 
 for rarity in rarities:

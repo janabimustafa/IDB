@@ -145,6 +145,90 @@ class Decal_Res(Resource):
             return get_obj_by_id(Decal, int(name))
         return get_obj_by_name(Decal, name)
 
+@api.route('/boosts/')
+class Boosts_Res(Resource):
+    def get(self):
+        return get_obj_list(Boost)
+
+
+@api.route('/boosts/<string:name>')
+class Boost_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Boost, int(name))
+        return get_obj_by_name(Boost, name)
+
+
+@api.route('/toppers/')
+class Boosts_Res(Resource):
+    def get(self):
+        return get_obj_list(Topper)
+
+
+@api.route('/toppers/<string:name>')
+class Boost_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Topper, int(name))
+        return get_obj_by_name(Topper, name)
+
+@api.route('/explosions/')
+class Explosion_Res(Resource):
+    def get(self):
+        return get_obj_list(Explosion)
+
+
+@api.route('/explosions/<string:name>')
+class Explosion_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Explosion, int(name))
+        return get_obj_by_name(Explosion, name)
+
+@api.route('/trails/')
+class Trail_Res(Resource):
+    def get(self):
+        return get_obj_list(Trail)
+
+
+@api.route('/trails/<string:name>')
+class Trail_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Trail, int(name))
+        return get_obj_by_name(Trail, name)
+
+@api.route('/banners/')
+class Banner_Res(Resource):
+    def get(self):
+        return get_obj_list(Banner)
+
+
+@api.route('/banners/<string:name>')
+class Banner_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Banner, int(name))
+        return get_obj_by_name(Banner, name)
+
+@api.route('/antennas/')
+class Antenna_Res(Resource):
+    def get(self):
+        return get_obj_list(Antenna)
+
+
+@api.route('/antennas/<string:name>')
+class Antenna_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Antenna, int(name))
+        return get_obj_by_name(Antenna, name)
 
 ### Meta mappings
 
@@ -192,6 +276,42 @@ class GetDecals(Resource):
 
     def get(self):
         return get_mapping(Decal)
+
+@api.route('/meta/boosts')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Boost)
+
+@api.route('/meta/toppers')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Topper)
+
+@api.route('/meta/antennas')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Antenna)
+
+@api.route('/meta/trails')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Trail)
+
+@api.route('/meta/banners')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Banner)
+
+@api.route('/meta/explosions')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Explosion)
 
 
 @api.route('/meta/crates')

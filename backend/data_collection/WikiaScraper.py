@@ -7,7 +7,7 @@ import hashlib
 WIKIA_API = 'http://rocketleague.wikia.com/api/v1/'
 
 # Names of category pages mapped to the Category of object
-CATEGORIES = {'Crates': 'Crate', 'Bodies': 'Body', 'Wheels': 'Wheel', 'Images - antennas': 'Antenna', 'Toppers': 'Topper', 'Images - trails': 'Trail', 'Arenas': 'Arena'}
+CATEGORIES = {'Crates': 'Crate', 'Decals': 'Decal', 'Bodies': 'Body', 'Wheels': 'Wheel', 'Images - antennas': 'Antenna', 'Toppers': 'Topper', 'Images - trails': 'Trail', 'Arenas': 'Arena'}
 
 # Antenna and Trail objects have a title of '<Name> antenna/trail.png' because they're just pictures
 REPLACEMENTS = {'Antenna': ' antenna', 'Trail': ' trail'}
@@ -21,7 +21,7 @@ category_sets = {}
 
 
 def get_hash(name):
-    return int(hashlib.sha256(name.lower().encode('utf-8')).hexdigest(), 16) % 10**8
+    return int(hashlib.sha256(name.strip().lower().encode('utf-8')).hexdigest(), 16) % 10**8
 
 class ImportableObject:
 
@@ -39,8 +39,8 @@ class ImportableObject:
         else:
             self.name = name
         # create a new database ID for bodies. Used for scraping Decal relations
-        if type == 'Body' or type == 'body':
-            self.id = get_hash(self.name.lower())
+        if not type == 'Crate':
+            self.id = get_hash(self.type.lower()+self.name.lower())
 
         if related is None:
             self.related = set()
@@ -141,13 +141,7 @@ def get_properties_from_id(id):
     return rep['items'][str(id)]
 
 
-if __name__ == '__main__':
-    if os.path.exists('serial.txt'):
-        with open('serial.txt', 'r') as f:
-            for line in f:
-                ImportableObject.deserialize(line)
-
-  
+if __name__ == '__main__':  
     for cat in CATEGORIES:
         for i in get_objects_from_category(cat):
             ImportableObject.GetObject(CATEGORIES[cat], i)

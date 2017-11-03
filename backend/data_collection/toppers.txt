@@ -1,0 +1,130 @@
+{"name": "Bobby Helmet", "rarity": 1, "id": 35260535, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ce341100691436196666.png"}
+{"name": "Br\u00fcnnehilde", "rarity": 1, "id": 66372748, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d02bf645481436196692.png"}
+{"name": "Cherry Top", "rarity": 1, "id": 14885813, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ebb5c2705b1476661642.png"}
+{"name": "Cromulon", "rarity": 1, "id": 11683089, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2b7aef623a1499314015.png"}
+{"name": "Day Of The Tentacle", "rarity": 1, "id": 80398826, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/af3cfdae341473421411.png"}
+{"name": "deadmau5", "rarity": 1, "id": 30300077, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e329a13d0b1455228982.png"}
+{"name": "Devil Horns", "rarity": 1, "id": 78344737, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e769d7582e1476661310.png"}
+{"name": "Fez", "rarity": 1, "id": 28033457, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a84530ab781476661730.png"}
+{"name": "Fire Helmet", "rarity": 1, "id": 96043867, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/93d4e110431476661154.png"}
+{"name": "Halo", "rarity": 1, "id": 53318304, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c4c6de01521507851260.png"}
+{"name": "Hard Hat", "rarity": 1, "id": 59502026, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e5ed9694611436196906.png"}
+{"name": "Hot Wheels", "rarity": 1, "id": 39950328, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/15bab675931487851113.png"}
+{"name": "Mariachi Hat", "rarity": 1, "id": 13281432, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ab35301ad61436196917.png"}
+{"name": "Mr. Meeseeks", "rarity": 1, "id": 82090600, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/182516000e1499314060.png"}
+{"name": "Mr. PBH", "rarity": 1, "id": 84923987, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a42f149d441499314127.png"}
+{"name": "Pirate's Hat", "rarity": 1, "id": 51519427, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bb584acce11436196980.png"}
+{"name": "Pizza Topper", "rarity": 1, "id": 72674038, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/691b7d46cb1436196999.png"}
+{"name": "Portal - Cake", "rarity": 1, "id": 26778119, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b753c2f2681451574873.png"}
+{"name": "Propellerhead", "rarity": 1, "id": 14132667, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9893ec3a381436197010.png"}
+{"name": "Rainbow", "rarity": 1, "id": 47254732, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e70147332f1506798627.png"}
+{"name": "Royal Crown", "rarity": 1, "id": 9668094, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d57ae321251476661182.png"}
+{"name": "Shark Bite", "rarity": 1, "id": 81989402, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bcee738b5f1487849968.png"}
+{"name": "Sombrero", "rarity": 1, "id": 19244734, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0c652f0dae1436197030.png"}
+{"name": "Succulents", "rarity": 1, "id": 51497307, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bc0e770b6e1506798654.png"}
+{"name": "Sushi Nigiri", "rarity": 1, "id": 33431500, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cd8b0195c31506798670.png"}
+{"name": "Taxi Topper", "rarity": 1, "id": 16315301, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/41929508771436197041.png"}
+{"name": "Top Hat", "rarity": 1, "id": 19986541, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4490a165291436197054.png"}
+{"name": "Witch's Hat", "rarity": 1, "id": 36275702, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b3e1cdd5e61476660458.png"}
+{"name": "Wizard Hat", "rarity": 1, "id": 33693141, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/127d6e48731476660551.png"}
+{"name": "Antlers", "rarity": 2, "id": 95066623, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3f50b4afe91455229291.png"}
+{"name": "Baseball Cap (B)", "rarity": 2, "id": 86843594, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3d04513e001466509813.png"}
+{"name": "Baseball Cap (F)", "rarity": 2, "id": 1424751, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/dbafc9e9021466509825.png"}
+{"name": "Beret", "rarity": 2, "id": 47806438, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d778652e1f1455229268.png"}
+{"name": "Biker Cap", "rarity": 2, "id": 75818961, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/72339db6b81455229238.png"}
+{"name": "Birthday Cake", "rarity": 2, "id": 76981783, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7269573be41476660945.png"}
+{"name": "Bowler", "rarity": 2, "id": 30937183, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/10483510ee1455228618.png"}
+{"name": "Brodie Helmet", "rarity": 2, "id": 81041044, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2e9af0b9531455228833.png"}
+{"name": "Bycocket", "rarity": 2, "id": 89983046, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c31c6575df1506799182.png"}
+{"name": "Captain's Hat", "rarity": 2, "id": 48470461, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/72097e47b61455229106.png"}
+{"name": "Cattleman", "rarity": 2, "id": 10082876, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cffee3f6661466509876.png"}
+{"name": "Chainsaw", "rarity": 2, "id": 88263221, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/91206a9e721455229074.png"}
+{"name": "Chef's Hat", "rarity": 2, "id": 22052459, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/eeeec4480d1476661047.png"}
+{"name": "Cockroach", "rarity": 2, "id": 95506410, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2fd31af0eb1455229011.png"}
+{"name": "Deerstalker", "rarity": 2, "id": 88873766, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2ca65e817e1455228961.png"}
+{"name": "Derby", "rarity": 2, "id": 70875685, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/be374e4d561455228930.png"}
+{"name": "Foam Hat", "rarity": 2, "id": 67635720, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4a778abb731473591498.png"}
+{"name": "Fruit Hat", "rarity": 2, "id": 33042313, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7f2a7e58781455228651.png"}
+{"name": "Graduation Cap", "rarity": 2, "id": 42401711, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/532d1a94821455227497.png"}
+{"name": "Hawaiian Lei", "rarity": 2, "id": 14393927, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/58cd0570d71506798490.png"}
+{"name": "Heart Glasses", "rarity": 2, "id": 95654054, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1e533fb0d51506798373.png"}
+{"name": "Homburg", "rarity": 2, "id": 31122613, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ad0e6702ce1455228894.png"}
+{"name": "Hotcakes", "rarity": 2, "id": 61492702, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/dfe92f9b0c1506798559.png"}
+{"name": "Ivy Cap", "rarity": 2, "id": 46500853, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1cf117164c1466509911.png"}
+{"name": "Jack-In-The-Box", "rarity": 2, "id": 23916980, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1842e73e261506795102.png"}
+{"name": "Latte", "rarity": 2, "id": 75091905, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c56883f8b41506795124.png"}
+{"name": "Light Bulb", "rarity": 2, "id": 61571465, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7fdada37d11466509925.png"}
+{"name": "Little Bow", "rarity": 2, "id": 91324096, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/814aeb7d321466509851.png"}
+{"name": "Little Bunny", "rarity": 2, "id": 41418463, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d0020c83d51506797506.png"}
+{"name": "Little Cow", "rarity": 2, "id": 67501362, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/db1e80fa0d1506797359.png"}
+{"name": "Little Dog", "rarity": 2, "id": 83921381, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5e19dfa1d01506797421.png"}
+{"name": "Little Elephant", "rarity": 2, "id": 83441683, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5a5ac692581506795078.png"}
+{"name": "Little Owl", "rarity": 2, "id": 42051156, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/57b87841e11506797460.png"}
+{"name": "Little Sloth", "rarity": 2, "id": 47759898, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e38f7d29e91506797537.png"}
+{"name": "Mouse Trap", "rarity": 2, "id": 40762427, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/fe2bb05cd11455200588.png"}
+{"name": "Paper Boat", "rarity": 2, "id": 17362515, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6b6a27b30b1455201691.png"}
+{"name": "Party Hat", "rarity": 2, "id": 87431338, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c81e850b1d1466509934.png"}
+{"name": "Pigeon", "rarity": 2, "id": 87087046, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a20180ba781466509945.png"}
+{"name": "Plunger", "rarity": 2, "id": 8951107, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7edc705a641455201336.png"}
+{"name": "Police Hat", "rarity": 2, "id": 98217984, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/dde232d9cf1455201108.png"}
+{"name": "Pork Pie", "rarity": 2, "id": 78849653, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b45b0e77e51466509886.png"}
+{"name": "Rasta", "rarity": 2, "id": 83697645, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/186d087b281455200741.png"}
+{"name": "Rhino Horns", "rarity": 2, "id": 98964212, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c58cbcc8781455200477.png"}
+{"name": "Shuriken", "rarity": 2, "id": 61954052, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/edb08afb0e1455200365.png"}
+{"name": "Stegosaur", "rarity": 2, "id": 71930983, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/651abd2aa11506798915.png"}
+{"name": "Surfboard", "rarity": 2, "id": 12575272, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d60d2b76731506798982.png"}
+{"name": "Tiara", "rarity": 2, "id": 86606611, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b98073864e1455200172.png"}
+{"name": "Traffic Cone", "rarity": 2, "id": 2456761, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/513443467f1455199954.png"}
+{"name": "Trucker Hat", "rarity": 2, "id": 55691060, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6132d2559b1466509957.png"}
+{"name": "Uncle Sam", "rarity": 2, "id": 59145226, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1142536b701506799030.png"}
+{"name": "Unicorn", "rarity": 2, "id": 33324555, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/72e98e07721455199722.png"}
+{"name": "Visor", "rarity": 2, "id": 10595557, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bc92ab9b6e1466509969.png"}
+{"name": "Work Boot", "rarity": 2, "id": 16153875, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ac326f77141455229178.png"}
+{"name": "Boombox", "rarity": 6, "id": 42456184, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e09c211af71451512424.png"}
+{"name": "Cavalier", "rarity": 6, "id": 56653380, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/184d6dd9c51447524861.png"}
+{"name": "Cow Skull", "rarity": 6, "id": 94647912, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b9b16b5cbe1451512448.png"}
+{"name": "Locomotive", "rarity": 6, "id": 25785838, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d8a2d302051445099373.png"}
+{"name": "Mohawk", "rarity": 6, "id": 84958394, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/75cb218c761451512463.png"}
+{"name": "Pixelated Shades", "rarity": 6, "id": 55204911, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d7d4214bcb1447524475.png"}
+{"name": "Shark Fin", "rarity": 6, "id": 37882392, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/72db31269f1445099088.png"}
+{"name": "Blitzen", "rarity": 5, "id": 32280269, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e7415389a21451618552.png"}
+{"name": "Bone King", "rarity": 5, "id": 79249436, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9c3b64d11b1476700155.png"}
+{"name": "Bunny Ears", "rarity": 5, "id": 94314335, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3d775cc74d1490223428.png"}
+{"name": "Christmas Tree", "rarity": 5, "id": 6484569, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ff401a6d6d1451618581.png"}
+{"name": "Easter Basket", "rarity": 5, "id": 37428886, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/76afdf89331490223447.png"}
+{"name": "Gargoyle", "rarity": 5, "id": 19117419, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/327282f6011508199075.png"}
+{"name": "Ghost", "rarity": 5, "id": 81650597, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3eec15b5b91476700196.png"}
+{"name": "Gold Cap (Alpha Reward)", "rarity": 5, "id": 89964893, "type": "Topper", "platform": 1, "image": "https://rocket-league.com/content/media/items/avatar/220px/4667fb047f1436196890.png"}
+{"name": "Grave Robber", "rarity": 5, "id": 73533061, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/71832190971508199242.png"}
+{"name": "Helper Elf", "rarity": 5, "id": 13022774, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6634961e1a1481307845.png"}
+{"name": "Hustle Brows", "rarity": 5, "id": 50556567, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f01aef85e31496436364.png"}
+{"name": "Mount Champion", "rarity": 5, "id": 7983921, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/486ce0287f1496436424.png"}
+{"name": "New Year's 2017", "rarity": 5, "id": 6985764, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/87c86f46e01481307921.png"}
+{"name": "Pumpkin", "rarity": 5, "id": 11149479, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/af4771b8a41447517580.png"}
+{"name": "Sad Sapling", "rarity": 5, "id": 7282472, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/afff318cfe1451618612.png"}
+{"name": "Santa", "rarity": 5, "id": 57040091, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c0d2c093d91476661457.png"}
+{"name": "Scarecrow Jack", "rarity": 5, "id": 80656070, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3710fbc17e1508199149.png"}
+{"name": "Season 1 - Bronze", "rarity": 5, "id": 52122028, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4ac48313531455312686.png"}
+{"name": "Season 1 - Gold", "rarity": 5, "id": 89268223, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/79121ed03c1455312712.png"}
+{"name": "Season 1 - Platinum", "rarity": 5, "id": 31527035, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/59620daf8b1455312724.png"}
+{"name": "Season 1 - Silver", "rarity": 5, "id": 9958139, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/075635a3421455312701.png"}
+{"name": "Undying Love", "rarity": 5, "id": 54810260, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/87ee1dd3bb1508199213.png"}
+{"name": "White Hat", "rarity": 5, "id": 26576424, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1638ec18231466509977.png"}
+{"name": "Catfish", "rarity": 3, "id": 94512913, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6ecbdb5a4c1506797603.png"}
+{"name": "Chafed Cherry", "rarity": 3, "id": 42237282, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f25d4a12e91506797965.png"}
+{"name": "Clamshell", "rarity": 3, "id": 1969567, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6bc04c745d1475614175.png"}
+{"name": "Drink Helmet", "rarity": 3, "id": 97983542, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0fa2a2afa51466509836.png"}
+{"name": "Fishbowl", "rarity": 3, "id": 33727072, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a77d2dae751506798269.png"}
+{"name": "MMS Headphones", "rarity": 3, "id": 90385896, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b731e4fd171506798317.png"}
+{"name": "Mr. Banana", "rarity": 3, "id": 9326359, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/be2a253b551506797557.png"}
+{"name": "Mr. Hot Dog", "rarity": 3, "id": 36776677, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ddfa96a3ff1506798437.png"}
+{"name": "Mr. Hot Pepper", "rarity": 3, "id": 60774912, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/407d72e9911506798458.png"}
+{"name": "Mrs. Avocado", "rarity": 3, "id": 46623069, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1d4ce6d3511506795061.png"}
+{"name": "Octopus", "rarity": 3, "id": 88455348, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e3b6e384ba1506798530.png"}
+{"name": "ROBO-Visor", "rarity": 3, "id": 62296415, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a01ecf4ad21466509894.png"}
+{"name": "Rooster Comb", "rarity": 3, "id": 37419641, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/42371e18541506798887.png"}
+{"name": "Sad Strawberry", "rarity": 3, "id": 60528859, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1e05bd6e521506798933.png"}
+{"name": "Wildcat Ears", "rarity": 3, "id": 21023192, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f66a69ba841466509861.png"}
+{"name": "Worried Watermelon", "rarity": 3, "id": 7892092, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6d8b64e35d1506795151.png"}
+{"name": "Butterfly", "rarity": 4, "id": 30150972, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/872f5e43811506797576.png"}
+{"name": "Dragon Wings", "rarity": 4, "id": 99200634, "type": "Topper", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/31154788a51506798148.png"}

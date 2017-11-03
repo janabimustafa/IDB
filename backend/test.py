@@ -125,5 +125,112 @@ class TestRLDBAPI(unittest.TestCase):
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Player))
 
+	def testGetAllBoosts(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/boosts")
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Boost))
+
+	def testGetBoostByName(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/boosts/Datastream").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Boost))
+
+	def testGetBoostByID(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/boosts/89065759").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Boost))
+
+	def testGetAllWheels(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/wheels")
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Wheel))
+
+	def testGetWheelByName(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/wheels/Veloce").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Wheel))
+
+	def testGetWheelByID(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/wheels/3509034").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Wheel))
+
+	def testGetAllToppers(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/toppers")
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Topper))
+
+	def testGetTopperByName(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/toppers/Beret").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Topper))
+
+	def testGetTopperByID(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/toppers/47806438").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Topper))
+
+	def testGetAllExplosions(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/explosions")
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Explosion))
+
+	def testGetExplosionByName(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/explosions/Classic").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Explosion))
+
+	def testGetExplosionByID(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/explosions/58207753").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Explosion))
+
+	def testGetAllTrails(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/trails")
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Trail))
+
+	def testGetTrailByName(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/trails/Imulsion").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Trail))
+
+	def testGetTrailByID(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/trails/26809623").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Trail))
+
+	def testGetAllBanners(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/banners")
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Banner))
+
+	def testGetBannerByName(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/banners/Block").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Banner))
+
+	def testGetBannerByID(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/banners/34975547").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Banner))
+
+	def testGetAllAntennas(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/antennas")
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Antenna))
+
+	def testGetAntennaByName(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/antennas/Balloon%20dog").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Antenna))
+
+	def testGetAntennaByID(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/antennas/74354673").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(isinstance(obj, Antenna))
+
+	
+
 if __name__ == "__main__":
     unittest.main()

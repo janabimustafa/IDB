@@ -266,7 +266,7 @@ class GetSources(Resource):
 
 
 @api.route('/meta/platforms')
-class GetSources(Resource):
+class GetPlatforms(Resource):
 
     def get(self):
         return get_mapping(Platform)

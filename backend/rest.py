@@ -160,6 +160,21 @@ class Boost_Res(Resource):
         return get_obj_by_name(Boost, name)
 
 
+@api.route('/wheels/')
+class Wheels_Res(Resource):
+    def get(self):
+        return get_obj_list(Wheel)
+
+
+@api.route('/wheels/<string:name>')
+class Wheel_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Wheel, int(name))
+        return get_obj_by_name(Wheel, name)
+
+
 @api.route('/toppers/')
 class Boosts_Res(Resource):
     def get(self):
@@ -175,7 +190,7 @@ class Boost_Res(Resource):
         return get_obj_by_name(Topper, name)
 
 @api.route('/explosions/')
-class Explosion_Res(Resource):
+class Explosions_Res(Resource):
     def get(self):
         return get_obj_list(Explosion)
 
@@ -189,7 +204,7 @@ class Explosion_Res(Resource):
         return get_obj_by_name(Explosion, name)
 
 @api.route('/trails/')
-class Trail_Res(Resource):
+class Trails_Res(Resource):
     def get(self):
         return get_obj_list(Trail)
 
@@ -203,7 +218,7 @@ class Trail_Res(Resource):
         return get_obj_by_name(Trail, name)
 
 @api.route('/banners/')
-class Banner_Res(Resource):
+class Banners_Res(Resource):
     def get(self):
         return get_obj_list(Banner)
 
@@ -217,7 +232,7 @@ class Banner_Res(Resource):
         return get_obj_by_name(Banner, name)
 
 @api.route('/antennas/')
-class Antenna_Res(Resource):
+class Antennas_Res(Resource):
     def get(self):
         return get_obj_list(Antenna)
 
@@ -319,7 +334,12 @@ class GetCrates(Resource):
 
     def get(self):
         return get_mapping(Crate)
+    
+@api.route('/meta/wheels')
+class GetWheels(Resource):
 
+    def get(self):
+        return get_mapping(Wheel)
 
 @api.route('/meta/dlcs')
 class GetDLCs(Resource):

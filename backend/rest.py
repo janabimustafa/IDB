@@ -3,6 +3,7 @@ from flask_restplus import Api, Resource, reqparse, abort
 from werkzeug.contrib.fixers import ProxyFix
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy_searchable import search
 from werkzeug.exceptions import BadRequest, NotFound
 from models import *
 import about_stats
@@ -144,6 +145,15 @@ class Decal_Res(Resource):
         if name.isdigit():
             return get_obj_by_id(Decal, int(name))
         return get_obj_by_name(Decal, name)
+
+
+### Search
+
+@api.route('/search/<string:term>')
+class Search_Res(Resource):
+
+    def get(self, term):
+        return [serialize(k) for k in search(Session().query(RLObtainable), term, sort=True)]
 
 
 ### Meta mappings

@@ -3,4 +3,5 @@ flask-restplus==0.10.1
 gunicorn==19.7.1
 SQLAlchemy==1.2.0b3
 psycopg2==2.7.3.1
+SQLAlchemy-Searchable==0.10.6
 requests==2.18.4

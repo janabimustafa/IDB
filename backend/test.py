@@ -43,7 +43,7 @@ class TestRLDBAPI(unittest.TestCase):
 		self.assertTrue(isinstance(obj, Body))
 
 	def testGetBodyById(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/bodies/7071").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/bodies/70560080").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Body))
 
@@ -60,7 +60,7 @@ class TestRLDBAPI(unittest.TestCase):
 		self.assertTrue(isinstance(obj, Decal))
 
 	def testGetDecalByID(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/decals/8127").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/decals/74418619").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Decal))
 

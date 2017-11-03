@@ -44,7 +44,7 @@ class RLObject(Base, DBObject): # Non-meta
     type = Column('type', UnicodeText)
     __mapper_args__ = {'polymorphic_on': type}
 
-    image = Column(String # URL of image
+    image = Column(String) # URL of image
     @declared_attr
     def platform(cls):
         return Column(Integer, ForeignKey('platforms.id'))

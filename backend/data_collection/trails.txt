@@ -1,0 +1,15 @@
+{"name": "Classic", "rarity": 1, "id": 1546919, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/19068d454d1499480364.png"}
+{"name": "Batmobile", "rarity": 6, "id": 29653844, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ff127f2cc81499480471.png"}
+{"name": "DeLorean Time Machine", "rarity": 6, "id": 75981434, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6e5d25c8d71499480541.png"}
+{"name": "Hallowtide", "rarity": 5, "id": 87669993, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c93c8857df1508199428.png"}
+{"name": "Season 4 - Bronze", "rarity": 5, "id": 85951295, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/31dc8285de1499480642.png"}
+{"name": "Season 4 - Champion", "rarity": 5, "id": 25057804, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7af727868a1499480859.png"}
+{"name": "Season 4 - Diamond", "rarity": 5, "id": 81862401, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e6c46f78b71499480815.png"}
+{"name": "Season 4 - Gold", "rarity": 5, "id": 82876121, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f4fa8f49811499480724.png"}
+{"name": "Season 4 - Platinum", "rarity": 5, "id": 65376414, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0dcbff79db1499480766.png"}
+{"name": "Season 4 - Silver", "rarity": 5, "id": 80080645, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5b632517041499480682.png"}
+{"name": "Blazer", "rarity": 4, "id": 83167534, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/89c849a4e51499318779.png"}
+{"name": "Friction", "rarity": 4, "id": 41611859, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3092cb70601499318812.png"}
+{"name": "Hot Rocks", "rarity": 4, "id": 80178336, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0ca99d568e1506795191.png"}
+{"name": "Lightning", "rarity": 4, "id": 99568468, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/eaf4e24d751506795171.png"}
+{"name": "Lightspeed", "rarity": 4, "id": 45330592, "type": "Trail", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/211d9cb7511499318715.png"}

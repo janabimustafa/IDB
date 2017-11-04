@@ -3,6 +3,8 @@ from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, creat
 from sqlalchemy.orm import sessionmaker, relationship, configure_mappers
 from sqlalchemy_searchable import make_searchable
 from sqlalchemy_utils.types import TSVectorType
+from sqlalchemy.sql import select
+import datetime
 import json
 import os
 
@@ -43,13 +45,16 @@ class RLObject(Base, DBObject): # Non-meta
     __mapper_args__ = {'polymorphic_on': type}
 
     image = Column(String) # URL of image
-
+    @declared_attr
+    def platform(cls):
+        return Column(Integer, ForeignKey('platforms.id'))
     def __eq__(self, other):
         return serialize_str(self) == serialize_str(other)
 
     def __repr__(self):
         return "<RLObject(id='{0}', name='{1}', type='{2}')>".format(
                                 self.id, self.name, CLASS_TO_TYPE.get(type(self)))
+    
 
 class RLObtainable(RLObject): # Not Players
     release_date = Column(Date)
@@ -118,6 +123,38 @@ class Wheel(RLItem):
     id = Column(ForeignKey('objects.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'wheel'}
 
+class Topper(RLItem):
+    __tablename__ = 'toppers'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'topper'}
+
+class Antenna(RLItem):
+    __tablename__ = 'antennas'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'antenna'}
+
+class Explosion(RLItem):
+    __tablename__ = 'explosions'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'explosion'}
+
+
+class Boost(RLItem):
+    __tablename__ = 'boosts'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'boost'}
+
+
+class Trail(RLItem):
+    __tablename__ = 'trails'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'trail'}
+
+class Banner(RLItem):
+    __tablename__ = 'banners'
+    id = Column(ForeignKey('objects.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'banner'}
+
 CrateItemsRelation = Table('crate_item_relations', Base.metadata,
     Column('crate_id', ForeignKey('crates.id'), primary_key=True),
     Column('item_id', ForeignKey('objects.id'), primary_key=True)) # Foreign key to all returnable types
@@ -147,7 +184,6 @@ class Player(RLObject):
     __tablename__ = 'players'
     id = Column(ForeignKey('objects.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'player'}
-    platform = Column(Integer, ForeignKey('platforms.id')) # ForeignKey
     skill_rating = Column(Integer) # Average of Ranked modes in most recent season
     wins = Column(Integer)
     sig_image = Column(String)
@@ -159,7 +195,13 @@ TYPE_TO_CLASS = {
     'crate': Crate,
     'dlc': DLC,
     'player': Player,
-    'wheel': Wheel
+    'wheel': Wheel,
+    'boost': Boost,
+    'antenna': Antenna,
+    'topper': Topper,
+    'explosion': Explosion,
+    'trail': Trail,
+    'banner': Banner
 }
 
 CLASS_TO_TYPE = {v: k for k, v in TYPE_TO_CLASS.items()}
@@ -187,9 +229,12 @@ def serialize(rl_object):
         del sdict['search_vector']
     for rel in RELATION_KEYS.get(type(rl_object), []):
         sdict[rel] = list(k.id for k in getattr(rl_object, rel))
+    if 'release_date' in sdict:
+        if sdict['release_date']:
+            sdict['release_date'] = sdict['release_date'].isoformat()
     return sdict
 
-def serialize_str(rl_object):
+def serialize_str(rl_object):    
     return json.dumps(serialize(rl_object))
 
 # Deserializes json into an object (or None if type unknown)
@@ -205,6 +250,12 @@ def _deserialize_helper(sdict):
             if rem in sdict:
                 del sdict[rem]
         del sdict['type']
+        if 'release_date' in sdict:
+            if sdict['release_date']:
+                sdict['release_date'] = datetime.datetime.strptime(sdict['release_date'], '%Y-%m-%d').date()
+            else:
+                del sdict['release_date']
+        # print(sdict['release_date'])
         return class_(**sdict)
     return None
 

@@ -31,7 +31,13 @@ with open(filename, 'r') as f:
             j['type'] = j['type'].lower()
         new = deserialize(json.dumps(j))
         if new:
-            s.merge(new)
+            old = s.query(RLItem).get(new.id)
+            if old:
+                old.rarity = new.rarity
+                old.image = new.image
+                s.merge(old)
+            else:
+                s.merge(new)
             for rel in RELATION_KEYS.get(type(new), []):
                 for other_id in j.get(rel, []):
                     relationships.append((type(new), RELATION_KEY_TARGETS[rel], new.id, other_id, rel))

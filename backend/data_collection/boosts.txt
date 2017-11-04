@@ -1,0 +1,87 @@
+{"name": "Blamite Overthruster", "rarity": 1, "id": 83592431, "type": "Boost", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/e3e613dc291509568889.png"}
+{"name": "Bubbles", "rarity": 1, "id": 8562572, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/171b72e2ba1436729259.png"}
+{"name": "Confetti", "rarity": 1, "id": 71448858, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c3d206745b1447544131.png"}
+{"name": "Datastream", "rarity": 1, "id": 89065759, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6031eee5631447524243.png"}
+{"name": "Flamethrower", "rarity": 1, "id": 21550542, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/128867239b1509210155.png"}
+{"name": "Flamethrower Blue", "rarity": 1, "id": 44294438, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4ffcb001571509210179.png"}
+{"name": "Flamethrower Green", "rarity": 1, "id": 19330896, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d6af9fd3e51509210192.png"}
+{"name": "Flamethrower Pink", "rarity": 1, "id": 99887031, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2832e3f0d71509210203.png"}
+{"name": "Flamethrower Purple", "rarity": 1, "id": 88473280, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/46f096b0de1509210214.png"}
+{"name": "Flamethrower Red", "rarity": 1, "id": 72696837, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c40ca9f6b01509210223.png"}
+{"name": "Flamethrower Yellow", "rarity": 1, "id": 74953835, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f376771c061509210291.png"}
+{"name": "Flowers", "rarity": 1, "id": 1274347, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4fadd36eba1509210374.png"}
+{"name": "Grass", "rarity": 1, "id": 43306129, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/801c4e12b71447544147.png"}
+{"name": "Hydro", "rarity": 1, "id": 91199834, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f3cda36b391509210345.png"}
+{"name": "Imulsion", "rarity": 1, "id": 68548383, "type": "Boost", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/3b10f0a1981509569407.png"}
+{"name": "Interdimensional GB", "rarity": 1, "id": 95850551, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d5a7879ff61499313960.png"}
+{"name": "Ion", "rarity": 1, "id": 89079005, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/8070414c601509210409.png"}
+{"name": "Ion Green", "rarity": 1, "id": 78962336, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e000c30bc01509210437.png"}
+{"name": "Ion Pink", "rarity": 1, "id": 62064662, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d01447e8601509210447.png"}
+{"name": "Ion Purple", "rarity": 1, "id": 81559482, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4c92b5de631509210458.png"}
+{"name": "Ion Red", "rarity": 1, "id": 68141453, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5904442bf41509210467.png"}
+{"name": "Ion Yellow", "rarity": 1, "id": 99992982, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d2a36428301509210477.png"}
+{"name": "Money", "rarity": 1, "id": 37177123, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/101ab985511509210835.png"}
+{"name": "Overcharge", "rarity": 1, "id": 78340835, "type": "Boost", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/6e695277c81509569431.png"}
+{"name": "Plasma", "rarity": 1, "id": 18557267, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/913317eaa91509210883.png"}
+{"name": "Portal - Conversion Gel", "rarity": 1, "id": 17630619, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/40853606071451618431.png"}
+{"name": "Portal - Propulsion Gel", "rarity": 1, "id": 84258285, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a8165f81f61451618455.png"}
+{"name": "Portal - Repulsion Gel", "rarity": 1, "id": 4711676, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3f222f4e521451618470.png"}
+{"name": "Rainbow", "rarity": 1, "id": 20263475, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/82ba5352d51509210905.png"}
+{"name": "Sacred", "rarity": 1, "id": 64087883, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/45a782fe1b1447544179.png"}
+{"name": "Slime", "rarity": 1, "id": 56549941, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bf1de3507c1509208679.png"}
+{"name": "Snowflakes", "rarity": 1, "id": 233632, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0aeb2ab30b1447525985.png"}
+{"name": "Sparkles", "rarity": 1, "id": 56819823, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9fa0aafdf41436155523.png"}
+{"name": "Standard", "rarity": 1, "id": 33172537, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bcf62588db1509208990.png"}
+{"name": "Standard Blue", "rarity": 1, "id": 80870222, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/54b0ca915a1509208717.png"}
+{"name": "Standard Green", "rarity": 1, "id": 7178445, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/74f0f609801509209142.png"}
+{"name": "Standard Pink", "rarity": 1, "id": 99587354, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/16e41cfd961509208748.png"}
+{"name": "Standard Purple", "rarity": 1, "id": 98456660, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ca2f3dbb6d1509208790.png"}
+{"name": "Standard Yellow", "rarity": 1, "id": 44181400, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b9a11d86d71509208809.png"}
+{"name": "Thermal", "rarity": 1, "id": 33235071, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d1c4e8e4f41509208859.png"}
+{"name": "Thermal Blue", "rarity": 1, "id": 1710857, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ac16efd2351509208888.png"}
+{"name": "Thermal Green", "rarity": 1, "id": 50331108, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f2769b97a51436166416.png"}
+{"name": "Thermal Pink", "rarity": 1, "id": 19253198, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/211df1f0621436166427.png"}
+{"name": "Thermal Purple", "rarity": 1, "id": 36557459, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ad88237fff1436166439.png"}
+{"name": "Thermal Yellow", "rarity": 1, "id": 78609908, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d5da5b35f71436166456.png"}
+{"name": "UV Turret", "rarity": 1, "id": 48609237, "type": "Boost", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/f26f8a56c21509570273.png"}
+{"name": "Accelerato", "rarity": 6, "id": 34721858, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f8f40be9b31455313138.png"}
+{"name": "Batmobile", "rarity": 6, "id": 26416198, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4ecf6eaece1457511351.png"}
+{"name": "Battle-Stars", "rarity": 6, "id": 98828047, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d2cea2c7a51509210918.png"}
+{"name": "Burnout", "rarity": 6, "id": 28347851, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3bc9e9b7e41447544108.png"}
+{"name": "Nitrous", "rarity": 6, "id": 31485078, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d7d7f379891509210851.png"}
+{"name": "Nuts & Bolts", "rarity": 6, "id": 90687006, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cc8adfef211451512352.png"}
+{"name": "OutaTime", "rarity": 6, "id": 94746313, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c278194c581457520466.png"}
+{"name": "Sandstorm", "rarity": 6, "id": 81861924, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a376cf5f4b1451512365.png"}
+{"name": "Candy Corn", "rarity": 5, "id": 95622568, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/438c09e8211447517135.png"}
+{"name": "Cold Fusion", "rarity": 5, "id": 3140003, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/982e2693311497781027.png"}
+{"name": "Gold Rush (Alpha Reward)", "rarity": 5, "id": 59225442, "type": "Boost", "platform": 1, "image": "https://rocket-league.com/content/media/items/avatar/220px/a943e71c601436141243.png"}
+{"name": "Helios", "rarity": 5, "id": 97270237, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bd128189b31496436494.png"}
+{"name": "Netherworld", "rarity": 5, "id": 2526288, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/722b160cf41476700213.png"}
+{"name": "Season 2 - Challenger", "rarity": 5, "id": 84843738, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/aa069c57d01466509655.png"}
+{"name": "Season 2 - Champion", "rarity": 5, "id": 3086009, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/db61ff76551466509676.png"}
+{"name": "Season 2 - Prospect", "rarity": 5, "id": 30478988, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e9bf17bc471466509738.png"}
+{"name": "Season 2 - Star", "rarity": 5, "id": 72940677, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b7b0ab80ee1466509755.png"}
+{"name": "Xmas", "rarity": 5, "id": 64664273, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b73255a20a1451618521.png"}
+{"name": "Frostbite", "rarity": 4, "id": 78999616, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/505a3fa3271466509715.png"}
+{"name": "Hearts", "rarity": 4, "id": 60367178, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e587fe3f191466509703.png"}
+{"name": "Lightning", "rarity": 4, "id": 28936241, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bca22474121466509690.png"}
+{"name": "Toon Smoke", "rarity": 4, "id": 63760003, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6b466dd7f71466509727.png"}
+{"name": "Feather", "rarity": 4, "id": 55159255, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/510195ba861506795687.png"}
+{"name": "Hexphase", "rarity": 4, "id": 53491806, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/625e9476901494498554.png"}
+{"name": "Ink", "rarity": 4, "id": 79297515, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/40f2af65191475764891.png"}
+{"name": "Lightning Yellow", "rarity": 4, "id": 62659309, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bef2e4a5da1481308644.png"}
+{"name": "Magmus", "rarity": 4, "id": 51147930, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cd5b44cbf81506795574.png"}
+{"name": "Polygonal", "rarity": 4, "id": 96820087, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/247cd8ce4a1473412843.png"}
+{"name": "Scary Pumpkin", "rarity": 4, "id": 59699416, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c0da6e4db81508198947.png"}
+{"name": "Taco", "rarity": 4, "id": 87382730, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/18b1ffb5961506795735.png"}
+{"name": "Treasure", "rarity": 4, "id": 55193436, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/8633e076351475764921.png"}
+{"name": "Xenosplash", "rarity": 4, "id": 68635667, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b3e0c500051490221812.png"}
+{"name": "Dark Matter", "rarity": 7, "id": 73894368, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0856114c281475684415.png"}
+{"name": "Hypernova", "rarity": 7, "id": 79739715, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2f99fb1b3d1475684451.png"}
+{"name": "Magic Missile", "rarity": 7, "id": 20327742, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1d5d277aa51499307391.png"}
+{"name": "Neo-Thermal", "rarity": 7, "id": 28501564, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4c5dad8e941494498583.png"}
+{"name": "Pixel Fire", "rarity": 7, "id": 19043911, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/81aefb8fb31473412903.png"}
+{"name": "Power-shot", "rarity": 7, "id": 48730378, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e1333105261506795018.png"}
+{"name": "Proton", "rarity": 7, "id": 18316882, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0929bebc7e1481302409.png"}
+{"name": "Tachyon", "rarity": 7, "id": 58388425, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4b73ae91951490228048.png"}
+{"name": "Trinity", "rarity": 7, "id": 75902495, "type": "Boost", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d3634905151473413137.png"}

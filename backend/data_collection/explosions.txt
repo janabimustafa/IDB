@@ -1,0 +1,13 @@
+{"name": "Classic", "rarity": 1, "id": 58207753, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/58f553376a1499480991.png"}
+{"name": "Standard Green", "rarity": 1, "id": 98135855, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1b296663511499481065.png"}
+{"name": "Standard Orange", "rarity": 1, "id": 5590273, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/235796ba9c1499481107.png"}
+{"name": "Standard Pink", "rarity": 1, "id": 46677385, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5e84e0329f1499481143.png"}
+{"name": "Standard Purple", "rarity": 1, "id": 86314871, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/709dd3aab51499481182.png"}
+{"name": "Reaper", "rarity": 7, "id": 96700805, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9e6fc7a8151508198121.png"}
+{"name": "Vampire Bat", "rarity": 7, "id": 37943620, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c8f0558bf41508198817.png"}
+{"name": "Electroshock", "rarity": 9, "id": 75278662, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c968ab9a051499318860.png"}
+{"name": "Fireworks", "rarity": 9, "id": 20841790, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/41474efd281499318897.png"}
+{"name": "Hellfire", "rarity": 9, "id": 54400987, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2edd5c32581499318998.png"}
+{"name": "Party Time", "rarity": 9, "id": 65968166, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4c9d399f811506784704.png"}
+{"name": "Popcorn", "rarity": 9, "id": 87314008, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0434e7f4621506784717.png"}
+{"name": "Sub-Zero", "rarity": 9, "id": 59762332, "type": "Explosion", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/27763725031499318967.png"}

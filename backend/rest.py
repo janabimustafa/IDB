@@ -1,7 +1,7 @@
 from flask import Flask, request, Blueprint
 from flask_restplus import Api, Resource, reqparse, abort
 from werkzeug.contrib.fixers import ProxyFix
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy_searchable import search
 from werkzeug.exceptions import BadRequest, NotFound
@@ -38,7 +38,7 @@ class ID_Res(Resource):
         abort(404)
 
 def get_obj_by_name(Class, name):
-    query = Session().query(Class).filter(Class.name == name).first()
+    query = Session().query(Class).filter(func.lower(Class.name) == name.lower()).first()
     if not query:
         raise NotFound()
     return serialize(query)
@@ -146,6 +146,105 @@ class Decal_Res(Resource):
             return get_obj_by_id(Decal, int(name))
         return get_obj_by_name(Decal, name)
 
+@api.route('/boosts/')
+class Boosts_Res(Resource):
+    def get(self):
+        return get_obj_list(Boost)
+
+
+@api.route('/boosts/<string:name>')
+class Boost_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Boost, int(name))
+        return get_obj_by_name(Boost, name)
+
+
+@api.route('/wheels/')
+class Wheels_Res(Resource):
+    def get(self):
+        return get_obj_list(Wheel)
+
+
+@api.route('/wheels/<string:name>')
+class Wheel_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Wheel, int(name))
+        return get_obj_by_name(Wheel, name)
+
+
+@api.route('/toppers/')
+class Boosts_Res(Resource):
+    def get(self):
+        return get_obj_list(Topper)
+
+
+@api.route('/toppers/<string:name>')
+class Boost_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Topper, int(name))
+        return get_obj_by_name(Topper, name)
+
+@api.route('/explosions/')
+class Explosions_Res(Resource):
+    def get(self):
+        return get_obj_list(Explosion)
+
+
+@api.route('/explosions/<string:name>')
+class Explosion_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Explosion, int(name))
+        return get_obj_by_name(Explosion, name)
+
+@api.route('/trails/')
+class Trails_Res(Resource):
+    def get(self):
+        return get_obj_list(Trail)
+
+
+@api.route('/trails/<string:name>')
+class Trail_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Trail, int(name))
+        return get_obj_by_name(Trail, name)
+
+@api.route('/banners/')
+class Banners_Res(Resource):
+    def get(self):
+        return get_obj_list(Banner)
+
+
+@api.route('/banners/<string:name>')
+class Banner_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Banner, int(name))
+        return get_obj_by_name(Banner, name)
+
+@api.route('/antennas/')
+class Antennas_Res(Resource):
+    def get(self):
+        return get_obj_list(Antenna)
+
+
+@api.route('/antennas/<string:name>')
+class Antenna_Res(Resource):
+
+    def get(self, name):
+        if name.isdigit():
+            return get_obj_by_id(Antenna, int(name))
+        return get_obj_by_name(Antenna, name)
 
 ### Search
 
@@ -203,13 +302,54 @@ class GetDecals(Resource):
     def get(self):
         return get_mapping(Decal)
 
+@api.route('/meta/boosts')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Boost)
+
+@api.route('/meta/toppers')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Topper)
+
+@api.route('/meta/antennas')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Antenna)
+
+@api.route('/meta/trails')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Trail)
+
+@api.route('/meta/banners')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Banner)
+
+@api.route('/meta/explosions')
+class GetBoosts(Resource):
+
+    def get(self):
+        return get_mapping(Explosion)
+
 
 @api.route('/meta/crates')
 class GetCrates(Resource):
 
     def get(self):
         return get_mapping(Crate)
+    
+@api.route('/meta/wheels')
+class GetWheels(Resource):
 
+    def get(self):
+        return get_mapping(Wheel)
 
 @api.route('/meta/dlcs')
 class GetDLCs(Resource):

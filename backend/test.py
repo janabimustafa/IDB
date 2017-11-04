@@ -43,7 +43,7 @@ class TestRLDBAPI(unittest.TestCase):
 		self.assertTrue(isinstance(obj, Body))
 
 	def testGetBodyById(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/bodies/7071").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/bodies/70560080").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Body))
 
@@ -60,7 +60,7 @@ class TestRLDBAPI(unittest.TestCase):
 		self.assertTrue(isinstance(obj, Decal))
 
 	def testGetDecalByID(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/decals/8127").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/decals/74418619").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Decal))
 
@@ -81,7 +81,6 @@ class TestRLDBAPI(unittest.TestCase):
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Crate))
 
-	@unittest.expectedFailure
 	def testGetAllDLC(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/dlcs/").read().decode()
 		obj_list = deserialize_list(result)
@@ -89,15 +88,13 @@ class TestRLDBAPI(unittest.TestCase):
 		for obj in obj_list:
 			self.assertTrue(isinstance(obj, DLC))
 
-	@unittest.expectedFailure
 	def testGetDLCByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/dlcs/Supersonic%20Fury").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, DLC))
 
-	@unittest.expectedFailure
 	def testGetDLCByID(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/dlcs/0").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/dlcs/44776510").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, DLC))
 

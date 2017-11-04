@@ -1,0 +1,56 @@
+{"name": "Block", "rarity": 1, "id": 34975547, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/390390ad131506779486.png"}
+{"name": "Circuit Pro", "rarity": 1, "id": 97293870, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4478c49ea41506779781.png"}
+{"name": "Coral", "rarity": 1, "id": 38282490, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/fb92cc027d1506779504.png"}
+{"name": "Crisscross", "rarity": 1, "id": 43106642, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/29010e69921506779517.png"}
+{"name": "Crystal", "rarity": 1, "id": 40979149, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/61856617721506779590.png"}
+{"name": "Feathered", "rarity": 1, "id": 13023909, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/8e9b9379d41506779563.png"}
+{"name": "Hexed", "rarity": 1, "id": 86010823, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3e9caab54e1506779613.png"}
+{"name": "Ishihara", "rarity": 1, "id": 64293916, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4a81dea96c1506779628.png"}
+{"name": "Island Scales", "rarity": 1, "id": 83238866, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7d359358801506779908.png"}
+{"name": "Leopard", "rarity": 1, "id": 65580486, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6721c53cfb1506779642.png"}
+{"name": "Old Flame", "rarity": 1, "id": 56230211, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f14f106eb01506779554.png"}
+{"name": "Sharp Flames", "rarity": 1, "id": 31862085, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/efcc59d40c1506779529.png"}
+{"name": "Standard", "rarity": 1, "id": 58312823, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/285267cb0b1506779849.png"}
+{"name": "Taxi", "rarity": 1, "id": 69347597, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/07073f7da81506780045.png"}
+{"name": "Topographic", "rarity": 1, "id": 27355698, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b840baa4131506780057.png"}
+{"name": "Triangle", "rarity": 1, "id": 70213756, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/58f0fbd6151506779544.png"}
+{"name": "Zebra", "rarity": 1, "id": 96267884, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7858b248951506780069.png"}
+{"name": "Howler", "rarity": 5, "id": 53282119, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a86bab8a611508199273.png"}
+{"name": "Season 5 - Bronze", "rarity": 5, "id": 21896364, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c98d8169121506781215.png"}
+{"name": "Season 5 - Bronze (Dragon)", "rarity": 5, "id": 72159575, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/59267dab2f1506781241.png"}
+{"name": "Season 5 - Champion", "rarity": 5, "id": 5740557, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b727ea44e71506781518.png"}
+{"name": "Season 5 - Champion (Dragon)", "rarity": 5, "id": 47903702, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/42d9054fef1506781537.png"}
+{"name": "Season 5 - Diamond", "rarity": 5, "id": 97797192, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/86ca1fb0cf1506781461.png"}
+{"name": "Season 5 - Diamond (Dragon)", "rarity": 5, "id": 14011034, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/59cd2680141506781482.png"}
+{"name": "Season 5 - Gold", "rarity": 5, "id": 42981852, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a4fb2109181506781358.png"}
+{"name": "Season 5 - Gold (Dragon)", "rarity": 5, "id": 1677575, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/da93c6d9b61506781381.png"}
+{"name": "Season 5 - Grand Champion", "rarity": 5, "id": 91244422, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9e4f4976111506781558.png"}
+{"name": "Season 5 - Grand Champion (Dragon)", "rarity": 5, "id": 33411981, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0e0781bf851506781575.png"}
+{"name": "Season 5 - Platinum", "rarity": 5, "id": 58791577, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/32bd77dc951506781418.png"}
+{"name": "Season 5 - Platinum (Dragon)", "rarity": 5, "id": 87838898, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/72e7c62dfa1506781440.png"}
+{"name": "Season 5 - Silver", "rarity": 5, "id": 15320519, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/927542d8781506781287.png"}
+{"name": "Season 5 - Silver (Dragon)", "rarity": 5, "id": 89483479, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/991a9b9b4a1506781318.png"}
+{"name": "Ball King", "rarity": 3, "id": 75498589, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/89d5e2afbc1506779462.png"}
+{"name": "Call Sign RL", "rarity": 3, "id": 16555927, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2c1167c8c71506780458.png"}
+{"name": "Dead Serious", "rarity": 3, "id": 44246188, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1f451871511506779599.png"}
+{"name": "Dendritic", "rarity": 3, "id": 4399076, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e294f2f0a51506780985.png"}
+{"name": "Hearts", "rarity": 3, "id": 17411167, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5d1cb321a01506780822.png"}
+{"name": "Maximon", "rarity": 3, "id": 63788256, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ea1b25f34b1506780924.png"}
+{"name": "MDGA", "rarity": 3, "id": 22260912, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cfc681e8921506779672.png"}
+{"name": "Narwhal", "rarity": 3, "id": 13330486, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/015cba5b9c1506780896.png"}
+{"name": "Rockat", "rarity": 3, "id": 36477114, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/454cd132e41506779868.png"}
+{"name": "Shattered", "rarity": 3, "id": 59012060, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7f975796621506779925.png"}
+{"name": "Soccer Ball", "rarity": 3, "id": 95300216, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b0f7ead45d1506779984.png"}
+{"name": "Sticker Bomb", "rarity": 3, "id": 99299420, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a6a5aed6761506780029.png"}
+{"name": "Tagged", "rarity": 3, "id": 12518440, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5044fe06641506780004.png"}
+{"name": "Turtle", "rarity": 3, "id": 28473334, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/8c9d9b3dda1506781085.png"}
+{"name": "Beaten Egg", "rarity": 4, "id": 14048239, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/08249838f71506780486.png"}
+{"name": "Calculated", "rarity": 4, "id": 76071020, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0245e509ec1506780235.png"}
+{"name": "Junk Food", "rarity": 4, "id": 71853441, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d13ce8b3e01506780653.png"}
+{"name": "Moai", "rarity": 4, "id": 35972868, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/fd3f3451101506779653.png"}
+{"name": "Nice Slice", "rarity": 4, "id": 44328823, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/606c6a3af51506779800.png"}
+{"name": "Pigeon", "rarity": 4, "id": 63849646, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f46f9e0e8d1506779684.png"}
+{"name": "Salty", "rarity": 4, "id": 22879174, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c7336f39331506779893.png"}
+{"name": "Starbase ARC", "rarity": 4, "id": 63074666, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e05ef10c221506780015.png"}
+{"name": "Unicorn", "rarity": 4, "id": 89972566, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/031c03ff201506779832.png"}
+{"name": "Zombie", "rarity": 4, "id": 23599417, "type": "Banner", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0a16b358401508199302.png"}

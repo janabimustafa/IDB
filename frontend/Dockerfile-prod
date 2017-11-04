@@ -1,0 +1,14 @@
+FROM nginx:1.13.5
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+RUN apt-get update
+RUN apt-get install -y curl build-essential
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN apt-get install -y nodejs
+WORKDIR /app
+COPY rldb/ .
+ENV NPM_CONFIG_LOGLEVEL warn
+ENV PATH /app/node_modules/.bin:$PATH
+RUN npm install
+RUN npm run build
+RUN mv build/* /usr/share/nginx/html/
+EXPOSE 3000

@@ -118,7 +118,7 @@ class TestRLDBAPI(unittest.TestCase):
 		self.assertTrue(isinstance(obj, Player))
 
 	def testGetPlayerByID(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/players/201346119").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/players/143045192").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Player))
 

@@ -187,6 +187,7 @@ class Player(RLObject):
     skill_rating = Column(Integer) # Average of Ranked modes in most recent season
     wins = Column(Integer)
     sig_image = Column(String)
+    profile_url = Column(String)
 
 TYPE_TO_CLASS = {
     'paint': Paint,

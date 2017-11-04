@@ -44,7 +44,7 @@ services:
       test: curl -f http://localhost:5000/api
       interval: 3s
       timeout: 5s
-      retries: 5
+      retries: 30
   react:
     image: janabimustafa/rldb-react
     container_name: rldb-react
@@ -60,7 +60,7 @@ services:
       test: curl -f http://localhost:3000
       interval: 3s
       timeout: 5s
-      retries: 5
+      retries: 30
   db:
     image: postgres:latest
     networks:

@@ -23,6 +23,7 @@ def get_about_stats():
     LIST_IDs = [
         '59c1b5da4cf5c473d942972e', # Proj 2 master/prod
         '59e93c4769cc96f17177fc3f', # Proj 3 master/prod
+        '59f8ec21abda5f9862d5c10e', # Proj 4 master/prod
     ]
 
     # API Key and token for RLDB Bot account

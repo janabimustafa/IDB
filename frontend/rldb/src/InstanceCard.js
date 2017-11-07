@@ -19,7 +19,7 @@ class InstanceCard extends Component {
     render() {
         console.log(this.props.data.type);
         return (
-            <div className=" col-md-4 col-sm-6 text-center">
+            <div className="col-md-4 col-sm-6 text-center">
                 <Link onClick={this.forceUpdate} to={`/${this.props.data.type}/${this.props.data.name}`}>
                     <img className="img-rounded" src={this.props.data.image}/>
                     <h2>{this.props.data.name}</h2>

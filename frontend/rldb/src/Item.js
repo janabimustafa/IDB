@@ -5,6 +5,8 @@ import {Pagination} from 'react-bootstrap';
 import InstanceCard from './InstanceCard';
 import LoadingOverlay from './LoadingOverlay';
 
+const numberPerPage = 9;
+
 class Item extends Component {
     constructor(props) {
         super(props);
@@ -34,8 +36,26 @@ class Item extends Component {
                 type: this.props.match.url.split('/')[1],
                 data: j,
                 filter: j,
-                view: j.slice(0,9)
+                view: j.slice(0, numberPerPage)
             });
+        });
+    }
+
+    reset(){
+        this.setState({
+            filter: this.state.data
+        });
+    }
+
+    sort(){
+        this.setState({
+            filter: this.state.filter but sorted
+        });
+    }
+
+    filter(){
+        this.setState({
+            filter: this.state.data but filtered
         });
     }
 
@@ -44,7 +64,7 @@ class Item extends Component {
         console.log(eventKey);
         this.setState({
             pageNumber: eventKey,
-            view: this.state.filter.slice((eventKey-1) * 9, eventKey * 9)
+            view: this.state.filter.slice((eventKey-1) * numberPerPage, eventKey * numberPerPage)
         });
     }
 
@@ -67,7 +87,7 @@ class Item extends Component {
                 <div className="text-center">
                     <Pagination
                         bsSize="medium" 
-                        items={Math.floor(this.state.filter.length / 9) + 1} 
+                        items={Math.floor(this.state.filter.length / numberPerPage) + 1} 
                         activePage={this.state.pageNumber}
                         onSelect={this.changePage}
                     />

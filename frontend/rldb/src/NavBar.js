@@ -20,22 +20,22 @@ class NavBar extends Component {
         <Navbar.Collapse>
           <Nav>
             <NavDropdown title="Items" id="nav-dropdown">
-              <MenuItem href="/crates">Crates</MenuItem>
-              <MenuItem href="/bodies">Bodies</MenuItem>
-              <MenuItem href="/paints">Paint Finish</MenuItem>
-              <MenuItem href="/antennas">Antennas</MenuItem>
-              <MenuItem href="/banners">Banners</MenuItem>
-              <MenuItem href="/boosts">Boosts</MenuItem>
-              <MenuItem href="/decals">Decals</MenuItem>
-              <MenuItem href="/explosions">Explosions</MenuItem>
-              <MenuItem href="/toppers">Toppers</MenuItem>
-              <MenuItem href="/trails">Trails</MenuItem>
-              <MenuItem href="/wheels">Wheels</MenuItem>
+              <MenuItem href="/crates/">Crates</MenuItem>
+              <MenuItem href="/bodies/">Bodies</MenuItem>
+              <MenuItem href="/paints/">Paint Finish</MenuItem>
+              <MenuItem href="/antennas/">Antennas</MenuItem>
+              <MenuItem href="/banners/">Banners</MenuItem>
+              <MenuItem href="/boosts/">Boosts</MenuItem>
+              <MenuItem href="/decals/">Decals</MenuItem>
+              <MenuItem href="/explosions/">Explosions</MenuItem>
+              <MenuItem href="/toppers/">Toppers</MenuItem>
+              <MenuItem href="/trails/">Trails</MenuItem>
+              <MenuItem href="/wheels/">Wheels</MenuItem>
             </NavDropdown>
-            <IndexLinkContainer to="/players">
+            <IndexLinkContainer to="/players/">
               <NavItem>Players</NavItem>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/dlcs">
+            <IndexLinkContainer to="/dlcs/">
               <NavItem>DLCs</NavItem>
             </IndexLinkContainer>
             <IndexLinkContainer to="/about">
@@ -48,7 +48,7 @@ class NavBar extends Component {
                 <FormControl type="text" placeholder="This doesn't work" />
               </FormGroup>
               {' '}
-              <LinkContainer to="/search">
+              <LinkContainer to="/search/">
                 <Button type="submit">Submit</Button>
               </LinkContainer>
             </Navbar.Form>

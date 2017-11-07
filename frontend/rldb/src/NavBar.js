@@ -19,44 +19,22 @@ class NavBar extends Component {
         <Navbar.Collapse>
           <Nav>
             <NavDropdown title="Items" id="nav-dropdown">
-              <IndexLinkContainer to="/crates">
-                <MenuItem>Crates</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/bodies">
-                <MenuItem>Bodies</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/paints">
-                <MenuItem>Paint Finish</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/antennas">
-                <MenuItem>Antennas</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/banners">
-                <MenuItem>Banners</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/boosts">
-                <MenuItem>Boosts</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/decals">
-                <MenuItem>Decals</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/explosions">
-                <MenuItem>Explosions</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/toppers">
-                <MenuItem>Toppers</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/trails">
-                <MenuItem>Trails</MenuItem>
-              </IndexLinkContainer>
-              <IndexLinkContainer to="/wheels">
-                <MenuItem>Wheels</MenuItem>
-              </IndexLinkContainer>
+              <MenuItem href="/crates">Crates</MenuItem>
+              <MenuItem href="/bodies">Bodies</MenuItem>
+              <MenuItem href="/paints">Paint Finish</MenuItem>
+              <MenuItem href="/antennas">Antennas</MenuItem>
+              <MenuItem href="/banners">Banners</MenuItem>
+              <MenuItem href="/boosts">Boosts</MenuItem>
+              <MenuItem href="/decals">Decals</MenuItem>
+              <MenuItem href="/explosions">Explosions</MenuItem>
+              <MenuItem href="/toppers">Toppers</MenuItem>
+              <MenuItem href="/trails">Trails</MenuItem>
+              <MenuItem href="/wheels">Wheels</MenuItem>
             </NavDropdown>
             <IndexLinkContainer to="/players">
               <NavItem>Players</NavItem>
             </IndexLinkContainer>
-            <IndexLinkContainer to="dlcs">
+            <IndexLinkContainer to="/dlcs">
               <NavItem>DLCs</NavItem>
             </IndexLinkContainer>
             <IndexLinkContainer to="/about">

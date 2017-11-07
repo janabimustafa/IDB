@@ -34,6 +34,7 @@ const App = () => (
       <Route exact path='/explosions' component={Item}/>
       <Route exact path='/toppers' component={Item}/>
       <Route exact path='/trails' component={Item}/>
+      <Route exact path='/boosts' component={Item}/>
       <Route exact path='/wheels' component={Item}/>
 
       <Route exact path='/dlcs' component={Item}/>

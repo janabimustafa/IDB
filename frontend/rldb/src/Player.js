@@ -40,8 +40,10 @@ class Player extends Component {
         });
         return (
             <div className="container">
+                <hr/>
                 <h1>Players</h1>
-                <div className="row">
+                <hr/>
+                <div className="">
                     {cards.length == 0 ? "No items to show." : cards}
                 </div>
             </div>

@@ -11,3 +11,20 @@ p {
     max-width: 150px;
     max-height: 150px;
 }
+
+.player-card {
+    margin: 16px;
+    padding: 5px;
+    background-color: ghostwhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    max-height: 425px;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.05); 
+}

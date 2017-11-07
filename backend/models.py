@@ -114,9 +114,14 @@ class Decal(RLItem):
     crate = Column(Integer, ForeignKey('crates.id')) # ForeignKey
     is_animated = Column(Boolean)
     is_paintable = Column(Boolean)
+    paints = relationship('Paint',
+        secondary=PaintDecalsRelation,
+        primaryjoin=id==PaintDecalsRelation.c.decal_id)
     bodies = relationship(Body,
         secondary=BodyDecalsRelation,
         primaryjoin=id==BodyDecalsRelation.c.decal_id)
+    def __hash__(self):
+        return hash(self.id)
 
 class Wheel(RLItem):
     __tablename__ = 'wheels'
@@ -207,9 +212,9 @@ TYPE_TO_CLASS = {
 CLASS_TO_TYPE = {v: k for k, v in TYPE_TO_CLASS.items()}
 
 RELATION_KEYS = {
-    Paint: ['decals'],
+    Paint: ['decals'],    
     Body: ['decals'],
-    Decal: ['bodies'],
+    Decal: ['bodies', 'paints'],
     Crate: ['items'],
     DLC: ['items']
 }
@@ -217,7 +222,9 @@ RELATION_KEYS = {
 RELATION_KEY_TARGETS = {
     'decals': Decal,
     'bodies': Body,
-    'items': RLObject
+    'paints': Paint,
+    'items': RLObject,
+    
 }
 
 def serialize(rl_object):

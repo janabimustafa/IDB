@@ -60,16 +60,19 @@ class Item extends Component {
         });
         return (
             <div className="container">
-                <hr/>
-                <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>
-                <hr/>
-                <div className="">
-                    {cards.length == 0 ? "No items to show." : cards}
+                <div className="container">
+                    <hr/>
+                    <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>
+                    <hr/>
+                    <div className="">
+                        {cards.length == 0 ? "No items to show." : cards}
+                    </div>
                 </div>
+                <hr/>
                 <div className="text-center">
                     <Pagination
                         bsSize="medium" 
-                        items={Math.floor(this.state.filter.length / 10) + 1} 
+                        items={this.state.filter.length % 10 == 0 ? Math.floor(this.state.filter.length / 10) : Math.floor(this.state.filter.length / 10) + 1} 
                         activePage={this.state.pageNumber}
                         onSelect={this.changePage}
                     />

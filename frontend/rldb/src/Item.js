@@ -67,7 +67,7 @@ class Item extends Component {
                 <div className="text-center">
                     <Pagination
                         bsSize="medium" 
-                        items={Math.floor(this.state.filter.length / 10) + 1} 
+                        items={Math.floor(this.state.filter.length / 9) + 1} 
                         activePage={this.state.pageNumber}
                         onSelect={this.changePage}
                     />

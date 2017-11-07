@@ -3,10 +3,11 @@ import {Route, Switch} from 'react-router-dom';
 
 import './App.css';
 
-import Header from './Header';
 import NavBar from './NavBar';
 
 import Home from './Home';
+import Item from './Item';
+
 import Crate from './Crate';
 import Body from './Body';
 import Paint from './Paint';
@@ -24,15 +25,26 @@ const App = () => (
     <NavBar />
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route exact path='/crate' component={Crate}/>
-      <Route exact path='/body' component={Body}/>
-      <Route exact path='/paint' component={Paint}/>
-      <Route exact path='/player' component={Player}/>
+      <Route exact path='/crates' component={Item}/>
+      <Route exact path='/bodies' component={Item}/>
+      <Route exact path='/paints' component={Item}/>
+      <Route exact path='/antennas' component={Item}/>
+      <Route exact path='/banners' component={Item}/>
+      <Route exact path='/decals' component={Item}/>
+      <Route exact path='/explosions' component={Item}/>
+      <Route exact path='/toppers' component={Item}/>
+      <Route exact path='/trails' component={Item}/>
+      <Route exact path='/wheels' component={Item}/>
+
+      <Route exact path='/dlcs' component={Item}/>
+
+      <Route exact path='/players' component={Player}/>
       <Route exact path='/about' component={About}/>
-      <Route path='/crate/:cratename' component={InstancePage}/>
-      <Route path='/body/:bodyname' component={InstancePage}/>
-      <Route path='/paint/:paintname' component={PaintPage}/>
-      <Route path='/player/:playername' component={PlayerPage}/>
+      
+      <Route path='/crates/:cratename' component={InstancePage}/>
+      <Route path='/bodies/:bodyname' component={InstancePage}/>
+      <Route path='/paints/:paintname' component={PaintPage}/>
+      <Route path='/players/:playername' component={PlayerPage}/>
       <Route component={NotFound}/>
     </Switch>
   </div>

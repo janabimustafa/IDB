@@ -34,7 +34,7 @@ class Item extends Component {
                 type: this.props.match.url.split('/')[1],
                 data: j,
                 filter: j,
-                view: j.slice(0,9)
+                view: j.slice(0,10)
             });
         });
     }
@@ -44,7 +44,7 @@ class Item extends Component {
         console.log(eventKey);
         this.setState({
             pageNumber: eventKey,
-            view: this.state.filter.slice((eventKey-1) * 9, eventKey * 9)
+            view: this.state.filter.slice((eventKey-1) * 10, eventKey * 10)
         });
     }
 
@@ -60,14 +60,16 @@ class Item extends Component {
         });
         return (
             <div className="container">
+                <hr/>
                 <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>
-                <div className="row">
+                <hr/>
+                <div className="">
                     {cards.length == 0 ? "No items to show." : cards}
                 </div>
                 <div className="text-center">
                     <Pagination
                         bsSize="medium" 
-                        items={Math.floor(this.state.filter.length / 9) + 1} 
+                        items={Math.floor(this.state.filter.length / 10) + 1} 
                         activePage={this.state.pageNumber}
                         onSelect={this.changePage}
                     />

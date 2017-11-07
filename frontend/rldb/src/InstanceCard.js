@@ -7,7 +7,7 @@ class InstanceCard extends Component {
     getRarity (rarity_num) {
         if (!rarity_num)
             return "unknown";
-        var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limted", "premium", "import", "exotic", "black market"];
+        var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limited", "premium", "import", "exotic", "black market"];
         return rarities[rarity_num];
     }
     

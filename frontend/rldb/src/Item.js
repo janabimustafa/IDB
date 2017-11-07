@@ -16,6 +16,8 @@ class Item extends Component {
             view: [],
             pageNumber: 1
         };
+
+        this.changePage = this.changePage.bind(this);
     }
 
     componentDidMount() {
@@ -30,8 +32,19 @@ class Item extends Component {
             console.log(j);
             this.setState({
                 type: this.props.match.url.split('/')[1],
-                data: j
+                data: j,
+                filter: j,
+                view: j.slice(0,9)
             });
+        });
+    }
+
+    //change what is being displayed in view list based on filter list
+    changePage(eventKey) {
+        console.log(eventKey);
+        this.setState({
+            pageNumber: eventKey,
+            view: this.state.filter.slice((eventKey-1) * 9, eventKey * 9)
         });
     }
 
@@ -39,9 +52,10 @@ class Item extends Component {
     render() {
         if (this.state.data === null)
             return (<LoadingOverlay />)
+
         // Create the cards before rendering
         var cards = [];
-        this.state.data.forEach( function(item) {
+        this.state.view.forEach( function(item) {
             cards.push(<InstanceCard data={item}/>);
         });
         return (
@@ -49,6 +63,14 @@ class Item extends Component {
                 <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>
                 <div className="row">
                     {cards.length == 0 ? "No items to show." : cards}
+                </div>
+                <div className="text-center">
+                    <Pagination
+                        bsSize="medium" 
+                        items={Math.floor(this.state.filter.length / 10) + 1} 
+                        activePage={this.state.pageNumber}
+                        onSelect={this.changePage}
+                    />
                 </div>
             </div>
         )

@@ -44,7 +44,7 @@ class Player extends Component {
                 <h1>Players</h1>
                 <hr/>
                 <div className="">
-                    {cards.length == 0 ? "No items to show." : cards}
+                    {cards.length === 0 ? "No items to show." : cards}
                 </div>
             </div>
         )

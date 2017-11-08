@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import InstanceCard from './InstanceCard';
 import LoadingOverlay from './LoadingOverlay';
+// import {Link} from 'react-router-dom';
 
 class InstancePage extends Component {
     constructor(props) {
@@ -101,7 +101,7 @@ class InstancePage extends Component {
                 <h1>{this.state.data.name}</h1>
                 <div className="row">
                     <div className="col-md-4">
-                        <img className="img-rounded img-responsive" src={this.state.data.image}/>
+                        <img className="img-rounded img-responsive" src={this.state.data.image} alt="rocket-league-item"/>
                     </div>
                     <h3>Description:</h3>
                     <div className="col-md-8 text-center">

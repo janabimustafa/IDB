@@ -7,15 +7,13 @@ import NavBar from './NavBar';
 
 import Home from './Home';
 import Item from './Item';
-
-import Crate from './Crate';
-import Body from './Body';
-import Paint from './Paint';
 import Player from './Player';
 import About from './About';
+
 import InstancePage from './InstancePage';
 import PaintPage from './PaintPage';
 import PlayerPage from './PlayerPage';
+
 import NotFound from './NotFound';
 
 //right now header is just navbar, but maybe header could be something more

@@ -33,7 +33,7 @@ class InstanceCard extends Component {
         return (
             <div className={'instance-card grow col-md-2 col-sm-4 text-center ' + this.getBorderColor(this.props.data.rarity) }>
                     <Link onClick={this.forceUpdate} to={`/${this.props.data.type}/${this.props.data.name}`}>
-                        <img className="img-rounded" src={this.props.data.image}/>                           
+                        <img className="img-rounded img-item" src={this.props.data.image}  alt="rocket-league-item"/>                           
                    
                         <div className="caption">
                             <h3>{this.props.data.name}</h3>

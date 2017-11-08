@@ -14,7 +14,7 @@ class PlayerCard extends Component {
         return (
             <div className="player-card grow col-md-2 col-sm-4 text-center">
                 <Link to={`/${this.props.data.type}/${this.props.data.name}`}>
-                    <img className="img-rounded img-player" src={this.props.data.image ? this.props.data.image : "http://via.placeholder.com/150x150"}/>
+                    <img className="img-rounded img-player" src={this.props.data.image ? this.props.data.image : "http://via.placeholder.com/150x150"}  alt="player"/>
                     <h2>{this.props.data.name}</h2>
                 </Link>
                 <br/>

@@ -1,0 +1,892 @@
+{
+	"info": {
+		"name": "IDB",
+		"_postman_id": "42f57f9d-9947-faa0-4af9-7747900e410e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all paints",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/paints/",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"paints",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get paint by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/paints/Circuit%20Board",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"paints",
+						"Circuit%20Board"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get paint by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/paints/10000",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"paints",
+						"10000"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all bodies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/bodies/",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"bodies",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get bodies by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/bodies/Backfire",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"bodies",
+						"Backfire"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get bodies by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/bodies/70560080",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"bodies",
+						"70560080"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all decals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/decals/",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"decals",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get decal by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/decals/Spatter",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"decals",
+						"Spatter"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get decal by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/decals/74418619",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"decals",
+						"74418619"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all crates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/crates",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"crates"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get crate by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/crates/Turbo%20Crate",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"crates",
+						"Turbo%20Crate"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get crate by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/crates/6991",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"crates",
+						"6991"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all dlcs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/dlcs/",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"dlcs",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get dlcs by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/dlcs/Supersonic%20Fury",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"dlcs",
+						"Supersonic%20Fury"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get dlcs by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/dlcs/56588818",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"dlcs",
+						"56588818"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get item by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/id/6991",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"id",
+						"6991"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get player by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/players/Kaydop/",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"players",
+						"Kaydop",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all players",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/players/",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"players",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get players by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/players/143045192",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"players",
+						"143045192"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all boosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/boosts",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"boosts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get boost by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/boosts/Datastream",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"boosts",
+						"Datastream"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get boost by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/boosts/89065759",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"boosts",
+						"89065759"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all wheels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/wheels",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"wheels"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get wheel by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/wheels/Veloce",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"wheels",
+						"Veloce"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get wheel by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/wheels/3509034",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"wheels",
+						"3509034"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all toppers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/toppers",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"toppers"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get topper by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/toppers/Beret",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"toppers",
+						"Beret"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get topper by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/toppers/47806438",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"toppers",
+						"47806438"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all explosions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/explosions",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"explosions"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get explosion by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/explosions/Classic",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"explosions",
+						"Classic"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get explosion by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/explosions/58207753",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"explosions",
+						"58207753"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all trails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/trails",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"trails"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get trail by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/trails/Imulsion",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"trails",
+						"Imulsion"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get trail by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/trails/26809623",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"trails",
+						"26809623"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all banners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/banners",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"banners"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get banner by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/banners/Calculated",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"banners",
+						"Calculated"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get banner by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/banners/76071020",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"banners",
+						"76071020"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Pagination} from 'react-bootstrap';
+import {Pagination, DropdownButton, MenuItem} from 'react-bootstrap';
 import InstanceCard from './InstanceCard';
 import LoadingOverlay from './LoadingOverlay';
 import Select from 'react-select';
@@ -25,6 +25,7 @@ class Item extends Component {
 
         this.changePage = this.changePage.bind(this);
         this.handleRarityFilterChange = this.handleRarityFilterChange.bind(this);
+        this.handleSort = this.handleSort.bind(this);
     }
 
     componentDidMount() {
@@ -47,20 +48,50 @@ class Item extends Component {
     }
     //change what is being displayed in view list based on filter list
     changePage(eventKey) {
-        console.log(eventKey);
         this.setState({
             pageNumber: eventKey,
             view: this.state.filter.slice((eventKey-1) * numberPerPage, eventKey * numberPerPage)
         });
     }
-    handleRarityFilterChange (value) {
+    
+    handleSort(eventKey) {
+        //https://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
+        var mySort = function(field, reverse, primer){
+            var key = primer ? function(x) {return primer(x[field])} : function(x) {return x[field]};
+            reverse = !reverse ? 1 : -1;
+
+            return function(a, b) {
+                return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+            }
+        }
         
+        let ekey = parseInt(eventKey);
+        let rev = ekey % 2 == 0
+
+        if (Math.floor((ekey + 1) / 2) == 1) {
+            var sorted = this.state.filter.sort(mySort('name', rev));
+        }
+        else if (Math.floor((ekey + 1) / 2) == 2) {
+            var sorted = this.state.filter.sort(mySort('rarity', rev));
+        }
+        else if (Math.floor((ekey + 1) / 2) == 3) {
+            var sorted = this.state.filter.sort(mySort('release_date', rev, function(x){return new Date(x)}));
+        }
+        console.log(sorted);
+
+        this.setState({
+            filter: sorted,
+            view: sorted.slice((this.state.pageNumber - 1) * numberPerPage, (this.state.pageNumber) * numberPerPage)
+        });
+    }
+
+    handleRarityFilterChange (value) {
         var filtered = value.length == 0 ? this.state.data : this.state.data.filter(item => value.map(x=>x.value).includes(item.rarity));        
         this.setState({
             filter: filtered,
             rarityFiltersValues: value,
             pageNumber: 1,
-            view: filtered.slice(0, 9),
+            view: filtered.slice(0, numberPerPage),
         });
     }
     //for each value in state, generate a model card
@@ -91,18 +122,32 @@ class Item extends Component {
                         <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>
                     </div>
                     <div className="col-md-8">
-                        <div className="col-md-4 filter-container">
+                        <div className="col-md-4 filter-container pull-right">
                             <Select placeholder="Rarity Filter: Any" onChange={this.handleRarityFilterChange} multi value={rarityFiltersValues} options={rarityOptions}></Select>
+                            <DropdownButton bsStyle="default" title="Sort By: ">
+                                <MenuItem header>Name</MenuItem>
+                                <MenuItem eventKey="1" onSelect={this.handleSort}>Increasing</MenuItem>
+                                <MenuItem eventKey="2" onSelect={this.handleSort}>Decreasing</MenuItem>
+                                <MenuItem divider />
+                                <MenuItem header>Rarity</MenuItem>
+                                <MenuItem eventKey="3" onSelect={this.handleSort}>Increasing</MenuItem>
+                                <MenuItem eventKey="4" onSelect={this.handleSort}>Decreasing</MenuItem>
+                                <MenuItem divider />
+                                <MenuItem header>Release Date</MenuItem>
+                                <MenuItem eventKey="5" onSelect={this.handleSort}>Increasing</MenuItem>
+                                <MenuItem eventKey="6" onSelect={this.handleSort}>Decreasing</MenuItem>
+                            </DropdownButton>
                         </div>
                     </div>
                 </div>
+
                 <div className="row">
                     {cards.length == 0 ? "No items to show." : cards}
                 </div>
                 <div className="text-center">
                     <Pagination
-                        bsSize="medium" 
-                        items={Math.floor(this.state.filter.length / numberPerPage) + 1} 
+                        bsSize="medium"     
+                        items={this.state.filter.length % numberPerPage === 0 ? Math.floor(this.state.filter.length / numberPerPage) : Math.floor(this.state.filter.length / numberPerPage) + 1} 
                         activePage={this.state.pageNumber}
                         onSelect={this.changePage}
                     />

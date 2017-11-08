@@ -1,11 +1,19 @@
+/* .row {
+    display: inline-block;
+} */
+
+.model-header {
+    border-color: rgba(18, 28, 51, 0.25);
+}
+
 hr {
     border-color: rgba(18, 28, 51, 0.25);
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 h1 {
     font-size: 36px;
-    padding-left: 15px;
+    /* margin-left: 15px; */
 }
 
 h2, h3 {
@@ -34,7 +42,7 @@ p {
     margin: 0;
 }
 
-.img-rounded {
+.img-item {
     margin-top: 12px;
     width: 150px;
 }
@@ -47,6 +55,7 @@ p {
     background-color: ghostwhite;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
+    height: 400px;
 }
 
 body {

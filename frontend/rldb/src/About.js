@@ -127,7 +127,7 @@ class About extends Component {
                 <p>Responsibilities: Back-End, API, Documentation.</p>
                 <p>{this.state.data['commits']["Musi13"]} Commits</p>
                 <p>{this.state.data["issues"]["Alex Gonzales"]} Issues</p>
-                <p>0 Unit Tests</p>
+                <p>3 Unit Tests</p>
             </div>
           </div>
 

@@ -1,0 +1,44 @@
+{"name": "Armadillo", "rarity": 1, "id": 43843111, "type": "Body", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/a9ea160e791509568760.png"}
+{"name": "Backfire", "rarity": 1, "id": 10326910, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5a7c33f8fb1436133276.png"}
+{"name": "Breakout", "rarity": 1, "id": 50198853, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d1ff3b0a291436133259.png"}
+{"name": "Gizmo", "rarity": 1, "id": 8001312, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/da9c9cdd5f1481367727.png"}
+{"name": "Hogsticker", "rarity": 1, "id": 364584, "type": "Body", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/269befbbba1509568078.png"}
+{"name": "Hotshot", "rarity": 1, "id": 64265881, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/40dfbccf9c1436133213.png"}
+{"name": "Merc", "rarity": 1, "id": 36623934, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/31cb8ecb591436133152.png"}
+{"name": "Octane", "rarity": 1, "id": 65571394, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1d349731e61509568153.png"}
+{"name": "Paladin", "rarity": 1, "id": 41997467, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c42a0ed28a1436133105.png"}
+{"name": "Road Hog", "rarity": 1, "id": 47197604, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3e304e13011436133088.png"}
+{"name": "Sweet Tooth", "rarity": 1, "id": 475085, "type": "Body", "platform": 2, "image": "https://rocket-league.com/content/media/items/avatar/220px/1b2c16f85a1509566879.png"}
+{"name": "Venom", "rarity": 1, "id": 98025416, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0fbe53e7dd1436133068.png"}
+{"name": "X-Devil", "rarity": 1, "id": 70560080, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/595597d9ee1481367841.png"}
+{"name": "'70 Dodge Charger R/T", "rarity": 6, "id": 33384198, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7a653a5b2c1507752125.png"}
+{"name": "'99 Nissan Skyline GT-R R34", "rarity": 6, "id": 18916922, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7d631f5c941507752286.png"}
+{"name": "Aftershock", "rarity": 6, "id": 12484274, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5eb451252c1466509310.png"}
+{"name": "Batmobile", "rarity": 6, "id": 83710768, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9e97acd0931457510614.png"}
+{"name": "Bone Shaker", "rarity": 6, "id": 13438335, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7e50bdd6fd1487707163.png"}
+{"name": "DeLorean Time Machine", "rarity": 6, "id": 49259652, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a9a4e7f88f1447515506.png"}
+{"name": "Dominus", "rarity": 6, "id": 76910870, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d0345504de1447516436.png"}
+{"name": "Esper", "rarity": 6, "id": 23070703, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/de6d966ae41466509341.png"}
+{"name": "Grog", "rarity": 6, "id": 63289195, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1462d8d3371451512051.png"}
+{"name": "Ice Charger", "rarity": 6, "id": 66515358, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cf857a5cb61491816943.png"}
+{"name": "Marauder", "rarity": 6, "id": 60893729, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/519f3fe4cf1466509330.png"}
+{"name": "Masamune", "rarity": 6, "id": 6891413, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/23aefd7b6e1466509351.png"}
+{"name": "Proteus", "rarity": 6, "id": 74541956, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/79b3c9d2d21475938184.png"}
+{"name": "Ripper", "rarity": 6, "id": 90024368, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0f21093fb11451512117.png"}
+{"name": "Scarab", "rarity": 6, "id": 45928378, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/862d0b17be1445099191.png"}
+{"name": "Takumi", "rarity": 6, "id": 74560516, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/047f600eb81451699335.png"}
+{"name": "Triton", "rarity": 6, "id": 6813136, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/eec6b4e3b81475938208.png"}
+{"name": "Twin Mill III", "rarity": 6, "id": 16193572, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4bc00247701487707111.png"}
+{"name": "Vulcan", "rarity": 6, "id": 6321991, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/027a9404fc1481301680.png"}
+{"name": "Zippy", "rarity": 6, "id": 86044037, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7db5e85dfa1445099012.png"}
+{"name": "Animus GP", "rarity": 7, "id": 26724931, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/71870b6aeb1499307713.png"}
+{"name": "Breakout Type-S", "rarity": 7, "id": 8349658, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/97eb34e7631475683880.png"}
+{"name": "Centio V17", "rarity": 7, "id": 82949925, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cbe61ba9141499307544.png"}
+{"name": "Dominus GT", "rarity": 7, "id": 86521130, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/75e8bb7e5d1473412157.png"}
+{"name": "Endo", "rarity": 7, "id": 82058743, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1f5724c5fb1490221547.png"}
+{"name": "J\u00e4ger 619 RS", "rarity": 7, "id": 27235945, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d02e13ec9f1506786587.png"}
+{"name": "Mantis", "rarity": 7, "id": 42545540, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/76c4b20ea71494793660.png"}
+{"name": "Octane ZSR", "rarity": 7, "id": 2769289, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6db50395201481302229.png"}
+{"name": "Road Hog XL", "rarity": 7, "id": 89881257, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/8d04eb69ff1473412255.png"}
+{"name": "Takumi RX-T", "rarity": 7, "id": 37423540, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7bd39778fe1473412354.png"}
+{"name": "X-Devil MK2", "rarity": 7, "id": 96974634, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/fa26b845f91473412371.png"}

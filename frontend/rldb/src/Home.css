@@ -15,17 +15,19 @@
     color: #141414;
 }
 
-h1 {
-    font-size: 60px;
+.text-container h1 {
+    font-size: 72px;
     font-weight: bold;
 }
 
-p {
-    font-size: 20px;
+.text-container p {
+    font-size: 30px;
 }
 
 .text-container {
     vertical-align: middle;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .cover-img { 

@@ -1,0 +1,126 @@
+{"name": "8-Ball", "rarity": 1, "id": 480340, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/459629ebd31436202897.png"}
+{"name": "9GAG", "rarity": 1, "id": 12015984, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bdc6036f3b1457520769.png"}
+{"name": "Blacklight", "rarity": 1, "id": 95363206, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2bbb83054e1436211859.png"}
+{"name": "Blacklight: Retribution", "rarity": 1, "id": 84279037, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/55c299bc3b1436203043.png"}
+{"name": "Blue Chequered Flag", "rarity": 1, "id": 81526914, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ea560dd1761436203085.png"}
+{"name": "Camo Flag", "rarity": 1, "id": 99935575, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e0f431a2eb1436203132.png"}
+{"name": "Chivalry - Agatha Knights", "rarity": 1, "id": 18175124, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3172c416c91447622568.png"}
+{"name": "Chivalry - Mason Order", "rarity": 1, "id": 15226151, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/fd9425c90a1447622585.png"}
+{"name": "Country Flags", "rarity": 1, "id": 8078882, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1ca371e1f01436206399.png"}
+{"name": "Dave's Bread", "rarity": 1, "id": 38263541, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e244e7a0ad1447518073.png"}
+{"name": "deadmau5", "rarity": 1, "id": 36623478, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/afb9e1aa0e1455310981.png"}
+{"name": "Disconnect", "rarity": 1, "id": 78839035, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5f9ddcd5cf1447544199.png"}
+{"name": "Discord", "rarity": 1, "id": 6357372, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/613131ca4b1473422319.png"}
+{"name": "DIV", "rarity": 1, "id": 6503057, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/eba5bbd7181473422284.png"}
+{"name": "Dollar Sign", "rarity": 1, "id": 19606459, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ea3abe0fc91436204174.png"}
+{"name": "Edge of Space", "rarity": 1, "id": 87034915, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/84f856fe611436204185.png"}
+{"name": "Fenix Rage", "rarity": 1, "id": 967984, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f51919e7dd1436204204.png"}
+{"name": "Gears of War - Cog Symbol", "rarity": 1, "id": 11661406, "type": "Antenna", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/bf2dfbf8511509568979.png"}
+{"name": "Gears of War - Cog Tag", "rarity": 1, "id": 22884932, "type": "Antenna", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/d099136ffb1509569075.png"}
+{"name": "Gears of War - Locust", "rarity": 1, "id": 79661013, "type": "Antenna", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/7023b719fc1509569124.png"}
+{"name": "Gingerbread Man", "rarity": 1, "id": 21637956, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/170bc32a611436204213.png"}
+{"name": "Halo - Guilty Spark", "rarity": 1, "id": 98152889, "type": "Antenna", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/37f8fc10081509569155.png"}
+{"name": "Halo - New Mombasa Cavaliers", "rarity": 1, "id": 51285592, "type": "Antenna", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/f8dd6cced21509569207.png"}
+{"name": "Halo - Swords of Sanghelios", "rarity": 1, "id": 19435145, "type": "Antenna", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/f1da3df05e1509569259.png"}
+{"name": "Headlander - Starcophagus", "rarity": 1, "id": 2157716, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0e83dbdac91473422296.png"}
+{"name": "Heart", "rarity": 1, "id": 53348327, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bbcc2cad131436204577.png"}
+{"name": "Horseshoe", "rarity": 1, "id": 39737784, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/78c305cca01436204587.png"}
+{"name": "J!NX", "rarity": 1, "id": 62290971, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2a87f424cf1499313375.png"}
+{"name": "Jolly Roger", "rarity": 1, "id": 89299970, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/58cb49eb0c1436204596.png"}
+{"name": "Jon Sandman", "rarity": 1, "id": 26430284, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b5704668071506797035.png"}
+{"name": "Lightning Bolt", "rarity": 1, "id": 7448553, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/13a358a10f1436205214.png"}
+{"name": "Moai", "rarity": 1, "id": 76420538, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2c33ec1f9f1455310954.png"}
+{"name": "Morty", "rarity": 1, "id": 59330962, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/28933ec17d1499313736.png"}
+{"name": "NoClip", "rarity": 1, "id": 13001230, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/abd893adbe1481309196.png"}
+{"name": "NZXT", "rarity": 1, "id": 29977313, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/00be61ace91481309278.png"}
+{"name": "Oddworld - Necrum", "rarity": 1, "id": 80369146, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/dd0749692e1447622288.png"}
+{"name": "PAX", "rarity": 1, "id": 20053309, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1990528b5c1473422327.png"}
+{"name": "Peace", "rarity": 1, "id": 34710907, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2f1c8643ca1436205234.png"}
+{"name": "Penny Arcade", "rarity": 1, "id": 28456627, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/55fe467e741473422338.png"}
+{"name": "Planetoid", "rarity": 1, "id": 40725565, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d1619cf6ce1436205254.png"}
+{"name": "Portal - Companion Cube", "rarity": 1, "id": 15862956, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e5454b784f1451618374.png"}
+{"name": "Portal - PotatOS", "rarity": 1, "id": 71166540, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6058c2696b1451618395.png"}
+{"name": "Reddit Snoo", "rarity": 1, "id": 35097071, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1a3cd46a171447518712.png"}
+{"name": "Rick", "rarity": 1, "id": 78720776, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4b5546d7aa1499313682.png"}
+{"name": "RL Garage", "rarity": 1, "id": 92489921, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/99a887d5f51451574606.png"}
+{"name": "RLCS", "rarity": 1, "id": 27438038, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0cd5ff95db1481309452.png"}
+{"name": "Safety Flag", "rarity": 1, "id": 3240185, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bac891b3fd1436205244.png"}
+{"name": "ScrewAttack", "rarity": 1, "id": 20492284, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0c061fd8a21473422355.png"}
+{"name": "SDMN FC", "rarity": 1, "id": 91559415, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e540f5c4e61481309362.png"}
+{"name": "Shadowgate", "rarity": 1, "id": 90593176, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d887b3df381436205265.png"}
+{"name": "Skull", "rarity": 1, "id": 79895379, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bd082ab2d61436205275.png"}
+{"name": "Smiley", "rarity": 1, "id": 5730703, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/652eea38c11436205283.png"}
+{"name": "Snowman", "rarity": 1, "id": 58891301, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7b1cf5b7051436205383.png"}
+{"name": "Soccer Ball", "rarity": 1, "id": 19318578, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ecca764edd1436205955.png"}
+{"name": "Spartan Sam", "rarity": 1, "id": 27510268, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/85498c3e811506796972.png"}
+{"name": "Star", "rarity": 1, "id": 79356509, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/932e89c3001436205965.png"}
+{"name": "Strike Vector EX", "rarity": 1, "id": 665749, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/1723209f3b1436205978.png"}
+{"name": "Sunset Overdrive - Fizzie", "rarity": 1, "id": 1645688, "type": "Antenna", "platform": 3, "image": "https://rocket-league.com/content/media/items/avatar/220px/03e9dae1151509569313.png"}
+{"name": "Sweet Tooth", "rarity": 1, "id": 4173674, "type": "Antenna", "platform": 2, "image": "https://rocket-league.com/content/media/items/avatar/220px/accf16b81b1436299905.png"}
+{"name": "Team Fat", "rarity": 1, "id": 7082831, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/add9538a131436205992.png"}
+{"name": "Tennis Ball", "rarity": 1, "id": 16585760, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9edebd25a21436206003.png"}
+{"name": "The Game Awards - Statue", "rarity": 1, "id": 45213759, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/33faf6466e1447519144.png"}
+{"name": "Twitch", "rarity": 1, "id": 43259150, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7ceef4d07f1436206016.png"}
+{"name": "UFO", "rarity": 1, "id": 15847524, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/23a8d898c41436206024.png"}
+{"name": "Unreal", "rarity": 1, "id": 94077089, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b991e5d3c71436206034.png"}
+{"name": "Unreal Tournament", "rarity": 1, "id": 68757755, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3aacb349901447622426.png"}
+{"name": "Unreal Tournament - Flak Shell", "rarity": 1, "id": 54945861, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3f519c294a1455311975.png"}
+{"name": "Vikkstar", "rarity": 1, "id": 93693612, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e2175e45831481309398.png"}
+{"name": "Warframe", "rarity": 1, "id": 742396, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2cc7b26c1f1436206042.png"}
+{"name": "Warframe - Chroma", "rarity": 1, "id": 8242792, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/70bba06a771436203269.png"}
+{"name": "Warframe - Excalibur", "rarity": 1, "id": 5098995, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/964bd521311436204195.png"}
+{"name": "Warframe - Loki", "rarity": 1, "id": 45570564, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6552355d921436205223.png"}
+{"name": "White Flag", "rarity": 1, "id": 12284033, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/57e5615c871439808350.png"}
+{"name": "Woofless", "rarity": 1, "id": 98929281, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/18fd80803a1506797052.png"}
+{"name": "Alien", "rarity": 2, "id": 15317179, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/850ca74cf71455312485.png"}
+{"name": "Balloon Dog", "rarity": 2, "id": 74354673, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7f0b395f351455312090.png"}
+{"name": "Candle", "rarity": 2, "id": 38436373, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3ffde1dbd51455312415.png"}
+{"name": "Chick Magnet", "rarity": 2, "id": 15216207, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4f47d4bbe31455312340.png"}
+{"name": "Cuckoo Clock", "rarity": 2, "id": 23269896, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/76d4a744bd1506797145.png"}
+{"name": "Cupcake", "rarity": 2, "id": 74517111, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f7a02a54a61455312271.png"}
+{"name": "Disco Ball", "rarity": 2, "id": 1675356, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/61a6443be41455312187.png"}
+{"name": "Donut", "rarity": 2, "id": 16916387, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5ddad76be61455311858.png"}
+{"name": "Flower - Daisy", "rarity": 2, "id": 86074296, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/44c10c97da1506797195.png"}
+{"name": "Flower - Orchid", "rarity": 2, "id": 80325008, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/42c472fcf71506797221.png"}
+{"name": "Flower - Rose", "rarity": 2, "id": 93154952, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cf13868e671455311770.png"}
+{"name": "Flower - Sunflower", "rarity": 2, "id": 39852760, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9498f6fd9f1455311672.png"}
+{"name": "Flower - Tulip", "rarity": 2, "id": 75833650, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/beb221dde11506795393.png"}
+{"name": "Foam Finger", "rarity": 2, "id": 27294153, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6e9f2e1b661455311404.png"}
+{"name": "Genie Lamp", "rarity": 2, "id": 56910000, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ad150b2f251455311337.png"}
+{"name": "Giant Panda", "rarity": 2, "id": 82830704, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/883c109c0e1506797276.png"}
+{"name": "Harpoon", "rarity": 2, "id": 90091883, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bbc5a060751475764770.png"}
+{"name": "Hot Dog", "rarity": 2, "id": 22174037, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9d51f49d551507154508.png"}
+{"name": "Hula Girl", "rarity": 2, "id": 77286735, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c8d6fc18091455311129.png"}
+{"name": "Lollipop", "rarity": 2, "id": 54215804, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/341f4750901506797251.png"}
+{"name": "Macaron", "rarity": 2, "id": 24898796, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/75e331c0911506784555.png"}
+{"name": "Parrot", "rarity": 2, "id": 36506917, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/247c3bbd1b1455310831.png"}
+{"name": "Pi\u00f1ata", "rarity": 2, "id": 77180604, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/935598a96e1455310635.png"}
+{"name": "Pinwheel", "rarity": 2, "id": 36164849, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/940e51b9921506797298.png"}
+{"name": "Rainbow Flag", "rarity": 2, "id": 50220114, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/af332a36d51455208893.png"}
+{"name": "Rocket", "rarity": 2, "id": 35402467, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/a4e38dfe381455310462.png"}
+{"name": "Rubber Duckie", "rarity": 2, "id": 46706246, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/2e109db4e91455310263.png"}
+{"name": "Satellite", "rarity": 2, "id": 82372181, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/ab638e440b1481308044.png"}
+{"name": "Seastar", "rarity": 2, "id": 8400727, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9dee0aefc71475764842.png"}
+{"name": "Trident", "rarity": 2, "id": 599831, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4e9f5508901475843511.png"}
+{"name": "Venus Flytrap", "rarity": 2, "id": 72571969, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0a7f0409061455311552.png"}
+{"name": "Waffle", "rarity": 2, "id": 73983332, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/cf5e5d17671455310165.png"}
+{"name": "Batman", "rarity": 6, "id": 77478831, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/24e5c7c59a1457511556.png"}
+{"name": "Bomb Pole", "rarity": 6, "id": 31404383, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b740f67ab01451512225.png"}
+{"name": "Radioactive", "rarity": 6, "id": 45965782, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/18587f654e1451512276.png"}
+{"name": "Retro Ball - Urban", "rarity": 6, "id": 10797147, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/43c8f2fa631445099108.png"}
+{"name": "Retro Ball - Utopia", "rarity": 6, "id": 87408111, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3dea1a8f051445099098.png"}
+{"name": "Retro Ball - Wasteland", "rarity": 6, "id": 12671148, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e9032fc91c1451512301.png"}
+{"name": "Superman", "rarity": 6, "id": 53266819, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4e5968b46f1457511579.png"}
+{"name": "Wonder Woman", "rarity": 6, "id": 13004018, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3090fcbc021457511595.png"}
+{"name": "Arachnotenna", "rarity": 5, "id": 31552500, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/c65602d94e1508199013.png"}
+{"name": "Calavera", "rarity": 5, "id": 75578905, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/974525d48a1447517810.png"}
+{"name": "Candy Cane", "rarity": 5, "id": 95951652, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/36d1df642f1451618333.png"}
+{"name": "Easter Egg", "rarity": 5, "id": 36137213, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/3004902be81490223403.png"}
+{"name": "Fuzzy Brute", "rarity": 5, "id": 15930956, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b1d54900551447518274.png"}
+{"name": "Fuzzy Skull", "rarity": 5, "id": 17372263, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/da5543f17e1476700176.png"}
+{"name": "Fuzzy Vamp", "rarity": 5, "id": 6560514, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/68d47486551447518467.png"}
+{"name": "Gold Nugget (Beta Reward)", "rarity": 5, "id": 85156470, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b8af341afd1436204222.png"}
+{"name": "Holiday Gift", "rarity": 5, "id": 69862477, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/efa1961c441451618355.png"}
+{"name": "Nutcracker", "rarity": 5, "id": 994394, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/df3c67a21c1481307462.png"}
+{"name": "Psyonix", "rarity": 5, "id": 20677942, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/e9055668cc1506797097.png"}
+{"name": "Shadow Witch", "rarity": 5, "id": 67330588, "type": "Antenna", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f90fce0d0f1508199040.png"}

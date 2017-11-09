@@ -1,0 +1,10 @@
+{"name": "Circuit Board", "rarity": 3, "id": 89771124, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/4804203a581499306752.png"}
+{"name": "Glossy Block", "rarity": 3, "id": 68303439, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d1fedc82f51499306818.png"}
+{"name": "Pearlescent (matte)", "rarity": 3, "id": 6778997, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/8f18cd8dee1506784897.png"}
+{"name": "Burlap", "rarity": 4, "id": 99919179, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f3b6ff1d7a1506784989.png"}
+{"name": "Cookie Dough", "rarity": 4, "id": 57362649, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/d55f940adc1506784859.png"}
+{"name": "Knitted Yarn", "rarity": 4, "id": 9631363, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/b2e87811121506784961.png"}
+{"name": "Metallic (Smooth)", "rarity": 4, "id": 90649891, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/aaa619d49e1506785333.png"}
+{"name": "Metallic Pearl (Smooth)", "rarity": 4, "id": 66712163, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/63996813831506901758.png"}
+{"name": "Moon Rock", "rarity": 4, "id": 52585472, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/642d1bcbf91506785098.png"}
+{"name": "Furry", "rarity": 7, "id": 56715778, "type": "Paint", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/f08c1b45121490221506.png"}

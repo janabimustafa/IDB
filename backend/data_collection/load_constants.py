@@ -1,19 +1,15 @@
 from models import *
 from sqlalchemy import create_engine, inspect
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, configure_mappers
 
 
 '''
 This file provides supplemental Rarity values for the RL Objects.
 '''
+configure_mappers()
 
 Base.metadata.reflect(db)
 Base.metadata.drop_all(db)
-# for tbl in reversed(Base.metadata.sorted_tables):
-#     try:
-#         tbl.drop(db)
-#     except:
-#         pass
 Base.metadata.create_all(db)
 
 s = Session()
@@ -32,7 +28,8 @@ rarities = [
 platforms = [
     Platform(id=1, name="Steam"),
     Platform(id=2, name="Playstation"),
-    Platform(id=3, name="Xbox")
+    Platform(id=3, name="Xbox"),
+    Platform(id=4, name="All")
 ]
 
 for rarity in rarities:
@@ -40,3 +37,4 @@ for rarity in rarities:
 for platform in platforms:
     s.merge(platform)
 s.commit()
+s.close()

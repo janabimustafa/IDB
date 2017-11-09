@@ -9,7 +9,7 @@ import Home from './Home';
 import Item from './Item';
 import Player from './Player';
 import About from './About';
-
+import Search from './Search';
 import InstancePage from './InstancePage';
 import PaintPage from './PaintPage';
 import PlayerPage from './PlayerPage';
@@ -36,10 +36,12 @@ const App = () => (
       <Route exact path='/wheels' component={Item}/>
 
       <Route exact path='/dlcs' component={Item}/>
+      
 
       <Route exact path='/players' component={Player}/>
       <Route exact path='/about' component={About}/>
       
+      <Route path='/search/:searchterm' component={Search}/>
       <Route path='/crates/:cratename' component={InstancePage}/>
       <Route path='/bodies/:bodyname' component={InstancePage}/>
       <Route path='/paints/:paintname' component={InstancePage}/>

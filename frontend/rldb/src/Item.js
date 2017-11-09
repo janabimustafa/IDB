@@ -7,7 +7,7 @@ import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import './Item.css';
 
-const numberPerPage = 9;
+const numberPerPage = 10;
 
 class Item extends Component {
     constructor(props) {
@@ -29,8 +29,8 @@ class Item extends Component {
     }
 
     componentDidMount() {
-        console.log('/api' + this.props.match.url + '/');
-        fetch('/api'+ this.props.match.url + '/', { 
+        console.log('/api' + this.props.match.url);
+        fetch('/api'+ this.props.match.url, { 
             method: 'GET',
             dataType: 'json'
         })
@@ -118,15 +118,21 @@ class Item extends Component {
         console.log(cards);
         return (
             <div className="container">
+                <hr/>
                 <div className="row">
-                    <div className="model-header">
-                        <hr/>
-                        <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>
-                        <hr/>          
-                    </div>
-                    <div className="col-md-8">
-                        <div className="col-md-4 filter-container pull-right">
-                            <Select placeholder="Rarity Filter: Any" onChange={this.handleRarityFilterChange} multi value={rarityFiltersValues} options={rarityOptions}></Select>
+                    <div className="col-md-8 model-header">                         
+                        <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>                            
+                    </div>                   
+                </div>
+                <hr/>
+                <div className="row">
+                    <div className="col-md-12 refine-options">
+                        <div className="col-md-8">
+                        </div>
+                        <div className="col-md-3">
+                            <Select placeholder="Rarity Filter: Any" onChange={this.handleRarityFilterChange} multi value={rarityFiltersValues} options={rarityOptions}></Select>                          
+                        </div>
+                        <div className="col-md-1">
                             <DropdownButton bsStyle="default" title="Sort By: ">
                                 <MenuItem header>Name</MenuItem>
                                 <MenuItem eventKey="1" onSelect={this.handleSort}>Increasing</MenuItem>
@@ -143,7 +149,6 @@ class Item extends Component {
                         </div>
                     </div>
                 </div>
-
                 <div className="row">
                     {cards.length == 0 ? "No items to show." : cards}
                 </div>

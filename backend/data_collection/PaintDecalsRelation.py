@@ -9,3 +9,4 @@ if __name__ == '__main__':
         paint.decals = decals
         s.merge(paint)
     s.commit()
+    s.close()

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
 import {Pagination, DropdownButton, MenuItem} from 'react-bootstrap';
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 import InstanceCard from './InstanceCard';
 import LoadingOverlay from './LoadingOverlay';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-
+import Highlighter from 'react-highlight-words';
 const numberPerPage = 10;
 
 class Search extends Component {
@@ -110,6 +110,20 @@ class Search extends Component {
         }
         
     }
+    makePlural (noun) {
+        var lastChar = noun.slice(-1)
+        console.log('last char in ' + noun + ' is ' + lastChar);
+        if (lastChar === 'y')
+            return noun.replace('y', 'ies');
+        else
+            return noun + 's';
+    }
+    dumpValues(item){
+        var values = Object.keys(item).map(function(key){
+            return item[key];
+        });
+        return values.join(" ");
+    }
     // shouldComponentUpdate(nextProps, nextState){
     //     if (nextProps.match.params.searchterm !== this.props.match.params.searchterm){
     //         return true
@@ -134,7 +148,21 @@ class Search extends Component {
         ]
         
         // Create the cards before rendering
-        var cards = view.map(item => (<InstanceCard data={item}/>));
+        var cards = view.map(item => (
+            <div>
+                <Link onClick={this.forceUpdate} to={`/${this.makePlural(item.type)}/${item.name}`}><button className="btn btn-link btn-lg">{item.name}</button></Link>
+                <div>
+                    <p className="container">
+                        <Highlighter
+                            searchWords={this.state.searchTerm.split(' ')}
+                            textToHighlight={this.dumpValues(item)}
+                        />
+                    </p>
+                </div>
+                <hr/>
+            {/* <InstanceCard data={item}/> */}
+            </div>
+        ));
         console.log(cards);
         return (
             <div className="container">

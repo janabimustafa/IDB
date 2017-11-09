@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 
 import {Pagination, DropdownButton, MenuItem} from 'react-bootstrap';
-import PlayerCard from './PlayerCard';
+import InstanceCard from './InstanceCard';
 import LoadingOverlay from './LoadingOverlay';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
+import './Item.css';
 
 const numberPerPage = 10;
 
-class Player extends Component {
+class Item extends Component {
     constructor(props) {
         super(props);
 
@@ -16,20 +17,20 @@ class Player extends Component {
             type: "",
             data: null,
             filter : [],
-            platformFiltersValues : [], //currently applied filters
-            platformFilter : [], //currently applied filters
+            rarityFiltersValues : [], //currently applied filters
+            rarityFilter : [], //currently applied filters
             view: [],
             pageNumber: 1
         };
 
         this.changePage = this.changePage.bind(this);
-        this.handlePlatformFilterChange = this.handlePlatformFilterChange.bind(this);
+        this.handleRarityFilterChange = this.handleRarityFilterChange.bind(this);
         this.handleSort = this.handleSort.bind(this);
     }
 
-    //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
-        fetch('/api/players/', { 
+        console.log('/api' + this.props.match.url);
+        fetch('/api'+ this.props.match.url, { 
             method: 'GET',
             dataType: 'json'
         })
@@ -46,15 +47,14 @@ class Player extends Component {
             });
         });
     }
-
-     //change what is being displayed in view list based on filter list
-     changePage(eventKey) {
+    //change what is being displayed in view list based on filter list
+    changePage(eventKey) {
         this.setState({
             pageNumber: eventKey,
             view: this.state.filter.slice((eventKey-1) * numberPerPage, eventKey * numberPerPage)
         });
     }
-
+    
     handleSort(eventKey) {
         //https://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
         var mySort = function(field, reverse, primer){
@@ -73,10 +73,10 @@ class Player extends Component {
             var sorted = this.state.filter.sort(mySort('name', rev));
         }
         else if (Math.floor((ekey + 1) / 2) == 2) {
-            var sorted = this.state.filter.sort(mySort('skill_rating', rev));
+            var sorted = this.state.filter.sort(mySort('rarity', rev));
         }
         else if (Math.floor((ekey + 1) / 2) == 3) {
-            var sorted = this.state.filter.sort(mySort('wins', rev, function(x){return new Date(x)}));
+            var sorted = this.state.filter.sort(mySort('release_date', rev, function(x){return new Date(x)}));
         }
         console.log(sorted);
 
@@ -86,44 +86,51 @@ class Player extends Component {
         });
     }
 
-    handlePlatformFilterChange (value) {
-        var filtered = value.length == 0 ? this.state.data : this.state.data.filter(player => value.map(x=>x.value).includes(player.platform));        
+    handleRarityFilterChange (value) {
+        var filtered = value.length == 0 ? this.state.data : this.state.data.filter(item => value.map(x=>x.value).includes(item.rarity));        
         this.setState({
             filter: filtered,
-            platformFiltersValues: value,
+            rarityFiltersValues: value,
             pageNumber: 1,
             view: filtered.slice(0, numberPerPage),
         });
     }
-
     //for each value in state, generate a model card
     render() {
+        console.log("render");
         if (this.state.data === null)
             return (<LoadingOverlay />)
-
-        let {platformFiltersValues, view} = this.state
-        let platformOptions = [
-            {value: 1, label: 'Steam'},
-            {value: 2, label: 'Playstation'},
-            {value: 3, label: 'Xbox'}
+        let {rarityFiltersValues, view} = this.state
+        let rarityOptions = [
+            {value: 1, label: 'Common'},
+            {value: 2, label: 'Uncommon'},
+            {value: 3, label: 'Rare'},
+            {value: 4, label: 'Very rare'},
+            {value: 5, label: 'Limited'},
+            {value: 6, label: 'Premium'},
+            {value: 7, label: 'Import'},
+            {value: 8, label: 'Exotic'},
+            {value: 9, label: 'Black market'}
         ]
-
+        
         // Create the cards before rendering
-        var cards = [];
-        this.state.view.forEach( function(item) {
-            cards.push(<PlayerCard data={item}/>);
-        });
+        var cards = view.map(item => (<InstanceCard data={item}/>));
+        console.log(cards);
         return (
             <div className="container">
                 <hr/>
-                <h1>Players</h1>
+                <div className="row">
+                    <div className="col-md-8 model-header">                         
+                        <h1>{this.state.type.charAt(0).toUpperCase() + this.state.type.slice(1)}</h1>                            
+                    </div>                   
+                </div>
                 <hr/>
                 <div className="row">
                     <div className="col-md-12 refine-options">
                         <div className="col-md-8">
                         </div>
                         <div className="col-md-3">
-                            <Select placeholder="Platform Filter: Any" onChange={this.handlePlatformFilterChange} multi value={platformFiltersValues} options={platformOptions}></Select>                          
+                            <Select placeholder="Rarity Filter: Any" onChange={this.handleRarityFilterChange} multi value={rarityFiltersValues} options={rarityOptions}></Select>                          
                         </div>
                         <div className="col-md-1">
                             <DropdownButton bsStyle="default" title="Sort By: ">
@@ -131,20 +138,21 @@ class Player extends Component {
                                 <MenuItem eventKey="1" onSelect={this.handleSort}>Increasing</MenuItem>
                                 <MenuItem eventKey="2" onSelect={this.handleSort}>Decreasing</MenuItem>
                                 <MenuItem divider />
-                                <MenuItem header>Skill Rating</MenuItem>
+                                <MenuItem header>Rarity</MenuItem>
                                 <MenuItem eventKey="3" onSelect={this.handleSort}>Increasing</MenuItem>
                                 <MenuItem eventKey="4" onSelect={this.handleSort}>Decreasing</MenuItem>
                                 <MenuItem divider />
-                                <MenuItem header>Wins</MenuItem>
+                                <MenuItem header>Release Date</MenuItem>
                                 <MenuItem eventKey="5" onSelect={this.handleSort}>Increasing</MenuItem>
                                 <MenuItem eventKey="6" onSelect={this.handleSort}>Decreasing</MenuItem>
                             </DropdownButton>
                         </div>
                     </div>
                 </div>
-                <div className="">
-                    {cards.length === 0 ? "No items to show." : cards}
+                <div className="row">
+                    {cards.length == 0 ? "No items to show." : cards}
                 </div>
+                <hr/>
                 <div className="text-center">
                     <Pagination
                         bsSize="medium"     
@@ -158,4 +166,4 @@ class Player extends Component {
     }
 }
 
-export default Player;
+export default Item;

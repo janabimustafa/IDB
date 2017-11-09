@@ -4,7 +4,7 @@ import './Home.css'
 
 const Home = () => (
     <div className="cover-img">
-        <img className="splash" src="http://fullhdpictures.com/wp-content/uploads/2016/01/Wonderful-Rocket-League-Wallpaper.jpg"/>
+        <img className="splash" src="http://fullhdpictures.com/wp-content/uploads/2016/01/Wonderful-Rocket-League-Wallpaper.jpg" alt="Futuristic soccer ball in a stadium"/>
         <div className="col-md-6 col-sm-6">
         </div>
         <div className="col-md-6 col-sm-6 text-container">

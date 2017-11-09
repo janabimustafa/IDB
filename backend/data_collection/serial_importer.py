@@ -49,4 +49,4 @@ for tup in relationships:
         getattr(a, tup[4]).append(b)
 
 s.commit()
- 
+s.close()

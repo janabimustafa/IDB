@@ -7,29 +7,48 @@ class InstanceCard extends Component {
     getRarity (rarity_num) {
         if (!rarity_num)
             return "unknown";
-        var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limted", "premium", "import", "exotic", "black market"];
+        var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limited", "premium", "import", "exotic", "black market"];
         return rarities[rarity_num];
     }
-    
-    getApiType (type) {
-        var apiTypes = {"crate" : "crates", "body":"bodies", "paint":"paints", "player":"players", "wheel":"wheels"};
-        return apiTypes[type];
+
+    getRarityColor (raw_rarity) {
+        return "color-" + this.getRarity(raw_rarity);
+    }
+
+    getBorderColor (raw_rarity) {
+        return "border-" + this.getRarity(raw_rarity);
+    }
+
+    upperCaseFirst(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    makePlural (noun) {
+        var lastChar = noun.slice(-1)
+        console.log('last char in ' + noun + ' is ' + lastChar);
+        if (lastChar === 'y')
+            return noun.replace('y', 'ies');
+        else
+            return noun + 's';
     }
 
     render() {
         console.log(this.props.data.type);
         return (
-            <div className=" col-md-4 col-sm-6 text-center">
-                <Link onClick={this.forceUpdate} to={`/${this.props.data.type}/${this.props.data.name}`}>
-                    <img className="img-rounded" src={this.props.data.image}/>
-                    <h2>{this.props.data.name}</h2>
-                </Link>
-                <div className="caption">
-                    <p>Rarity: { this.getRarity(this.props.data.rarity) }</p>
-                    <p>Item Type: {this.props.data.type}</p>
-                    <p>Release Date: {this.props.data.release_date ? this.props.data.release_date : "unknown"}</p>
-                    <p>Source: {this.props.data.source ? this.props.data.source : "drop"}</p>
-                </div>
+            <div className={'instance-card grow col-md-2 col-sm-4 text-center ' + this.getBorderColor(this.props.data.rarity) }>
+                    <Link onClick={this.forceUpdate} to={`/${this.makePlural(this.props.data.type)}/${this.props.data.name}`}>
+                        <img className="img-rounded img-item" src={this.props.data.image}  alt="rocket-league-item"/>                           
+                   
+                        <div className="caption">
+                            <h3>{this.props.data.name}</h3>
+                            <br/>
+                            <p className={this.getRarityColor(this.props.data.rarity)}> {this.getRarity(this.props.data.rarity).toUpperCase()}</p>
+                            <br/>
+                            <p className="">Item Type: {this.upperCaseFirst(this.props.data.type)}</p>
+                            <p>Release Date: {this.props.data.release_date ? this.props.data.release_date : "Unknown"}</p>
+                            <p>Source: {this.props.data.crates.length > 0 ? "Crate" : (this.props.data.dlcs.length > 0 || this.props.data.type == "dlc") ? "DLC" : "Drop"}</p>
+                        </div>                            
+                    </Link>
             </div>
         )
     }

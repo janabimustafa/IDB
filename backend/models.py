@@ -1,3 +1,4 @@
+from heapq import heappush, heappop
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
 from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine, Table, UnicodeText
 from sqlalchemy.orm import sessionmaker, relationship, configure_mappers
@@ -36,6 +37,15 @@ class DBObject: # Everything
     id = Column(Integer, primary_key=True)
     name = Column(UnicodeText)
 
+CrateItemsRelation = Table('crate_item_relations', Base.metadata,
+    Column('crate_id', ForeignKey('crates.id'), primary_key=True),
+    Column('item_id', ForeignKey('objects.id'), primary_key=True)) # Foreign key to all returnable types
+
+
+DLCItemsRelation = Table('dlc_item_relations', Base.metadata,
+    Column('dlc_id', ForeignKey('dlcs.id'), primary_key=True),
+    Column('item_id', ForeignKey('objects.id'), primary_key=True))
+
 class RLObject(Base, DBObject): # Non-meta
     __tablename__ = 'objects'
 
@@ -45,16 +55,25 @@ class RLObject(Base, DBObject): # Non-meta
     __mapper_args__ = {'polymorphic_on': type}
 
     image = Column(String) # URL of image
+    crates = relationship('Crate',
+        secondary=CrateItemsRelation,
+        primaryjoin=id==CrateItemsRelation.c.item_id)
+    dlcs = relationship('DLC',
+        secondary=DLCItemsRelation,
+        primaryjoin=id==DLCItemsRelation.c.item_id)    
     @declared_attr
     def platform(cls):
         return Column(Integer, ForeignKey('platforms.id'))
+
     def __eq__(self, other):
         return serialize_str(self) == serialize_str(other)
+
+    def __lt__(self, other):
+        return self.name < other.name
 
     def __repr__(self):
         return "<RLObject(id='{0}', name='{1}', type='{2}')>".format(
                                 self.id, self.name, CLASS_TO_TYPE.get(type(self)))
-    
 
 class RLObtainable(RLObject): # Not Players
     release_date = Column(Date)
@@ -160,9 +179,6 @@ class Banner(RLItem):
     id = Column(ForeignKey('objects.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'banner'}
 
-CrateItemsRelation = Table('crate_item_relations', Base.metadata,
-    Column('crate_id', ForeignKey('crates.id'), primary_key=True),
-    Column('item_id', ForeignKey('objects.id'), primary_key=True)) # Foreign key to all returnable types
 
 class Crate(RLItem):
     __tablename__ = 'crates'
@@ -173,9 +189,6 @@ class Crate(RLItem):
         secondary=CrateItemsRelation,
         primaryjoin=id==CrateItemsRelation.c.crate_id)
 
-DLCItemsRelation = Table('dlc_item_relations', Base.metadata,
-    Column('dlc_id', ForeignKey('dlcs.id'), primary_key=True),
-    Column('item_id', ForeignKey('objects.id'), primary_key=True))
 
 class DLC(RLObtainable):
     __tablename__ = 'dlcs'
@@ -192,6 +205,7 @@ class Player(RLObject):
     skill_rating = Column(Integer) # Average of Ranked modes in most recent season
     wins = Column(Integer)
     sig_image = Column(String)
+    profile_url = Column(String)
 
 TYPE_TO_CLASS = {
     'paint': Paint,
@@ -233,8 +247,8 @@ def serialize(rl_object):
     sdict = {k: rl_object.__dict__[k] for k in rl_object.__dict__ if not k.startswith('_')}
     sdict['type'] = CLASS_TO_TYPE.get(type(rl_object))
     if 'search_vector' in sdict:
-        del sdict['search_vector']
-    for rel in RELATION_KEYS.get(type(rl_object), []):
+        del sdict['search_vector']    
+    for rel in (RELATION_KEYS.get(type(rl_object), []) + ['crates', 'dlcs']):
         sdict[rel] = list(k.id for k in getattr(rl_object, rel))
     if 'release_date' in sdict:
         if sdict['release_date']:
@@ -271,3 +285,27 @@ def deserialize_list(json_str):
     object_list = [_deserialize_helper(json) for json in json_list]
     return object_list
 
+def search(class_, term):
+    term = str(term).lower()
+    s = Session()
+    pq = []
+
+    for obj in s.query(class_):
+        counter = 0
+        for attr in vars(obj):
+            if attr.startswith('_'):
+                continue
+            val = str(getattr(obj, attr)).lower()
+            while term in val:
+                counter += 1
+                val = val.replace(term, '')
+        heappush(pq, (-counter, obj, counter))
+
+    ret = []
+    for _ in range(len(pq)):
+        consider = heappop(pq)
+        if consider[2] <= 0:
+            break
+        ret.append(consider[1])
+
+    return ret

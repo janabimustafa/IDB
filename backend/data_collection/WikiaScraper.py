@@ -155,3 +155,4 @@ if __name__ == '__main__':
     with open('serial.txt', 'w') as f:
         for rl in all_objects.values():
             f.write(rl.serialize() + '\n')
+    session.close()

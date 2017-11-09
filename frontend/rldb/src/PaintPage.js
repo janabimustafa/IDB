@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 class PaintPage extends Component {
     constructor(props) {
@@ -47,7 +47,7 @@ class PaintPage extends Component {
                 <h1>{this.state.data.name}</h1>
                 <div className="row">
                     <div className="col-md-4">
-                        <img className="img-rounded img-responsive" src={this.state.data.image}/>
+                        <img className="img-rounded img-responsive" src={this.state.data.image}  alt="rocket-league-paint-item"/>
                     </div>
                     <div className="col-md-8 text-center">
                         <h3>Rarity: { this.getRarity(this.state.data.rarity) }</h3>

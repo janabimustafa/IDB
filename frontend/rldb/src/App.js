@@ -42,7 +42,7 @@ const App = () => (
       
       <Route path='/crates/:cratename' component={InstancePage}/>
       <Route path='/bodies/:bodyname' component={InstancePage}/>
-      <Route path='/paints/:paintname' component={PaintPage}/>
+      <Route path='/paints/:paintname' component={InstancePage}/>
       <Route path='/antennas/:antennaname' component={InstancePage}/>
       <Route path='/banners/:bannername' component={InstancePage}/>
       <Route path='/decals/:decalname' component={InstancePage}/>

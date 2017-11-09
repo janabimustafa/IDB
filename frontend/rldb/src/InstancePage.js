@@ -257,7 +257,7 @@ class InstancePage extends Component {
                     <h3>Go back.</h3>
                 </Link> */}
                 <h1>{this.state.data.name}</h1>
-                <h3 className={this.getRarityColor(this.state.data.rarity)}> {this.getRarity(this.state.data.rarity).toUpperCase()}</h3>
+                <h3 className={this.getRarityColor(this.state.data.rarity)}> {this.state.data.type === 'dlc' ? '' : this.getRarity(this.state.data.rarity).toUpperCase()}</h3>
                 <div className="row">
                     <div className="col-md-4">
                         <img className="img-rounded img-responsive" src={this.state.data.image} alt="rocket-league-item"/>

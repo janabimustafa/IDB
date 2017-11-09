@@ -7,10 +7,10 @@ import hashlib
 WIKIA_API = 'http://rocketleague.wikia.com/api/v1/'
 
 # Names of category pages mapped to the Category of object
-CATEGORIES = {'Crates': 'Crate', 'Decals': 'Decal', 'Bodies': 'Body', 'Wheels': 'Wheel', 'Images - antennas': 'Antenna', 'Toppers': 'Topper', 'Images - trails': 'Trail', 'Arenas': 'Arena'}
+CATEGORIES = {'Crates': 'Crate', 'Decals': 'Decal', 'Bodies': 'Body', 'Wheels': 'Wheel', 'Images - antennas': 'Antenna', 'Toppers': 'Topper', 'Images - trails': 'Boost', 'Arenas': 'Arena'}
 
 # Antenna and Trail objects have a title of '<Name> antenna/trail.png' because they're just pictures
-REPLACEMENTS = {'Antenna': ' antenna', 'Trail': ' trail'}
+REPLACEMENTS = {'Antenna': ' antenna', 'Boost': ' trail'}
 
 NO_DESCRIPT = {'Antenna', 'Trail'}
 

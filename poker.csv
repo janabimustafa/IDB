@@ -30,3 +30,16 @@ As a PC user, I want to see player stats for Steam players.;1;24/10/2017 23:13:3
 As a user, I want to view information about the game the database is based on.;2;24/10/2017 23:11:42;00:00:21;00:00:14;Alex;Melanie;3;
 
 Current User Stories
+sep=;
+Story Title;Estimate;Vote Started;Voting Duration;Avg Voting Time;Fastest;Slowest;Actual;
+As a user, I want to see RLCS' twitter feed on the front page.;1;09/11/2017 15:41:02;00:00:04;00:00:03;Melanie;Alex;
+As a user, I want to see which paint finishes fit on which decals.;2;09/11/2017 15:40:57;00:00:04;00:00:03;Melanie;Alex;
+As a user, I want to see links to the contributers' individual github pages;1;09/11/2017 15:40:50;00:00:05;00:00:04;Melanie;Alex;
+As a user, I want to see users' profile links on their player page.;2;09/11/2017 15:40:40;00:00:08;00:00:07;Melanie;Alex;
+As a user, I want to save be in the same pagination page if I click on an item, and go back to the models page using a back button.;2;09/11/2017 15:40:26;00:00:12;00:00:11;Melanie;Alex;
+As a user, I want to be able to sort instances by their attributes.;2;09/11/2017 15:40:21;00:00:03;00:00:02;Melanie;Alex;
+As a user, I only want to see only some items per page with pagination for more pages.;;09/11/2017 15:40:11;00:00:08;00:00:06;Melanie;Alex;
+As a user, I want to see an advanced search page to search things better.;3;09/11/2017 15:40:01;00:00:08;00:00:07;Melanie;Alex;
+As a user, I want to be able to filter instances by their attributes.;2;09/11/2017 15:39:54;00:00:04;00:00:02;Melanie;Alex;
+As a user, I want to see a search bar on the NavBar to search the whole site.;½;09/11/2017 15:39:43;00:00:08;00:00:05;Melanie;Alex;
+As a user, I want to see a well formatted "Not Found" page if I try to go to an item that doesn't exist.;2;26/10/2017 06:01:33;00:00:32;00:00:31;Melanie;Alex;

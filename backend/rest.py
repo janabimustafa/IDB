@@ -304,7 +304,7 @@ class GetSources(Resource):
 
 
 @api.route('/meta/platforms')
-class GetSources(Resource):
+class GetPlatforms(Resource):
 
     def get(self):
         return get_mapping(Platform)
@@ -337,13 +337,13 @@ class GetBoosts(Resource):
         return get_mapping(Boost)
 
 @api.route('/meta/toppers')
-class GetBoosts(Resource):
+class GetToppers(Resource):
 
     def get(self):
         return get_mapping(Topper)
 
 @api.route('/meta/antennas')
-class GetBoosts(Resource):
+class GetAntennas(Resource):
 
     def get(self):
         return get_mapping(Antenna)
@@ -355,13 +355,13 @@ class GetBoosts(Resource):
         return get_mapping(Trail)
 
 @api.route('/meta/banners')
-class GetBoosts(Resource):
+class GetBanners(Resource):
 
     def get(self):
         return get_mapping(Banner)
 
 @api.route('/meta/explosions')
-class GetBoosts(Resource):
+class GetExplosions(Resource):
 
     def get(self):
         return get_mapping(Explosion)

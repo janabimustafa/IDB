@@ -13,9 +13,10 @@ python -m data_collection.serial_importer data_collection/antennas.txt
 python -m data_collection.serial_importer data_collection/banners.txt
 python -m data_collection.serial_importer data_collection/boosts.txt
 python -m data_collection.serial_importer data_collection/explosions.txt
-python -m data_collection.serial_importer data_collection/paints.txt
+# python -m data_collection.serial_importer data_collection/paints.txt
 python -m data_collection.serial_importer data_collection/toppers.txt
 python -m data_collection.serial_importer data_collection/trails.txt
 python -m data_collection.serial_importer data_collection/wheels.txt
 python -m data_collection.serial_importer data_collection/dlcs.txt
 python -m data_collection.relation_importer data_collection/dlcs_items.txt
+python -m data_collection.PaintDecalsRelation

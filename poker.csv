@@ -1,3 +1,21 @@
+Previous User Stories
+
+Story Title;Estimate;Actual;
+Setup namecheap domain;.5;.5
+Decide on Project topic;2;5
+Find sources;2;1
+Research models, relationships, attributes;2;2
+Connect Flask/Docker app to GCP;3;6
+Setup basic site landing page and nav bar;1;1
+As a user, I want to see available crates in the game.;1;2
+As a user, I want to see available vehicle bodies in the game.;1;1
+As a user, I want to see available in-game decals.;1;1
+As a user, I want to see available paint finishes.;1;.5
+As a user, I want to see items grouped into categories.;2;.5
+As a user, I want to see rarities of items.;1;2
+As a user, I want to see availability of items (when they were available, can I get them now).;1;.5
+As a developer, I want references to each attribute so that I can easily look up related items.;1;1
+
 sep=;
 Story Title;Estimate;Vote Started;Voting Duration;Avg Voting Time;Fastest;Slowest;Actual;
 As a user, I want to see which crates contain which items.;2;26/10/2017 06:01:27;00:00:04;00:00:03;Alex;Melanie;4;
@@ -10,3 +28,5 @@ As a PS4 user, I want to see player stats for PS4 players.;1;24/10/2017 23:13:56
 As an Xbox user, I want to see player stats for Xbox players.;1;24/10/2017 23:13:49;00:00:05;00:00:04;Alex;Melanie;2;
 As a PC user, I want to see player stats for Steam players.;1;24/10/2017 23:13:32;00:00:09;00:00:06;Alex;Melanie;2;
 As a user, I want to view information about the game the database is based on.;2;24/10/2017 23:11:42;00:00:21;00:00:14;Alex;Melanie;3;
+
+Current User Stories

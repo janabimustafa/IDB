@@ -8,6 +8,20 @@
 	"item": [
 		{
 			"name": "get all paints",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"paint\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -32,6 +46,20 @@
 		},
 		{
 			"name": "get paint by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"paint\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -56,6 +84,20 @@
 		},
 		{
 			"name": "get paint by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"paint\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -80,6 +122,20 @@
 		},
 		{
 			"name": "get all bodies",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"body\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -104,6 +160,20 @@
 		},
 		{
 			"name": "get bodies by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"body\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -127,7 +197,21 @@
 			"response": []
 		},
 		{
-			"name": "get bodies by name",
+			"name": "get bodies by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"body\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -152,6 +236,20 @@
 		},
 		{
 			"name": "get all decals",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"decal\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -176,6 +274,20 @@
 		},
 		{
 			"name": "get decal by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"decal\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -200,6 +312,20 @@
 		},
 		{
 			"name": "get decal by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"decal\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -224,6 +350,20 @@
 		},
 		{
 			"name": "get all crates",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"crate\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -247,6 +387,20 @@
 		},
 		{
 			"name": "get crate by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"crate\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -271,6 +425,20 @@
 		},
 		{
 			"name": "get crate by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"crate\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -295,6 +463,20 @@
 		},
 		{
 			"name": "get all dlcs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"dlc\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -319,6 +501,20 @@
 		},
 		{
 			"name": "get dlcs by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"dlc\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -343,6 +539,20 @@
 		},
 		{
 			"name": "get dlcs by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"dlc\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -367,6 +577,20 @@
 		},
 		{
 			"name": "get item by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"id\\\":\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -390,32 +614,21 @@
 			"response": []
 		},
 		{
-			"name": "get player by name",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"url": {
-					"raw": "http://dev.rldb.me/api/players/Kaydop/",
-					"protocol": "http",
-					"host": [
-						"dev",
-						"rldb",
-						"me"
-					],
-					"path": [
-						"api",
-						"players",
-						"Kaydop",
-						""
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
 			"name": "get all players",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"player\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -439,7 +652,59 @@
 			"response": []
 		},
 		{
+			"name": "get player by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"player\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://dev.rldb.me/api/players/Scrub%20Killa",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"rldb",
+						"me"
+					],
+					"path": [
+						"api",
+						"players",
+						"Scrub%20Killa"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "get players by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"player\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -464,6 +729,20 @@
 		},
 		{
 			"name": "get all boosts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"boost\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -487,6 +766,20 @@
 		},
 		{
 			"name": "get boost by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"boost\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -511,6 +804,20 @@
 		},
 		{
 			"name": "get boost by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"boost\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -535,6 +842,20 @@
 		},
 		{
 			"name": "get all wheels",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"wheel\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -558,6 +879,20 @@
 		},
 		{
 			"name": "get wheel by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"wheel\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -582,6 +917,20 @@
 		},
 		{
 			"name": "get wheel by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"wheel\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -606,6 +955,20 @@
 		},
 		{
 			"name": "get all toppers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"topper\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -629,6 +992,20 @@
 		},
 		{
 			"name": "get topper by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"topper\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -653,6 +1030,20 @@
 		},
 		{
 			"name": "get topper by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"topper\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -677,6 +1068,20 @@
 		},
 		{
 			"name": "get all explosions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"explosion\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -700,6 +1105,20 @@
 		},
 		{
 			"name": "get explosion by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"explosion\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -724,6 +1143,20 @@
 		},
 		{
 			"name": "get explosion by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"explosion\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -748,6 +1181,20 @@
 		},
 		{
 			"name": "get all trails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"trail\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -771,6 +1218,20 @@
 		},
 		{
 			"name": "get trail by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"trail\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -795,6 +1256,20 @@
 		},
 		{
 			"name": "get trail by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"trail\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -819,6 +1294,20 @@
 		},
 		{
 			"name": "get all banners",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"banner\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -842,6 +1331,20 @@
 		},
 		{
 			"name": "get banner by name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"banner\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -866,6 +1369,20 @@
 		},
 		{
 			"name": "get banner by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"type\\\": \\\"banner\\\"\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],

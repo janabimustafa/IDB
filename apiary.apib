@@ -5,253 +5,8 @@ HOST: http://docs.janabimustafa.apiary.io/
 
 Rocket League Database (RLDB) is an API allowing players and fans to obtain information about in-game items and top players.
 
-## Paints [/paints/]
-### Get all Paints [GET]
-
-+ Response 200 (application/json)
-
-        [{
-            "id": 0,
-            "name": "Circuit Board",
-            "type": "paint",
-            "rarity": "rare",
-            "source": "crate",
-            "crate": 0,
-            "release_date": "2017-07-05",
-            "decals": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }]
-
-## Paint [/paints/{name}]
-### Get a Paint Finish by name [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Circuit Board",
-            "type": "paint",
-            "rarity": "rare",
-            "source": "crate",
-            "crate": 0,
-            "release_date": "2017-07-05",
-            "decals": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## Paint [/paints/{id}]
-### Get a Paint Finish by id [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Circuit Board",
-            "type": "paint",
-            "rarity": "rare",
-            "source": "crate",
-            "crate": 0,
-            "release_date": "2017-07-05",
-            "decals": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## Bodies [/bodies/]
-### Get all bodies [GET]
-
-+ Response 200 (application/json)
-
-        [{
-            "id": 0,
-            "name": "Backfire",
-            "type": "body",
-            "rarity": "common",
-            "source": "body",
-            "release_date": "2015-07-07",
-            "decals": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        },]
-        
-## Body [/bodies/{name}]
-### Get a Body by name [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Backfire",
-            "type": "body",
-            "rarity": "common",
-            "source": "body",
-            "release_date": "2015-07-07",
-            "decals": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## Body [/bodies/{id}]
-### Get a Body by id [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Backfire",
-            "type": "body",
-            "rarity": "common",
-            "source": "body",
-            "release_date": "2015-07-07",
-            "decals": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## Decals [/decals/]
-### Get all Decals [GET]
-
-+ Response 200 (application/json)
-
-        [{
-            "id": 0,
-            "name": "Funny Book",
-            "type": "decal",
-            "rarity": "rare",
-            "source": "crate",
-            "crate": 0,
-            "is_animated": false,
-            "is_paintable": true,
-            "bodies": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        },]
-
-## Decal [/decals/{name}]
-### Get a Decal by name [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Funny Book",
-            "type": "decal",
-            "rarity": "rare",
-            "source": "crate",
-            "crate": 0,
-            "is_animated": false,
-            "is_paintable": true,
-            "bodies": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## Decal [/decals/{id}]
-### Get a Decal by id [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Funny Book",
-            "type": "decal",
-            "rarity": "rare",
-            "source": "crate",
-            "crate": 0,
-            "is_animated": false,
-            "is_paintable": true,
-            "bodies": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## Crates [/crates/]
-### Get all Crates [GET]
-
-+ Response 200 (application/json)
-
-        [{
-            "id": 0,
-            "name": "Turbo",
-            "type": "crate",
-            "rarity": "rare",
-            "source": "drop",
-            "release_date": "2017-03-22",
-            "retire_date": null,
-            "items": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        },]
-        
-## Crate [/crates/{name}]
-### Get a Crate by name [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Turbo",
-            "type": "crate",
-            "rarity": "rare",
-            "source": "drop",
-            "release_date": "2017-03-22",
-            "retire_date": null,
-            "items": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## Crate [/crates/{id}]
-### Get a Crate by id [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Turbo",
-            "type": "crate",
-            "rarity": "rare",
-            "source": "drop",
-            "release_date": "2017-03-22",
-            "retire_date": null,
-            "items": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## DLCs [/dlcs/]
-### Get all DLC [GET]
-
-+ Response 200 (application/json)
-
-        [{
-            "id": 0,
-            "name": "Supersonic Fury",
-            "type": "DLC",
-            "release_date": "2015-08-13",
-            "items": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        },]
-        
-## DLC [/dlcs/{name}]
-### Get a DLC by name [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Supersonic Fury",
-            "type": "DLC",
-            "release_date": "2015-08-13",
-            "items": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## DLC [/dlcs/{id}]
-### Get a DLC by id [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 0,
-            "name": "Supersonic Fury",
-            "type": "DLC",
-            "release_date": "2015-08-13",
-            "items": [1, 2, 3, 4, 5],
-            "image": "https://www.example.com/image.png"
-        }
-
-## ID [/id/{id}]
+# Group Objects
+## Object By Id [/id/{id}]
 ### Get an Object by ID [GET]
 
 + Response 200 (application/json)
@@ -266,58 +21,10 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "decals": [1, 2, 3, 4, 5],
             "image": "https://www.example.com/image.png"
         }
-
-## Players [/players/]
-### Get all Players [GET]
-
-+ Response 200 (application/json)
-
-        [{
-            "id": 143045192,
-            "name": "Kaydop",
-            "type": "player",
-            "platform": 1,
-            "skill_rating": 1648,
-            "wins": 5503,
-            "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
-            "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
-        },]
         
-## Player [/players/{name}]
-### Get a Player by name [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 143045192,
-            "name": "Kaydop",
-            "type": "player",
-            "platform": 1,
-            "skill_rating": 1648,
-            "wins": 5503,
-            "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
-            "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
-        }
-
-      
-## Player [/players/{id}]
-### Get a Player by ID [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "id": 143045192,
-            "name": "Kaydop",
-            "type": "player",
-            "platform": 1,
-            "skill_rating": 1648,
-            "wins": 5503,
-            "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
-            "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
-        }
-
-## Search [/search/{term}]
-### Get a list of results in relevant order based on a search keyword
+# Group Search
+## Search by Term [/search/{term}]
+### Get a list of results in relevant order based on a search keyword [GET]
 
 + Response 200 (application/json)
 
@@ -389,3 +96,896 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "type": "wheel"
           }
         ]
+        
+# Group Paints
+## All Paints [/paints/]
+### Get all Paints [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "id": 0,
+            "name": "Circuit Board",
+            "type": "paint",
+            "rarity": "rare",
+            "source": "crate",
+            "crate": 0,
+            "release_date": "2017-07-05",
+            "decals": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }]
+
+## Paint By Name [/paints/{name}]
+### Get a Paint Finish by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Circuit Board",
+            "type": "paint",
+            "rarity": "rare",
+            "source": "crate",
+            "crate": 0,
+            "release_date": "2017-07-05",
+            "decals": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+
+## Paint By Id [/paints/{id}]
+### Get a Paint Finish by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Circuit Board",
+            "type": "paint",
+            "rarity": "rare",
+            "source": "crate",
+            "crate": 0,
+            "release_date": "2017-07-05",
+            "decals": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+# Group Bodies
+## All Bodies [/bodies/]
+### Get all bodies [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "id": 0,
+            "name": "Backfire",
+            "type": "body",
+            "rarity": "common",
+            "source": "body",
+            "release_date": "2015-07-07",
+            "decals": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        },]
+        
+## Body By Name [/bodies/{name}]
+### Get a Body by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Backfire",
+            "type": "body",
+            "rarity": "common",
+            "source": "body",
+            "release_date": "2015-07-07",
+            "decals": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+
+## Body By Id [/bodies/{id}]
+### Get a Body by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Backfire",
+            "type": "body",
+            "rarity": "common",
+            "source": "body",
+            "release_date": "2015-07-07",
+            "decals": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+
+# Group Decals
+## All Decals [/decals/]
+### Get all Decals [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "id": 0,
+            "name": "Funny Book",
+            "type": "decal",
+            "rarity": "rare",
+            "source": "crate",
+            "crate": 0,
+            "is_animated": false,
+            "is_paintable": true,
+            "bodies": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        },]
+
+## Decal By Name [/decals/{name}]
+### Get a Decal by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Funny Book",
+            "type": "decal",
+            "rarity": "rare",
+            "source": "crate",
+            "crate": 0,
+            "is_animated": false,
+            "is_paintable": true,
+            "bodies": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+
+## Decal By Id [/decals/{id}]
+### Get a Decal by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Funny Book",
+            "type": "decal",
+            "rarity": "rare",
+            "source": "crate",
+            "crate": 0,
+            "is_animated": false,
+            "is_paintable": true,
+            "bodies": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+# Group Crates
+## All Crates [/crates/]
+### Get all Crates [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "id": 0,
+            "name": "Turbo",
+            "type": "crate",
+            "rarity": "rare",
+            "source": "drop",
+            "release_date": "2017-03-22",
+            "retire_date": null,
+            "items": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        },]
+        
+## Crate By Name [/crates/{name}]
+### Get a Crate by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Turbo",
+            "type": "crate",
+            "rarity": "rare",
+            "source": "drop",
+            "release_date": "2017-03-22",
+            "retire_date": null,
+            "items": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+
+## Crate By Id [/crates/{id}]
+### Get a Crate by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Turbo",
+            "type": "crate",
+            "rarity": "rare",
+            "source": "drop",
+            "release_date": "2017-03-22",
+            "retire_date": null,
+            "items": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+# Group DLCs
+## All DLCs [/dlcs/]
+### Get all DLC [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "id": 0,
+            "name": "Supersonic Fury",
+            "type": "DLC",
+            "release_date": "2015-08-13",
+            "items": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        },]
+        
+## DLC By Name [/dlcs/{name}]
+### Get a DLC by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Supersonic Fury",
+            "type": "DLC",
+            "release_date": "2015-08-13",
+            "items": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+
+## DLC By Id [/dlcs/{id}]
+### Get a DLC by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 0,
+            "name": "Supersonic Fury",
+            "type": "DLC",
+            "release_date": "2015-08-13",
+            "items": [1, 2, 3, 4, 5],
+            "image": "https://www.example.com/image.png"
+        }
+
+# Group Antennas
+## All Antennas [/antennas/]
+### Get all Antennas [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "description": "",
+            "image": "https://vignette.wikia.nocookie.net/rocketleague/images/6/66/Nosgoth_vampire_antenna.png/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/257/window-height/256?cb=20170213014524",
+            "source": null,
+            "name": "Nosgoth vampire",
+            "platform": null,
+            "release_date": null,
+            "id": 16188259,
+            "dlcs": [],
+            "crates": [],
+            "rarity": null,
+            "type": "antenna"
+        }]
+        
+## Antenna By Name [/antennas/{name}]
+### Get an Antenna by name [GET]
+
++ Response 200 (application/json)
+
+        {
+          "description": "",
+          "image": "https://vignette.wikia.nocookie.net/rocketleague/images/6/66/Nosgoth_vampire_antenna.png/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/257/window-height/256?cb=20170213014524",
+          "source": null,
+          "name": "Nosgoth vampire",
+          "platform": null,
+          "release_date": null,
+          "id": 16188259,
+          "dlcs": [],
+          "crates": [],
+          "rarity": null,
+          "type": "antenna"
+        }
+
+## Antenna By Id [/antennas/{id}]
+### Get an Antenna by id [GET]
+
++ Response 200 (application/json)
+
+        {
+          "description": "",
+          "image": "https://vignette.wikia.nocookie.net/rocketleague/images/6/66/Nosgoth_vampire_antenna.png/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/257/window-height/256?cb=20170213014524",
+          "source": null,
+          "name": "Nosgoth vampire",
+          "platform": null,
+          "release_date": null,
+          "id": 16188259,
+          "dlcs": [],
+          "crates": [],
+          "rarity": null,
+          "type": "antenna"
+        }
+
+
+# Group Banners
+## All Banners [/banners/]
+### Get all Banners [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "description": null,
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/390390ad131506779486.png",
+            "source": null,
+            "name": "Block",
+            "platform": 4,
+            "release_date": null,
+            "id": 34975547,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "banner"
+        },]
+        
+## Banner By Name [/banners/{name}]
+### Get a Banner by name [GET]
+
++ Response 200 (application/json)
+
+        {
+        "description": null,
+        "image": "https://rocket-league.com/content/media/items/avatar/220px/390390ad131506779486.png",
+        "source": null,
+        "name": "Block",
+        "platform": 4,
+        "release_date": null,
+        "id": 34975547,
+        "dlcs": [],
+        "crates": [],
+        "rarity": 1,
+        "type": "banner"
+        }
+
+## Banner By Id [/banners/{id}]
+### Get a Banner by id [GET]
+
++ Response 200 (application/json)
+
+        {
+        "description": null,
+        "image": "https://rocket-league.com/content/media/items/avatar/220px/390390ad131506779486.png",
+        "source": null,
+        "name": "Block",
+        "platform": 4,
+        "release_date": null,
+        "id": 34975547,
+        "dlcs": [],
+        "crates": [],
+        "rarity": 1,
+        "type": "banner"
+        }
+
+# Group Boosts
+## All Boosts [/boosts/]
+### Get all Boosts [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "description": "Rocket trail used in customization.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/40f2af65191475764891.png",
+            "source": null,
+            "name": "Ink",
+            "platform": null,
+            "release_date": null,
+            "id": 79297515,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 4,
+            "type": "boost"
+        },]
+        
+## Boost By Name [/boosts/{name}]
+### Get a Boost by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": "Rocket trail used in customization.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/40f2af65191475764891.png",
+            "source": null,
+            "name": "Ink",
+            "platform": null,
+            "release_date": null,
+            "id": 79297515,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 4,
+            "type": "boost"
+        }
+
+## Boost By Id [/boosts/{id}]
+### Get a Boost by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": "Rocket trail used in customization.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/40f2af65191475764891.png",
+            "source": null,
+            "name": "Ink",
+            "platform": null,
+            "release_date": null,
+            "id": 79297515,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 4,
+            "type": "boost"
+        }
+        
+# Group Explosions
+## All Explosions [/explosions/]
+### Get all Explosions [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "description": null,
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/58f553376a1499480991.png",
+            "source": null,
+            "name": "Classic",
+            "platform": 4,
+            "release_date": null,
+            "id": 58207753,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "explosion"
+        },]
+        
+## Explosion By Name [/explosions/{name}]
+### Get an Explosion by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": null,
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/58f553376a1499480991.png",
+            "source": null,
+            "name": "Classic",
+            "platform": 4,
+            "release_date": null,
+            "id": 58207753,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "explosion"
+        }
+
+## Explosion By Id [/explosions/{id}]
+### Get an Explosion by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": null,
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/58f553376a1499480991.png",
+            "source": null,
+            "name": "Classic",
+            "platform": 4,
+            "release_date": null,
+            "id": 58207753,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "explosion"
+        }
+
+# Group Toppers
+## All Toppers [/toppers/]
+### Get all Toppers [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "description": "The Beret topper is a collectable item in the game that is used to customize the player's vehicle further. It provides no advantages while used and is simply cosmetic. It is categorized as an uncommon topper. This topper is available as a random drop from playing completed online matches.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/d778652e1f1455229268.png",
+            "source": null,
+            "name": "Beret",
+            "platform": null,
+            "release_date": null,
+            "id": 47806438,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 2,
+            "type": "topper"
+        },]
+        
+## Topper By Name [/toppers/{name}]
+### Get a Topper by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": "The Beret topper is a collectable item in the game that is used to customize the player's vehicle further. It provides no advantages while used and is simply cosmetic. It is categorized as an uncommon topper. This topper is available as a random drop from playing completed online matches.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/d778652e1f1455229268.png",
+            "source": null,
+            "name": "Beret",
+            "platform": null,
+            "release_date": null,
+            "id": 47806438,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 2,
+            "type": "topper"
+        }
+
+## Topper By Id [/toppers/{id}]
+### Get a Topper by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": "The Beret topper is a collectable item in the game that is used to customize the player's vehicle further. It provides no advantages while used and is simply cosmetic. It is categorized as an uncommon topper. This topper is available as a random drop from playing completed online matches.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/d778652e1f1455229268.png",
+            "source": null,
+            "name": "Beret",
+            "platform": null,
+            "release_date": null,
+            "id": 47806438,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 2,
+            "type": "topper"
+        }
+
+# Group Trails
+## All Trails [/trails/]
+### Get all Trails [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "description": null,
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/19068d454d1499480364.png",
+            "source": null,
+            "name": "Classic",
+            "platform": 4,
+            "release_date": null,
+            "id": 1546919,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "trail"
+        },]
+        
+## Trail By Name [/trails/{name}]
+### Get a Trail by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": null,
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/19068d454d1499480364.png",
+            "source": null,
+            "name": "Classic",
+            "platform": 4,
+            "release_date": null,
+            "id": 1546919,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "trail"
+        }
+
+## Trail By Id [/trails/{id}]
+### Get a Trail by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": null,
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/19068d454d1499480364.png",
+            "source": null,
+            "name": "Classic",
+            "platform": 4,
+            "release_date": null,
+            "id": 1546919,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "trail"
+        }
+        
+# Group Wheels
+## All Wheels [/wheels/]
+### Get all Wheels [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "description": "The Spyder wheel is a collectable item in the game that is used to customize the player's vehicle further. It provides no advantages while used and is simply cosmetic. It is categorized as a common wheel but the painted variants are categorized as exotic (uncommon before August 4, 2017) and can only be obtained by trade-up. This wheel must be unlocked—like most of the common wheels—by playing the game normally through completed matches. Matches can be online or offline exhibitions.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/ad050326131436131560.png",
+            "source": null,
+            "name": "Spyder",
+            "platform": null,
+            "release_date": null,
+            "id": 58662612,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "wheel"
+        },]
+        
+## Wheel By Name [/wheels/{name}]
+### Get a Wheel by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": "The Spyder wheel is a collectable item in the game that is used to customize the player's vehicle further. It provides no advantages while used and is simply cosmetic. It is categorized as a common wheel but the painted variants are categorized as exotic (uncommon before August 4, 2017) and can only be obtained by trade-up. This wheel must be unlocked—like most of the common wheels—by playing the game normally through completed matches. Matches can be online or offline exhibitions.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/ad050326131436131560.png",
+            "source": null,
+            "name": "Spyder",
+            "platform": null,
+            "release_date": null,
+            "id": 58662612,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "wheel"
+        }
+
+## Wheel By Id [/wheels/{id}]
+### Get a Wheel by id [GET]
+
++ Response 200 (application/json)
+
+        {
+            "description": "The Spyder wheel is a collectable item in the game that is used to customize the player's vehicle further. It provides no advantages while used and is simply cosmetic. It is categorized as a common wheel but the painted variants are categorized as exotic (uncommon before August 4, 2017) and can only be obtained by trade-up. This wheel must be unlocked—like most of the common wheels—by playing the game normally through completed matches. Matches can be online or offline exhibitions.",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/ad050326131436131560.png",
+            "source": null,
+            "name": "Spyder",
+            "platform": null,
+            "release_date": null,
+            "id": 58662612,
+            "dlcs": [],
+            "crates": [],
+            "rarity": 1,
+            "type": "wheel"
+        }        
+        
+
+# Group Players
+## All Players [/players/]
+### Get all Players [GET]
+
++ Response 200 (application/json)
+
+        [{
+            "id": 143045192,
+            "name": "Kaydop",
+            "type": "player",
+            "platform": 1,
+            "skill_rating": 1648,
+            "wins": 5503,
+            "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
+            "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
+        },]
+        
+## Player By Name [/players/{name}]
+### Get a Player by name [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 143045192,
+            "name": "Kaydop",
+            "type": "player",
+            "platform": 1,
+            "skill_rating": 1648,
+            "wins": 5503,
+            "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
+            "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
+        }
+
+## Player By Id [/players/{id}]
+### Get a Player by ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 143045192,
+            "name": "Kaydop",
+            "type": "player",
+            "platform": 1,
+            "skill_rating": 1648,
+            "wins": 5503,
+            "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
+            "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
+        }
+
+# Group Meta
+## About Meta [/meta/about]
+### Get About Info [GET]
++ Response 200 (application/json)
+
+        {
+          "num_issues": 46,
+          "issues": {
+            "Alex Gonzales": 15,
+            "Mustafa Taleb": 12,
+            "Melanie L Rivera": 14,
+            "John O'Kane": 6,
+            "George Weng": 9
+          },
+          "commits": {
+            "obits13": 82,
+            "janabimustafa": 92,
+            "lprekon": 17,
+            "gweng88": 20,
+            "Musi13": 31
+          },
+          "num_commits": 242
+        }
+## Antennas Meta [/meta/antennas]
+### Get Antennas Info [GET]
++ Response 200 (application/json)
+
+        {
+            "480340": "8-Ball",
+            "599831": "Trident",
+            "665749": "Strike Vector EX",
+            "742396": "Warframe",
+            "967984": "Fenix Rage",
+            "994394": "Nutcracker",
+            "1645688": "Sunset Overdrive - Fizzie",
+            "1675356": "Disco ball",
+            "2157716": "Headlander - Starcophagus"
+        }
+
+## Banners Meta [/meta/banners]
+### Get Banners Info [GET]
++ Response 200 (application/json)
+
+        {
+            "1677575": "Season 5 - Gold (Dragon)",
+            "4399076": "Dendritic",
+            "5740557": "Season 5 - Champion",
+            "12518440": "Tagged",
+            "13023909": "Feathered",
+        }
+        
+## Bodies Meta [/meta/bodies]
+### Get Bodies Info [GET]
++ Response 200 (application/json)
+
+        {
+            "364584": "Hogsticker",
+            "475085": "Sweet Tooth",
+            "2769289": "Octane ZSR",
+            "6321991": "Vulcan",
+            "6813136": "Triton",
+        }
+        
+## Boosts Meta [/meta/boosts]
+### Get Boosts Info [GET]
++ Response 200 (application/json)
+
+        {
+            "233632": "Snowflakes",
+            "1274347": "Flowers",
+            "1710857": "Thermal blue",
+            "2526288": "Netherworld"
+        }        
+        
+## Crates Meta [/meta/crates]
+### Get Crates Info [GET]
++ Response 200 (application/json)
+
+        {
+            "6983": "Nitro Crate",
+            "6987": "Champion Crate 1",
+            "6988": "Player's Choice Crate",
+            "6990": "Champion Crate 2",
+        }        
+        
+## Decals Meta [/meta/decals]
+### Get Decals Info [GET]
++ Response 200 (application/json)
+
+        {
+            "160444": "MIRV",
+            "995282": "Dyno",
+            "1412576": "Maximon",
+            "2625037": "Vector",
+            "3444028": "Big Buck",
+            "3716284": "Scorpions",
+        }           
+## DLCs Meta [/meta/dlcs]
+### Get DLCs Info [GET]
++ Response 200 (application/json)
+
+        {
+            "6079443": "Vulcan",
+            "13487446": "Revenge of the Battle-Cars",
+            "14000544": "Esper",
+            "20407652": "Ice Charger",
+            "38497051": "Chaos Run",
+        }                
+## Explosions Meta [/meta/explosions]
+### Get Explosions Info [GET]
++ Response 200 (application/json)
+
+        {
+            "5590273": "Standard Orange",
+            "20841790": "Fireworks",
+            "37943620": "Vampire Bat",
+            "46677385": "Standard Pink",
+            "54400987": "Hellfire",
+        }                
+## Paints Meta [/meta/paints]
+### Get Paints Info [GET]
++ Response 200 (application/json)
+
+        {
+            "10000": "Corroded Metal",
+            "10001": "Glossy",
+            "10002": "Matte",
+            "10003": "Metallic",
+            "10004": "Semigloss",
+            "10005": "Circuit Board",
+        }                
+## Platforms Meta [/meta/platforms]
+### Get Platforms Info [GET]
++ Response 200 (application/json)
+
+        {
+            "1": "Steam",
+            "2": "Playstation",
+            "3": "Xbox",
+            "4": "All"
+        }                
+## Rarities Meta [/meta/rarities]
+### Get Rarities Info [GET]
++ Response 200 (application/json)
+
+        {
+            "1": "common",
+            "2": "uncommon",
+            "3": "rare",
+            "4": "very_rare",
+            "5": "limited",
+            "6": "premium",
+            "7": "import",
+            "8": "exotic",
+            "9": "black_market"
+        }                
+## Toppers Meta [/meta/toppers]
+### Get Toppers Info [GET]
++ Response 200 (application/json)
+
+        {
+            "1424751": "Baseball Cap (F)",
+            "1969567": "Clamshell",
+            "2456761": "Traffic Cone",
+            "6484569": "Christmas Tree",
+            "6985764": "New Year's 2017",
+        }                
+## Trails Meta [/meta/trails]
+### Get Trails Info [GET]
++ Response 200 (application/json)
+
+        {
+            "1546919": "Classic",
+            "25057804": "Season 4 - Champion",
+            "29653844": "Batmobile",
+            "41611859": "Friction",
+        }                    
+## Wheels Meta [/meta/wheels]
+### Get Wheels Info [GET]
++ Response 200 (application/json)
+
+        {
+            "438170": "Draco",
+            "668133": "Looper",
+            "1148714": "Ripper",
+            "1832967": "Invader",
+        }

@@ -124,8 +124,10 @@ class TestRLDBAPI(unittest.TestCase):
 
 	def testGetAllBoosts(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/boosts")
-		obj = deserialize(result)
-		self.assertTrue(isinstance(obj, Boost))
+		obj_list = deserialize_list(result)
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
+			self.assertTrue(isinstance(obj, Boost))
 
 	def testGetBoostByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/boosts/Datastream").read().decode()
@@ -139,8 +141,10 @@ class TestRLDBAPI(unittest.TestCase):
 
 	def testGetAllWheels(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/wheels")
-		obj = deserialize(result)
-		self.assertTrue(isinstance(obj, Wheel))
+		obj_list = deserialize_list(result)
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
+			self.assertTrue(isinstance(obj, Wheel))
 
 	def testGetWheelByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/wheels/Veloce").read().decode()
@@ -154,8 +158,10 @@ class TestRLDBAPI(unittest.TestCase):
 
 	def testGetAllToppers(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/toppers")
-		obj = deserialize(result)
-		self.assertTrue(isinstance(obj, Topper))
+		obj_list = deserialize_list(result)
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
+			self.assertTrue(isinstance(obj, Topper))
 
 	def testGetTopperByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/toppers/Beret").read().decode()
@@ -169,8 +175,10 @@ class TestRLDBAPI(unittest.TestCase):
 
 	def testGetAllExplosions(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/explosions")
-		obj = deserialize(result)
-		self.assertTrue(isinstance(obj, Explosion))
+		obj_list = deserialize_list(result)
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
+			self.assertTrue(isinstance(obj, Explosion))
 
 	def testGetExplosionByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/explosions/Classic").read().decode()
@@ -184,8 +192,10 @@ class TestRLDBAPI(unittest.TestCase):
 
 	def testGetAllTrails(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/trails")
-		obj = deserialize(result)
-		self.assertTrue(isinstance(obj, Trail))
+		obj_list = deserialize_list(result)
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
+			self.assertTrue(isinstance(obj, Trail))
 
 	def testGetTrailByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/trails/Imulsion").read().decode()
@@ -199,8 +209,10 @@ class TestRLDBAPI(unittest.TestCase):
 
 	def testGetAllBanners(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/banners")
-		obj = deserialize(result)
-		self.assertTrue(isinstance(obj, Banner))
+		obj_list = deserialize_list(result)
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
+			self.assertTrue(isinstance(obj, Banner))
 
 	def testGetBannerByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/banners/Block").read().decode()
@@ -214,8 +226,10 @@ class TestRLDBAPI(unittest.TestCase):
 
 	def testGetAllAntennas(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/antennas")
-		obj = deserialize(result)
-		self.assertTrue(isinstance(obj, Antenna))
+		obj_list = deserialize_list(result)
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
+			self.assertTrue(isinstance(obj, Antenna))
 
 	def testGetAntennaByName(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/antennas/Balloon%20dog").read().decode()

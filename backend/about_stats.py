@@ -46,5 +46,5 @@ def get_about_stats():
                     trello_stats[name] += 1
 
     package = {'commits': git_stats, 'num_commits': num_commits, 'issues': trello_stats, 'num_issues': num_issues}
-
+    s.close()
     return package

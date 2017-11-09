@@ -69,3 +69,4 @@ with open('data_collection/players.txt', 'w') as f:
 
         # This has more data than we use, so extract here
         f.write(json.dumps(out)+ '\n')
+s.close()

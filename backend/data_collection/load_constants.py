@@ -37,3 +37,4 @@ for rarity in rarities:
 for platform in platforms:
     s.merge(platform)
 s.commit()
+s.close()

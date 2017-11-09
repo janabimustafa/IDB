@@ -122,6 +122,14 @@ class TestRLDBAPI(unittest.TestCase):
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Player))
 
+	def testGetBodiesCrates(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/bodies/42545540").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(len(obj.crates) > 0)
+	def testGetBodiesDlcs(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/bodies/Scarab").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(len(obj.dlcs) > 0)
 	def testGetAllBoosts(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/boosts").read().decode()
 		object_list = deserialize_list(result)

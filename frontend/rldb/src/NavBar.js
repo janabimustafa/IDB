@@ -1,11 +1,26 @@
 import React, {Component} from 'react';
-
+import {withRouter} from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button} from 'react-bootstrap';
 import {  LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 import './NavBar.css';
 
 class NavBar extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchTerm: ''
+    }
+    this.searchSubmit = this.searchSubmit.bind(this);
+    this.searchChange = this.searchChange.bind(this);
+  }
+  searchChange(event){
+    this.setState({searchTerm: event.target.value});
+  }
+  searchSubmit(event){
+    event.preventDefault()
+    var searchTermEncoded = encodeURI(this.state.searchTerm)    
+    this.props.history.push(`/search/${searchTermEncoded}`)
+  }
   render() {
     return (
       <Navbar className="navbar title-font" inverse collapseOnSelect>
@@ -44,13 +59,13 @@ class NavBar extends Component {
           </Nav>
           <Nav pullRight>
             <Navbar.Form>
-              <FormGroup>
-                <FormControl type="text" placeholder="This doesn't work" />
-              </FormGroup>
-              {' '}
-              <LinkContainer to="/search/">
+              <form onSubmit={this.searchSubmit}>
+                <FormGroup>
+                  <FormControl value={this.state.searchTerm} onChange={this.searchChange} type="text" placeholder="Search..." />
+                </FormGroup>
+                {' '}
                 <Button type="submit">Submit</Button>
-              </LinkContainer>
+              </form>
             </Navbar.Form>
           </Nav>
         </Navbar.Collapse>
@@ -59,4 +74,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);

@@ -3,7 +3,7 @@ from flask_restplus import Api, Resource, reqparse, abort
 from werkzeug.contrib.fixers import ProxyFix
 from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy_searchable import search
+from sqlalchemy_searchable import search as searchable_search
 from werkzeug.exceptions import BadRequest, NotFound
 from models import *
 import about_stats
@@ -252,8 +252,13 @@ class Antenna_Res(Resource):
 class Search_Res(Resource):
 
     def get(self, term):
-        return [serialize(k) for k in search(Session().query(RLObtainable), term, sort=True)]
+        return [serialize(k) for k in search(RLObject, term)]
 
+@api.route('/searchable_search/<string:term>')
+class Searchable_Res(Resource):
+
+    def get(self, term):
+        return [serialize(k) for k in searchable_search(Session().query(RLObtainable), term, sort=True)]
 
 ### Meta mappings
 

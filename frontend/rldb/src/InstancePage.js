@@ -208,7 +208,7 @@ class InstancePage extends Component {
                     <br/>
                     <p className="">Item Type: {this.upperCaseFirst(this.state.data.type)}</p>
                     <p>Release Date: {this.state.data.release_date ? this.state.data.release_date : "Unknown"}</p>
-                    <p>Source: {this.state.data.crates.length > 0 ? "Crate" : "Drop"}</p>
+                    <p>Source: {this.state.data.crates.length > 0 ? "Crate" : this.state.data.dlcs.length > 0 ? "DLC" : "Drop"}</p>
                     <br/>
                 </div>
                 

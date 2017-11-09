@@ -46,7 +46,7 @@ class InstanceCard extends Component {
                             <br/>
                             <p className="">Item Type: {this.upperCaseFirst(this.props.data.type)}</p>
                             <p>Release Date: {this.props.data.release_date ? this.props.data.release_date : "Unknown"}</p>
-                            <p>Source: {this.props.data.crates.length > 0 ? "Crate" : "Drop"}</p>
+                            <p>Source: {this.props.data.crates.length > 0 ? "Crate" : this.props.data.dlcs.length > 0 ? "DLC" : "Drop"}</p>
                         </div>                            
                     </Link>
             </div>

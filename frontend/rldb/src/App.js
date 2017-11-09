@@ -52,6 +52,9 @@ const App = () => (
       <Route path='/trails/:trailname' component={InstancePage}/>
       <Route path='/boosts/:boostname' component={InstancePage}/>
       <Route path='/wheels/:wheelname' component={InstancePage}/>
+
+      <Route path='/dlcs/:dlcname' component={InstancePage}/>
+
       <Route path='/players/:playername' component={PlayerPage}/>
       <Route component={NotFound}/>
     </Switch>

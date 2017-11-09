@@ -233,7 +233,10 @@ def serialize(rl_object):
     sdict['type'] = CLASS_TO_TYPE.get(type(rl_object))
     if 'search_vector' in sdict:
         del sdict['search_vector']
-    for rel in (RELATION_KEYS.get(type(rl_object), []) + ['crates']):
+    relationships = RELATION_KEYS.get(type(rl_object), [])
+    if not type(rl_object) == Player:
+        relationships.append('crates')
+    for rel in relationships:
         sdict[rel] = list(k.id for k in getattr(rl_object, rel))
     if 'release_date' in sdict:
         if sdict['release_date']:

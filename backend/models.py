@@ -284,8 +284,10 @@ def search(class_, term):
         for attr in vars(obj):
             if attr.startswith('_'):
                 continue
-            if term in str(getattr(obj, attr)).lower():
+            val = str(getattr(obj, attr)).lower()
+            while term in val:
                 counter += 1
+                val = val.replace(term, '')
         heappush(pq, (-counter, obj, counter))
 
     ret = []

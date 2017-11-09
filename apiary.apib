@@ -56,7 +56,6 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "image": "https://www.example.com/image.png"
         }
 
-
 ## Bodies [/bodies/]
 ### Get all bodies [GET]
 
@@ -88,6 +87,7 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "decals": [1, 2, 3, 4, 5],
             "image": "https://www.example.com/image.png"
         }
+
 ## Body [/bodies/{id}]
 ### Get a Body by id [GET]
 
@@ -139,6 +139,7 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "bodies": [1, 2, 3, 4, 5],
             "image": "https://www.example.com/image.png"
         }
+
 ## Decal [/decals/{id}]
 ### Get a Decal by id [GET]
 
@@ -157,7 +158,6 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "image": "https://www.example.com/image.png"
         }
 
-        
 ## Crates [/crates/]
 ### Get all Crates [GET]
 
@@ -191,6 +191,7 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "items": [1, 2, 3, 4, 5],
             "image": "https://www.example.com/image.png"
         }
+
 ## Crate [/crates/{id}]
 ### Get a Crate by id [GET]
 
@@ -207,6 +208,7 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "items": [1, 2, 3, 4, 5],
             "image": "https://www.example.com/image.png"
         }
+
 ## DLCs [/dlcs/]
 ### Get all DLC [GET]
 
@@ -234,6 +236,7 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "items": [1, 2, 3, 4, 5],
             "image": "https://www.example.com/image.png"
         }
+
 ## DLC [/dlcs/{id}]
 ### Get a DLC by id [GET]
 
@@ -279,7 +282,6 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
             "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
         },]
-
         
 ## Player [/players/{name}]
 ### Get a Player by name [GET]
@@ -313,3 +315,93 @@ Rocket League Database (RLDB) is an API allowing players and fans to obtain info
             "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
             "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
         }
+
+## Player [/players/{id}]
+### Get a Player by ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 143045192,
+            "name": "Kaydop",
+            "type": "player",
+            "platform": 1,
+            "skill_rating": 1648,
+            "wins": 5503,
+            "image": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e3693c5c0d72a837867e70ff0e59e74ffcbcebe9_full.jpg",
+            "sig_image": "http://signature.rocketleaguestats.com/normal/Steam/76561198067659334.png"
+        }
+
+## Search [/search/{term}]
+### Get a list of results in relevant order based on a search keyword
+
++ Response 200 (application/json)
+
+        [
+          {
+            "description": "Aftershock is a Battle-Car released on July 5, 2016, as part of the Rocket League Collector's Edition. It was made available to purchase separately on July 18, 2016. It originally appeared in Rocket League precursor Supersonic Acrobatic Rocket-Powered Battle-Cars.",
+            "source": null,
+            "rarity": 6,
+            "release_date": "2016-07-05",
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/5eb451252c1466509310.png",
+            "dlcs": [
+              84710383
+            ],
+            "id": 12484274,
+            "platform": null,
+            "decals": [
+              6776909,
+              160444,
+              13003571,
+              73521300,
+              51676618,
+              45810652,
+              68128185,
+              93671752,
+              36549623,
+              83904252,
+              24150559,
+              93308742,
+              41704422,
+              63922985,
+              96696252,
+              6385815,
+              79232364
+            ],
+            "name": "Aftershock",
+            "crates": [],
+            "type": "body"
+          },
+          {
+            "dlcs": [],
+            "description": "Drive the fan-favorite, jet-inspired dynamo, Aftershock, and relive the glory days of the original Supersonic Acrobatic Rocket-Powered Battle-Cars, today!",
+            "id": 84710383,
+            "items": [
+              12484274,
+              84661330,
+              6776909,
+              160444,
+              13003571,
+              73521300,
+              51676618,
+              45810652
+            ],
+            "platform": null,
+            "release_date": "2016-07-18",
+            "name": "Aftershock",
+            "crates": [],
+            "image": "https://vignette.wikia.nocookie.net/rocketleague/images/2/2e/Aftershock_hero_art.jpg/revision/latest/scale-to-width-down/310?cb=20170531180331",
+            "type": "dlc"
+          },
+          {
+            "dlcs": [
+              84710383
+            ],
+            "id": 84661330,
+            "platform": 4,
+            "name": "Aftershock",
+            "crates": [],
+            "image": "https://rocket-league.com/content/media/items/avatar/220px/eec69ea4b21466509373.png",
+            "type": "wheel"
+          }
+        ]

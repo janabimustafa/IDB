@@ -43,6 +43,15 @@ const App = () => (
       <Route path='/crates/:cratename' component={InstancePage}/>
       <Route path='/bodies/:bodyname' component={InstancePage}/>
       <Route path='/paints/:paintname' component={PaintPage}/>
+      <Route path='/antennas/:antennaname' component={InstancePage}/>
+      <Route path='/banners/:bannername' component={InstancePage}/>
+      <Route path='/decals/:decalname' component={InstancePage}/>
+      <Route path='/explosions/:explosionname' component={InstancePage}/>
+      <Route path='/decals/:decalname' component={InstancePage}/>
+      <Route path='/toppers/:toppername' component={InstancePage}/>
+      <Route path='/trails/:trailname' component={InstancePage}/>
+      <Route path='/boosts/:boostname' component={InstancePage}/>
+      <Route path='/wheels/:wheelname' component={InstancePage}/>
       <Route path='/players/:playername' component={PlayerPage}/>
       <Route component={NotFound}/>
     </Switch>

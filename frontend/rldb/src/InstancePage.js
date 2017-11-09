@@ -9,14 +9,12 @@ class InstancePage extends Component {
 
         this.state = {
             data: null,
-            itemsData: null
+            itemsData: null,
+            crateData: null,
+            decalData: null,
+            bodyData: null
         };
     }
-
-    getApiType (type_name) {
-        var apiTypes = {"crate":"crates", "paint":"paints", "body":"bodies","player":"players"};
-        return apiTypes[type_name];
-    } 
 
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
@@ -32,32 +30,101 @@ class InstancePage extends Component {
         .then(j => {
             console.log(j);
             var items = [];
+            var crates = [];
+            var decals = [];
+            var bodies = [];
+
             if(j.items !== undefined)
             {
+                var itemsPromise = j.items.map( function(item) {
+                    var uri = '/api/id/' + item;
+                    return fetch(uri, { 
+                                        method: 'GET',
+                                        dataType: 'json'
+                                    })
+                                    .then(function(response) {
+                                        return response.json()
+                                    });
+                    });
 
-            
-            var itemsPromise = j.items.map( function(item) {
-                var uri = '/api/id/' + item;
-                return fetch(uri, { 
-                                    method: 'GET',
-                                    dataType: 'json'
-                                })
-                                .then(function(response) {
-                                    return response.json()
-                                });
-                });
-
-            Promise.all(itemsPromise).then((result)=>{
-                console.log("All items fetched!");
-                console.log(result);
-                console.log(typeof(result));                
-                this.setState({
-                    itemsData : result
-                });
+                Promise.all(itemsPromise).then((result)=>{
+                    console.log("All items fetched!");
+                    console.log(result);
+                    console.log(typeof(result));                
+                    this.setState({
+                        itemsData : result
+                    });
             });}
 
+            if(j.crates !== undefined)
+            {
+                var cratesPromise = j.crates.map( function(crate) {
+                    var uri = '/api/id/' + crate;
+                    return fetch(uri, { 
+                                        method: 'GET',
+                                        dataType: 'json'
+                                    })
+                                    .then(function(response) {
+                                        return response.json()
+                                    });
+                    });
+
+                Promise.all(cratesPromise).then((result)=>{
+                    console.log("All crates fetched!");
+                    console.log(result);
+                    console.log(typeof(result));                
+                    this.setState({
+                        crateData : result
+                    });
+            });}
+
+            if(j.decals !== undefined)
+            {
+                var decalsPromise = j.decals.map( function(item) {
+                    var uri = '/api/id/' + item;
+                    return fetch(uri, { 
+                                        method: 'GET',
+                                        dataType: 'json'
+                                    })
+                                    .then(function(response) {
+                                        return response.json()
+                                    });
+                    });
+
+                Promise.all(decalsPromise).then((result)=>{
+                    console.log("All decals fetched!");
+                    console.log(result);
+                    console.log(typeof(result));                
+                    this.setState({
+                        decalData : result
+                    });
+            });}
+
+            if(j.bodies !== undefined)
+            {
+                var bodiesPromise = j.bodies.map( function(item) {
+                    var uri = '/api/id/' + item;
+                    return fetch(uri, { 
+                                        method: 'GET',
+                                        dataType: 'json'
+                                    })
+                                    .then(function(response) {
+                                        return response.json()
+                                    });
+                    });
+
+                Promise.all(bodiesPromise).then((result)=>{
+                    console.log("All bodies fetched!");
+                    console.log(result);
+                    console.log(typeof(result));                
+                    this.setState({
+                        bodyData : result
+                    });
+            });}
+
+
             this.setState({
-                data: j,
+                data: j
             });
 
         });
@@ -99,6 +166,30 @@ class InstancePage extends Component {
             });
         }
 
+        var crateCards = [];
+        if(this.state.crateData !== null)
+        {
+            this.state.crateData.forEach( function(item) {
+                crateCards.push(<InstanceCard key={item.id} data={item}/>);
+            });
+        }
+
+        var decalCards = [];
+        if(this.state.decalData !== null)
+        {
+            this.state.decalData.forEach( function(item) {
+                decalCards.push(<InstanceCard key={item.id} data={item}/>);
+            });
+        }
+
+        var bodyCards = [];
+        if(this.state.bodyData !== null)
+        {
+            this.state.bodyData.forEach( function(item) {
+                bodyCards.push(<InstanceCard key={item.id} data={item}/>);
+            });
+        }
+
         return (
             <div className="container">
                 {/* <Link to={'/'+ this.props.match.url.split('/')[1]}>
@@ -112,28 +203,74 @@ class InstancePage extends Component {
                     </div>
                     <h3>Description:</h3>
                     <div className="">
-                        <p>{this.state.data.description}</p>   
+                        <p>{this.state.data.description ? this.state.data.description : "No description for this item."}</p>   
                     </div>
                     <br/>
                     <p className="">Item Type: {this.upperCaseFirst(this.state.data.type)}</p>
                     <p>Release Date: {this.state.data.release_date ? this.state.data.release_date : "Unknown"}</p>
                     <p>Source: {this.state.data.crates.length > 0 ? "Crate" : "Drop"}</p>
+                    <br/>
                 </div>
                 
-                    {
-                        itemCards.length > 0 ?
-                            <div className="row">
-                                <hr/>
-                                <h3>Contains:</h3> 
-                                {itemCards}
-                            </div>
-                                
-                            : 
-                                ''
-                    }                   
-                    
-                
-                
+                {
+                    this.state.data.items !== undefined && this.state.data.items.length > 0 ?
+                        <div className="row">
+                            <hr/>
+                            <h3>Contains:</h3>
+                            {itemCards.length > 0 ?
+                                itemCards
+                            :
+                                <LoadingOverlay />}
+                        </div>
+                            
+                        : 
+                            ''
+                }
+
+                {
+                    this.state.data.crates !== undefined && this.state.data.crates > 0 ?
+                        <div className="row">
+                            <hr/>
+                            <h3>Source:</h3>
+                            {crateCards.length > 0 ?
+                                crateCards
+                            :
+                                <LoadingOverlay />}
+                        </div>
+                            
+                        : 
+                            ''
+                }
+
+                {
+                    this.state.data.decals !== undefined && this.state.data.decals > 0 ?
+                        <div className="row">
+                            <hr/>
+                            <h3>Decals:</h3>
+                            {decalCards.length > 0 ?
+                                decalCards
+                            :
+                                <LoadingOverlay />}
+                        </div>
+                            
+                        : 
+                            ''
+                }
+
+                {
+                    this.state.data.bodies !== undefined && this.state.data.bodies > 0 ?
+                        <div className="row">
+                            <hr/>
+                            <h3>Bodies:</h3>
+                            {bodyCards.length > 0 ?
+                                bodyCards
+                            :
+                                <LoadingOverlay />}
+                        </div>
+                            
+                        : 
+                            ''
+                }                          
             </div>
         )
     }

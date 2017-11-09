@@ -12,7 +12,8 @@ class InstancePage extends Component {
             itemsData: null,
             crateData: null,
             decalData: null,
-            bodyData: null
+            bodyData: null,
+            dlcData: null
         };
     }
 
@@ -121,6 +122,27 @@ class InstancePage extends Component {
                         bodyData : result
                     });
             });}
+            if(j.dlcs !== undefined)
+            {
+                var dlcsPromise = j.dlcs.map( function(item) {
+                    var uri = '/api/id/' + item;
+                    return fetch(uri, { 
+                                        method: 'GET',
+                                        dataType: 'json'
+                                    })
+                                    .then(function(response) {
+                                        return response.json()
+                                    });
+                    });
+
+                Promise.all(dlcsPromise).then((result)=>{
+                    console.log("All dlcs fetched!");
+                    console.log(result);
+                    console.log(typeof(result));                
+                    this.setState({
+                        dlcData : result
+                    });
+            });}
 
 
             this.setState({
@@ -190,6 +212,14 @@ class InstancePage extends Component {
             });
         }
 
+        var dlcCards = [];
+        if(this.state.dlcData !== null)
+        {
+            this.state.dlcData.forEach( function(item) {
+                dlcCards.push(<InstanceCard key={item.id} data={item}/>);
+            });
+        }
+
         return (
             <div className="container">
                 {/* <Link to={'/'+ this.props.match.url.split('/')[1]}>
@@ -234,6 +264,21 @@ class InstancePage extends Component {
                             <h3>Source:</h3>
                             {crateCards.length > 0 ?
                                 crateCards
+                            :
+                                <LoadingOverlay />}
+                        </div>
+                            
+                        : 
+                            ''
+                }
+
+                {
+                    this.state.data.dlcs !== undefined && this.state.data.dlcs.length > 0 ?
+                        <div className="row">
+                            <hr/>
+                            <h3>Source:</h3>
+                            {dlcCards.length > 0 ?
+                                dlcCards
                             :
                                 <LoadingOverlay />}
                         </div>

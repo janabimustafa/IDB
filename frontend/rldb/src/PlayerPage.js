@@ -55,6 +55,7 @@ class PlayerPage extends Component {
                         <h3>Platform: {this.getPlatform(this.state.data.platform)}</h3>
                         <h3>Skill Rating: {this.state.data.skill_rating}</h3>
                         <h3>Wins: {this.state.data.wins}</h3>
+                        <a className="btn btn-info" href={this.state.data.profile_url}>Profile Page</a>
                         {/* <Link to={'/'+ this.props.match.url.split('/')[1]}>
                         <h3>Go back.</h3>
                         </Link> */}

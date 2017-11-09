@@ -1,3 +1,4 @@
+from heapq import heappush, heappop
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
 from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine, Table, UnicodeText
 from sqlalchemy.orm import sessionmaker, relationship, configure_mappers
@@ -48,13 +49,16 @@ class RLObject(Base, DBObject): # Non-meta
     @declared_attr
     def platform(cls):
         return Column(Integer, ForeignKey('platforms.id'))
+
     def __eq__(self, other):
         return serialize_str(self) == serialize_str(other)
+
+    def __lt__(self, other):
+        return self.name < other.name
 
     def __repr__(self):
         return "<RLObject(id='{0}', name='{1}', type='{2}')>".format(
                                 self.id, self.name, CLASS_TO_TYPE.get(type(self)))
-    
 
 class RLObtainable(RLObject): # Not Players
     release_date = Column(Date)
@@ -265,3 +269,27 @@ def deserialize_list(json_str):
     object_list = [_deserialize_helper(json) for json in json_list]
     return object_list
 
+def search(class_, term):
+    term = str(term).lower()
+    s = Session()
+    pq = []
+
+    for obj in s.query(class_):
+        counter = 0
+        for attr in vars(obj):
+            if attr.startswith('_'):
+                continue
+            val = str(getattr(obj, attr)).lower()
+            while term in val:
+                counter += 1
+                val = val.replace(term, '')
+        heappush(pq, (-counter, obj, counter))
+
+    ret = []
+    for _ in range(len(pq)):
+        consider = heappop(pq)
+        if consider[2] <= 0:
+            break
+        ret.append(consider[1])
+
+    return ret

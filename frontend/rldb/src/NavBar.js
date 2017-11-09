@@ -35,7 +35,7 @@ class NavBar extends Component {
             <IndexLinkContainer to="/players/">
               <NavItem>Players</NavItem>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/dlcs/">
+            <IndexLinkContainer onClick={this.forceUpdate} to="/dlcs/">
               <NavItem>DLCs</NavItem>
             </IndexLinkContainer>
             <IndexLinkContainer to="/about">

@@ -41,6 +41,10 @@ CrateItemsRelation = Table('crate_item_relations', Base.metadata,
     Column('item_id', ForeignKey('objects.id'), primary_key=True)) # Foreign key to all returnable types
 
 
+DLCItemsRelation = Table('dlc_item_relations', Base.metadata,
+    Column('dlc_id', ForeignKey('dlcs.id'), primary_key=True),
+    Column('item_id', ForeignKey('objects.id'), primary_key=True))
+
 class RLObject(Base, DBObject): # Non-meta
     __tablename__ = 'objects'
 
@@ -53,6 +57,9 @@ class RLObject(Base, DBObject): # Non-meta
     crates = relationship('Crate',
         secondary=CrateItemsRelation,
         primaryjoin=id==CrateItemsRelation.c.item_id)
+    dlcs = relationship('DLC',
+        secondary=DLCItemsRelation,
+        primaryjoin=id==DLCItemsRelation.c.item_id)    
     @declared_attr
     def platform(cls):
         return Column(Integer, ForeignKey('platforms.id'))
@@ -173,9 +180,6 @@ class Crate(RLItem):
         secondary=CrateItemsRelation,
         primaryjoin=id==CrateItemsRelation.c.crate_id)
 
-DLCItemsRelation = Table('dlc_item_relations', Base.metadata,
-    Column('dlc_id', ForeignKey('dlcs.id'), primary_key=True),
-    Column('item_id', ForeignKey('objects.id'), primary_key=True))
 
 class DLC(RLObtainable):
     __tablename__ = 'dlcs'
@@ -233,7 +237,7 @@ def serialize(rl_object):
     sdict['type'] = CLASS_TO_TYPE.get(type(rl_object))
     if 'search_vector' in sdict:
         del sdict['search_vector']    
-    for rel in (RELATION_KEYS.get(type(rl_object), []) + ['crates']):
+    for rel in (RELATION_KEYS.get(type(rl_object), []) + ['crates', 'dlcs']):
         sdict[rel] = list(k.id for k in getattr(rl_object, rel))
     if 'release_date' in sdict:
         if sdict['release_date']:

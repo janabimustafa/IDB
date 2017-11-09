@@ -228,7 +228,7 @@ class InstancePage extends Component {
                 }
 
                 {
-                    this.state.data.crates !== undefined && this.state.data.crates > 0 ?
+                    this.state.data.crates !== undefined && this.state.data.crates.length > 0 ?
                         <div className="row">
                             <hr/>
                             <h3>Source:</h3>
@@ -243,7 +243,7 @@ class InstancePage extends Component {
                 }
 
                 {
-                    this.state.data.decals !== undefined && this.state.data.decals > 0 ?
+                    this.state.data.decals !== undefined && this.state.data.decals.length > 0 ?
                         <div className="row">
                             <hr/>
                             <h3>Decals:</h3>
@@ -258,7 +258,7 @@ class InstancePage extends Component {
                 }
 
                 {
-                    this.state.data.bodies !== undefined && this.state.data.bodies > 0 ?
+                    this.state.data.bodies !== undefined && this.state.data.bodies.length > 0 ?
                         <div className="row">
                             <hr/>
                             <h3>Bodies:</h3>

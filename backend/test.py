@@ -126,6 +126,10 @@ class TestRLDBAPI(unittest.TestCase):
 		result = urlopen(r"http://127.0.0.1:5000/api/bodies/42545540").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(len(obj.crates) > 0)
+	def testGetBodiesDlcs(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/bodies/Scarab").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(len(obj.dlcs) > 0)
 
 if __name__ == "__main__":
     unittest.main()

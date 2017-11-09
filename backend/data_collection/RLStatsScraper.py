@@ -3,6 +3,7 @@ import json
 from time import sleep
 from statistics import mean
 import random
+import urllib.parse
 
 # RLDB Bot's API key
 API_KEY = 'K9QWM40INDPZ8H2KN6W34F83JC4BUBLD'
@@ -57,5 +58,14 @@ with open('data_collection/players.txt', 'w') as f:
         out['image'] = player['avatar']
         out['sig_image'] = player['signatureUrl']
         out['type'] = 'player'
+
+        if player['platform']['id'] == 1:
+            out['profile_url'] = 'https://steamcommunity.com/profiles/{0}/'.format(player['uniqueId'])
+        elif player['platform']['id'] == 2:
+            out['profile_url'] = 'https://psnprofiles.com/{0}'.format(player['displayName'])
+        elif player['platform']['id'] == 3:
+            out['profile_url'] = 'https://account.xbox.com/en-us/Profile?GamerTag={0}&activetab=main%3amaintab3'.format(
+                urllib.parse.quote_plus(player['displayName']))
+
         # This has more data than we use, so extract here
         f.write(json.dumps(out)+ '\n')

@@ -1,41 +1,43 @@
 sudo: required
-
 services:
-  - docker
-
+- docker
 env:
-  - DOCKER_COMPOSE_VERSION=1.16.1
-
+- DOCKER_COMPOSE_VERSION=1.16.1
 before_install:
-  - docker --version
-  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-  - sudo apt-get update
-  - sudo apt-get -y install docker-ce
-  - docker --version
-  - docker-compose --version
-  - sudo rm /usr/local/bin/docker-compose
-  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin
-  - docker-compose --version
-
+- docker --version
+- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+- sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+- sudo apt-get update
+- sudo apt-get -y install docker-ce
+- docker --version
+- docker-compose --version
+- sudo rm /usr/local/bin/docker-compose
+- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+- chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
+- docker-compose --version
 install:
-  - docker-compose build
-  - docker-compose up -d
-
+- if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+  docker-compose -f docker-compose-travis.yml build;
+  docker-compose -f docker-compose-travis.yml up -d;
+  else
+  docker-compose build;
+  docker-compose up -d;
+  fi
 script:
-  - docker exec rldb-flask python test.py
-#- docker exec -e CI=true rldb-react npm test
+- docker exec rldb-flask python test.py
 after_success:
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then  
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push janabimustafa/rldb-flask;
-    docker push janabimustafa/rldb-react;
-    elif [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "dev" ]; then
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker tag janabimustafa/rldb-flask janabimustafa/rldb-flask:dev;
-    docker tag janabimustafa/rldb-react janabimustafa/rldb-react:dev;
-    docker push janabimustafa/rldb-flask:dev;
-    docker push janabimustafa/rldb-react:dev;
-    fi
+- if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  docker push janabimustafa/rldb-flask;
+  docker push janabimustafa/rldb-react;
+  elif [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "dev" ]; then
+  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  docker tag janabimustafa/rldb-flask janabimustafa/rldb-flask:dev;
+  docker tag janabimustafa/rldb-react janabimustafa/rldb-react:dev;
+  docker push janabimustafa/rldb-flask:dev;
+  docker push janabimustafa/rldb-react:dev;
+  fi
+notifications:
+  slack:
+    secure: xNCgG27ScanU4o5yEHw3jf405/u4nuXzG9NlElpvfB8AxXuZkx1IpcSvsFwwrxq1j4MpGeBE/4YTZUBBZBchA+IXP2WeMUdkmqymayHL9o97LDtqS1RVNAcM5JfqV2JvDj8I2x8v27eI0tgdtvG5s0z1nKThAQ4r36b1Rs/1y93k2EQ2opXM62nAalDbwkLGtZvqaXZYRHNMIoZ/XOS0MJxcH+gQcR+vPu2El4xRHN9B54Zku/H+8me9p2GpJFBOiHt94Ull7WbP+sXjlQDwTt/+rTMUfmqVFTtc4Pyezo09OKJWO20/H7rGJ1U3+CjUFNVbqrodUkdHerIEybhz8JGj5OGu6BCT+cUD+R8t2qwCReuQsx4ZlI8UYnNf+Ff5lJBt3KtQHqcG3pB5tykRadEeRczAtjtGhgjzWDQjGHu2uF+NeXUxbBvQ1H2ynMY5/87V+BPOExq+ZOqAht+0TmGbtHMC9jd2bGd8hqOhVK2uIPdh2b6RwrD8r7X8h60FS4vZc0is33CQDMJh+NwzQC56QqvhieVsTw8pCUnimZWr4R4ceZyIK413c4t19ykiI3qkUqYzMBIU/K+3iaPD65Bkp/d5s9qMwxwbH5a3wXR9OvRcNc0zab3XfL4saxBsw4HAmPMyJNyiXDMfnYvhd9z7RoPcwit+QwmmxpGDjQc=

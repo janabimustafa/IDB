@@ -1,12 +1,16 @@
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
-from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine, Table
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey, create_engine, Table, UnicodeText
+from sqlalchemy.orm import sessionmaker, relationship, configure_mappers
+from sqlalchemy_searchable import make_searchable
+from sqlalchemy_utils.types import TSVectorType
 from sqlalchemy.sql import select
 import datetime
 import json
 import os
 
 Base = declarative_base()
+
+make_searchable()
 
 DB_NAME = os.environ['DB_NAME']
 DB_USER = os.environ['DB_USER']
@@ -19,21 +23,28 @@ DB_HOST = os.environ['DB_HOST']
 # if it already exists)
 
 db = create_engine('{dialect}://{user}:{password}@{host}/{db}'.format(dialect=DB_DIALECT, user=DB_USER, password=DB_PASS, host=DB_HOST, db=DB_NAME))
-Session = sessionmaker(bind=db)
+_session_maker = None
+
+# Defined this way so configuration isn't loaded until a Session is requested
+def Session():
+    global _session_maker
+    if not _session_maker:
+        _session_maker = sessionmaker(bind=db)
+    return _session_maker()
 
 class DBObject: # Everything
     id = Column(Integer, primary_key=True)
-    name = Column(String(50))
+    name = Column(UnicodeText)
 
 class RLObject(Base, DBObject): # Non-meta
     __tablename__ = 'objects'
 
     id = Column(Integer, primary_key=True)
 
-    type = Column('type', String(50))
+    type = Column('type', UnicodeText)
     __mapper_args__ = {'polymorphic_on': type}
 
-    image = Column(String(300)) # URL of image
+    image = Column(String) # URL of image
     @declared_attr
     def platform(cls):
         return Column(Integer, ForeignKey('platforms.id'))
@@ -47,7 +58,8 @@ class RLObject(Base, DBObject): # Non-meta
 
 class RLObtainable(RLObject): # Not Players
     release_date = Column(Date)
-    description = Column(String)
+    description = Column(UnicodeText)
+    search_vector = Column(TSVectorType('name', 'description', 'type'))
 
 class RLItem(RLObtainable): # Not DLC
     @declared_attr
@@ -175,6 +187,7 @@ class Player(RLObject):
     skill_rating = Column(Integer) # Average of Ranked modes in most recent season
     wins = Column(Integer)
     sig_image = Column(String)
+    profile_url = Column(String)
 
 TYPE_TO_CLASS = {
     'paint': Paint,
@@ -213,7 +226,9 @@ def serialize(rl_object):
         return None
     sdict = {k: rl_object.__dict__[k] for k in rl_object.__dict__ if not k.startswith('_')}
     sdict['type'] = CLASS_TO_TYPE.get(type(rl_object))
-    for rel in RELATION_KEYS.get(type(rl_object), []):        
+    if 'search_vector' in sdict:
+        del sdict['search_vector']
+    for rel in RELATION_KEYS.get(type(rl_object), []):
         sdict[rel] = list(k.id for k in getattr(rl_object, rel))
     if 'release_date' in sdict:
         if sdict['release_date']:

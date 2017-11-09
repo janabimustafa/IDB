@@ -122,5 +122,10 @@ class TestRLDBAPI(unittest.TestCase):
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Player))
 
+	def testGetBodiesCrates(self):
+		result = urlopen(r"http://127.0.0.1:5000/api/bodies/42545540").read().decode()
+		obj = deserialize(result)
+		self.assertTrue(len(obj.crates) > 0)
+
 if __name__ == "__main__":
     unittest.main()

@@ -49,7 +49,7 @@ class About extends Component {
           <br></br>
           <a className="source-link" href="https://trello.com/b/XG6xjh7g/project-4">Link to Trello</a>
           <br></br>
-          <a className="source-link" href="">Link to Technical Report</a>
+          <a className="source-link" href="https://utexas.box.com/s/thgg37af3gfgyt71ap6lopvsboxnlcwm">Link to Technical Report</a>
           <br></br>
           <a className="source-link" href="https://utexas.box.com/s/o9m3o9dejlj60rte192f86clga005uzi">Link to UML Diagram (UT Box)</a>
 

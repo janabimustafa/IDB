@@ -29,7 +29,7 @@ _session_maker = None
 def Session():
     global _session_maker
     if not _session_maker:
-        _session_maker = sessionmaker(bind=db, autoflush=True)
+        _session_maker = sessionmaker(bind=db)
     return _session_maker()
 
 class DBObject: # Everything

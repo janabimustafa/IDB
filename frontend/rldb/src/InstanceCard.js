@@ -10,11 +10,6 @@ class InstanceCard extends Component {
         var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limited", "premium", "import", "exotic", "black market"];
         return rarities[rarity_num];
     }
-    
-    getApiType (type) {
-        var apiTypes = {"crate" : "crates", "body":"bodies", "paint":"paints", "player":"players", "wheel":"wheels"};
-        return apiTypes[type];
-    }
 
     getRarityColor (raw_rarity) {
         return "color-" + this.getRarity(raw_rarity);
@@ -28,11 +23,20 @@ class InstanceCard extends Component {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
+    makePlural (noun) {
+        var lastChar = noun.slice(-1)
+        console.log('last char in ' + noun + ' is ' + lastChar);
+        if (lastChar === 'y')
+            return noun.replace('y', 'ies');
+        else
+            return noun + 's';
+    }
+
     render() {
         console.log(this.props.data.type);
         return (
             <div className={'instance-card grow col-md-2 col-sm-4 text-center ' + this.getBorderColor(this.props.data.rarity) }>
-                    <Link onClick={this.forceUpdate} to={`/${this.props.data.type}/${this.props.data.name}`}>
+                    <Link onClick={this.forceUpdate} to={`/${this.makePlural(this.props.data.type)}/${this.props.data.name}`}>
                         <img className="img-rounded img-item" src={this.props.data.image}  alt="rocket-league-item"/>                           
                    
                         <div className="caption">

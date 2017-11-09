@@ -19,8 +19,8 @@ class PlayerPage extends Component {
     //is it better to do fetch in constructor or in componentDidMount
     componentDidMount() {
         var url = this.props.match.url
-
-        fetch('/api/' + this.getApiType(url.split('/')[1]) + "/" + url.split('/')[2] , { 
+        console.log('/api' + url);
+        fetch('/api' + url , { 
             method: 'GET',
             dataType: 'json'
         })

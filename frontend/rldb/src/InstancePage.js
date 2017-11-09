@@ -22,7 +22,7 @@ class InstancePage extends Component {
     componentDidMount() {
         var url = this.props.match.url
 
-        fetch('/api/' + this.getApiType(url.split('/')[1]) + "/" + url.split('/')[2] , { 
+        fetch('/api' + url, { 
             method: 'GET',
             dataType: 'json'
         })

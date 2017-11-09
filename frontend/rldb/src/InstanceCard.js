@@ -42,7 +42,7 @@ class InstanceCard extends Component {
                         <div className="caption">
                             <h3>{this.props.data.name}</h3>
                             <br/>
-                            <p className={this.getRarityColor(this.props.data.rarity)}> {this.getRarity(this.props.data.rarity).toUpperCase()}</p>
+                            <p className={this.getRarityColor(this.props.data.rarity)}> {this.props.data.type === 'dlc' ? '' : this.getRarity(this.props.data.rarity).toUpperCase()}</p>
                             <br/>
                             <p className="">Item Type: {this.upperCaseFirst(this.props.data.type)}</p>
                             <p>Release Date: {this.props.data.release_date ? this.props.data.release_date : "Unknown"}</p>

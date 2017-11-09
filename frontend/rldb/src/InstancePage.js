@@ -13,7 +13,8 @@ class InstancePage extends Component {
             crateData: null,
             decalData: null,
             bodyData: null,
-            dlcData: null
+            dlcData: null,
+            paintData: null
         };
     }
 
@@ -34,6 +35,7 @@ class InstancePage extends Component {
             var crates = [];
             var decals = [];
             var bodies = [];
+            var paints = [];
 
             if(j.items !== undefined)
             {
@@ -144,6 +146,27 @@ class InstancePage extends Component {
                     });
             });}
 
+            if(j.paints !== undefined)
+            {
+                var paintsPromise = j.paints.map( function(item) {
+                    var uri = '/api/id/' + item;
+                    return fetch(uri, { 
+                                        method: 'GET',
+                                        dataType: 'json'
+                                    })
+                                    .then(function(response) {
+                                        return response.json()
+                                    });
+                    });
+
+                Promise.all(paintsPromise).then((result)=>{
+                    console.log("All dlcs fetched!");
+                    console.log(result);
+                    console.log(typeof(result));                
+                    this.setState({
+                        paintData : result
+                    });
+            });}
 
             this.setState({
                 data: j
@@ -220,13 +243,21 @@ class InstancePage extends Component {
             });
         }
 
+        var paintCards = [];
+        if(this.state.paintData !== null)
+        {
+            this.state.paintData.forEach( function(item) {
+                paintCards.push(<InstanceCard key={item.id} data={item}/>);
+            });
+        }
+
         return (
             <div className="container">
                 {/* <Link to={'/'+ this.props.match.url.split('/')[1]}>
                     <h3>Go back.</h3>
                 </Link> */}
                 <h1>{this.state.data.name}</h1>
-                <h3 className={this.getRarityColor(this.state.data.rarity)}> {this.getRarity(this.state.data.rarity).toUpperCase()}</h3>
+                <h3 className={this.getRarityColor(this.state.data.rarity)}> {this.state.data.type === 'dlc' ? '' : this.getRarity(this.state.data.rarity).toUpperCase()}</h3>
                 <div className="row">
                     <div className="col-md-4">
                         <img className="img-rounded img-responsive" src={this.state.data.image} alt="rocket-league-item"/>
@@ -238,7 +269,7 @@ class InstancePage extends Component {
                     <br/>
                     <p className="">Item Type: {this.upperCaseFirst(this.state.data.type)}</p>
                     <p>Release Date: {this.state.data.release_date ? this.state.data.release_date : "Unknown"}</p>
-                    <p>Source: {this.state.data.crates.length > 0 ? "Crate" : this.state.data.dlcs.length > 0 ? "DLC" : "Drop"}</p>
+                    <p>Source: {this.state.data.crates.length > 0 ? "Crate" : (this.state.data.dlcs.length > 0 || this.state.data.type == "dlc") > 0 ? "DLC" : "Drop"}</p>
                     <br/>
                 </div>
                 
@@ -261,7 +292,7 @@ class InstancePage extends Component {
                     this.state.data.crates !== undefined && this.state.data.crates.length > 0 ?
                         <div className="row">
                             <hr/>
-                            <h3>Source:</h3>
+                            <h3>Crate Source:</h3>
                             {crateCards.length > 0 ?
                                 crateCards
                             :
@@ -276,7 +307,7 @@ class InstancePage extends Component {
                     this.state.data.dlcs !== undefined && this.state.data.dlcs.length > 0 ?
                         <div className="row">
                             <hr/>
-                            <h3>Source:</h3>
+                            <h3>DLC Source:</h3>
                             {dlcCards.length > 0 ?
                                 dlcCards
                             :
@@ -301,7 +332,6 @@ class InstancePage extends Component {
                         : 
                             ''
                 }
-
                 {
                     this.state.data.bodies !== undefined && this.state.data.bodies.length > 0 ?
                         <div className="row">
@@ -309,6 +339,20 @@ class InstancePage extends Component {
                             <h3>Bodies:</h3>
                             {bodyCards.length > 0 ?
                                 bodyCards
+                            :
+                                <LoadingOverlay />}
+                        </div>
+                            
+                        : 
+                            ''
+                }   
+                {
+                    this.state.data.paints !== undefined && this.state.data.paints.length > 0 ?
+                        <div className="row">
+                            <hr/>
+                            <h3>Paint Finishes:</h3>
+                            {paintCards.length > 0 ?
+                                paintCards
                             :
                                 <LoadingOverlay />}
                         </div>

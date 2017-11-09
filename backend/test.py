@@ -206,12 +206,12 @@ class TestRLDBAPI(unittest.TestCase):
 			self.assertTrue(isinstance(obj, Trail))
 
 	def testGetTrailByName(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/trails/Imulsion").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/trails/Batmobile").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Trail))
 
 	def testGetTrailByID(self):
-		result = urlopen(r"http://127.0.0.1:5000/api/trails/26809623").read().decode()
+		result = urlopen(r"http://127.0.0.1:5000/api/trails/29653844").read().decode()
 		obj = deserialize(result)
 		self.assertTrue(isinstance(obj, Trail))
 

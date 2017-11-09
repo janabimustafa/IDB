@@ -11,7 +11,6 @@ import Player from './Player';
 import About from './About';
 import Search from './Search';
 import InstancePage from './InstancePage';
-import PaintPage from './PaintPage';
 import PlayerPage from './PlayerPage';
 
 import NotFound from './NotFound';

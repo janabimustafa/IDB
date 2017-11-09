@@ -33,8 +33,8 @@ class TestRLDBAPI(unittest.TestCase):
 	def testGetAllBodies(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/bodies/").read().decode()
 		object_list = deserialize_list(result)
-		self.assertTrue(len(obj_list) > 1)
-		for obj in obj_list:
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
 			self.assertTrue(isinstance(obj, Body))
 
 	def testGetBodyByName(self):
@@ -50,8 +50,8 @@ class TestRLDBAPI(unittest.TestCase):
 	def testGetAllDecals(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/decals/").read().decode()
 		object_list = deserialize_list(result)
-		self.assertTrue(len(obj_list) > 1)
-		for obj in obj_list:
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
 			self.assertTrue(isinstance(obj, Decal))
 
 	def testGetDecalByName(self):
@@ -67,8 +67,8 @@ class TestRLDBAPI(unittest.TestCase):
 	def testGetAllCrates(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/crates/").read().decode()
 		object_list = deserialize_list(result)
-		self.assertTrue(len(obj_list) > 1)
-		for obj in obj_list:
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
 			self.assertTrue(isinstance(obj, Crate))
 
 	def testGetCrateByName(self):
@@ -84,8 +84,8 @@ class TestRLDBAPI(unittest.TestCase):
 	def testGetAllDLC(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/dlcs/").read().decode()
 		object_list = deserialize_list(result)
-		self.assertTrue(len(obj_list) > 1)
-		for obj in obj_list:
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
 			self.assertTrue(isinstance(obj, DLC))
 
 	def testGetDLCByName(self):
@@ -108,8 +108,8 @@ class TestRLDBAPI(unittest.TestCase):
 	def testGetAllPlayers(self):
 		result = urlopen(r"http://127.0.0.1:5000/api/players/").read().decode()
 		object_list = deserialize_list(result)
-		self.assertTrue(len(obj_list) > 1)
-		for obj in obj_list:
+		self.assertTrue(len(object_list) > 1)
+		for obj in object_list:
 			self.assertTrue(isinstance(obj, Player))
 
 	def testGetPlayerByName(self):

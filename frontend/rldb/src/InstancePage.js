@@ -52,15 +52,13 @@ class InstancePage extends Component {
                 console.log(result);
                 console.log(typeof(result));                
                 this.setState({
-                    data: j,
                     itemsData : result
                 });
             });}
-            else {
-                this.setState({
-                    data: j,
-                });
-            }
+
+            this.setState({
+                data: j,
+            });
 
         });
     }
@@ -70,7 +68,15 @@ class InstancePage extends Component {
             return "unknown";
         var rarities = ["unknown", "common", "uncommon", "rare", "very rare", "limted", "premium", "import", "exotic", "black market"];
         return rarities[rarity_num];
-    } 
+    }
+
+    getRarityColor (raw_rarity) {
+        return "color-" + this.getRarity(raw_rarity);
+    }
+
+    upperCaseFirst(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
 
     /* This could be useful.
         var content = this.state.data;
@@ -99,17 +105,34 @@ class InstancePage extends Component {
                     <h3>Go back.</h3>
                 </Link> */}
                 <h1>{this.state.data.name}</h1>
+                <h3 className={this.getRarityColor(this.state.data.rarity)}> {this.getRarity(this.state.data.rarity).toUpperCase()}</h3>
                 <div className="row">
                     <div className="col-md-4">
                         <img className="img-rounded img-responsive" src={this.state.data.image} alt="rocket-league-item"/>
                     </div>
                     <h3>Description:</h3>
-                    <div className="col-md-8 text-center">
+                    <div className="">
                         <p>{this.state.data.description}</p>   
                     </div>
-                    {itemCards.length > 0 ? <h3>Contains:</h3> : <hr/>}                   
-                    {itemCards}
+                    <br/>
+                    <p className="">Item Type: {this.upperCaseFirst(this.state.data.type)}</p>
+                    <p>Release Date: {this.state.data.release_date ? this.state.data.release_date : "Unknown"}</p>
+                    <p>Source: {this.state.data.crates.length > 0 ? "Crate" : "Drop"}</p>
                 </div>
+                
+                    {
+                        itemCards.length > 0 ?
+                            <div className="row">
+                                <hr/>
+                                <h3>Contains:</h3> 
+                                {itemCards}
+                            </div>
+                                
+                            : 
+                                ''
+                    }                   
+                    
+                
                 
             </div>
         )

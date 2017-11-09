@@ -29,7 +29,8 @@ class Item extends Component {
     }
 
     componentDidMount() {
-        fetch('/api'+ this.props.match.url, { 
+        console.log('/api' + this.props.match.url + '/');
+        fetch('/api'+ this.props.match.url + '/', { 
             method: 'GET',
             dataType: 'json'
         })

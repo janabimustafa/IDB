@@ -16,11 +16,20 @@ class InstanceCard extends Component {
         return apiTypes[type];
     }
 
+    makePlural (noun) {
+        var lastChar = noun.slice(-1)
+        console.log('last char in ' + noun + ' is ' + lastChar);
+        if (lastChar === 'y')
+            return noun.replace('y', 'ies');
+        else
+            return noun + 's';
+    }
+
     render() {
         console.log(this.props.data.type);
         return (
             <div className="col-md-4 col-sm-6 text-center">
-                <Link onClick={this.forceUpdate} to={`/${this.props.data.type}/${this.props.data.name}`}>
+                <Link onClick={this.forceUpdate} to={`/${this.makePlural(this.props.data.type)}/${this.props.data.name}`}>
                     <img className="img-rounded" src={this.props.data.image}/>
                     <h2>{this.props.data.name}</h2>
                 </Link>

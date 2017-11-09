@@ -3,11 +3,17 @@
 } */
 
 .model-header {
-    border-color: rgba(18, 28, 51, 0.25);
+    min-height: 70px;
+}
+
+.refine-options {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 hr {
     border-color: rgba(18, 28, 51, 0.25);
+    margin: 0;
     /* margin-left: 15px; */
 }
 

@@ -39,28 +39,47 @@ class About extends Component {
           <h1>About</h1>
           <hr/>  
 
-          <p>We are the Supersonic Acrobatic Rocket-Powered Engineers.</p>
-          <p>RocketLeagueDB (RLDB.me) is a database for most things Rocket League made for Rocket League fans.</p>
-          <a href="http://docs.janabimustafa.apiary.io/">Link to Apiary API</a>
+          <br/>
+          <h3>We are the Supersonic Acrobatic Rocket-Powered Engineers.</h3>
+          <h3>RocketLeagueDB (RLDB.me) is a database for most things Rocket League for Rocket League fans.</h3>
+          <br/>
+          <a className="source-link" href="http://docs.janabimustafa.apiary.io/">Link to Apiary API</a>
           <br></br>
-          <a href="https://github.com/janabimustafa/idb">Link to GitHub Repo</a>
+          <a className="source-link" href="https://github.com/janabimustafa/idb">Link to GitHub Repo</a>
           <br></br>
-          <a href="https://trello.com/b/XG6xjh7g/project-4">Link to Trello</a>
+          <a className="source-link" href="https://trello.com/b/XG6xjh7g/project-4">Link to Trello</a>
           <br></br>
-          <a href="https://utexas.box.com/s/jy9pa6ja68ogjylym7wxg38tyg0ik5tk">Link to Technical Report</a>
+          <a className="source-link" href="">Link to Technical Report</a>
+          <br></br>
+          <a className="source-link" href="">Link to UML Diagram</a>
 
           <h3>Data Sources</h3>
           <div className="row">
             <div className="source-card col-md-3">
+              <div className="source-image-container">        
+                <img className="source-image" src="https://vignette.wikia.nocookie.net/rocketleague/images/b/b8/Wiki-welcome.png/revision/latest?cb=20170913175236" alt="Welcome to the Rocket League Wiki"/>
+              </div>
+              <br/><br/>
               <a className="source-link" href="http://rocketleague.wikia.com/api/v1">Rocket League Wikia</a>
-              <p>The Rocket League Wikia is a fan contributed wiki page. We employ a python script to scrape each catergory and obtain all items in the category. Then, we obtain all related items for each item.</p>
+              <br/><br/>
+              <p>The Rocket League Wikia is a fan contributed wiki page. We employ a python script to scrape each catergory and obtain all items in the category. Then, we obtain all related items for each item.</p>    
             </div>
             <div className="source-card col-md-3">
+              <div className="source-image-container">
+                <img className="source-image" src="https://rocketleaguestats.com/assets/img/logo/rls_logotype_fullcolor_light.png" alt="RocketLeague Stats logo"/>
+              </div>
+              <br/><br/>
               <a className="source-link" href="http://documentation.rocketleaguestats.com">RocketLeagueStats</a>
+              <br/><br/>
               <p>RocketLeagueStats is a fan-made collection of Rocket League player statistics. We use their API to obtain player information. The API returns JSON, so we use that information for the player info.</p>
             </div>
             <div className="source-card col-md-3">
+              <div className="source-image-container">
+                <img className="source-image" src="https://rocket-league.com/assets/images/logos/rocket-league-garage-footer.svg" alt="RocketLeague Stats logo"/>
+              </div>
+              <br/><br/>
               <a className="source-link" href="https://rocket-league.com/items">Rocket League Garage</a>
+              <br/><br/>
               <p>Rocket League Garage is a fan-made Rocket League site containing the names and images of most in-game items. We scrape the site using X-Path to obtain the images and names of the items to add them to our database.</p>
             </div>
           </div>

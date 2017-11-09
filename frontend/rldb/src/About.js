@@ -51,7 +51,7 @@ class About extends Component {
           <br></br>
           <a className="source-link" href="">Link to Technical Report</a>
           <br></br>
-          <a className="source-link" href="">Link to UML Diagram</a>
+          <a className="source-link" href="https://utexas.box.com/s/o9m3o9dejlj60rte192f86clga005uzi">Link to UML Diagram (UT Box)</a>
 
           <h3>Data Sources</h3>
           <div className="row">

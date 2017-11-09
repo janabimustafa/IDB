@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Populating db..."
 python -m data_collection.load_constants
 python -m data_collection.serial_importer data_collection/serial.txt
 python -m data_collection.serial_importer data_collection/decals.txt

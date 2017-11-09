@@ -66,4 +66,5 @@ if __name__ == '__main__':
     with open('crate_items.txt', 'w') as f:        
         for crate in crate_items:
             for item in crate_items[crate]:
-                f.write(json.dumps({"from_type": "crate", "from_id": crate, "from_relation": "items", "to_id": item}) + '\n')            
+                f.write(json.dumps({"from_type": "crate", "from_id": crate, "from_relation": "items", "to_id": item}) + '\n') 
+    session.close()           

@@ -30,25 +30,40 @@ app.register_blueprint(blueprint)
 class ID_Res(Resource):
 
     def get(self, id):
-        s = Session()
-        for Class in CLASS_TO_TYPE: # Works as a functional listing of all 'real' types
-            res = s.query(Class).filter(Class.id == id).first()
-            if res:
-                return serialize(res)
-        abort(404)
+        s = Session()  
+        try:
+            for Class in CLASS_TO_TYPE: # Works as a functional listing of all 'real' types
+                res = s.query(Class).filter(Class.id == id).first()
+                if res:
+                    return serialize(res)
+            abort(404)
+        finally:
+            s.close()
 
 def get_obj_by_name(Class, name):
-    query = Session().query(Class).filter(func.lower(Class.name) == name.lower()).first()
-    if not query:
-        raise NotFound()
-    return serialize(query)
+    s = Session()
+    try:        
+        query = s.query(Class).filter(func.lower(Class.name) == name.lower()).first()
+        if not query:
+            raise NotFound()
+        return serialize(query)
+    finally:
+        s.close()
 def get_obj_by_id(Class, id):
-    query = Session().query(Class).filter(Class.id == id).first()
-    if not query:
-        raise NotFound()
-    return serialize(query)
+    s = Session()
+    try:
+        query = s.query(Class).filter(Class.id == id).first()
+        if not query:
+            raise NotFound()
+        return serialize(query)
+    finally:
+        s.close()
 def get_obj_list(Class):
-    return [serialize(e) for e in Session().query(Class)]
+    s = Session()
+    try:
+        return [serialize(e) for e in s.query(Class)]
+    finally:
+        s.close()
 
 ### Player lookup by id number
 
@@ -252,14 +267,21 @@ class Antenna_Res(Resource):
 class Search_Res(Resource):
 
     def get(self, term):
-        return [serialize(k) for k in search(Session().query(RLObtainable), term, sort=True)]
+        s = Session()
+        try:
+            return [serialize(k) for k in search(s.query(RLObtainable), term, sort=True)]
+        finally:
+            s.close()
 
 
 ### Meta mappings
 
 def get_mapping(Class):
     s = Session()
-    return {r.id: r.name for r in s.query(Class)}
+    try:    
+        return {r.id: r.name for r in s.query(Class)}
+    finally:
+        s.close()
 
 @api.route('/meta/rarities')
 class GetRarities(Resource):

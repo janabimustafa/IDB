@@ -26,4 +26,5 @@ with open(filename, 'r') as f:
             getattr(a, j['from_relation']).append(b)
 
 s.commit()
+s.close()
  

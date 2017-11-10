@@ -118,7 +118,7 @@ class About extends Component {
                 <p>Responsibilities: sysadmin, back-end, front-end, API</p>
                 <p>{this.state.data['commits']["janabimustafa"]} Commits</p>
                 <p>{this.state.data["issues"]["Mustafa Taleb"]} Issues</p>
-                <p>0 Unit Tests</p>
+                <p>4 Unit Tests</p>
             </div>
             <div className="col-md-4 text-center">
               <img className="img-rounded" src="img/about/alex.jpg" alt="contributor"></img>

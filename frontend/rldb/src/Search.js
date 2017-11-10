@@ -120,7 +120,12 @@ class Search extends Component {
     }
     dumpValues(item){
         var values = Object.keys(item).map(function(key){
-            return item[key];
+            var value = item[key];
+            if (isNaN(value)){
+                if (!Array.isArray(value))
+                    return value;
+            }
+            return '';
         });
         return values.join(" ");
     }

@@ -285,8 +285,8 @@ def deserialize_list(json_str):
     object_list = [_deserialize_helper(json) for json in json_list]
     return object_list
 
-def search(class_, term):
-    term = str(term).lower()
+def search(class_, terms):
+    terms = [k.lower() for k in terms]
     s = Session()
     pq = []
 
@@ -295,10 +295,11 @@ def search(class_, term):
         for attr in vars(obj):
             if attr.startswith('_'):
                 continue
-            val = str(getattr(obj, attr)).lower()
-            while term in val:
-                counter += 1
-                val = val.replace(term, '')
+            for term in terms:
+                val = str(getattr(obj, attr)).lower()
+                while term in val:
+                    counter += 1
+                    val = val.replace(term, '')
         heappush(pq, (-counter, obj, counter))
 
     ret = []

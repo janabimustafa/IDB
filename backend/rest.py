@@ -269,7 +269,7 @@ class Search_Res(Resource):
     def get(self, term):
         s = Session()
         try:
-            return [serialize(k) for k in search(RLObject, term)]
+            return [serialize(k) for k in search(RLObject, (k for k in term.split()))]
         finally:
             s.close()
 

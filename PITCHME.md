@@ -1,4 +1,4 @@
-#Rocket League Database
+# Rocket League Database
 ### on RLDB.me
 ## CS 373
 
@@ -27,32 +27,32 @@
 ---
 
 ## Self-Critique
-What did we do well?
+What did we do well?<br>
 - data collection
 - navigation
 - continuous integration
-What did we learn?
+What did we learn?<br>
 - Docker, a necessary evil
 - Google Cloud Platform, expensive
 - 
-What can we do better?
+What can we do better?<br>
 - planning and assignment of tasks
 - CSS
-What puzzles us?
+What puzzles us?<br>
 - visualizations
 
 ---
 
-##Event4Me Critique
-What did they do well?
+## Event4Me Critique
+What did they do well?<br>
 - beautiful, consistent design
 - 5 data sources
-What did we learn from their website?
+What did we learn from their website?<br>
 - 
-What can they do better?
+What can they do better?<br>
 - contrast! (difficulty reading the grey on grey)
-What puzzles us about their website?
+What puzzles us about their website?<br>
 
 ---
 
-##Thank you!
+## Thank you!

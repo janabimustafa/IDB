@@ -124,7 +124,7 @@ class About extends Component {
               <img className="img-rounded" src="img/about/alex.jpg" alt="contributor"></img>
                 <h2>Alex Gonzales</h2>
                 <p>I am a senior in UTCS and can count on two hands the number of games of Rocket League I have played.</p>
-                <p>Responsibilities: Back-End, API, Documentation.</p>
+                <p>Responsibilities: Back-End, API, Documentation, DB Management.</p>
                 <p>{this.state.data['commits']["Musi13"]} Commits</p>
                 <p>{this.state.data["issues"]["Alex Gonzales"]} Issues</p>
                 <p>3 Unit Tests</p>

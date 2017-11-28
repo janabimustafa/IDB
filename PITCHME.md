@@ -10,7 +10,7 @@
 - Melanie Rivera
   - design, data collection
 - Alex Gonzales
-  - backend, API, documentation, data collection
+  - backend, API, documentation, data collection, db management
 - George Weng
   - frontend
 - Mustafa Taleb

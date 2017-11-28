@@ -1,10 +1,6 @@
-## Rocket League Database
+# Rocket League
+# Database
 ##### on RLDB.me
-#### CS 373
-
----
-
-### Tools?
 
 ---
 
@@ -22,6 +18,10 @@
 
 ---
 
+### Tools?
+
+---
+
 ## Demonstration
 
 ---
@@ -34,7 +34,6 @@
 - What did we learn?
   - Docker, a necessary evil
   - Google Cloud Platform, expensive
-  - 
 - What can we do better?
   - planning and assignment of tasks
   - CSS
@@ -48,11 +47,12 @@
   - beautiful, consistent design
   - 5 data sources
 - What did we learn from their website?
-  - 
+  - database was slow for everyone
+  - load everything before displaying
 - What can they do better?
   - contrast! (difficulty reading the grey on grey)
 - What puzzles us about their website?
 
 ---
 
-### Thank you!
+### Q&A

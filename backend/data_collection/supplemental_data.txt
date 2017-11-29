@@ -98,7 +98,7 @@
 {"id": 7138, "name": "Zippy", "type": "Body", "rarity" : 6}
 {"id": 7145, "name": "Aftershock", "type": "Body", "rarity" : 6}
 {"id": 7152, "name": "Marauder", "type": "Body", "rarity" : 6}
-{"id": 8609, "name": "'70 Dodge Charger R/T", "type": "Body", "rarity" : 6}
+{"id": 8609, "name": "'70 Dodge Charger R-T", "type": "Body", "rarity" : 6}
 {"id": 6654, "name": "Tribal", "type": "Decal", "rarity" : 3}
 {"id": 7566, "name": "Septem", "type": "Wheel", "rarity" : 4}
 {"id": 4948, "name": "Dieci", "type": "Wheel", "rarity" : 1}

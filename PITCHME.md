@@ -55,4 +55,39 @@
 
 ---
 
+### Docker
++++
+#### Easy start for developers
+```bash
+docker-compose build
+docker-compose up -d
+```
++++
+#### Easy builds for production
+```bash
+docker-compose -f docker-compose-travis.yml build
+```
+---
+
+### Servers & CI
++++
+#### Servers
+- Two micro instances on Google Compute Engine for dev and prod
+- Database is hosted on both vms separate from the Docker workspace
+- Dev site available on dev.rldb.me
+- Live site available on rldb.me
++++
+#### Travis
+- Builds and tests latest changes and pull requests
+- Pushes Docker images
+  - When the build is against the dev branch, a Docker image with :dev tag is pushed
+  - When the build is against the master branch, a Docker image with the :latest tag is pushed
++++
+#### Watchtower
+A Dockerized application to automate the deployment process
+- Polls Docker hub for the latest versions of our images
+- Deploys the new version, cleaning up afterwards
+
+---
+
 ### Q&A

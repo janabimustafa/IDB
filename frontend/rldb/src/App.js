@@ -3,19 +3,18 @@ import {Route, Switch} from 'react-router-dom';
 
 import './App.css';
 
-import NavBar from './NavBar';
+import NavBar from './components/NavBar.js';
 
-import Home from './Home';
-import Item from './Item';
-import Player from './Player';
-import About from './About';
-import Search from './Search';
-import InstancePage from './InstancePage';
-import PlayerPage from './PlayerPage';
+import Home from './pages/Home/Home.js';
+import Item from './pages/Item/Item.js';
+import Player from './pages/Player/Player.js';
+import About from './pages/About/About.js';
+import Search from './pages/Search/Search.js';
+import InstancePage from './pages/Item/InstancePage.js';
+import PlayerPage from './pages/Player/PlayerPage.js';
 
-import NotFound from './NotFound';
-
-//right now header is just navbar, but maybe header could be something more
+import NotFound from './pages/NotFound/NotFound.js';
+import SearchNotFound from './pages/SearchNotFound/SearchNotFound.js';
 
 const App = () => (
   <div>
@@ -39,6 +38,7 @@ const App = () => (
 
       <Route exact path='/players' component={Player}/>
       <Route exact path='/about' component={About}/>
+      <Route exact path='/search/' component={SearchNotFound}/>
       
       <Route path='/search/:searchterm' component={Search}/>
       <Route path='/crates/:cratename' component={InstancePage}/>

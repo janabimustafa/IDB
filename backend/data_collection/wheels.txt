@@ -28,7 +28,7 @@
 {"name": "Tunica", "rarity": 1, "id": 24481134, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/658fae94ed1436130601.png"}
 {"name": "Veloce", "rarity": 1, "id": 3509034, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/79201ea6e01436130486.png"}
 {"name": "Vortex", "rarity": 1, "id": 42379880, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/6af3f0119e1436130307.png"}
-{"name": "'70 Dodge Charger R/T", "rarity": 6, "id": 42050038, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bce8858b141507752522.png"}
+{"name": "'70 Dodge Charger R-T", "rarity": 6, "id": 42050038, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/bce8858b141507752522.png"}
 {"name": "'99 Nissan Skyline GT-R R34", "rarity": 6, "id": 77318203, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/dcfc6fd5c21507752540.png"}
 {"name": "Aftershock", "rarity": 6, "id": 84661330, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/eec69ea4b21466509373.png"}
 {"name": "Batmobile", "rarity": 6, "id": 88437082, "type": "Wheel", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5144d7dbb41457511395.png"}

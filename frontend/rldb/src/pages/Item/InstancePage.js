@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import InstanceCard from './InstanceCard';
-import LoadingOverlay from './LoadingOverlay';
+import InstanceCard from './components/InstanceCard';
+import LoadingOverlay from '../../components/LoadingOverlay';
 // import {Link} from 'react-router-dom';
 
 class InstancePage extends Component {

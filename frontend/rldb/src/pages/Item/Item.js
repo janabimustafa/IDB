@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 import {Pagination, DropdownButton, MenuItem} from 'react-bootstrap';
-import InstanceCard from './InstanceCard';
-import LoadingOverlay from './LoadingOverlay';
+import InstanceCard from './components/InstanceCard.js';
+import LoadingOverlay from '../../components/LoadingOverlay.js';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import './Item.css';

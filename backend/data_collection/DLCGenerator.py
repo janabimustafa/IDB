@@ -317,15 +317,15 @@ dlcs = [
         ]
     },
     {
-        'id': get_hash('dlc' + '\'70 DODGE CHARGER R/T'),
-        'name': '\'70 Dodge Charger R/T',
+        'id': get_hash('dlc' + '\'70 DODGE CHARGER R-T'),
+        'name': '\'70 Dodge Charger R-T',
         'release_date': '2017-10-11',
-        'description': 'Challenge the rules with Dom Toretto\'s 1970 Dodge Charger R/T from from the film that launched the epic saga, The Fast and the Furious, by Universal Pictures.',
+        'description': 'Challenge the rules with Dom Toretto\'s 1970 Dodge Charger R-T from from the film that launched the epic saga, The Fast and the Furious, by Universal Pictures.',
         'image': 'https://vignette.wikia.nocookie.net/rocketleague/images/4/49/%2770_Dodge_Charger_RT_hero_art.jpg/revision/latest/scale-to-width-down/310?cb=20171004211508',
         'type': 'dlc',
         'items': [
-            get_hash('body' + '\'70 Dodge Charger R/T'),            
-            get_hash('wheel' + '\'70 Dodge Charger R/T'),
+            get_hash('body' + '\'70 Dodge Charger R-T'),            
+            get_hash('wheel' + '\'70 Dodge Charger R-T'),
             get_hash('decal' + 'Alameda Twin'),
             get_hash('decal' + 'Good Graces'),
             get_hash('decal' + 'Flames'),

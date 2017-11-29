@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import LoadingOverlay from './LoadingOverlay';
+import LoadingOverlay from '../../components/LoadingOverlay';
 // import {Link} from 'react-router-dom';
 
 class PlayerPage extends Component {

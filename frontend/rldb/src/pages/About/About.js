@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import LoadingOverlay from './LoadingOverlay';
+import LoadingOverlay from '../../components/LoadingOverlay';
 
 //this page just copy pasted from static instead of rewriting with react-bootstrap
 
@@ -47,9 +47,9 @@ class About extends Component {
           <br></br>
           <a className="source-link" href="https://github.com/janabimustafa/idb">Link to GitHub Repo</a>
           <br></br>
-          <a className="source-link" href="https://trello.com/b/XG6xjh7g/project-4">Link to Trello</a>
+          <a className="source-link" href="https://trello.com/b/IWIighBA/project-5">Link to Trello</a>
           <br></br>
-          <a className="source-link" href="https://utexas.box.com/s/yonyad8ubdccb7hvadxbmmdso1nnhquf">Link to Technical Report</a>
+          <a className="source-link" href="https://janabimustafa.gitbooks.io/rldb-technical-report/content/">Link to Technical Report (GitBook)</a>
           <br></br>
           <a className="source-link" href="https://utexas.box.com/s/o9m3o9dejlj60rte192f86clga005uzi">Link to UML Diagram (UT Box)</a>
 
@@ -124,7 +124,7 @@ class About extends Component {
               <img className="img-rounded" src="img/about/alex.jpg" alt="contributor"></img>
                 <h2>Alex Gonzales</h2>
                 <p>I am a senior in UTCS and can count on two hands the number of games of Rocket League I have played.</p>
-                <p>Responsibilities: Back-End, API, Documentation.</p>
+                <p>Responsibilities: Back-End, API, Documentation, DB Management.</p>
                 <p>{this.state.data['commits']["Musi13"]} Commits</p>
                 <p>{this.state.data["issues"]["Alex Gonzales"]} Issues</p>
                 <p>3 Unit Tests</p>

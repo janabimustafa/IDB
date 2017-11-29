@@ -1,5 +1,5 @@
-# Rocket League
-# Database
+## Rocket League
+## Database
 ##### on RLDB.me
 
 ---

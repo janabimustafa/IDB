@@ -23,10 +23,6 @@ sysadmin, backend, API, data collection
 
 ---
 
-### Tools?
-
----
-
 ### Docker
 +++
 #### Easy start for developers
@@ -74,7 +70,7 @@ A Dockerized application to automate the deployment process
 - continuous integration
 +++
 #### What did we learn?
-- Docker, a necessary evil
+- Docker
 - Google Cloud Platform, expensive
 +++
 #### What can we do better?

@@ -14,6 +14,7 @@ import InstancePage from './pages/Item/InstancePage.js';
 import PlayerPage from './pages/Player/PlayerPage.js';
 
 import NotFound from './pages/NotFound/NotFound.js';
+import SearchNotFound from './pages/SearchNotFound/SearchNotFound.js';
 
 const App = () => (
   <div>
@@ -37,6 +38,7 @@ const App = () => (
 
       <Route exact path='/players' component={Player}/>
       <Route exact path='/about' component={About}/>
+      <Route exact path='/search/' component={SearchNotFound}/>
       
       <Route path='/search/:searchterm' component={Search}/>
       <Route path='/crates/:cratename' component={InstancePage}/>

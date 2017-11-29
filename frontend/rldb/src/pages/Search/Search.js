@@ -38,7 +38,7 @@ class Search extends Component {
             dataType: 'json'
         })
         .then(function(response) {
-            return response.json()
+            return response.json();
         })
         .then(j => {
             console.log(j);

@@ -18,7 +18,7 @@ class NavBar extends Component {
   }
   searchSubmit(event){
     event.preventDefault()
-    var searchTermEncoded = encodeURI(this.state.searchTerm)    
+    var searchTermEncoded = encodeURIComponent(this.state.searchTerm)    
     this.props.history.push(`/search/${searchTermEncoded}`)
   }
   render() {

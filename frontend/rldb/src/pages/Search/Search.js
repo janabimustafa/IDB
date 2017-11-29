@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 import {Pagination, DropdownButton, MenuItem} from 'react-bootstrap';
 import {withRouter, Link} from 'react-router-dom';
-import InstanceCard from './InstanceCard';
-import LoadingOverlay from './LoadingOverlay';
+import InstanceCard from '../Item/components/InstanceCard.js';
+import LoadingOverlay from '../../components/LoadingOverlay.js';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import Highlighter from 'react-highlight-words';

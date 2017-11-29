@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 import {Pagination, DropdownButton, MenuItem} from 'react-bootstrap';
-import PlayerCard from './PlayerCard';
-import LoadingOverlay from './LoadingOverlay';
+import PlayerCard from './components/PlayerCard';
+import LoadingOverlay from '../../components/LoadingOverlay';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 

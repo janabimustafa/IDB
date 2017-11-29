@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import LoadingOverlay from './LoadingOverlay';
+import LoadingOverlay from '../../components/LoadingOverlay';
 
 //this page just copy pasted from static instead of rewriting with react-bootstrap
 

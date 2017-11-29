@@ -29,7 +29,6 @@ As an Xbox user, I want to see player stats for Xbox players.;1;24/10/2017 23:13
 As a PC user, I want to see player stats for Steam players.;1;24/10/2017 23:13:32;00:00:09;00:00:06;Alex;Melanie;2;
 As a user, I want to view information about the game the database is based on.;2;24/10/2017 23:11:42;00:00:21;00:00:14;Alex;Melanie;3;
 
-Current User Stories
 sep=;
 Story Title;Estimate;Vote Started;Voting Duration;Avg Voting Time;Fastest;Slowest;Actual;
 As a user, I want to see RLCS' twitter feed on the front page.;1;09/11/2017 15:41:02;00:00:04;00:00:03;Melanie;Alex;
@@ -43,3 +42,17 @@ As a user, I want to see an advanced search page to search things better.;3;09/1
 As a user, I want to be able to filter instances by their attributes.;2;09/11/2017 15:39:54;00:00:04;00:00:02;Melanie;Alex;
 As a user, I want to see a search bar on the NavBar to search the whole site.;½;09/11/2017 15:39:43;00:00:08;00:00:05;Melanie;Alex;
 As a user, I want to see a well formatted "Not Found" page if I try to go to an item that doesn't exist.;2;26/10/2017 06:01:33;00:00:32;00:00:31;Melanie;Alex;
+
+Current User Stories
+sep=;
+Story Title;Estimate;Vote Started;Voting Duration;Avg Voting Time;Fastest;Slowest;Actual;
+As a developer, I want to see tests for the GUI.;5;20/10/2017 20:40:02;00:00:04;00:00:03;Melanie;Alex;
+As a developer, I want to be able to easily edit a Gitpitch presentation through a code editor.;4;20/10/2017 20:40:02;00:00:06;00:00:04;Melanie;Alex;
+As a developer, I want to be able to view a GitBooks technical report from the About page.;2;20/10/2017 20:40:02;00:00:07;00:00:03;Melanie;Alex;
+As a developer, I want to view the team's self-critique somewhere in the technical report.;1;20/10/2017 20:40:02;00:00:05;00:00:02;Melanie;Alex;
+As a developer, I want to view the teams' critique of another team somewhere in the technical report.;1;20/10/2017 20:40:02;00:00:03;00:00:02;Melanie;Alex;
+As a user, I don't want to receive a 404 page when searching for an empty term.;1;20/10/2017 20:40:02;00:00:04;00:00:03;Melanie;Alex;
+As a user, I want to be able to use the site with a mobile phone without the home text taking up the whole screen.;2;20/10/2017 20:40:02;00:00:04;00:00:03;Melanie;Alex;
+As a developer, I want the UML diagram to be available somwhere in the technical report.;1;20/10/2017 20:40:02;00:00:05;00:00:03;Melanie;Alex;
+As a user, I want the models to be sorted alphabetically by default.;1;20/10/2017 20:40:02;00:00:08;00:00:02;Melanie;Alex;
+As a user, I want the common rarity items to have a color.;1;20/10/2017 20:40:02;00:00:07;00:00:03;Melanie;Alex;

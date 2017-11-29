@@ -120,7 +120,11 @@ body {
     border-bottom: 8px solid magenta;
 }
 
-.border-unknown, .border-common {
+.border-common {
+    border-bottom: 8px solid grey;
+}
+
+.border-unknown {
     border-bottom: 8px solid ghostwhite;
 }
 

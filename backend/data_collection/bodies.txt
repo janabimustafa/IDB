@@ -11,7 +11,7 @@
 {"name": "Sweet Tooth", "rarity": 1, "id": 475085, "type": "Body", "platform": 2, "image": "https://rocket-league.com/content/media/items/avatar/220px/1b2c16f85a1509566879.png"}
 {"name": "Venom", "rarity": 1, "id": 98025416, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/0fbe53e7dd1436133068.png"}
 {"name": "X-Devil", "rarity": 1, "id": 70560080, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/595597d9ee1481367841.png"}
-{"name": "'70 Dodge Charger R/T", "rarity": 6, "id": 33384198, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7a653a5b2c1507752125.png"}
+{"name": "'70 Dodge Charger R-T", "rarity": 6, "id": 33384198, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7a653a5b2c1507752125.png"}
 {"name": "'99 Nissan Skyline GT-R R34", "rarity": 6, "id": 18916922, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/7d631f5c941507752286.png"}
 {"name": "Aftershock", "rarity": 6, "id": 12484274, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/5eb451252c1466509310.png"}
 {"name": "Batmobile", "rarity": 6, "id": 83710768, "type": "Body", "platform": 4, "image": "https://rocket-league.com/content/media/items/avatar/220px/9e97acd0931457510614.png"}

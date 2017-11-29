@@ -47,9 +47,9 @@ class About extends Component {
           <br></br>
           <a className="source-link" href="https://github.com/janabimustafa/idb">Link to GitHub Repo</a>
           <br></br>
-          <a className="source-link" href="https://trello.com/b/XG6xjh7g/project-4">Link to Trello</a>
+          <a className="source-link" href="https://trello.com/b/IWIighBA/project-5">Link to Trello</a>
           <br></br>
-          <a className="source-link" href="https://utexas.box.com/s/yonyad8ubdccb7hvadxbmmdso1nnhquf">Link to Technical Report</a>
+          <a className="source-link" href="https://janabimustafa.gitbooks.io/rldb-technical-report/content/">Link to Technical Report (GitBook)</a>
           <br></br>
           <a className="source-link" href="https://utexas.box.com/s/o9m3o9dejlj60rte192f86clga005uzi">Link to UML Diagram (UT Box)</a>
 

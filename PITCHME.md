@@ -7,19 +7,19 @@
 ### Group Members
 +++
 #### John O'kane
-unit testing, QA
+Unit testing, QA
 +++
 #### Melanie Rivera
-design, data collection
+Design, data collection
 +++
 #### Alex Gonzales
-backend, API, documentation, data collection, db management
+Backend, API, documentation, data collection, db management
 +++
 #### George Weng
-frontend
+Frontend
 +++
 #### Mustafa Taleb
-sysadmin, backend, API, data collection
+Sysadmin, backend, API, data collection
 
 ---
 
@@ -65,34 +65,39 @@ A Dockerized application to automate the deployment process
 ### Self-Critique
 +++
 #### What did we do well?
-- data collection
-- navigation
-- continuous integration
+- Data collection
+- Navigation
+- Continuous integration
 +++
 #### What did we learn?
 - Docker
 - Google Cloud Platform, expensive
 +++
 #### What can we do better?
-- planning and assignment of tasks
+- Planning and assignment of tasks
 - CSS
 +++
 #### What puzzles us?
-- visualizations
+- Visualizations
 
 ---
 
 ### Event4Me Critique
++++
 #### What did they do well?
-- beautiful, consistent design
+- Beautiful, consistent design
 - 5 data sources
++++
 #### What did we learn from their website?
-- database was slow for everyone
-- load everything before displaying
+- Load everything before displaying
++++
 #### What can they do better?
-- contrast! (difficulty reading the grey on grey)
+- Contrast! (difficulty reading the grey on grey)
+- Events with multiple artists show up as different events
+- Past events still show up
++++
 #### What puzzles us about their website?
-
+- The default sorting for events
 ---
 
 

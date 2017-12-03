@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        -->
+        <style>
+        body {
+            text-align: center;
+        }
+        #events {
+            display: inline-block;
+        }
+        #artistgenre{
+            display: inline-block;
+        }
+        #artistcountry{
+            display: inline-block;
+        }
+        #histo{
+            display: inline-block;
+        }
+        #geo{
+            display: inline-block;
+        }
+        #sankey{
+            display: inline-block;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="events" style="width: 1200px; height: 800px;"></div>
+        <div id="artistgenre" style="width: 1200px; height: 800px;"></div>
+        <div id="artistcountry" style="width: 1200px; height: 800px;"></div>
+        <div id="geo" style="width: 1200px; height: 800px;"></div>
+        <div id="sankey" style="width: 1200px; height: 9000px;"></div>
+        <div id="histo" style="width: 1200px; height: 800px;"></div>
+
+        <script type="text/javascript" src="api.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart', 'sankey', 'geochart']});
+            google.charts.setOnLoadCallback(drawVisualizations);
+
+            function drawVisualizations() {
+
+                //////////////////////////
+                //EVENTS//////////////////
+                //////////////////////////
+                var events = google.visualization.arrayToDataTable([
+                  ['Type', 'Amount'],
+                  ['Concerts', 398],
+                  ['Festivals', 69],
+                ]);
+
+                var options1 = {
+                  title: 'Event Types',
+                  titleTextStyle: {
+                    fontSize: 40
+                  },
+                  legend: 'none'
+                };
+
+                var pie1 = new google.visualization.PieChart(document.getElementById('events'));
+
+                pie1.draw(events, options1);
+                
+                //////////////////////////
+                //ARTIST GENRE////////////
+                //////////////////////////
+                var artistgenre = google.visualization.arrayToDataTable([
+                  ['Genre', 'Amount'],
+                  ['Alternative/Indie', 53],
+                  ['Pop', 53],
+                  ['Rap/Hip Hop', 77],
+                  ['Soul/R&B', 29],
+                  ['Country', 23],
+                  ['Soundtracks', 3],
+                  ['Rock', 42],
+                  ['Electronic/Dance', 13],
+                  ['Latin', 2],
+                  ['N/A', 3],
+                  ['World Tropical', 1],
+                  ['Folk', 1],
+                  ['Jazz', 2],
+                  ['Christian/Gospel', 1]
+                ]);
+
+                var options2 = {
+                  title: 'Artist Genres',
+                  titleTextStyle: {
+                    fontSize: 40
+                  },
+                  legend: 'none'
+                };
+
+                var pie2 = new google.visualization.PieChart(document.getElementById('artistgenre'));
+
+                pie2.draw(artistgenre, options2);   
+                
+                //////////////////////////
+                //ARTIST COUNTRY//////////
+                //////////////////////////
+                var artistcountry = google.visualization.arrayToDataTable([
+                  ['Country', 'Amount'],
+                  ['USA', 300],
+                  ['Canada', 2],
+                  ['England', 1]
+                ]);
+
+                var options3 = {
+                  title: 'Artist Countries',
+                  titleTextStyle: {
+                    fontSize: 40
+                  },
+                  legend: 'none'
+                };
+
+                var pie3 = new google.visualization.PieChart(document.getElementById('artistcountry'));
+
+                pie3.draw(artistcountry, options3);
+
+                //this one is dumb because
+                //1. it should be a vertical bar graph
+                //2. it's basically just shows that they scraped max 3 events for each artist
+                //
+/*
+                //////////////////////////
+                //HISTOGRAM OF ARTIST APPEARANCES
+                //////////////////////////
+                var artistsAppearances = [['Artist', 'Amount']]
+                artistsData.artists.forEach( function(artist){
+                    artistsAppearances.push([artist.name, artist.events.length])
+                }); 
+                //console.log(artistsAppearances);
+
+                var histoData = google.visualization.arrayToDataTable(artistsAppearances);
+
+                var options4 = {
+                    title: 'Number of events for artists',
+                    titleTextStyle: {
+                        fontSize: 40
+                    },
+                    legend: {position: 'none'},
+                    histogram: {bucketSize: 1}
+                };
+
+                var histo = new google.visualization.Histogram(document.getElementById('histo'));
+                histo.draw(histoData, options4);
+*/
+                //////////////////////////
+                //GEOCHART////////////////    Will this break if I don't give an API key...? we'll see
+                //////////////////////////
+                var countryEvents = {}
+                metrosData.metros.forEach(function(metro){
+                    if(metro.country in countryEvents){
+                        countryEvents[metro.country] += metro.events.length;
+                    }
+                    else{
+                        countryEvents[metro.country] = metro.events.length;
+                    }
+                });
+                //console.log(countryEvents);
+                var countryEventsArray = [['Country', 'Events']]
+                for (var country in countryEvents){
+                    countryEventsArray.push([country, countryEvents[country]]);
+                }
+                var countryData = google.visualization.arrayToDataTable(countryEventsArray);
+
+                var options5 = {
+                    colorAxis: {colors: ['#80b060', '#203000']}
+                }
+
+                var geo = new google.visualization.GeoChart(document.getElementById('geo'));
+
+                geo.draw(countryData, options5);
+
+/*
+                //SANKEY of EVENTS
+                //{"name": "T-Pain at Gramercy Theatre (October 24, 2017)", "type": "Concert", "artist": ["112", "T-Pain", "https://i.scdn.co/image/ba28f9e229d19a4bfcab63522610c413807c724f"], "img_url": "https://i.scdn.co/image/ba28f9e229d19a4bfcab63522610c413807c724f", "venue": ["110", "Gramercy Theatre", "https://farm5.staticflickr.com/4216/34997776491_e7b90a5cd9.jpg"], "id": 146, "start_time": "19:00:00", "start_date": "2017-10-24"}
+                var data = new google.visualization.DataTable();
+
+                //from events.js
+                var hmm = [];
+                var festivalsToArtists = [];
+                eventsData.events.forEach( function(event){
+                    
+                //    if(arrayItem.type == "Concert"){
+                //        concertsToArtists.push([arrayItem.name, arrayItem.artist[1], 1]);
+                //    }
+                //    else{
+                //        festivalsToArtists.push([arrayItem.name, arrayItem.artist[1], 1]);
+                //    }
+                //    
+                    hmm.push([event.venue[1], event.artist[1], 1]);
+                });
+                //console.log(concertsToArtists);
+                //console.log(festivalsToArtists);    
+
+                data.addColumn('string', 'Concert');
+                data.addColumn('string', 'Artist');
+                data.addColumn('number', 'Weight');
+                data.addRows(hmm);
+
+                // Sets chart options.
+                var options = {
+                  node: {
+                    label: {
+                        fontSize: 5
+                    },
+                    nodePadding: 5
+                  }
+                };
+
+                var chart = new google.visualization.Sankey(document.getElementById('sankey'));
+                chart.draw(data, options);
+*/
+              }
+
+            
+        </script>
+
+
+    </body>
+</html>

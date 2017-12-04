@@ -106,19 +106,28 @@ A Dockerized application to automate the deployment process
 ### Event4Me Critique
 +++
 #### What did they do well?
-- Beautiful, consistent design
+- Consistent design
 - 5 data sources
+- Placeholder Images
+- Good choice of details
 +++
 #### What did we learn from their website?
 - Load everything before displaying
+- There's a popular amphitheatre in Austin
 +++
 #### What can they do better?
-- Contrast! (difficulty reading the grey on grey)
+- Contrast! (Difficulty reading the grey on grey)
 - Events with multiple artists show up as different events
 - Past events still show up
 +++
+#### What can they do better? (cont.)
+- Images stretched for background
+- Apiary is outdated
+- JSON response is unusual
++++
 #### What puzzles us about their website?
-- The default sorting for events
+- Default sorting for events
+- Some artists have no events
 ---
 
 ### Visualization

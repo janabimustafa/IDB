@@ -6,17 +6,17 @@
 
 ### Group Members
 +++
-#### John O'kane
-Unit testing, QA
-+++
 #### Melanie Rivera
-Design, data collection
+Frontend, data collection
++++
+#### John O'kane
+Unit testing, QA Engineer
 +++
 #### Alex Gonzales
 Backend, API, documentation, data collection, db management
 +++
 #### George Weng
-Frontend
+Frontend, visualization
 +++
 #### Mustafa Taleb
 Sysadmin, backend, API, data collection
@@ -62,23 +62,44 @@ A Dockerized application to automate the deployment process
 
 ---
 
+## Rest API
+
+---
+
+## Unit Tests
+
+---
+
 ### Self-Critique
 +++
 #### What did we do well?
 - Data collection
+  - 2 APIs, 1 XPath scraper for supplemental data
 - Navigation
 - Continuous integration
+- Version control
+  - 368 commits, 36 branches, 64 pull requests, 6 releases
+  - Branches and pull requests
+  - only 1 merge conflict ever!
 +++
 #### What did we learn?
 - Docker
-- Google Cloud Platform, expensive
+- Google Cloud Platform, expen$$$ive
+- React
+- Trello
+- GitFlow
+- Selenium
+- Teamwork
 +++
 #### What can we do better?
 - Planning and assignment of tasks
 - CSS
+- Trello board card labels/titles/descriptions
+- Communication
 +++
 #### What puzzles us?
 - Visualizations
+- React
 
 ---
 
@@ -100,5 +121,8 @@ A Dockerized application to automate the deployment process
 - The default sorting for events
 ---
 
+### Visualization
+
+---
 
 ### Q&A

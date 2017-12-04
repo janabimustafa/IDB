@@ -75,31 +75,32 @@ A Dockerized application to automate the deployment process
 #### What did we do well?
 - Data collection
   - 2 APIs, 1 XPath scraper for supplemental data
-- Navigation
 - Continuous integration
 - Version control
   - 368 commits, 36 branches, 64 pull requests, 6 releases
   - Branches and pull requests
   - only 1 merge conflict ever!
+  - Docker
 +++
 #### What did we learn?
-- Docker
 - Google Cloud Platform, expen$$$ive
-- React
+- Docker
 - Trello
 - GitFlow
 - Selenium
 - Teamwork
+- React?
 +++
 #### What can we do better?
 - Planning and assignment of tasks
-- CSS
 - Trello board card labels/titles/descriptions
 - Communication
+- CSS
+- React??
 +++
 #### What puzzles us?
-- Visualizations
-- React
+- React???
+
 
 ---
 

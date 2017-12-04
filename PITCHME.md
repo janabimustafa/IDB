@@ -76,11 +76,11 @@ A Dockerized application to automate the deployment process
 - Data collection
   - 2 APIs, 1 XPath scraper for supplemental data
 - Continuous integration
+- Docker
 - Version control
   - 368 commits, 36 branches, 64 pull requests, 6 releases
   - Branches and pull requests
   - only 1 merge conflict ever!
-  - Docker
 +++
 #### What did we learn?
 - Google Cloud Platform, expen$$$ive
@@ -100,7 +100,6 @@ A Dockerized application to automate the deployment process
 +++
 #### What puzzles us?
 - React???
-
 
 ---
 
